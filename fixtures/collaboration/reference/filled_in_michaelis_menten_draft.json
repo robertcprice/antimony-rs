@@ -1,0 +1,322 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [
+    {
+      "category": "SBML unit consistency",
+      "id": 99506,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99507,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20513,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    }
+  ],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection": {
+    "compartments": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "cell",
+        "name": null,
+        "sbo_term": null,
+        "size": 2.0,
+        "spatial_dimensions": 3,
+        "units": null
+      }
+    ],
+    "constraints": [],
+    "events": [],
+    "function_definitions": [
+      {
+        "annotation": null,
+        "id": "mm",
+        "math": {
+          "children": [
+            {
+              "name": "S",
+              "type": 260
+            },
+            {
+              "name": "Vm",
+              "type": 260
+            },
+            {
+              "name": "Km",
+              "type": 260
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "Vm",
+                      "type": 260
+                    },
+                    {
+                      "name": "S",
+                      "type": 260
+                    }
+                  ],
+                  "type": 42
+                },
+                {
+                  "children": [
+                    {
+                      "name": "Km",
+                      "type": 260
+                    },
+                    {
+                      "name": "S",
+                      "type": 260
+                    }
+                  ],
+                  "type": 43
+                }
+              ],
+              "type": 47
+            }
+          ],
+          "type": 267
+        },
+        "name": null,
+        "sbo_term": null
+      }
+    ],
+    "initial_assignments": [],
+    "level": 3,
+    "model": {
+      "annotation": null,
+      "id": "filled_in_michaelis_menten_draft",
+      "name": null,
+      "sbo_term": null
+    },
+    "model_units": {
+      "AreaUnits": null,
+      "ConversionFactor": null,
+      "ExtentUnits": null,
+      "LengthUnits": null,
+      "SubstanceUnits": null,
+      "TimeUnits": null,
+      "VolumeUnits": null
+    },
+    "packages": [],
+    "parameters": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "Km",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 1.5
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "Vm",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 3.0
+      },
+      {
+        "annotation": null,
+        "constant": false,
+        "id": "total_pool",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": null
+      }
+    ],
+    "reactions": [
+      {
+        "annotation": null,
+        "compartment": null,
+        "id": "J1",
+        "local_parameters": [],
+        "math": {
+          "children": [
+            {
+              "name": "S",
+              "type": 260
+            },
+            {
+              "name": "Vm",
+              "type": 260
+            },
+            {
+              "name": "Km",
+              "type": 260
+            }
+          ],
+          "name": "mm",
+          "type": 268
+        },
+        "modifiers": [],
+        "name": null,
+        "products": [
+          {
+            "constant": true,
+            "species": "P",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reactants": [
+          {
+            "constant": true,
+            "species": "S",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reversible": true,
+        "sbo_term": null
+      }
+    ],
+    "rules": [
+      {
+        "kind": "assignmentRule",
+        "math": {
+          "children": [
+            {
+              "name": "S",
+              "type": 260
+            },
+            {
+              "name": "P",
+              "type": 260
+            }
+          ],
+          "type": 43
+        },
+        "variable": "total_pool"
+      }
+    ],
+    "species": [
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "cell",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "P",
+        "initial_amount": null,
+        "initial_concentration": 0.5,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      },
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "cell",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "S",
+        "initial_amount": null,
+        "initial_concentration": 8.0,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      }
+    ],
+    "unit_definitions": [],
+    "version": 2
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "b2feefcbd9b0cebeb2eb856d27390c86a5b34eb115667d914feda64bac717323",
+  "status": "PASS"
+}

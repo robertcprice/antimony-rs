@@ -1,0 +1,4 @@
+function first_fn(x) x + 1 end
+function second_fn(x) first_fn(x) + 2 end
+function third_fn(x) second_fn(x) * 3 end
+a = third_fn(4);

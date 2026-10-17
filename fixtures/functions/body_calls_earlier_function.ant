@@ -1,0 +1,3 @@
+function sq(x) x * x end
+function sum_sq(x, y) sq(x) + sq(y) end
+a = sum_sq(3, 4);

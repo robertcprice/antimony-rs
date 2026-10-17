@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"lt()\":  Error when parsing input 'lt()' at position 4:  The function 'lt' takes at least two arguments, but 0 were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "1de477267066b3101b530484fb725afef2e744058fcb9bc089f2c71f3b6b0bc6",
+  "status": "REFERENCE_REJECTED"
+}

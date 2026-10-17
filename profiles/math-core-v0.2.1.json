@@ -1,0 +1,35 @@
+{
+  "schema": "antimony-rs-implementation-boundary-v2",
+  "implementation_id": "math-core-v0.2.1-slice",
+  "status": "experimental_bounded_corrective_implementation",
+  "corrects_implementation": "math-core-v0.2-slice",
+  "historical_corpus_profile": "kinetic-core-v0.1",
+  "relationship_to_historical_target": "Corrective extension retains numeric builtins outside frozen kinetic-core-v0.1 target. Does not establish full target or language conformance.",
+  "rational_contract": {
+    "representation": "Typed unreduced signed numerator/denominator; preserve rational AST distinct from division.",
+    "recognition": "Reference primary canonical precision15 and plain signed integer spelling below1e15, in complete parentheses; plus-sign and separately grouped operands escape rational tokenization.",
+    "components": "Final normalized numerator and denominator must each lie in inclusive signed32-bit range; wider safe intermediates allow unary signs to fold before final validation.",
+    "call_open": "A rational numeric token consumed by the opening function delimiter is a syntax error, not a call argument.",
+    "zero_denominator": "Explicit UnsupportedFeature in every rational context; ordinary division rates retain their existing contract.",
+    "dimensions": "Rational numeric atom is dimensionless; ordinary numeric literal dimensional inference remains unchanged."
+  },
+  "retained_exclusions": [
+    "Conditionals, booleans and piecewise",
+    "User-defined functions, rules and events",
+    "Computed compartments and reaction-valued expressions",
+    "Existing scalar precision/magnitude exclusions",
+    "Simulation and general simulation readiness"
+  ],
+  "verification_contracts": {
+    "manifest": "fixtures/rational-calls/corrective-v1.json",
+    "overlay": "fixtures/manifests/math-core-v2_1-overlay.json",
+    "evidence": "tools/oracle/rational-evidence.json",
+    "guide": "docs/RATIONAL_CALLS_EVIDENCE.md"
+  },
+  "claims": {
+    "full_antimony": false,
+    "frozen_target_conformance": false,
+    "published": false,
+    "upstream_endorsement": false
+  }
+}

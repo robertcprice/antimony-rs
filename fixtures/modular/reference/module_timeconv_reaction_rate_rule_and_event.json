@@ -1,0 +1,380 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [
+    {
+      "category": "SBML unit consistency",
+      "id": 99506,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99507,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20513,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    }
+  ],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection": {
+    "compartments": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "M1_c",
+        "name": null,
+        "sbo_term": null,
+        "size": 1.0,
+        "spatial_dimensions": 3,
+        "units": null
+      }
+    ],
+    "constraints": [],
+    "events": [
+      {
+        "annotation": null,
+        "assignments": [
+          {
+            "math": {
+              "children": [
+                {
+                  "name": "M1_S",
+                  "type": 260
+                },
+                {
+                  "integer": 1,
+                  "type": 256
+                }
+              ],
+              "type": 43
+            },
+            "variable": "M1_S"
+          }
+        ],
+        "delay": null,
+        "id": "M1_E1",
+        "name": null,
+        "priority": null,
+        "sbo_term": null,
+        "trigger": {
+          "initial_value": true,
+          "math": {
+            "children": [
+              {
+                "children": [
+                  {
+                    "name": "time",
+                    "type": 262
+                  },
+                  {
+                    "name": "tf",
+                    "type": 260
+                  }
+                ],
+                "type": 47
+              },
+              {
+                "integer": 2,
+                "type": 256
+              }
+            ],
+            "type": 310
+          },
+          "persistent": true
+        },
+        "use_values_from_trigger_time": true
+      }
+    ],
+    "function_definitions": [],
+    "initial_assignments": [],
+    "level": 3,
+    "model": {
+      "annotation": null,
+      "id": "scaled_clock",
+      "name": null,
+      "sbo_term": null
+    },
+    "model_units": {
+      "AreaUnits": null,
+      "ConversionFactor": null,
+      "ExtentUnits": null,
+      "LengthUnits": null,
+      "SubstanceUnits": null,
+      "TimeUnits": null,
+      "VolumeUnits": null
+    },
+    "packages": [],
+    "parameters": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "M1_k",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 0.4
+      },
+      {
+        "annotation": null,
+        "constant": false,
+        "id": "M1_x",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 1.0
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "tf",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 10.0
+      }
+    ],
+    "reactions": [
+      {
+        "annotation": null,
+        "compartment": null,
+        "id": "M1_J1",
+        "local_parameters": [],
+        "math": {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "M1_c",
+                      "type": 260
+                    },
+                    {
+                      "name": "M1_k",
+                      "type": 260
+                    }
+                  ],
+                  "type": 42
+                },
+                {
+                  "name": "M1_S",
+                  "type": 260
+                }
+              ],
+              "type": 42
+            },
+            {
+              "name": "tf",
+              "type": 260
+            }
+          ],
+          "type": 47
+        },
+        "modifiers": [],
+        "name": null,
+        "products": [
+          {
+            "constant": true,
+            "species": "M1_P",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reactants": [
+          {
+            "constant": true,
+            "species": "M1_S",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reversible": true,
+        "sbo_term": null
+      }
+    ],
+    "rules": [
+      {
+        "kind": "rateRule",
+        "math": {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "real": -0.2,
+                      "type": 257
+                    },
+                    {
+                      "name": "M1_x",
+                      "type": 260
+                    }
+                  ],
+                  "type": 42
+                },
+                {
+                  "children": [
+                    {
+                      "real": 0.05,
+                      "type": 257
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "time",
+                          "type": 262
+                        },
+                        {
+                          "name": "tf",
+                          "type": 260
+                        }
+                      ],
+                      "type": 47
+                    }
+                  ],
+                  "type": 42
+                }
+              ],
+              "type": 43
+            },
+            {
+              "name": "tf",
+              "type": 260
+            }
+          ],
+          "type": 47
+        },
+        "variable": "M1_x"
+      }
+    ],
+    "species": [
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "M1_c",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "M1_P",
+        "initial_amount": null,
+        "initial_concentration": 0.0,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      },
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "M1_c",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "M1_S",
+        "initial_amount": null,
+        "initial_concentration": 6.0,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      }
+    ],
+    "unit_definitions": [],
+    "version": 2
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "fb20944078915dc5931fc1f2703358d94e444aac52feffbeb36915bcee14b394",
+  "status": "PASS"
+}

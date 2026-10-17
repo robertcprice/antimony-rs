@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 2:  5 SBML error(s) when creating module '__main'.  libAntimony tries to catch these errors before libSBML complains, but sometimes cannot.  Error message(s) from libSBML:\n\nInside the <lambda> of a <functionDefinition>, if a <ci> element is not the first element within a MathML <apply>, then the <ci>'s value can only be the value of a <bvar> element declared in that <lambda>. In other words, all model entities referenced inside a function definition must be passed arguments to that function. \nReference: L3V2 Sections 3.4.3 and 4.3.2\n The variable 'time' is not listed as a <bvar> of FunctionDefinition 'f'.\n\nThe csymbol 'time' should not be used within the <math> element of a <functionDefinition>. (References: L2V3 Section 4.3.2; L2V4 Section 4.3.2)\n\nThe interpretation the Hierarchical Model Composition constructs to produce a kind of 'flattened' version of the model devoid of the comp package constructs must produce a valid SBML Level 3 model.\nReference: L3V1 Comp V1 Appendix A1\n Errors that follow relate to the flattened document produced using the CompFlatteningConverter.\n\nInside the <lambda> of a <functionDefinition>, if a <ci> element is not the first element within a MathML <apply>, then the <ci>'s value can only be the value of a <bvar> element declared in that <lambda>. In other words, all model entities referenced inside a function definition must be passed arguments to that function. \nReference: L3V2 Sections 3.4.3 and 4.3.2\n The variable 'time' is not listed as a <bvar> of FunctionDefinition 'f'.\n\nThe csymbol 'time' should not be used within the <math> element of a <functionDefinition>. (References: L2V3 Section 4.3.2; L2V4 Section 4.3.2)\n",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "0144bd0dc7b27206b8b818dda875c35d4ff31a197e638cdcf6dec7e397bcabca",
+  "status": "REFERENCE_REJECTED"
+}

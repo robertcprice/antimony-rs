@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 2:  Loop detected:  a's definition (f(a)) either includes itself directly (i.e. 's5 := 6 + s5') or by proxy (i.e. 's5 := 8*d3' and 'd3 := 9*s5').",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "72b6c365b13aa61545b4d5d4799bf214d133eee98f36c24be9d50420edd75674",
+  "status": "REFERENCE_REJECTED"
+}

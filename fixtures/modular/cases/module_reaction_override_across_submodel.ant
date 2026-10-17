@@ -1,0 +1,10 @@
+model rxn_mod(S, P)
+  k = 0.1;
+  J_step: S -> P; k*S;
+end
+model *main()
+  species A = 4, B = 0;
+  k_fast = 0.6;
+  M: rxn_mod(A, B);
+  M.J_step := k_fast*A;
+end

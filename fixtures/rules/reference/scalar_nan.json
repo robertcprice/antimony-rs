@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  3 SBML error(s) when creating module '__main'.  libAntimony tries to catch these errors before libSBML complains, but sometimes cannot.  Error message(s) from libSBML:\n\nOutside of a <functionDefinition>, if a <ci> element is not the first element within a MathML <apply>, then the <ci>'s value can only be chosen from the set of identifiers of (in L2V1) <species>, <compartment>, or <parameter> objects; (in L2V2-L2V5), <species>, <compartment>, <parameter> or <reaction> objects; (in L3V1) <species>, <compartment>, <parameter>, <reaction> or <speciesReference> objects and (in L3V2) <species>, <compartment>, <parameter>, <reaction>, <speciesReference> objects or L3 package objects with defined mathematical meaning. \nReference: L3V2 Section 3.4.3\n The formula 'NaN' in the math element of the <assignmentRule> uses 'NaN' that is not the id of a species/compartment/parameter/reaction/speciesReference.\n\nThe interpretation the Hierarchical Model Composition constructs to produce a kind of 'flattened' version of the model devoid of the comp package constructs must produce a valid SBML Level 3 model.\nReference: L3V1 Comp V1 Appendix A1\n Errors that follow relate to the flattened document produced using the CompFlatteningConverter.\n\nOutside of a <functionDefinition>, if a <ci> element is not the first element within a MathML <apply>, then the <ci>'s value can only be chosen from the set of identifiers of (in L2V1) <species>, <compartment>, or <parameter> objects; (in L2V2-L2V5), <species>, <compartment>, <parameter> or <reaction> objects; (in L3V1) <species>, <compartment>, <parameter>, <reaction> or <speciesReference> objects and (in L3V2) <species>, <compartment>, <parameter>, <reaction>, <speciesReference> objects or L3 package objects with defined mathematical meaning. \nReference: L3V2 Section 3.4.3\n The formula 'NaN' in the math element of the <assignmentRule> uses 'NaN' that is not the id of a species/compartment/parameter/reaction/speciesReference.\n",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "e313b2ceb383d461320ecbb89c31b05dee95057749d9eef3b5e8cfdbd6bf9eab",
+  "status": "REFERENCE_REJECTED"
+}

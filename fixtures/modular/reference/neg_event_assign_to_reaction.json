@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 3:  3 SBML error(s) when creating module '__main'.  libAntimony tries to catch these errors before libSBML complains, but sometimes cannot.  Error message(s) from libSBML:\n\nThe value of the attribute 'variable' in an <eventAssignment> can only be the identifier of a <compartment>, <species>, model-wide <parameter> definition, or (in Level 3) <speciesReference>, or (in Level 3 Version 2), any identifier in the SId namespace of the model belonging to an element defined by an SBML Level 3 package as having with mathematical meaning.\nReference: L3V2 Section 4.12.5\n In the <event> with id '_E0' the <eventAssignment> with variable 'J0' does not refer to an existing <compartment>, <species> or <parameter>.\n\nThe interpretation the Hierarchical Model Composition constructs to produce a kind of 'flattened' version of the model devoid of the comp package constructs must produce a valid SBML Level 3 model.\nReference: L3V1 Comp V1 Appendix A1\n Errors that follow relate to the flattened document produced using the CompFlatteningConverter.\n\nThe value of the attribute 'variable' in an <eventAssignment> can only be the identifier of a <compartment>, <species>, model-wide <parameter> definition, or (in Level 3) <speciesReference>, or (in Level 3 Version 2), any identifier in the SId namespace of the model belonging to an element defined by an SBML Level 3 package as having with mathematical meaning.\nReference: L3V2 Section 4.12.5\n In the <event> with id '_E0' the <eventAssignment> with variable 'J0' does not refer to an existing <compartment>, <species> or <parameter>.\n",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "3f9082eec17812ddaf9941614d2d2a841b47c45e2e215465dab2776db56f514f",
+  "status": "REFERENCE_REJECTED"
+}

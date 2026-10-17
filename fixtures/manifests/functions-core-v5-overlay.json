@@ -1,0 +1,99 @@
+{
+  "schema": "antimony-native-overlay-v7",
+  "implemented_profile": "functions-core-v0.5-slice",
+  "sources": {
+    "fixtures/manifests/original-v1.json": "d02e761c5fb109b3eff5a575b2dee3fe9b2651c9398db6c3ffe1ecf633277717",
+    "fixtures/manifests/arithmetic-v1.json": "97c10521fcf0fd36989d1f11ea742fd0c03a110dbb42a8f69440385607ed4273",
+    "tools/workloads/generated-v1.json": "49c823b4ad158543dd98152ecb6c0ecff5154db185438007ccc042448d6e968d",
+    "tools/workloads/generated_contracts.py": "42066d81322ace375b22104294f5b0e5ab3c3c147f4382be204cc9742d18c017",
+    "fixtures/manifests/flat-model-v2-overlay.json": "8d3c599134ce143283a2ebd5a68a54ca7c2730747add54d772273fafaf016d63",
+    "fixtures/manifests/math-core-v2-overlay.json": "12632bd5b5d5cd96e7a1cbd21afe50f91856e1b1fe0188ba17d9faef4ff3f44c",
+    "fixtures/manifests/math-core-v2_1-overlay.json": "e9426b4fc5279425b3afa80c02528f82ee6a75eed2d1045a623adae2da2bfcc2",
+    "fixtures/manifests/builtins-v2.json": "d7d87884eec8c6e12a0c32ba3ebb136f5f794ee8d3383afafd568a5eb2518582",
+    "fixtures/manifests/symbols-v2.json": "6f6aa4754ad793c51937a0e58bb4a7ebbf81b06093e365334116569facb6a93e",
+    "fixtures/rational-calls/corrective-v1.json": "fec0107066dcefe5a89dddc5bc8094554f8227e6bc091dad41261e29a5c11cce",
+    "fixtures/manifests/conditional-core-v3-overlay.json": "ea029eccf3eeb716733a4d24db837e50a92d0160175ac3638d1ba38593e8441e",
+    "fixtures/conditionals/manifest.json": "98d550a0a16a0a3763f1d1741786680ab6a09ac2ffc46691cdd5ae40f0816be9",
+    "fixtures/conditionals/aliases-v1.json": "93174c8a284fc3f37e40a39a51d3bb26c17822f09d1fabe39e0a4aa297c985ca",
+    "fixtures/manifests/rules-core-v4-overlay.json": "a5ae142265206a609b02fe661891d38abca422c915d271bea3a97e7140dac92c",
+    "fixtures/rules/manifest.json": "52955e98f736d442663e37e33b15cf86efaeed58f4922f43811e17a75ecf91fa"
+  },
+  "original_overrides": {
+    "absent_values": {
+      "from": "strict_profile_rejected",
+      "to": "target_supported",
+      "reason": "Source-ordered symbol resolution with explicit unset initialization and declaration qualifiers."
+    },
+    "init_unknown": {
+      "from": "strict_profile_rejected",
+      "to": "target_supported",
+      "reason": "Source-ordered symbol resolution with explicit unset initialization and declaration qualifiers."
+    },
+    "formula_uninitialized": {
+      "from": "strict_profile_rejected",
+      "to": "target_supported",
+      "reason": "Source-ordered symbol resolution with explicit unset initialization and declaration qualifiers."
+    },
+    "formula_duplicate": {
+      "from": "strict_profile_rejected",
+      "to": "target_supported",
+      "reason": "Source-ordered symbol resolution with explicit unset initialization and declaration qualifiers."
+    },
+    "formula_species_promotion": {
+      "from": "strict_profile_rejected",
+      "to": "target_supported",
+      "reason": "Source-ordered symbol resolution with explicit unset initialization and declaration qualifiers."
+    },
+    "formula_var_qualifier": {
+      "from": "unsupported_profile",
+      "to": "target_supported",
+      "reason": "Source-ordered symbol resolution with explicit unset initialization and declaration qualifiers."
+    },
+    "formula_dollar_qualifier": {
+      "from": "unsupported_profile",
+      "to": "target_supported",
+      "reason": "Source-ordered symbol resolution with explicit unset initialization and declaration qualifiers."
+    },
+    "function_call": {
+      "from": "unsupported_profile",
+      "to": "target_supported",
+      "reason": "Verified numeric builtin sin is now a typed expression and SBML operator."
+    },
+    "assignment_rule": {
+      "from": "unsupported_profile",
+      "to": "target_supported",
+      "reason": "Bounded flat parameter/species assignment and rate rules are now supported."
+    },
+    "formula_assignment_rule": {
+      "from": "unsupported_profile",
+      "to": "target_supported",
+      "reason": "Bounded flat parameter/species assignment and rate rules are now supported."
+    }
+  },
+  "workload_overrides": {
+    "grid_unset_00": {
+      "from": "REJECTED",
+      "to": "EXPORTED"
+    },
+    "grid_unset_01": {
+      "from": "REJECTED",
+      "to": "EXPORTED"
+    },
+    "grid_unset_02": {
+      "from": "REJECTED",
+      "to": "EXPORTED"
+    },
+    "grid_unset_03": {
+      "from": "REJECTED",
+      "to": "EXPORTED"
+    }
+  },
+  "arithmetic_overrides": {
+    "deferred_builtin": {
+      "from": "rejected",
+      "diagnostic_code_from": "unsupported_feature",
+      "to": "accepted",
+      "reason": "Typed sin support intentionally accepts the historical arithmetic builtin negative; reference snapshot unchanged."
+    }
+  }
+}

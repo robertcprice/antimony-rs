@@ -1,0 +1,1 @@
+const species S; species P; S=1; P=0; k=2; J: S => P; k*S;

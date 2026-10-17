@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  syntax error, unexpected element name, expecting '('",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "d2820eb89cfcc393e6c3ee9e2675e1cf6f199f15ee6cdcb4c1d215a6fb1c3d9d",
+  "status": "REFERENCE_REJECTED"
+}

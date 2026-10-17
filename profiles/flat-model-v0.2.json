@@ -1,0 +1,37 @@
+{
+  "schema": "antimony-rs-implementation-boundary-v1",
+  "implementation_id": "flat-model-v0.2-slice",
+  "status": "bounded_increment_verified",
+  "target_profile": "kinetic-core-v0.1",
+  "previous_implementation": "arithmetic-v0.1-slice",
+  "native_runtime": "Rust; no native C/C++ or Python dependency; no simulator",
+  "new_capabilities": [
+    "Source-ordered symbol merging, compatible redeclarations and formula-to-species promotion",
+    "Const/var declarations and dollar boundary qualifiers with reference-checked occurrence ordering",
+    "Optional reaction labels and source-ordered generated identifiers",
+    "Explicit unset values and unresolved symbolic initial assignments without fabricated zero values",
+    "Deferred scalar compartment initialization and last explicit species compartment selection"
+  ],
+  "retained_limits": [
+    "Computed compartment sizes and reaction-valued expressions remain unsupported",
+    "Amount initialization and substance-only species remain unsupported",
+    "Functions, time, assignment/rate rules, events, imports and hierarchical models remain unsupported",
+    "Known initialization domain errors and cycles reject even with other unset dependencies",
+    "Arithmetic precision/range, resource, unit and export-validation limits remain enforced"
+  ],
+  "verification_contracts": {
+    "symbols": "fixtures/manifests/symbols-v2.json",
+    "historical_native_outcome_overlay": "fixtures/manifests/flat-model-v2-overlay.json",
+    "guide": "docs/SYMBOLS.md",
+    "full_source_receipt": "NOT_RUN: historical recipe has incompatible hardcoded outcome inventories",
+    "evidence": "tools/oracle/symbols-evidence.json",
+    "review": "docs/reviews/symbols-review.md"
+  },
+  "claims": {
+    "full_antimony": false,
+    "full_target_profile": false,
+    "simulation_ready_for_all_accepted_models": false,
+    "published": false,
+    "upstream_endorsement": false
+  }
+}

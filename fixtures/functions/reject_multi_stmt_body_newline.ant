@@ -1,0 +1,5 @@
+function f(x)
+  x + 1
+  x + 2
+end
+a = f(1);

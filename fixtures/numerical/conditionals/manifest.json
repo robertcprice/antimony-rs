@@ -1,0 +1,35 @@
+{
+  "schema": "antimony-piecewise-numerical-v1",
+  "grid": {
+    "start": 0,
+    "end": 10,
+    "steps": 100
+  },
+  "comparison": {
+    "absolute": 1e-08,
+    "relative": 1e-07
+  },
+  "solver": {
+    "name": "cvode",
+    "relative_tolerance": 1e-10,
+    "absolute_tolerance": 1e-12,
+    "maximum_num_steps": 100000,
+    "variable_step_size": false,
+    "stiff": true
+  },
+  "cases": [
+    {
+      "id": "continuous_piecewise_input",
+      "path": "fixtures/numerical/conditionals/continuous_piecewise_input.ant",
+      "sha256": "53d2e84684caee37409fead82e30dbfe8106db969d0e647c6ff6146badcac235",
+      "selections": [
+        "time",
+        "S",
+        "[S]",
+        "default_compartment"
+      ],
+      "provenance": "Independent integral of continuous rate t for t<5 and5 otherwise, S0=0; no coefficient fitting, no discontinuous-input or event timing claim."
+    }
+  ],
+  "implemented_profile": "conditional-core-v0.3-slice"
+}

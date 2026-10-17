@@ -1,0 +1,2 @@
+function half(x) (1/2) * x end
+a = half(6);

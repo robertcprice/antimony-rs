@@ -1,0 +1,20 @@
+module sub_stage(S)
+  compartment c = 1;
+  species S in c = 10;
+  species P in c = 0;
+  species Q in c = 0;
+  k1 = 0.2;
+  k2 = 0.1;
+  J1: S -> P; c * k1 * S;
+  J2: S -> Q; c * k2 * S;
+end
+
+module *pipeline()
+  compartment c = 1;
+  species X in c = 15;
+  tf = 4;
+  ef = 2;
+  M1: sub_stage(X), timeconv = tf, extentconv = ef;
+  delete M1.J2, M1.Q;
+  M1.P is Y;
+end

@@ -1,0 +1,1792 @@
+{
+  "schema": "antimony-rs-corpus-v1",
+  "corpus_version": "original-v1",
+  "oracle_environment": "tools/oracle/environment.json",
+  "wheel_pins": "tools/oracle/wheels.json",
+  "research_source_sha": "f3f5c6b7f3f22ab48f8e382a9318ef50bce2b4b2",
+  "release_tag": "v3.2.0",
+  "release_tag_sha": "a4cb7549a03beef569ce21a0a7342e315ca0ed43",
+  "wheel_build_source_sha": null,
+  "source_mapping_note": "Release tag resolved using official GitHub API; no independently attested wheel-to-source mapping. Research baseline is not the wheel build. Pin is provisional local reference, not maintainer-approved compatibility target.",
+  "fixtures": [
+    {
+      "id": "first_conversion",
+      "path": "fixtures/accepted/first_conversion.ant",
+      "sha256": "64fdea2ad703e7cf961f3ad05968dc6f43a81942cab6cc41b2638be6c867de35",
+      "expectation": "fixtures/manifests/first_conversion.expected.json",
+      "feature_ids": [
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F12"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "model.named",
+        "reaction.irreversible",
+        "compartment.explicit"
+      ]
+    },
+    {
+      "id": "arrow_reversible",
+      "path": "fixtures/accepted/arrow_reversible.ant",
+      "sha256": "572bae2d129197979b39538e04898abc4436c9e172ef6afc04d9c3f58a20d4cd",
+      "expectation": "fixtures/manifests/arrow_reversible.expected.json",
+      "feature_ids": [
+        "F05",
+        "F07"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "reaction.reversible",
+        "compartment.default"
+      ]
+    },
+    {
+      "id": "arrow_irreversible",
+      "path": "fixtures/accepted/arrow_irreversible.ant",
+      "sha256": "0571c8b6bf3eb01df721e2f38d5b1adb8695a4ed095137268551263c6cfaa01d",
+      "expectation": "fixtures/manifests/arrow_irreversible.expected.json",
+      "feature_ids": [
+        "F07"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "reaction.irreversible"
+      ]
+    },
+    {
+      "id": "nonunit_volume",
+      "path": "fixtures/accepted/nonunit_volume.ant",
+      "sha256": "d4a0f541598e38aeb4b21e4b170c3cb05dcf457fa96fd67dd670caa8d222ea92",
+      "expectation": "fixtures/manifests/nonunit_volume.expected.json",
+      "feature_ids": [
+        "F04",
+        "F05",
+        "F07"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "compartment.nonunit",
+        "species.concentration"
+      ]
+    },
+    {
+      "id": "boundary_dollar",
+      "path": "fixtures/accepted/boundary_dollar.ant",
+      "sha256": "6ac3a8bcd592c7cfced966b3f2c31c8577b8bd606e50919f8121764e6b228451",
+      "expectation": "fixtures/manifests/boundary_dollar.expected.json",
+      "feature_ids": [
+        "F04"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "species.boundary.dollar"
+      ]
+    },
+    {
+      "id": "boundary_const",
+      "path": "fixtures/accepted/boundary_const.ant",
+      "sha256": "423e8d3f9351a3bfb8fe36cc0780862a7c9ab103b45ae410643efd5ed724a3b3",
+      "expectation": "fixtures/manifests/boundary_const.expected.json",
+      "feature_ids": [
+        "F04"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "species.boundary.const"
+      ]
+    },
+    {
+      "id": "absent_values",
+      "path": "fixtures/rejected/absent_values.ant",
+      "sha256": "2c6a833b24d9d767ef201fdc9b5d0f7647096247545abc6bb22c247eecf29570",
+      "expectation": "fixtures/manifests/absent_values.expected.json",
+      "feature_ids": [
+        "F03",
+        "F04",
+        "F05",
+        "F06"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "initialization.absent",
+        "compartment.default"
+      ]
+    },
+    {
+      "id": "precedence",
+      "path": "fixtures/accepted/precedence.ant",
+      "sha256": "c54364de532b707e0847abff83531ed8579653b9b76c30462374338eb00867ae",
+      "expectation": "fixtures/manifests/precedence.expected.json",
+      "feature_ids": [
+        "F08"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "expression.unary_power",
+        "expression.right_power",
+        "expression.product_sum"
+      ]
+    },
+    {
+      "id": "malformed",
+      "path": "fixtures/rejected/malformed.ant",
+      "sha256": "65a4e320b9cffe7a8b89c72e1b494c78285a4283814b553cabc66d6a714c59e3",
+      "expectation": "fixtures/manifests/malformed.expected.json",
+      "feature_ids": [
+        "F01",
+        "F13"
+      ],
+      "native_profile_expectation": "malformed",
+      "reference_status": "REFERENCE_REJECTED",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "syntax.malformed"
+      ]
+    },
+    {
+      "id": "assignment_rule",
+      "path": "fixtures/rejected/assignment_rule.ant",
+      "sha256": "482b2ca94d27caa0ad7ae05bd71e43c353bd619f81ac5c77bdd99b918d41a49c",
+      "expectation": "fixtures/manifests/assignment_rule.expected.json",
+      "feature_ids": [
+        "X02"
+      ],
+      "native_profile_expectation": "unsupported_profile",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "unsupported.assignment_rule"
+      ]
+    },
+    {
+      "id": "event",
+      "path": "fixtures/rejected/event.ant",
+      "sha256": "3790acf14b41cb39ee6bdcc371a4bff1583d18ffb880b9542db4269969d1a225",
+      "expectation": "fixtures/manifests/event.expected.json",
+      "feature_ids": [
+        "X03"
+      ],
+      "native_profile_expectation": "unsupported_profile",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "unsupported.event"
+      ]
+    },
+    {
+      "id": "function_call",
+      "path": "fixtures/rejected/function_call.ant",
+      "sha256": "8f7894759137de261840e34c7bea62245a28b0f05db5b99b5f96a97ebbc23598",
+      "expectation": "fixtures/manifests/function_call.expected.json",
+      "feature_ids": [
+        "X01"
+      ],
+      "native_profile_expectation": "unsupported_profile",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "unsupported.function_call"
+      ]
+    },
+    {
+      "id": "scientific_notation",
+      "path": "fixtures/accepted/scientific_notation.ant",
+      "sha256": "c52486ef24411f5fef81bcd38fb445bc7d8db1bf6dd1d39707bb9a3fe7950d4c",
+      "expectation": "fixtures/manifests/scientific_notation.expected.json",
+      "feature_ids": [
+        "F01",
+        "F06",
+        "F08"
+      ],
+      "semantic_tags": [
+        "expression.scientific_notation",
+        "parameter.scientific_notation"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "init_numeric_arithmetic",
+      "path": "fixtures/accepted/init_numeric_arithmetic.ant",
+      "sha256": "1b740a2badf0bfee68c69742a75d244549e7f3fa1973636284db67c958fe3715",
+      "expectation": "fixtures/manifests/init_numeric_arithmetic.expected.json",
+      "feature_ids": [
+        "F04",
+        "F06",
+        "F08",
+        "F09"
+      ],
+      "semantic_tags": [
+        "initialization.numeric_arithmetic",
+        "initialization.species"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "init_forward_chain",
+      "path": "fixtures/accepted/init_forward_chain.ant",
+      "sha256": "d6f43aadf1e6716fc30fd1345346258dd104bc0681c687448bc4764197e4660b",
+      "expectation": "fixtures/manifests/init_forward_chain.expected.json",
+      "feature_ids": [
+        "F03",
+        "F06",
+        "F09"
+      ],
+      "semantic_tags": [
+        "initialization.forward",
+        "initialization.chain",
+        "initialization.first_occurrence_order"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "init_species_dependency",
+      "path": "fixtures/accepted/init_species_dependency.ant",
+      "sha256": "031783874e1c9b03435c9d810bb2e2a6ef02e70a0b7b2f10f3533fedef310cb6",
+      "expectation": "fixtures/manifests/init_species_dependency.expected.json",
+      "feature_ids": [
+        "F04",
+        "F05",
+        "F06",
+        "F09"
+      ],
+      "semantic_tags": [
+        "initialization.species_reference",
+        "initialization.compartment_reference",
+        "parameter.constant_propagation_false"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "init_boundary_dependency",
+      "path": "fixtures/accepted/init_boundary_dependency.ant",
+      "sha256": "3fb693511e8d984fb4c46b79a2bc12bba66e1c02292422e6ddbf80308418c09e",
+      "expectation": "fixtures/manifests/init_boundary_dependency.expected.json",
+      "feature_ids": [
+        "F04",
+        "F06",
+        "F09"
+      ],
+      "semantic_tags": [
+        "initialization.boundary_reference",
+        "parameter.constant_propagation_true"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "init_wrapped_literals",
+      "path": "fixtures/accepted/init_wrapped_literals.ant",
+      "sha256": "87264e205d23850ef97ac4e9e6a2cde61c96613c9b1838c702fefc80a4ddee4d",
+      "expectation": "fixtures/manifests/init_wrapped_literals.expected.json",
+      "feature_ids": [
+        "F06",
+        "F08",
+        "F09"
+      ],
+      "semantic_tags": [
+        "initialization.bare_negative",
+        "initialization.unary_plus",
+        "initialization.parenthesized_literal"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "init_precedence",
+      "path": "fixtures/accepted/init_precedence.ant",
+      "sha256": "3afd575b8597d23468f5cf33e2d8381cafeb5534df4894bc01eb6e973fd4febb",
+      "expectation": "fixtures/manifests/init_precedence.expected.json",
+      "feature_ids": [
+        "F06",
+        "F08",
+        "F09"
+      ],
+      "semantic_tags": [
+        "initialization.power_precedence",
+        "initialization.power_association"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "init_reaction_cycle",
+      "path": "fixtures/accepted/init_reaction_cycle.ant",
+      "sha256": "e60031fced0827d29cc6eb28fc4d9dab9a2c49ba839dd6f7d618cc1a86e29727",
+      "expectation": "fixtures/manifests/init_reaction_cycle.expected.json",
+      "feature_ids": [
+        "F03",
+        "F07",
+        "F09"
+      ],
+      "semantic_tags": [
+        "initialization.acyclic",
+        "reaction.cycle_valid"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "init_first_occurrence_order",
+      "path": "fixtures/accepted/init_first_occurrence_order.ant",
+      "sha256": "3cbaca9414a195a335009e9eb926c4761371969056982ec5b8c6d54d5e051d19",
+      "expectation": "fixtures/manifests/init_first_occurrence_order.expected.json",
+      "feature_ids": [
+        "F03",
+        "F04",
+        "F07",
+        "F09"
+      ],
+      "semantic_tags": [
+        "initialization.reaction_participant_order"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "init_unknown",
+      "path": "fixtures/rejected/init_unknown.ant",
+      "sha256": "a3325c41f54ab9a3c48c7729dda6af8b035a582d1ae4ef97d76f2728066a7217",
+      "expectation": "fixtures/manifests/init_unknown.expected.json",
+      "feature_ids": [
+        "F03",
+        "F06",
+        "F09"
+      ],
+      "semantic_tags": [
+        "initialization.unset_dependency"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "init_divzero",
+      "path": "fixtures/rejected/init_divzero.ant",
+      "sha256": "be4e21036ec3df027e7543282e25635398ae82fce72e2b2e193fe66a993b2bb5",
+      "expectation": "fixtures/manifests/init_divzero.expected.json",
+      "feature_ids": [
+        "F06",
+        "F08",
+        "F09"
+      ],
+      "semantic_tags": [
+        "initialization.divide_zero"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "init_nonfinite",
+      "path": "fixtures/rejected/init_nonfinite.ant",
+      "sha256": "eefd7e7691c19f0b7fd5550bbbe261bafde7172e6dbcc470272ca103b490a946",
+      "expectation": "fixtures/manifests/init_nonfinite.expected.json",
+      "feature_ids": [
+        "F06",
+        "F08",
+        "F09"
+      ],
+      "semantic_tags": [
+        "initialization.nonfinite_result"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "init_domain",
+      "path": "fixtures/rejected/init_domain.ant",
+      "sha256": "bc9d266d28131cf4306f43886668e90deabe67c5a7d75744fcd1961f4549f440",
+      "expectation": "fixtures/manifests/init_domain.expected.json",
+      "feature_ids": [
+        "F06",
+        "F08",
+        "F09"
+      ],
+      "semantic_tags": [
+        "initialization.power_domain"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "init_cycle",
+      "path": "fixtures/rejected/init_cycle.ant",
+      "sha256": "43a970854131c5979e56b1e71b43d06a76413e039ac42b75b832b5290a7a88e0",
+      "expectation": "fixtures/manifests/init_cycle.expected.json",
+      "feature_ids": [
+        "F06",
+        "F09"
+      ],
+      "semantic_tags": [
+        "initialization.mutual_cycle"
+      ],
+      "native_profile_expectation": "semantic_rejected",
+      "reference_status": "REFERENCE_REJECTED",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "init_self_cycle",
+      "path": "fixtures/rejected/init_self_cycle.ant",
+      "sha256": "a40188f783fa7293a5aa87522aad7e01e103c6d1730e7be0691ed54d38123d52",
+      "expectation": "fixtures/manifests/init_self_cycle.expected.json",
+      "feature_ids": [
+        "F06",
+        "F09"
+      ],
+      "semantic_tags": [
+        "initialization.self_cycle"
+      ],
+      "native_profile_expectation": "semantic_rejected",
+      "reference_status": "REFERENCE_REJECTED",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "init_compartment_expression",
+      "path": "fixtures/rejected/init_compartment_expression.ant",
+      "sha256": "436fed6c5434340670b3a3edcbba6c944aca8d754f09549e7a898963cb15a675",
+      "expectation": "fixtures/manifests/init_compartment_expression.expected.json",
+      "feature_ids": [
+        "F05",
+        "F09"
+      ],
+      "semantic_tags": [
+        "initialization.compartment_expression_deferred"
+      ],
+      "native_profile_expectation": "unsupported_profile",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_builtins",
+      "path": "fixtures/accepted/units_builtins.ant",
+      "sha256": "29c36bc1e2aeb2905b1cbbc807e8c743c49b7fc017b0f95ef608933f19cf6d6c",
+      "expectation": "fixtures/manifests/units_builtins.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.builtins",
+        "units.aliases",
+        "units.dimensionless"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_scaled",
+      "path": "fixtures/accepted/units_scaled.ant",
+      "sha256": "4c0ccfe36c9f7ec3daa25419459d81dfceb4e2b67b851e000504438dfac8672e",
+      "expectation": "fixtures/manifests/units_scaled.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.scale_multiplier",
+        "units.no_rescaling"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_product_order",
+      "path": "fixtures/accepted/units_product_order.ant",
+      "sha256": "a932ae9be2ee8b23802e374bbce050d933ab10e28c28ddcf0c85a1feff75fd6b",
+      "expectation": "fixtures/manifests/units_product_order.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.product",
+        "units.quotient",
+        "units.component_order"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_powers",
+      "path": "fixtures/accepted/units_powers.ant",
+      "sha256": "da81d168157baf6d5302deed639673de6dc2029805d6ddb86133d7cae6bd844a",
+      "expectation": "fixtures/manifests/units_powers.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.integer_power",
+        "units.reciprocal"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_forward_alias",
+      "path": "fixtures/accepted/units_forward_alias.ant",
+      "sha256": "498c5f60eb98088ddf4d18a19fa6624f13d691c4296e8da1aa9c85c4cb296fdb",
+      "expectation": "fixtures/manifests/units_forward_alias.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.forward_alias",
+        "units.definition_order"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_compartment",
+      "path": "fixtures/accepted/units_compartment.ant",
+      "sha256": "3a07c7198b854137d74b24392a561d791e004dff7592ba8512a2874600b3b7ef",
+      "expectation": "fixtures/manifests/units_compartment.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.compartment",
+        "units.no_rescaling"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_consistent_arithmetic",
+      "path": "fixtures/accepted/units_consistent_arithmetic.ant",
+      "sha256": "cf00f5f9dd6691da6a38a75f45328eb6e82b76c688c7411ed1bb68bcbc0f92ce",
+      "expectation": "fixtures/manifests/units_consistent_arithmetic.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.known_consistent_arithmetic"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_unknown",
+      "path": "fixtures/rejected/units_unknown.ant",
+      "sha256": "c6e6a97290e3548addda8812a2ed8ebfff750445673de0aa24878e52a237437c",
+      "expectation": "fixtures/manifests/units_unknown.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.unknown_not_dimensionless"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_cycle",
+      "path": "fixtures/rejected/units_cycle.ant",
+      "sha256": "f51dc60c423ac1050b1b7944b2a916b6588dbb2a909ee4278bcce86b55306c89",
+      "expectation": "fixtures/manifests/units_cycle.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.alias_cycle"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_redefined",
+      "path": "fixtures/rejected/units_redefined.ant",
+      "sha256": "c764f77463028e9f110a417e94082f28dbe9b3cac8a00444ae53cdd93de028a4",
+      "expectation": "fixtures/manifests/units_redefined.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.repeated_definition"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_fractional_power",
+      "path": "fixtures/rejected/units_fractional_power.ant",
+      "sha256": "e9c4a6e162946c5de260d8e58269e21753b3ae5fdc34e6b4b210356d8c118a98",
+      "expectation": "fixtures/manifests/units_fractional_power.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.fractional_power_deferred"
+      ],
+      "native_profile_expectation": "unsupported_profile",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_species_annotation",
+      "path": "fixtures/rejected/units_species_annotation.ant",
+      "sha256": "fc327f8b75c9eef7c36dd967da4076b340c8e4db4447df64c1564823f038ce29",
+      "expectation": "fixtures/manifests/units_species_annotation.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.species_concentration_conversion_deferred"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_model_defaults",
+      "path": "fixtures/rejected/units_model_defaults.ant",
+      "sha256": "d58c7d03ad2b2141411183351f8723dbd816caee54d0b094b3e286d313921ef5",
+      "expectation": "fixtures/manifests/units_model_defaults.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.model_defaults_deferred"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_inconsistent_arithmetic",
+      "path": "fixtures/rejected/units_inconsistent_arithmetic.ant",
+      "sha256": "f7c2e332a61eb68027bbb83a006aef983398ebc4bae762e21846e72d920c206c",
+      "expectation": "fixtures/manifests/units_inconsistent_arithmetic.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.provable_dimensional_conflict"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_inline_annotation",
+      "path": "fixtures/rejected/units_inline_annotation.ant",
+      "sha256": "0d40389ba24469376fe41fd16f9308f9ffa89783124ff9ff99d559b72d98c7d3",
+      "expectation": "fixtures/manifests/units_inline_annotation.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.inline_number_units_deferred"
+      ],
+      "native_profile_expectation": "unsupported_profile",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_scalar_power",
+      "path": "fixtures/rejected/units_scalar_power.ant",
+      "sha256": "d69c3a28798a0c0053df32fa824f5b7a0e95aea46e53cafbe87dfc1e6581d3f6",
+      "expectation": "fixtures/manifests/units_scalar_power.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.scalar_power_deferred"
+      ],
+      "native_profile_expectation": "unsupported_profile",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_duplicate_kind",
+      "path": "fixtures/rejected/units_duplicate_kind.ant",
+      "sha256": "7f48475f75dd3c78b3f84fecfd929a0db031f8d447003a7e77af90899696ea6b",
+      "expectation": "fixtures/manifests/units_duplicate_kind.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.duplicate_kind_deferred"
+      ],
+      "native_profile_expectation": "unsupported_profile",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "units_plural_custom",
+      "path": "fixtures/rejected/units_plural_custom.ant",
+      "sha256": "ba07283d37d68669782e47540ed24c52fc5bcdc1d1c18b3c42ea7235a8355d63",
+      "expectation": "fixtures/manifests/units_plural_custom.expected.json",
+      "feature_ids": [
+        "F10"
+      ],
+      "semantic_tags": [
+        "units.custom_name_singularization_deferred"
+      ],
+      "native_profile_expectation": "unsupported_profile",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_implicit_concentration",
+      "path": "fixtures/accepted/species_units_implicit_concentration.ant",
+      "sha256": "b32ea7f148efb6843b532d4ce37e334bd012e9827553cef30172078cd92f1614",
+      "expectation": "fixtures/manifests/species_units_implicit_concentration.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "implicit_concentration"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_scaled_concentration",
+      "path": "fixtures/accepted/species_units_scaled_concentration.ant",
+      "sha256": "559d9ee6ee5fcdf645b5e61e26fc1b5138d20408a636be9d5d55bf7b62046dad",
+      "expectation": "fixtures/manifests/species_units_scaled_concentration.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "scaled_concentration"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_scaled_volume",
+      "path": "fixtures/accepted/species_units_scaled_volume.ant",
+      "sha256": "1ce42f9f2835db56a2065a54bf50c981c7d1bcad8e28c01ba15834a315de28ee",
+      "expectation": "fixtures/manifests/species_units_scaled_volume.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "scaled_volume"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_alias_concentration",
+      "path": "fixtures/accepted/species_units_alias_concentration.ant",
+      "sha256": "a513145db9424da9d0ae3730d957a9d6caac3b3154bfd7561f133bb3a837cc9d",
+      "expectation": "fixtures/manifests/species_units_alias_concentration.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "alias_concentration"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_dimensionless_compartment",
+      "path": "fixtures/accepted/species_units_dimensionless_compartment.ant",
+      "sha256": "3d6d719ef3fd3953714331040edbb4b916560746a4590c2f1b8a1b486afad5d9",
+      "expectation": "fixtures/manifests/species_units_dimensionless_compartment.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "dimensionless_compartment"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_generated_order",
+      "path": "fixtures/accepted/species_units_generated_order.ant",
+      "sha256": "ce9e9660fed0f192f43535f4152a343bfd684f7d34767f6b9884496a34d7af10",
+      "expectation": "fixtures/manifests/species_units_generated_order.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "generated_order"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_dedup_reverse",
+      "path": "fixtures/accepted/species_units_dedup_reverse.ant",
+      "sha256": "91683da0e016e123585e2501dbb1be300bf016203a9aa6e834eee082afc85194",
+      "expectation": "fixtures/manifests/species_units_dedup_reverse.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "dedup_reverse"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_inverse_pair",
+      "path": "fixtures/accepted/species_units_inverse_pair.ant",
+      "sha256": "1dd82ac38e2167396f27f5779c30caaca8bf4c5761d4614a99c761c6d7845dc2",
+      "expectation": "fixtures/manifests/species_units_inverse_pair.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "inverse_pair"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_defaults_builtin",
+      "path": "fixtures/accepted/species_units_defaults_builtin.ant",
+      "sha256": "1678e33fcf2977b8923eb9aa365648506c404e11223d0f0835cf4a0fe0903c1b",
+      "expectation": "fixtures/manifests/species_units_defaults_builtin.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "defaults_builtin"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_defaults_scaled",
+      "path": "fixtures/accepted/species_units_defaults_scaled.ant",
+      "sha256": "e7d610e08e5b9176fe30ea6226e7ce3b98e065f85f08634f5a022089e4fd0120",
+      "expectation": "fixtures/manifests/species_units_defaults_scaled.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "defaults_scaled"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_defaults_alias_entities",
+      "path": "fixtures/accepted/species_units_defaults_alias_entities.ant",
+      "sha256": "2ea7eaac09d1ef128ae074f9e74ea0bebb22b5ebcc94eed3d946ce97d7ee188e",
+      "expectation": "fixtures/manifests/species_units_defaults_alias_entities.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "defaults_alias_entities"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_defaults_forward_match",
+      "path": "fixtures/accepted/species_units_defaults_forward_match.ant",
+      "sha256": "16340ba8010e53fba9a7548860c0d350f0f05e9ec398389da16f59a77cdcff28",
+      "expectation": "fixtures/manifests/species_units_defaults_forward_match.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "defaults_forward_match"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_implicit_volume_override",
+      "path": "fixtures/accepted/species_units_implicit_volume_override.ant",
+      "sha256": "d2abb752cc994e0be74a643520ee29c9e46d35f97af2b2505651d344d6bab0e7",
+      "expectation": "fixtures/manifests/species_units_implicit_volume_override.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "implicit_volume_override"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_explicit_volume_override",
+      "path": "fixtures/accepted/species_units_explicit_volume_override.ant",
+      "sha256": "a0d6df220a6258cf02aff65a86f4e5f90d457b0d45e156e07090b1143805bc8d",
+      "expectation": "fixtures/manifests/species_units_explicit_volume_override.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "explicit_volume_override"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_defaults_unannotated",
+      "path": "fixtures/accepted/species_units_defaults_unannotated.ant",
+      "sha256": "cd18e1b353e131b46a0d9f6b647ed17a520791fa312f968ce6d1f5829e56b6c2",
+      "expectation": "fixtures/manifests/species_units_defaults_unannotated.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "defaults_unannotated"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_defaults_dimensionless",
+      "path": "fixtures/accepted/species_units_defaults_dimensionless.ant",
+      "sha256": "60806393867c9f4d471c94e25e9015ab18070a1a710e5175576db878831cbc69",
+      "expectation": "fixtures/manifests/species_units_defaults_dimensionless.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "defaults_dimensionless",
+        "units.source_export_contradiction"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_invalid_explicit",
+      "path": "fixtures/rejected/species_units_invalid_explicit.ant",
+      "sha256": "48f839c46f8a319923b722913c57df22220483f26c34c56146912eeb7e489eb8",
+      "expectation": "fixtures/manifests/species_units_invalid_explicit.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "invalid_explicit"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "SBML_INVALID",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_invalid_default_volume",
+      "path": "fixtures/rejected/species_units_invalid_default_volume.ant",
+      "sha256": "6e379f2def69c5b2ed1a38b761d9a20348ecd739b49be52e1d7d68fed3694eb2",
+      "expectation": "fixtures/manifests/species_units_invalid_default_volume.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "invalid_default_volume"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "SBML_INVALID",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_unknown_annotation",
+      "path": "fixtures/rejected/species_units_unknown_annotation.ant",
+      "sha256": "eec217d0cdf413552f332a52f7861c788c26401ff3be1ee87e21b76462fb4af9",
+      "expectation": "fixtures/manifests/species_units_unknown_annotation.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "unknown_annotation"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_repeated_annotation",
+      "path": "fixtures/rejected/species_units_repeated_annotation.ant",
+      "sha256": "8312b4f123bc3755b4f2d6ea3c70176056706dcec77580b0567966e13e71d10e",
+      "expectation": "fixtures/manifests/species_units_repeated_annotation.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "repeated_annotation"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_collision_parameter",
+      "path": "fixtures/rejected/species_units_collision_parameter.ant",
+      "sha256": "75a002b7fc198c464dd8071864cac3dea54effac4ff34321869f06935a3a5470",
+      "expectation": "fixtures/manifests/species_units_collision_parameter.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "collision_parameter"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_collision_definition",
+      "path": "fixtures/rejected/species_units_collision_definition.ant",
+      "sha256": "c70f1badf0a760d05eed41b50c5429686d804c23e9db45be784d64dcbcd5cd57",
+      "expectation": "fixtures/manifests/species_units_collision_definition.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "collision_definition"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_defaults_incompatible",
+      "path": "fixtures/rejected/species_units_defaults_incompatible.ant",
+      "sha256": "da01adcdd2dc2028eb4c9ed69a4f8d0a9add581edcc3dc543f66982a53774e19",
+      "expectation": "fixtures/manifests/species_units_defaults_incompatible.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "defaults_incompatible"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_defaults_unknown",
+      "path": "fixtures/rejected/species_units_defaults_unknown.ant",
+      "sha256": "0adbaccd36330697d215aba2328fa140e001aaf7e34bcb76d03766d29f602c0d",
+      "expectation": "fixtures/manifests/species_units_defaults_unknown.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "defaults_unknown"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "species_units_defaults_redefined",
+      "path": "fixtures/rejected/species_units_defaults_redefined.ant",
+      "sha256": "98752a370bccec014b4577d86142f4b4b35bf38ee556f6f07ad70d68295e394e",
+      "expectation": "fixtures/manifests/species_units_defaults_redefined.expected.json",
+      "feature_ids": [
+        "F03",
+        "F08",
+        "F10",
+        "F12"
+      ],
+      "semantic_tags": [
+        "units.species.concentration",
+        "units.model_defaults",
+        "defaults_redefined"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "scalar_excess_decimal_precision",
+      "path": "fixtures/rejected/scalar_excess_decimal_precision.ant",
+      "sha256": "8034de411535c21aba6c020c47ca5c8b9826fb13e86fdc63b2c60a3a3b6b2c5c",
+      "expectation": "fixtures/manifests/scalar_excess_decimal_precision.expected.json",
+      "feature_ids": [
+        "F04",
+        "F08",
+        "F12"
+      ],
+      "semantic_tags": [
+        "scalar.precision",
+        "scalar.reference_serialization",
+        "native.unsupported_precision"
+      ],
+      "native_profile_expectation": "unsupported_profile",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "scalar_excess_integer_precision",
+      "path": "fixtures/rejected/scalar_excess_integer_precision.ant",
+      "sha256": "b84280018e65cd4b70fd2bfd60b56e0b60b9fcb86889a3788fb8f1796f5042cf",
+      "expectation": "fixtures/manifests/scalar_excess_integer_precision.expected.json",
+      "feature_ids": [
+        "F04",
+        "F08",
+        "F12"
+      ],
+      "semantic_tags": [
+        "scalar.precision",
+        "scalar.reference_serialization",
+        "native.unsupported_precision"
+      ],
+      "native_profile_expectation": "unsupported_profile",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed"
+    },
+    {
+      "id": "header_optional",
+      "path": "fixtures/accepted/header_optional.ant",
+      "sha256": "a3378fee0561eb12ecd2c2c209582a054dd77de73950d46017c77a9dec492b65",
+      "expectation": "fixtures/manifests/header_optional.expected.json",
+      "feature_ids": [
+        "F01",
+        "F02"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "header.optional"
+      ]
+    },
+    {
+      "id": "header_optional_semicolon",
+      "path": "fixtures/accepted/header_optional_semicolon.ant",
+      "sha256": "d278c7a297426ca471e8971ab2c9c5a14dfd11d21513d6a8c03c5ec3ec31560c",
+      "expectation": "fixtures/manifests/header_optional_semicolon.expected.json",
+      "feature_ids": [
+        "F01",
+        "F02"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "header.optional.semicolon"
+      ]
+    },
+    {
+      "id": "formula_list_literals",
+      "path": "fixtures/accepted/formula_list_literals.ant",
+      "sha256": "8a10adbd06389504ea04e69d9fa545bedc7b83bff9a206e22a64180f3de4b7ac",
+      "expectation": "fixtures/manifests/formula_list_literals.expected.json",
+      "feature_ids": [
+        "F03",
+        "F06",
+        "F09"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "formula.list.literals"
+      ]
+    },
+    {
+      "id": "formula_list_forward",
+      "path": "fixtures/accepted/formula_list_forward.ant",
+      "sha256": "ebcc453890cb3d5c15df98fb87ac76ace793a34884ab81bb9d34eda3ca9df616",
+      "expectation": "fixtures/manifests/formula_list_forward.expected.json",
+      "feature_ids": [
+        "F03",
+        "F06",
+        "F09"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "formula.list.forward"
+      ]
+    },
+    {
+      "id": "formula_list_mixed",
+      "path": "fixtures/accepted/formula_list_mixed.ant",
+      "sha256": "3783d15e79f67b8c63505fa57b40aba00a583c0ba379a11d4a9cbeb9f913c83f",
+      "expectation": "fixtures/manifests/formula_list_mixed.expected.json",
+      "feature_ids": [
+        "F03",
+        "F06",
+        "F09"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "formula.list.mixed"
+      ]
+    },
+    {
+      "id": "formula_list_species_dependency",
+      "path": "fixtures/accepted/formula_list_species_dependency.ant",
+      "sha256": "a4721bfacbcca77668bca7fa0e6a3faa065d50c30fefa483949107e05e370a55",
+      "expectation": "fixtures/manifests/formula_list_species_dependency.expected.json",
+      "feature_ids": [
+        "F03",
+        "F04",
+        "F06",
+        "F09"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "formula.list.species.dependency"
+      ]
+    },
+    {
+      "id": "formula_list_boundary_dependency",
+      "path": "fixtures/accepted/formula_list_boundary_dependency.ant",
+      "sha256": "d99fa970195abbf25dc650a9a94007af37cb75bf6939a2b0089ce1bbb99f396b",
+      "expectation": "fixtures/manifests/formula_list_boundary_dependency.expected.json",
+      "feature_ids": [
+        "F03",
+        "F04",
+        "F06",
+        "F09"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "formula.list.boundary.dependency"
+      ]
+    },
+    {
+      "id": "formula_list_eof",
+      "path": "fixtures/accepted/formula_list_eof.ant",
+      "sha256": "416f2b39c18887f1c481caf82cf39589cef5775ddedd39a62d75401908001cf8",
+      "expectation": "fixtures/manifests/formula_list_eof.expected.json",
+      "feature_ids": [
+        "F01",
+        "F03",
+        "F06"
+      ],
+      "native_profile_expectation": "target_supported",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "formula.list.eof"
+      ]
+    },
+    {
+      "id": "bare_statement",
+      "path": "fixtures/rejected/bare_statement.ant",
+      "sha256": "ebe25af89af185569b99dfbd573e007ddbab84e6239b3fdaeb15376eb41d21bf",
+      "expectation": "fixtures/manifests/bare_statement.expected.json",
+      "feature_ids": [
+        "F01",
+        "F13"
+      ],
+      "native_profile_expectation": "malformed",
+      "reference_status": "REFERENCE_REJECTED",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "bare.statement"
+      ]
+    },
+    {
+      "id": "formula_trailing_comma",
+      "path": "fixtures/rejected/formula_trailing_comma.ant",
+      "sha256": "e722eb013bf5175bab26f6c149521c4530a13ab87952356b31b907e5aa1aa5ea",
+      "expectation": "fixtures/manifests/formula_trailing_comma.expected.json",
+      "feature_ids": [
+        "F01",
+        "F13"
+      ],
+      "native_profile_expectation": "malformed",
+      "reference_status": "REFERENCE_REJECTED",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "formula.trailing.comma"
+      ]
+    },
+    {
+      "id": "formula_newline_continuation",
+      "path": "fixtures/rejected/formula_newline_continuation.ant",
+      "sha256": "30bbde99315c30d0a5e92e5cf239c99384b4b16b6252d37b37d7febeec808acb",
+      "expectation": "fixtures/manifests/formula_newline_continuation.expected.json",
+      "feature_ids": [
+        "F01",
+        "F13"
+      ],
+      "native_profile_expectation": "malformed",
+      "reference_status": "REFERENCE_REJECTED",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "formula.newline.continuation"
+      ]
+    },
+    {
+      "id": "formula_uninitialized",
+      "path": "fixtures/rejected/formula_uninitialized.ant",
+      "sha256": "fe13ec5afb26c699ee6262aca7d2b2ac113fe742f551fab8c10647079d0d7673",
+      "expectation": "fixtures/manifests/formula_uninitialized.expected.json",
+      "feature_ids": [
+        "F03",
+        "F06"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "formula.uninitialized"
+      ]
+    },
+    {
+      "id": "formula_duplicate",
+      "path": "fixtures/rejected/formula_duplicate.ant",
+      "sha256": "64e91462a1a43be7c84951e8b8a05b9d18720885ab21e9891261f9c48a810d0f",
+      "expectation": "fixtures/manifests/formula_duplicate.expected.json",
+      "feature_ids": [
+        "F03",
+        "F06"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "formula.duplicate"
+      ]
+    },
+    {
+      "id": "formula_species_promotion",
+      "path": "fixtures/rejected/formula_species_promotion.ant",
+      "sha256": "2361a5d3b8c1c0f4970c7ad1fbb4dc23e68940ebb6764d2b9028f8722e31b5d2",
+      "expectation": "fixtures/manifests/formula_species_promotion.expected.json",
+      "feature_ids": [
+        "F03",
+        "F04"
+      ],
+      "native_profile_expectation": "strict_profile_rejected",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "formula.species.promotion"
+      ]
+    },
+    {
+      "id": "formula_var_qualifier",
+      "path": "fixtures/rejected/formula_var_qualifier.ant",
+      "sha256": "0ca33b6e9656f122f0073f8a075ad7975ffaa172fd022d610419afe8374bc3d1",
+      "expectation": "fixtures/manifests/formula_var_qualifier.expected.json",
+      "feature_ids": [
+        "F03",
+        "F06"
+      ],
+      "native_profile_expectation": "unsupported_profile",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "formula.var.qualifier"
+      ]
+    },
+    {
+      "id": "formula_dollar_qualifier",
+      "path": "fixtures/rejected/formula_dollar_qualifier.ant",
+      "sha256": "0d40da5ce4d698f526bc6c5e21092ba48e6fcf0c37265231da89f43115c22657",
+      "expectation": "fixtures/manifests/formula_dollar_qualifier.expected.json",
+      "feature_ids": [
+        "F03",
+        "F06"
+      ],
+      "native_profile_expectation": "unsupported_profile",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "formula.dollar.qualifier"
+      ]
+    },
+    {
+      "id": "formula_assignment_rule",
+      "path": "fixtures/rejected/formula_assignment_rule.ant",
+      "sha256": "7ee50a8354d8ee682a368bfeea81ef462a12e9374054b192689d4de67ea289b7",
+      "expectation": "fixtures/manifests/formula_assignment_rule.expected.json",
+      "feature_ids": [
+        "X02"
+      ],
+      "native_profile_expectation": "unsupported_profile",
+      "reference_status": "PASS",
+      "provenance": "Original minimal fixture authored for this project; not copied from upstream",
+      "license": "Project licensing undecided; no public redistribution grant asserted",
+      "numerical_applicability": "NOT_RUN; no simulator installed",
+      "semantic_tags": [
+        "flat.declarations",
+        "formula.assignment.rule"
+      ]
+    }
+  ],
+  "profile_id": "kinetic-core-v0.1",
+  "profile_path": "profiles/kinetic-core-v0.1.json"
+}

@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"max(1, )\":  Error when parsing input 'max(1,)' at position 7:  syntax error, unexpected ')'",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "a7898f183f1c5c964d1b10031e003383cd0ed0ebb691e70fc3cc649997517e7b",
+  "status": "REFERENCE_REJECTED"
+}

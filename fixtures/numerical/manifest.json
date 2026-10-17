@@ -1,0 +1,204 @@
+{
+  "schema": "antimony-numerical-manifest-v1",
+  "grid": {
+    "start": 0,
+    "end": 10,
+    "steps": 100
+  },
+  "comparison": {
+    "absolute": 1e-08,
+    "relative": 1e-07
+  },
+  "solver": {
+    "name": "cvode",
+    "relative_tolerance": 1e-10,
+    "absolute_tolerance": 1e-12,
+    "maximum_num_steps": 100000,
+    "variable_step_size": false,
+    "stiff": true
+  },
+  "cases": [
+    {
+      "id": "units_decay",
+      "path": "fixtures/numerical/units_decay.ant",
+      "sha256": "e499340c6ff75e033ef3e57170c90a2e65e563879020f5f8269eb5a334570b2c",
+      "selections": [
+        "time",
+        "S",
+        "[S]",
+        "cell",
+        "k"
+      ],
+      "constants": {
+        "volume": 1,
+        "S0": 3,
+        "k": 0.4
+      },
+      "provenance": "Original repository-authored analytic test model; not copied from the official SBML Test Suite.",
+      "analytic_reference": "docs/NUMERICAL_MODELS.md#units-decay"
+    },
+    {
+      "id": "reversible",
+      "path": "fixtures/numerical/reversible.ant",
+      "sha256": "a10af8aecd7e1e636b29663cf75320019bcea0a1075103bd69acdda32cf12adb",
+      "selections": [
+        "time",
+        "A",
+        "[A]",
+        "B",
+        "[B]",
+        "default_compartment",
+        "kf",
+        "kr"
+      ],
+      "constants": {
+        "volume": 1,
+        "A0": 3,
+        "B0": 1,
+        "kf": 0.3,
+        "kr": 0.1
+      },
+      "provenance": "Original repository-authored analytic test model; not copied from the official SBML Test Suite.",
+      "analytic_reference": "docs/NUMERICAL_MODELS.md#reversible"
+    },
+    {
+      "id": "nonunit_no_factor",
+      "path": "fixtures/numerical/nonunit_no_factor.ant",
+      "sha256": "f4b97746c418ba3fe49612fb89803e80501d6e1e1563288af84ecd4c0f77dfb7",
+      "selections": [
+        "time",
+        "S",
+        "[S]",
+        "P",
+        "[P]",
+        "cell",
+        "k"
+      ],
+      "constants": {
+        "volume": 3,
+        "S0": 2,
+        "P0": 0,
+        "k": 0.6
+      },
+      "provenance": "Original repository-authored analytic test model; not copied from the official SBML Test Suite.",
+      "analytic_reference": "docs/NUMERICAL_MODELS.md#nonunit-no-factor"
+    },
+    {
+      "id": "boundary",
+      "path": "fixtures/numerical/boundary.ant",
+      "sha256": "e0649edf104f3e616021e8ae2d25845ce5ef04e56959b143a1dde5697568ef62",
+      "selections": [
+        "time",
+        "B",
+        "[B]",
+        "P",
+        "[P]",
+        "default_compartment",
+        "k"
+      ],
+      "constants": {
+        "volume": 1,
+        "B0": 2,
+        "P0": 1,
+        "k": 0.3
+      },
+      "provenance": "Original repository-authored analytic test model; not copied from the official SBML Test Suite.",
+      "analytic_reference": "docs/NUMERICAL_MODELS.md#boundary"
+    },
+    {
+      "id": "source_drain",
+      "path": "fixtures/numerical/source_drain.ant",
+      "sha256": "a0ac643efb210c93f38a1ceb9c4760bbb81d6fea3268ee9f7a41dcd62225d66d",
+      "selections": [
+        "time",
+        "S",
+        "[S]",
+        "default_compartment",
+        "q",
+        "k"
+      ],
+      "constants": {
+        "volume": 1,
+        "S0": 0,
+        "q": 0.6,
+        "k": 0.2
+      },
+      "provenance": "Original repository-authored analytic test model; not copied from the official SBML Test Suite.",
+      "analytic_reference": "docs/NUMERICAL_MODELS.md#source-drain"
+    },
+    {
+      "id": "forward_initial",
+      "path": "fixtures/numerical/forward_initial.ant",
+      "sha256": "e3862f1650fe1d37469450f5b258fdc727a1b81f1b877a01d11d95556bee9610",
+      "selections": [
+        "time",
+        "S",
+        "[S]",
+        "default_compartment",
+        "base",
+        "delta",
+        "p",
+        "k",
+        "held"
+      ],
+      "constants": {
+        "volume": 1,
+        "S0": 3,
+        "base": 2,
+        "delta": 1,
+        "p": 0.8,
+        "k": 0.4,
+        "held": 3
+      },
+      "provenance": "Original repository-authored analytic test model; not copied from the official SBML Test Suite.",
+      "analytic_reference": "docs/NUMERICAL_MODELS.md#forward-initial"
+    },
+    {
+      "id": "stoichiometry",
+      "path": "fixtures/numerical/stoichiometry.ant",
+      "sha256": "eccced0c17b2d6a18d39ac8fd76c7bc02d3bfc6a41e45a5736ed52ac4f4059de",
+      "selections": [
+        "time",
+        "A",
+        "[A]",
+        "B",
+        "[B]",
+        "default_compartment",
+        "k"
+      ],
+      "constants": {
+        "volume": 1,
+        "A0": 4,
+        "B0": 0,
+        "k": 0.2,
+        "reactant_stoichiometry": 2
+      },
+      "provenance": "Original repository-authored analytic test model; not copied from the official SBML Test Suite.",
+      "analytic_reference": "docs/NUMERICAL_MODELS.md#stoichiometry"
+    },
+    {
+      "id": "unequal_transfer",
+      "path": "fixtures/numerical/unequal_transfer.ant",
+      "sha256": "f18bfb8dd52a774a286ca179068cc1354a01d103bc15e265b85ab1e9d11ecbbb",
+      "selections": [
+        "time",
+        "A",
+        "[A]",
+        "B",
+        "[B]",
+        "c1",
+        "c2",
+        "k"
+      ],
+      "constants": {
+        "source_volume": 2,
+        "product_volume": 5,
+        "A0": 3,
+        "B0": 1,
+        "k": 0.4
+      },
+      "provenance": "Original repository-authored analytic test model; not copied from the official SBML Test Suite.",
+      "analytic_reference": "docs/NUMERICAL_MODELS.md#unequal-transfer"
+    }
+  ]
+}

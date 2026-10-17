@@ -1,0 +1,18 @@
+function mm(S, Vm, Km)
+  Vm * S / (Km + S)
+end
+
+model covalent_modification_goldbeter_koshland_cycle()
+  compartment cell = 1;
+  species W in cell, Wp in cell;
+  W = 1.0;
+  Wp = 0.0;
+  V1 = 1.2;
+  K1 = 0.1;
+  V2 = 0.8;
+  K2 = 0.1;
+  J_kinase: W -> Wp; mm(W, V1, K1);
+  J_phosphatase: Wp -> W; mm(Wp, V2, K2);
+  W_total := W + Wp;
+  W_star_frac := Wp / W_total;
+end

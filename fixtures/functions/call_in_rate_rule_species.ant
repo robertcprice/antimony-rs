@@ -1,0 +1,3 @@
+function f(x) -0.1 * x end
+species S = 5;
+S' = f(S);

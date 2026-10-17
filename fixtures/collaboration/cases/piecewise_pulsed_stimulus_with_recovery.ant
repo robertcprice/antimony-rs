@@ -1,0 +1,13 @@
+function pulse_window(t, t_on, t_off, high, low)
+  piecewise(high, (t >= t_on) && (t < t_off), low)
+end
+
+model piecewise_pulsed_stimulus_with_recovery()
+  species R_inact = 4.0, R_act = 0.0;
+  k_act = 0.6;
+  k_deact = 0.4;
+  ligand := pulse_window(time, 2, 6, 2.5, 0.05);
+  J_on: R_inact -> R_act; k_act * ligand * R_inact;
+  J_off: R_act -> R_inact; k_deact * R_act;
+  frac_active := R_act / (R_inact + R_act);
+end

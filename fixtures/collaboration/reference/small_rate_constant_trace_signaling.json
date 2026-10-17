@@ -1,0 +1,504 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [
+    {
+      "category": "SBML unit consistency",
+      "id": 99506,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99507,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20513,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    }
+  ],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection": {
+    "compartments": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "c",
+        "name": null,
+        "sbo_term": null,
+        "size": 1.0,
+        "spatial_dimensions": 3,
+        "units": null
+      }
+    ],
+    "constraints": [],
+    "events": [],
+    "function_definitions": [
+      {
+        "annotation": null,
+        "id": "mass_action_bimol",
+        "math": {
+          "children": [
+            {
+              "name": "k",
+              "type": 260
+            },
+            {
+              "name": "A",
+              "type": 260
+            },
+            {
+              "name": "B",
+              "type": 260
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "k",
+                      "type": 260
+                    },
+                    {
+                      "name": "A",
+                      "type": 260
+                    }
+                  ],
+                  "type": 42
+                },
+                {
+                  "name": "B",
+                  "type": 260
+                }
+              ],
+              "type": 42
+            }
+          ],
+          "type": 267
+        },
+        "name": null,
+        "sbo_term": null
+      }
+    ],
+    "initial_assignments": [],
+    "level": 3,
+    "model": {
+      "annotation": null,
+      "id": "small_rate_constant_trace_signaling",
+      "name": null,
+      "sbo_term": null
+    },
+    "model_units": {
+      "AreaUnits": null,
+      "ConversionFactor": null,
+      "ExtentUnits": null,
+      "LengthUnits": null,
+      "SubstanceUnits": null,
+      "TimeUnits": null,
+      "VolumeUnits": null
+    },
+    "packages": [],
+    "parameters": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "k_int",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 1e-05
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "koff",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 0.00035
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "kon",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 1200000.0
+      },
+      {
+        "annotation": null,
+        "constant": false,
+        "id": "occupancy",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": null
+      },
+      {
+        "annotation": null,
+        "constant": false,
+        "id": "receptor_total",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": null
+      }
+    ],
+    "reactions": [
+      {
+        "annotation": null,
+        "compartment": null,
+        "id": "J_bind",
+        "local_parameters": [],
+        "math": {
+          "children": [
+            {
+              "name": "kon",
+              "type": 260
+            },
+            {
+              "name": "L",
+              "type": 260
+            },
+            {
+              "name": "R",
+              "type": 260
+            }
+          ],
+          "name": "mass_action_bimol",
+          "type": 268
+        },
+        "modifiers": [],
+        "name": null,
+        "products": [
+          {
+            "constant": true,
+            "species": "LR",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reactants": [
+          {
+            "constant": true,
+            "species": "L",
+            "stoichiometry": 1.0
+          },
+          {
+            "constant": true,
+            "species": "R",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reversible": true,
+        "sbo_term": null
+      },
+      {
+        "annotation": null,
+        "compartment": null,
+        "id": "J_intern",
+        "local_parameters": [],
+        "math": {
+          "children": [
+            {
+              "name": "k_int",
+              "type": 260
+            },
+            {
+              "name": "LR",
+              "type": 260
+            }
+          ],
+          "type": 42
+        },
+        "modifiers": [],
+        "name": null,
+        "products": [],
+        "reactants": [
+          {
+            "constant": true,
+            "species": "LR",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reversible": true,
+        "sbo_term": null
+      },
+      {
+        "annotation": null,
+        "compartment": null,
+        "id": "J_unbind",
+        "local_parameters": [],
+        "math": {
+          "children": [
+            {
+              "name": "koff",
+              "type": 260
+            },
+            {
+              "name": "LR",
+              "type": 260
+            }
+          ],
+          "type": 42
+        },
+        "modifiers": [],
+        "name": null,
+        "products": [
+          {
+            "constant": true,
+            "species": "L",
+            "stoichiometry": 1.0
+          },
+          {
+            "constant": true,
+            "species": "R",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reactants": [
+          {
+            "constant": true,
+            "species": "LR",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reversible": true,
+        "sbo_term": null
+      }
+    ],
+    "rules": [
+      {
+        "kind": "assignmentRule",
+        "math": {
+          "children": [
+            {
+              "name": "R",
+              "type": 260
+            },
+            {
+              "name": "LR",
+              "type": 260
+            }
+          ],
+          "type": 43
+        },
+        "variable": "receptor_total"
+      },
+      {
+        "kind": "assignmentRule",
+        "math": {
+          "children": [
+            {
+              "name": "LR",
+              "type": 260
+            },
+            {
+              "children": [
+                {
+                  "name": "receptor_total",
+                  "type": 260
+                },
+                {
+                  "real": 1e-15,
+                  "type": 258
+                }
+              ],
+              "type": 43
+            }
+          ],
+          "type": 47
+        },
+        "variable": "occupancy"
+      }
+    ],
+    "species": [
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "c",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "L",
+        "initial_amount": null,
+        "initial_concentration": 2.5e-09,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      },
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "c",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "LR",
+        "initial_amount": null,
+        "initial_concentration": 5e-12,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      },
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "c",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "R",
+        "initial_amount": null,
+        "initial_concentration": 1e-08,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      }
+    ],
+    "unit_definitions": [],
+    "version": 2
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "378ba6de88232835dcf2bfec6bd42ff623020075e6a2cfb4f0802ddbad286a4e",
+  "status": "PASS"
+}

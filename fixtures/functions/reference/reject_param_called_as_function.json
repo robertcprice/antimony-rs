@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 2:  3 SBML error(s) when creating module '__main'.  libAntimony tries to catch these errors before libSBML complains, but sometimes cannot.  Error message(s) from libSBML:\n\nOutside of a <functionDefinition>, if a <ci> element is the first element within a MathML <apply>, then the <ci>'s value can only be chosen from the set of identifiers of <functionDefinition>s defined in the SBML model.\nReference: L3V2 Section 4.3.2\n The formula 'x(1)' in the math element of the <functionDefinition> with id 'f' uses 'x' which is not a function definition id.\n\nThe interpretation the Hierarchical Model Composition constructs to produce a kind of 'flattened' version of the model devoid of the comp package constructs must produce a valid SBML Level 3 model.\nReference: L3V1 Comp V1 Appendix A1\n Errors that follow relate to the flattened document produced using the CompFlatteningConverter.\n\nOutside of a <functionDefinition>, if a <ci> element is the first element within a MathML <apply>, then the <ci>'s value can only be chosen from the set of identifiers of <functionDefinition>s defined in the SBML model.\nReference: L3V2 Section 4.3.2\n The formula 'x(1)' in the math element of the <functionDefinition> with id 'f' uses 'x' which is not a function definition id.\n",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "aa847f6e63cfd368e9963903c8b1ce03fad4d0486bbc82504e00b59683b32842",
+  "status": "REFERENCE_REJECTED"
+}

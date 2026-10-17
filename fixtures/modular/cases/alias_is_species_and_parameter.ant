@@ -1,0 +1,5 @@
+species S_internal = 5, P = 0;
+k_internal = 0.3;
+S_internal is S;
+k_internal is k;
+S -> P; k*S;

@@ -1,0 +1,54 @@
+{
+  "schema": "antimony-modular-numerical-v1",
+  "implemented_profile": "modular-core-v0.8-slice",
+  "grid": {
+    "start": 0,
+    "end": 10,
+    "steps": 100
+  },
+  "comparison": {
+    "absolute": 1e-08,
+    "relative": 1e-07
+  },
+  "solver": {
+    "name": "cvode",
+    "relative_tolerance": 1e-10,
+    "absolute_tolerance": 1e-12,
+    "maximum_num_steps": 100000,
+    "variable_step_size": false,
+    "stiff": true
+  },
+  "cases": [
+    {
+      "id": "substance_only_reaction_override_decay",
+      "path": "fixtures/numerical/modular/substance_only_reaction_override_decay.ant",
+      "sha256": "f13af0965f637f789d5e3a385c2238ffc9da21ea0a308da380590dc4f74afbda",
+      "selections": [
+        "time",
+        "S",
+        "[S]",
+        "P",
+        "[P]",
+        "k_fast",
+        "k_slow",
+        "V"
+      ],
+      "provenance": "Independent hand-derived substanceOnly species decay in compartment V = 2 with S(0) = 4 (amount), P(0) = 0, and reaction kinetic-law override J := k_fast * S replacing k_slow * S (k_fast = 0.5, k_slow = 0.1); no fitted or solver-derived coefficients."
+    },
+    {
+      "id": "modular_port_and_member_override_cascade",
+      "path": "fixtures/numerical/modular/modular_port_and_member_override_cascade.ant",
+      "sha256": "5453fe894eb65d1fbd9aa7d3488f7df2be046fd206120144ec738ecb14d4eebb",
+      "selections": [
+        "time",
+        "A",
+        "[A]",
+        "B",
+        "[B]",
+        "M_k",
+        "default_compartment"
+      ],
+      "provenance": "Independent hand-derived submodel instantiation M: decay_stage(A, B) with port binding (X -> A, Y -> B) and caller member override M.k = 0.25 replacing default k = 0.1 for A(0) = 6, B(0) = 0; no fitted or solver-derived coefficients."
+    }
+  ]
+}

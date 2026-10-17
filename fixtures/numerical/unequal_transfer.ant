@@ -1,0 +1,4 @@
+compartment c1=2; compartment c2=5;
+species A in c1, B in c2;
+A=3; B=1; k=0.4;
+J: A => B; k*A*c1;

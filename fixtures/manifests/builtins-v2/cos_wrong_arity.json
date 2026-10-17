@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"cos(1, 2)\":  Error when parsing input 'cos(1,2)' at position 8:  The function 'cos' takes exactly one argument, but 2 were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "3c7204eb9e07e82fcadbd2090ac06b2571a483f4d824a4175eab8803b175d4ef",
+  "status": "REFERENCE_REJECTED"
+}

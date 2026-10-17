@@ -1,0 +1,6 @@
+unit s_u = second;
+unit per_sec = 1 / second;
+function prod(k, t) k * t end
+k = 0.5; k has per_sec;
+t0 = 4; t0 has s_u;
+a = prod(k, t0);

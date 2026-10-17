@@ -1,0 +1,19 @@
+function mass_action_bimol(k, A, B)
+  k * A * B
+end
+
+model small_rate_constant_trace_signaling()
+  compartment c = 1;
+  species L in c, R in c, LR in c;
+  L = 2.5e-9;
+  R = 1.0e-8;
+  LR = 5.0e-12;
+  kon = 1.2e6;
+  koff = 3.5e-4;
+  k_int = 1.0e-5;
+  J_bind: L + R -> LR; mass_action_bimol(kon, L, R);
+  J_unbind: LR -> L + R; koff * LR;
+  J_intern: LR -> ; k_int * LR;
+  receptor_total := R + LR;
+  occupancy := LR / (receptor_total + 1e-15);
+end

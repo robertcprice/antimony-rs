@@ -1,0 +1,6 @@
+unit s_u = second;
+unit m_u = metre;
+function dbl(x) x + x end
+t0 = 1; t0 has s_u;
+a = 1; a has m_u;
+a := dbl(t0);

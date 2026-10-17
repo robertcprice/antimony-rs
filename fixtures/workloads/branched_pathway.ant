@@ -1,0 +1,4 @@
+compartment cell=3;species A in cell,B in cell,C in cell,D in cell;
+A=6;B=1;C=2;D=0;formula k1=q/2,q=0.4,k2=0.1,k3=0.3,k4=0.25;
+AB:A=>B;k1*A*cell;AC:A=>C;k2*A*cell;
+BD:B=>D;k3*B*cell;CD:C=>D;k4*C*cell;

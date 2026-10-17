@@ -1,0 +1,4 @@
+compartment cell=2; species E in cell,S in cell,C in cell,P in cell;
+E=1;S=8;C=0;P=0;kon=0.3;koff=0.2;kcat=0.4;
+Bind:E+S->C;(kon*E*S-koff*C)*cell;
+Cat:C=>E+P;kcat*C*cell;

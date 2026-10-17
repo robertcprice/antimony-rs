@@ -1,0 +1,2 @@
+species S = 2;
+a = S(1);

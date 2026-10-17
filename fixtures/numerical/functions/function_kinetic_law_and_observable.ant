@@ -1,0 +1,11 @@
+function lin_rate(k, x)
+  k * x
+end
+function affine_obs(m, x, b)
+  m * x + b
+end
+species S = 4;
+species P = 0;
+k = 0.5;
+y := affine_obs(2, S, 1);
+J: S => P; lin_rate(k, S);

@@ -1,0 +1,4 @@
+unit mM = 1e-3 mole / liter;
+function dbl(x) 2 * x end
+a = 3; a has mM;
+b = dbl(a);

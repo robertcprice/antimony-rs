@@ -1,0 +1,151 @@
+{
+  "schema": "antimony-conditional-alias-corpus-v1",
+  "implemented_profile": "conditional-core-v0.3-slice",
+  "provenance": "Separate root-approved Boolean call alias supplement; pinned reference snapshots captured before native evidence. Nonzero capitalized calls may load but emit null math and earn rejection-only credit.",
+  "parent_manifest": {
+    "path": "fixtures/conditionals/manifest.json",
+    "sha256": "98d550a0a16a0a3763f1d1741786680ab6a09ac2ffc46691cdd5ae40f0816be9"
+  },
+  "fixtures": [
+    {
+      "id": "call_true_title_empty",
+      "path": "fixtures/conditionals/call_true_title_empty.ant",
+      "sha256": "b220998cca1bed5033fb1738479c07bae816c751760c732b641f9f442569fcb4",
+      "expectation": "fixtures/conditionals/reference/call_true_title_empty.json",
+      "expectation_sha256": "80edc58400b5465e69ac8e6bf1a2b7b004ecd62a22e05b39a0080e9981efdbf1",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "call_true_title_one",
+      "path": "fixtures/conditionals/call_true_title_one.ant",
+      "sha256": "5237784b44e6d227da803eb337dac7bd9682ac0bf368f68104a0edef027a1d0f",
+      "expectation": "fixtures/conditionals/reference/call_true_title_one.json",
+      "expectation_sha256": "50f72db458fc423f642f40ca045e22558c641784a9660af478a6133cd4e0e955",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "call_true_title_two",
+      "path": "fixtures/conditionals/call_true_title_two.ant",
+      "sha256": "3e637d7112de097b84c7b60985490a18a4b7e3df0482a6e5de0501d8a5e7efb8",
+      "expectation": "fixtures/conditionals/reference/call_true_title_two.json",
+      "expectation_sha256": "a2221360d211df921e12435a772627cae111e12c1ed03fb709ff459b07fd2ec2",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "call_true_upper_empty",
+      "path": "fixtures/conditionals/call_true_upper_empty.ant",
+      "sha256": "0aa24f902dd319dce709452b9a81164ee8b505a4237661aa9b8b1df0114bb11c",
+      "expectation": "fixtures/conditionals/reference/call_true_upper_empty.json",
+      "expectation_sha256": "b517e759d8442e38bb8bd486ffa27e44faac444fb935c45daa73e94ed5bde07c",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "call_true_upper_one",
+      "path": "fixtures/conditionals/call_true_upper_one.ant",
+      "sha256": "bfad510af1490b1407564277621916b7ec7418be9b423373471f039febea844f",
+      "expectation": "fixtures/conditionals/reference/call_true_upper_one.json",
+      "expectation_sha256": "ae5e2a8d12e9971009a7d0e7e19f8673f7357a050fe33ccb099cb66c5855b26e",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "call_true_upper_two",
+      "path": "fixtures/conditionals/call_true_upper_two.ant",
+      "sha256": "7fefb59e0252af04b2ac830d63cd9347af0da3c6fff0f2e8cfce2bfc8e10fdae",
+      "expectation": "fixtures/conditionals/reference/call_true_upper_two.json",
+      "expectation_sha256": "2e8214484dee6f8bc2ff848642f8e420192b3427de81bef77dd5a4b363e9ea9d",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "call_false_title_empty",
+      "path": "fixtures/conditionals/call_false_title_empty.ant",
+      "sha256": "23c7cfc7c7cd07c7b6323fa0a5a2ff62b8462c07bb3bed9b2f88e83eae675470",
+      "expectation": "fixtures/conditionals/reference/call_false_title_empty.json",
+      "expectation_sha256": "342b7649629ca9637f40cf5490605f497feb81cee3006638d0fb1bd7b13383a1",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "call_false_title_one",
+      "path": "fixtures/conditionals/call_false_title_one.ant",
+      "sha256": "60ffa26bcf1402ff03ee3e927e3cae7b792a1d922d53208253aec29d60c6d8c5",
+      "expectation": "fixtures/conditionals/reference/call_false_title_one.json",
+      "expectation_sha256": "d3969aabdbf477dc04583fa78a093220d62c6e7d9d5f55b1df252341f2c1f4d7",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "call_false_title_two",
+      "path": "fixtures/conditionals/call_false_title_two.ant",
+      "sha256": "deaa19c27cc45e4a45b4a135a7b21f2be756f684e925a7cce1887db55c50ca44",
+      "expectation": "fixtures/conditionals/reference/call_false_title_two.json",
+      "expectation_sha256": "a5a663ee2153a0c8213daac8cb6d8d1e2435cd2cb229b8d7cc66c446c609dc3e",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "call_false_upper_empty",
+      "path": "fixtures/conditionals/call_false_upper_empty.ant",
+      "sha256": "95d055a60829f3d46aff02eb25a4cddc4b8263ae733ab203fdc4794c1c7c8452",
+      "expectation": "fixtures/conditionals/reference/call_false_upper_empty.json",
+      "expectation_sha256": "f8e94257ffbc3caee813b008647688f50054a0f3304782eea1cde6a6f3e62811",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "call_false_upper_one",
+      "path": "fixtures/conditionals/call_false_upper_one.ant",
+      "sha256": "19a0253bdf04611b13311e15d8cab49b93be2dc4bcd1af511ff29723b6174835",
+      "expectation": "fixtures/conditionals/reference/call_false_upper_one.json",
+      "expectation_sha256": "179f41bc61f53d600cbb3f10752e085dd8d245711d12ea25340bde917526b704",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "call_false_upper_two",
+      "path": "fixtures/conditionals/call_false_upper_two.ant",
+      "sha256": "501bc7e4575c9fdf530030ccc59198bd4f7174edb4cdda08e51fd12dc0a3bb7f",
+      "expectation": "fixtures/conditionals/reference/call_false_upper_two.json",
+      "expectation_sha256": "52677c6d62b05e6c473c56cd17ca1ca536ee25ee5517ac1327c23172f32c782e",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "call_true_lower_empty",
+      "path": "fixtures/conditionals/call_true_lower_empty.ant",
+      "sha256": "6de7d016b8cc6a2a79ba26b402d2a9ebfff88cc824a6c374a5b23aba5d2aa9f9",
+      "expectation": "fixtures/conditionals/reference/call_true_lower_empty.json",
+      "expectation_sha256": "0bfb4f11180a7c85ddc7fe45145abb2a94d27029d0d5f29c9cdd09b0877ea70e",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "call_false_lower_empty",
+      "path": "fixtures/conditionals/call_false_lower_empty.ant",
+      "sha256": "d677dc8b544c8c5d2f0b4bdf815fe3c8535b89dd8d061f4cb21a0c50efc7cffb",
+      "expectation": "fixtures/conditionals/reference/call_false_lower_empty.json",
+      "expectation_sha256": "8979b3c42f884d2b7a5f489fa9fb813262bdeb2d6c41e04370f676c92f18642a",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    }
+  ]
+}

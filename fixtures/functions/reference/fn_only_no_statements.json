@@ -1,0 +1,71 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection": {
+    "compartments": [],
+    "constraints": [],
+    "events": [],
+    "function_definitions": [
+      {
+        "annotation": null,
+        "id": "f",
+        "math": {
+          "children": [
+            {
+              "name": "x",
+              "type": 260
+            },
+            {
+              "children": [
+                {
+                  "name": "x",
+                  "type": 260
+                },
+                {
+                  "integer": 1,
+                  "type": 256
+                }
+              ],
+              "type": 43
+            }
+          ],
+          "type": 267
+        },
+        "name": null,
+        "sbo_term": null
+      }
+    ],
+    "initial_assignments": [],
+    "level": 3,
+    "model": {
+      "annotation": null,
+      "id": "__main",
+      "name": null,
+      "sbo_term": null
+    },
+    "model_units": {
+      "AreaUnits": null,
+      "ConversionFactor": null,
+      "ExtentUnits": null,
+      "LengthUnits": null,
+      "SubstanceUnits": null,
+      "TimeUnits": null,
+      "VolumeUnits": null
+    },
+    "packages": [],
+    "parameters": [],
+    "reactions": [],
+    "rules": [],
+    "species": [],
+    "unit_definitions": [],
+    "version": 2
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "90e7b6eedf7cfc51b8b6c68a9255a5214cd5c960cc13106099c2364f4756063b",
+  "status": "PASS"
+}

@@ -1,0 +1,17 @@
+model unnamed_three_step_conversion_chain()
+  compartment cell = 1;
+  species S0 in cell, S1 in cell, S2 in cell, S3 in cell;
+  S0 = 12;
+  S1 = 0;
+  S2 = 0;
+  S3 = 0;
+  k01 = 0.4;
+  k12 = 0.25;
+  k23 = 0.15;
+  -> S0; 0.5;
+  S0 -> S1; k01 * S0;
+  S1 -> S2; k12 * S1;
+  S2 -> S3; k23 * S2;
+  S3 -> ; 0.1 * S3;
+  pool_total := S0 + S1 + S2 + S3;
+end

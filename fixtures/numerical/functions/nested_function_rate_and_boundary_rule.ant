@@ -1,0 +1,12 @@
+function base_drive()
+  1
+end
+function ramp(t_val, slope)
+  base_drive() + slope * t_val
+end
+species $B;
+species S = 0;
+u = 0;
+u' = base_drive();
+B := ramp(u, 0.2);
+J: $B => S; B;

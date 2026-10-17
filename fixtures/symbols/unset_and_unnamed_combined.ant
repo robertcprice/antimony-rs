@@ -1,0 +1,2 @@
+model trial()
+compartment c;species A in c,B;=>A;input;A=>B;k*A;end

@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"not()\":  Error when parsing input 'not()' at position 5:  The function 'not' takes exactly one argument, but 0 were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "929dd870ce9baf98360d3dd318dc44ee381795652a4a9771adb36c7cda4696bf",
+  "status": "REFERENCE_REJECTED"
+}

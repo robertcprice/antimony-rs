@@ -1,0 +1,22 @@
+function mm(S, Vm, Km)
+  Vm * S / (Km + S)
+end
+
+model reusable_michaelis_menten_two_isozyme_pathway()
+  compartment cyto = 1.2;
+  species Glc in cyto, G6P in cyto, F6P in cyto;
+  Glc = 5.0;
+  G6P = 0.4;
+  F6P = 0.1;
+  Vm_hk1 = 1.8;
+  Km_hk1 = 0.2;
+  Vm_hk2 = 0.9;
+  Km_hk2 = 1.5;
+  Vm_pgi = 2.2;
+  Km_pgi = 0.6;
+  J_hk1: Glc -> G6P; mm(Glc, Vm_hk1, Km_hk1);
+  J_hk2: Glc -> G6P; mm(Glc, Vm_hk2, Km_hk2);
+  J_pgi: G6P -> F6P; mm(G6P, Vm_pgi, Km_pgi);
+  hexose_pool := Glc + G6P + F6P;
+  total_hk_flux := mm(Glc, Vm_hk1, Km_hk1) + mm(Glc, Vm_hk2, Km_hk2);
+end

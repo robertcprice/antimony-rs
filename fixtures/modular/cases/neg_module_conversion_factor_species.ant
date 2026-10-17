@@ -1,0 +1,12 @@
+model sub()
+  compartment c = 1;
+  species S in c = 10, P in c = 0;
+  k = 0.1;
+  J1: S -> P; c * k * S;
+end
+
+model *main()
+  compartment c = 1;
+  species tf in c = 2;
+  M1: sub(), timeconv = tf;
+end

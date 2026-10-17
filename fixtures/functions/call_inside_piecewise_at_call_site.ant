@@ -1,0 +1,4 @@
+function f(x) x^2 end
+function g(x) 2 * x end
+p = 3;
+a := piecewise(f(p), p > 2, g(p));

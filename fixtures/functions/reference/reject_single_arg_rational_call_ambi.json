@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 2:  In the formula \"f(1/2)\":  Error when parsing input 'f(1/2)' at position 6:  syntax error, unexpected number in rational notation",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "5fdda69cfe19c2cc01bccd82fcc6b6be4b3e05bef87545a0981d61b212059b64",
+  "status": "REFERENCE_REJECTED"
+}

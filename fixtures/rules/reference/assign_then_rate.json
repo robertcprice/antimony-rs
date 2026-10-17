@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  The variable 'a' is associated with an assignment rule, and may not additionally have a rate rule.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "216c211cb72d32d41378872c78c911729deb10c5ff8cbc1012e98b869dd4d561",
+  "status": "REFERENCE_REJECTED"
+}

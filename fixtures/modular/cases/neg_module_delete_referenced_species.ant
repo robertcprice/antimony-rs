@@ -1,0 +1,11 @@
+model sub()
+  compartment c = 1;
+  species S in c = 10, P in c = 0;
+  k = 0.1;
+  J1: S -> P; c * k * S;
+end
+
+model *main()
+  M1: sub();
+  delete M1.S;
+end

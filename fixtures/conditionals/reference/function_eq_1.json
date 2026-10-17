@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"eq(1)\":  Error when parsing input 'eq(1)' at position 5:  The function 'eq' takes at least two arguments, but 1 were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "54b9f2e6d1bbc8ba9977a24f248f0b538d5ed99d893c37f26551288226b061f0",
+  "status": "REFERENCE_REJECTED"
+}

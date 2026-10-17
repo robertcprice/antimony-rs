@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"pow(2)\":  Error when parsing input 'pow(2)' at position 6:  The function 'power' takes exactly two arguments, but 1 were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "e3c08f0b5da898f9daeeb29efb8084d89b811710c9805a41691e96524b1b67f3",
+  "status": "REFERENCE_REJECTED"
+}

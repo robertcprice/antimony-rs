@@ -1,0 +1,2 @@
+function f(x, y, z) (x + y) * z - x / y ^ 2 end
+a = f(2, 3, 4);

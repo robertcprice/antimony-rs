@@ -1,0 +1,45 @@
+{
+  "schema": "antimony-rs-implementation-boundary-v2",
+  "implementation_id": "rules-core-v0.4-slice",
+  "status": "experimental_bounded_implementation",
+  "extends_implementation": "conditional-core-v0.3-slice",
+  "historical_corpus_profile": "kinetic-core-v0.1",
+  "relationship_to_historical_target": "Separate bounded extension: flat parameter/species assignment and rate rules, Boolean/conditional operators, and numeric functions extend beyond frozen kinetic-core-v0.1; old corpus reuse is not target conformance.",
+  "syntax": {
+    "assignment_rules": "target := expr; and inline species/formula/const/var/$ declarations with :=.",
+    "rate_rules": "target' = expr; (including spaced target ' = expr;) and inline species/formula/const/var/$ declarations with '=.",
+    "empty_rule_rejections": "Empty rule syntax (a := ;, a' = ;, EOF or newline before RHS) rejects UnsupportedFeature; never silently clears or drops rules.",
+    "algebraic_rule_rejections": "0 = expr; rejects UnsupportedFeature.",
+    "prime_rejections": "Uncoalesced prime tokens (in expressions or followed by ==) reject Syntax."
+  },
+  "semantics": {
+    "ownership_and_replacement": "Same-kind rules replace the formula (last wins) while retaining previously inferred symbols and first-seen target order; mixed assignment/rate rules on the same symbol reject DeclarationConflict.",
+    "initialization_interaction": "Assignment rules clear prior '=' initializations; '=' after ':=' rejects DeclarationConflict. Rate rules preserve independent '=' scalar or InitialAssignment initialization.",
+    "lexical_scalar_export": "Assignment-rule targets populate SBML scalar attributes and public value()/initial_concentration() getters only for verified lexical finite bare numeric/-numeric forms; grouped, unary-plus, rational, Boolean, or constant expressions do not.",
+    "species_boundary_promotion": "Source-order-sensitive: promoting an already-ruled non-species to species sets boundaryCondition=true unless a later var species overrides it; assigning a rule to an already-declared non-boundary species keeps boundaryCondition=false; non-boundary ruled species in reaction stoichiometries reject DeclarationConflict.",
+    "dependency_cycles": "Assignment rules participate in the algebraic dependency graph alongside '=' initializations; source-prefix transient cycles reject InitializationCycle before rule replacement.",
+    "dimensions": "Assignment rules require target and RHS dimensions to match when both are Known; rate rules require Known RHS dimensions to equal Known target minus Known model time_unit."
+  },
+  "retained_exclusions": [
+    "Compartment assignment and rate rules (dynamic compartments)",
+    "Reaction assignment rules replacing kinetic laws",
+    "Algebraic rules (0 = expr) and empty rule clearing (a := ;)",
+    "Events, delay, user-defined functions, and submodel hierarchy",
+    "All textual infix/prefix logical aliases, comparison chains, XOR, and implies",
+    "Nonfinite constants and existing scalar/rational restrictions",
+    "A solver or general simulation-readiness guarantee"
+  ],
+  "verification_contracts": {
+    "manifest": "fixtures/rules/manifest.json",
+    "overlay": "fixtures/manifests/rules-core-v4-overlay.json",
+    "evidence": "tools/oracle/rules-evidence.json",
+    "guide": "docs/RULES.md",
+    "analytic_manifest": "fixtures/numerical/rules/manifest.json"
+  },
+  "claims": {
+    "full_antimony": false,
+    "frozen_target_conformance": false,
+    "published": false,
+    "upstream_endorsement": false
+  }
+}

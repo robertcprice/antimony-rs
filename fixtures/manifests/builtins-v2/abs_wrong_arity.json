@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"abs(1, 2)\":  Error when parsing input 'abs(1,2)' at position 8:  The function 'abs' takes exactly one argument, but 2 were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "5d2fb7c6236806b1b73ceaa9afa18b980b8d6192946210000a3bf1d1d20d5113",
+  "status": "REFERENCE_REJECTED"
+}

@@ -1,0 +1,4 @@
+function f1(x) x + 1 end
+function f2(x) f1(x) * 2 end
+function f3(x) f2(x) - f1(x) end
+a = f3(5);

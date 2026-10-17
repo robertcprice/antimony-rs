@@ -1,0 +1,1 @@
+unit conc=0.001 mole/litre;compartment c=3;c has litre;species S in c;S=2;S has conc;

@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "antimony-rs-compatibility-v1",
+  "title": "Historical corpus compatibility record with explicit implementation extension scope",
+  "type": "object",
+  "required": [
+    "schema",
+    "profile_id",
+    "fixture",
+    "feature_ids",
+    "source_sha256",
+    "status",
+    "reference_status",
+    "native_stages"
+  ],
+  "properties": {
+    "schema": {
+      "const": "antimony-rs-compatibility-v1"
+    },
+    "profile_id": {
+      "const": "kinetic-core-v0.1",
+      "description": "Historical source corpus/feature namespace, not a claim that an expanded implementation conforms to this frozen target."
+    },
+    "fixture": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "feature_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "F01",
+          "F02",
+          "F03",
+          "F04",
+          "F05",
+          "F06",
+          "F07",
+          "F08",
+          "F09",
+          "F10",
+          "F11",
+          "F12",
+          "F13",
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ]
+      }
+    },
+    "source_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "UNSUPPORTED_PROFILE",
+        "ORACLE_BLOCKED",
+        "NOT_RUN",
+        "ORACLE_ERROR",
+        "REFERENCE_REJECTED",
+        "SBML_INVALID",
+        "PROJECTION_UNSUPPORTED",
+        "INPUT_REJECTED"
+      ]
+    },
+    "reference_status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "UNSUPPORTED_PROFILE",
+        "ORACLE_BLOCKED",
+        "NOT_RUN",
+        "ORACLE_ERROR",
+        "REFERENCE_REJECTED",
+        "SBML_INVALID",
+        "PROJECTION_UNSUPPORTED",
+        "INPUT_REJECTED"
+      ]
+    },
+    "native_stages": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "syntax",
+        "resolve",
+        "export",
+        "numerical"
+      ],
+      "properties": {
+        "syntax": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNSUPPORTED_PROFILE",
+            "ORACLE_BLOCKED",
+            "NOT_RUN",
+            "ORACLE_ERROR",
+            "REFERENCE_REJECTED",
+            "SBML_INVALID",
+            "PROJECTION_UNSUPPORTED",
+            "INPUT_REJECTED"
+          ]
+        },
+        "resolve": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNSUPPORTED_PROFILE",
+            "ORACLE_BLOCKED",
+            "NOT_RUN",
+            "ORACLE_ERROR",
+            "REFERENCE_REJECTED",
+            "SBML_INVALID",
+            "PROJECTION_UNSUPPORTED",
+            "INPUT_REJECTED"
+          ]
+        },
+        "export": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNSUPPORTED_PROFILE",
+            "ORACLE_BLOCKED",
+            "NOT_RUN",
+            "ORACLE_ERROR",
+            "REFERENCE_REJECTED",
+            "SBML_INVALID",
+            "PROJECTION_UNSUPPORTED",
+            "INPUT_REJECTED"
+          ]
+        },
+        "numerical": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNSUPPORTED_PROFILE",
+            "ORACLE_BLOCKED",
+            "NOT_RUN",
+            "ORACLE_ERROR",
+            "REFERENCE_REJECTED",
+            "SBML_INVALID",
+            "PROJECTION_UNSUPPORTED",
+            "INPUT_REJECTED"
+          ]
+        }
+      }
+    },
+    "implemented_profile": {
+      "enum": ["math-core-v0.2-slice", "math-core-v0.2.1-slice", "conditional-core-v0.3-slice", "rules-core-v0.4-slice", "functions-core-v0.5-slice", "modular-core-v0.8-slice"],
+      "description": "Actual expanded implementation when running the explicit current native-outcome overlay."
+    },
+    "corpus_profile_id": {
+      "const": "kinetic-core-v0.1"
+    },
+    "profile_scope": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "dependentRequired": {
+    "implemented_profile": [
+      "corpus_profile_id",
+      "profile_scope"
+    ]
+  }
+}

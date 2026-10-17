@@ -1,0 +1,3 @@
+species S = 2;
+function f(x) x + S end
+a = f(1);

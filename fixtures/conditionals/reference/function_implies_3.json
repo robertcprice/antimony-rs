@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"implies(true, false, true)\":  Error when parsing input 'implies(true,false,true)' at position 24:  The function 'implies' takes exactly two arguments, but 3 were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "eb2f46b487db9cd3eeecdd22f686f34069a05093a6e8366811e35de97a0151ea",
+  "status": "REFERENCE_REJECTED"
+}

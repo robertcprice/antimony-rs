@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 2:  3 SBML error(s) when creating module '__main'.  libAntimony tries to catch these errors before libSBML complains, but sometimes cannot.  Error message(s) from libSBML:\n\nInside the <lambda> of a <functionDefinition>, the identifier of that <functionDefinition> cannot appear as the value of a <ci> element. SBML functions are not permitted to be recursive. \nReference: L3V2 Sections 3.4.3 and 4.3.2\n The functionDefinition with id 'fact' refers to itself within the math formula lambda(n, piecewise(1, leq(n, 1), n * fact(n - 1)))'.\n\nThe interpretation the Hierarchical Model Composition constructs to produce a kind of 'flattened' version of the model devoid of the comp package constructs must produce a valid SBML Level 3 model.\nReference: L3V1 Comp V1 Appendix A1\n Errors that follow relate to the flattened document produced using the CompFlatteningConverter.\n\nInside the <lambda> of a <functionDefinition>, the identifier of that <functionDefinition> cannot appear as the value of a <ci> element. SBML functions are not permitted to be recursive. \nReference: L3V2 Sections 3.4.3 and 4.3.2\n The functionDefinition with id 'fact' refers to itself within the math formula lambda(n, piecewise(1, leq(n, 1), n * fact(n - 1)))'.\n",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "638bda5f935b6acaaff7957666ba2f05208c9c5b75c688921c663fd7eeeef7cb",
+  "status": "REFERENCE_REJECTED"
+}

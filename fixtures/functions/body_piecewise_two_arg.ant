@@ -1,0 +1,2 @@
+function pos(x) piecewise(x, x > 0) end
+a = pos(3);

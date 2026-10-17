@@ -1,0 +1,127 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20513,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    }
+  ],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection": {
+    "compartments": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "default_compartment",
+        "name": null,
+        "sbo_term": 410,
+        "size": 1.0,
+        "spatial_dimensions": 3,
+        "units": null
+      }
+    ],
+    "constraints": [],
+    "events": [],
+    "function_definitions": [],
+    "initial_assignments": [
+      {
+        "math": {
+          "name": "S",
+          "type": 260
+        },
+        "symbol": "a"
+      }
+    ],
+    "level": 3,
+    "model": {
+      "annotation": null,
+      "id": "__main",
+      "name": null,
+      "sbo_term": null
+    },
+    "model_units": {
+      "AreaUnits": null,
+      "ConversionFactor": null,
+      "ExtentUnits": null,
+      "LengthUnits": null,
+      "SubstanceUnits": null,
+      "TimeUnits": null,
+      "VolumeUnits": null
+    },
+    "packages": [],
+    "parameters": [
+      {
+        "annotation": null,
+        "constant": false,
+        "id": "a",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": null
+      }
+    ],
+    "reactions": [],
+    "rules": [],
+    "species": [
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "default_compartment",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "S",
+        "initial_amount": null,
+        "initial_concentration": 2.0,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      }
+    ],
+    "unit_definitions": [],
+    "version": 2
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "69f605c51a74c4f5ce99a3e610ece0700fc609396796ddf1ce193ba590fbae01",
+  "status": "PASS"
+}

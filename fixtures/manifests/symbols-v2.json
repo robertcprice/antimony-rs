@@ -1,0 +1,667 @@
+{
+  "schema": "antimony-symbols-corpus-v2",
+  "implemented_profile": "flat-model-v0.2-slice",
+  "provenance": "Original project-authored models; pinned upstream-only expectations; license undecided.",
+  "fixtures": [
+    {
+      "id": "compartment_list",
+      "path": "fixtures/symbols/compartment_list.ant",
+      "sha256": "100087cf73faeac9bccd732dec9105e1d6bf0b0987b2998c5a2ef4691333ee38",
+      "expectation": "fixtures/manifests/symbols-v2/compartment_list.json",
+      "expectation_sha256": "fee085fe9922df9f78bfbca3f7f6982c0ebb1e611e68ac0f6cfb1b05e823a6b7",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "const_formula",
+      "path": "fixtures/symbols/const_formula.ant",
+      "sha256": "0468fc09de3baae9012d656243a1c674446b260f04682f1a3a593693c41d3fd4",
+      "expectation": "fixtures/manifests/symbols-v2/const_formula.json",
+      "expectation_sha256": "4be85e746a953e87a1620f522a7b9873081fab1bf8cc25e08470ac2f838fe635",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "const_formula_unset",
+      "path": "fixtures/symbols/const_formula_unset.ant",
+      "sha256": "6f2a226acd850b132225a2fa5302a81fc7e66de979255a2b10b72b22255f671e",
+      "expectation": "fixtures/manifests/symbols-v2/const_formula_unset.json",
+      "expectation_sha256": "48b53708d94a6cccc594a03b5192e43e8f8cbc7545cdce740b48de46775474b5",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "const_initial_species_dependency",
+      "path": "fixtures/symbols/const_initial_species_dependency.ant",
+      "sha256": "26850301b931ec81e5971f403ba564a23c1cfd4bea14bd344ac357f1a67af2aa",
+      "expectation": "fixtures/manifests/symbols-v2/const_initial_species_dependency.json",
+      "expectation_sha256": "c57c13719167f7e4021204ca2422a23c676576ae0223720abfe7677864979570",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "const_species",
+      "path": "fixtures/symbols/const_species.ant",
+      "sha256": "70786a81e43b0b21836c5abee08624cc4fc5969ea4109e61ef71cb51fed9914e",
+      "expectation": "fixtures/manifests/symbols-v2/const_species.json",
+      "expectation_sha256": "2e3fd02573908503b16d0833d1508eec405924ff43006ab4db30ccfc8b3f5d85",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "const_then_var_species",
+      "path": "fixtures/symbols/const_then_var_species.ant",
+      "sha256": "ddfdbb049562a04679abdc524798772d567de2bd5422b4fcd5a7dbc74d9e465e",
+      "expectation": "fixtures/manifests/symbols-v2/const_then_var_species.json",
+      "expectation_sha256": "879fbe5d653c01ad2055ba1565ff08551f90c583f702b3566e962f5e1699d724",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "const_untyped",
+      "path": "fixtures/symbols/const_untyped.ant",
+      "sha256": "835a8fe1eb5aa8004dd8a05a3419af358f0f2b1fed99aa8a9313b6c6ca356d6f",
+      "expectation": "fixtures/manifests/symbols-v2/const_untyped.json",
+      "expectation_sha256": "48e77235909109f7b7e1a8c515a8768d61fa7bcc47f70636128ffec1aaa5219b",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "deferred_compartment_expression",
+      "path": "fixtures/symbols/deferred_compartment_expression.ant",
+      "sha256": "de5f4e043009bc745dacb98ed2e6646556d8dc84ae6cc0ecd4c7c2c3671027df",
+      "expectation": "fixtures/manifests/symbols-v2/deferred_compartment_expression.json",
+      "expectation_sha256": "cc5734f5d1ec7319bb7c5a0f10bf1f22b26c6e1e2bfc558b08f883a50b008e5e",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "dollar_formula",
+      "path": "fixtures/symbols/dollar_formula.ant",
+      "sha256": "fd382e058bf7b17098422e25d9e3f98959a690b4ae00a5d6e3e2683b79337c9f",
+      "expectation": "fixtures/manifests/symbols-v2/dollar_formula.json",
+      "expectation_sha256": "bebc954930988d661607e744c6b3dbf5e1d2451bb55e4fab09ea297219e5688d",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "dollar_untyped",
+      "path": "fixtures/symbols/dollar_untyped.ant",
+      "sha256": "fcdb6b22ec46eb3dde3814f92ad45ae66ee399c6fd3f9c12f448679da8ce35eb",
+      "expectation": "fixtures/manifests/symbols-v2/dollar_untyped.json",
+      "expectation_sha256": "cbf25a063646c66c32b32cbf8cc605f6f3e1ea58aa1f11408e93f4c614e720fd",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "empty_compartment",
+      "path": "fixtures/symbols/empty_compartment.ant",
+      "sha256": "b1ef0dadadb2452807547a32a725a68d132a1c14f1057e19c21dcc8c6fb92a1b",
+      "expectation": "fixtures/manifests/symbols-v2/empty_compartment.json",
+      "expectation_sha256": "a94ee49adb1047f3b4be4aa1be7ec1d085d476a0c932bfdeaf32ca2a9b9fe40b",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "empty_formula",
+      "path": "fixtures/symbols/empty_formula.ant",
+      "sha256": "e65fd9d28731d7d5ecbdb8a8c0fcb14aac32cb78e26c8833732d08e2bfdcc7b6",
+      "expectation": "fixtures/manifests/symbols-v2/empty_formula.json",
+      "expectation_sha256": "169ff621313a6c351362abcdb09cb903258e2985f208fa8e37301037648baa88",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "empty_initial_reference",
+      "path": "fixtures/symbols/empty_initial_reference.ant",
+      "sha256": "be2b21893cc7e65a778ea4ccf0df0c523a9f2179318cd1899ecc18c23013d05c",
+      "expectation": "fixtures/manifests/symbols-v2/empty_initial_reference.json",
+      "expectation_sha256": "285bf09ec622297cf52eb3a2139c98c62d9a7c2ae833d1780296d6065125cda9",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "empty_reaction_species",
+      "path": "fixtures/symbols/empty_reaction_species.ant",
+      "sha256": "c7df5a6442f78d9ead4a6456a4fcb2aea0a5ecb0d39ab18ecac5351426347f80",
+      "expectation": "fixtures/manifests/symbols-v2/empty_reaction_species.json",
+      "expectation_sha256": "7274ea2efadfb66f340f8d017f9626b9542b988a7417127eaab143c6846c9770",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "empty_species",
+      "path": "fixtures/symbols/empty_species.ant",
+      "sha256": "9f189919870ec1fa640e525915a71f2a6aa1891462dc7176b8a3e6411464c53d",
+      "expectation": "fixtures/manifests/symbols-v2/empty_species.json",
+      "expectation_sha256": "1e98a236abf631bde5c9a73f6ccfc5b76f7655bd54098a2490276104794cc623",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "empty_untyped_var",
+      "path": "fixtures/symbols/empty_untyped_var.ant",
+      "sha256": "cc563f4989ee8cd500360dd0de83cede51f4b2b133bd0abb41297ac62cf5085e",
+      "expectation": "fixtures/manifests/symbols-v2/empty_untyped_var.json",
+      "expectation_sha256": "591e6af46e14a3a0d8971a9b98cce568b8c14ede82cda75953ee9dd20ad23f18",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "formula_inline_species",
+      "path": "fixtures/symbols/formula_inline_species.ant",
+      "sha256": "d4c9e2388590174638a9f4be2707d65899b6245cab2067c7b506bd1f68bfb6d2",
+      "expectation": "fixtures/manifests/symbols-v2/formula_inline_species.json",
+      "expectation_sha256": "31419ba8840b52e3145a01c17d475b84ba308da1f61cd2fc7618296b9d136352",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "formula_species_promotion",
+      "path": "fixtures/symbols/formula_species_promotion.ant",
+      "sha256": "7322971c2bb30dd2aa58f9101df0c05323fbe482b22c63e0582fd53e582d2a97",
+      "expectation": "fixtures/manifests/symbols-v2/formula_species_promotion.json",
+      "expectation_sha256": "7ae602cdbecdf0c5afdde0cf93de9099494595d146e4a608af71ad415ea4077d",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "incompatible_formula_reaction",
+      "path": "fixtures/symbols/incompatible_formula_reaction.ant",
+      "sha256": "4ef10860432caf9755bc21f3ddb530ceb58b1f31e76f1ab2102e21f4540bb228",
+      "expectation": "fixtures/manifests/symbols-v2/incompatible_formula_reaction.json",
+      "expectation_sha256": "d434aa8ebb25054fa556a417859970414b7cd5430e6a779ef9f550e05797d52b",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "incompatible_species_compartment",
+      "path": "fixtures/symbols/incompatible_species_compartment.ant",
+      "sha256": "1a7aecd828651b1e1a0ffbbfc5edaaa9afb450ddc4a5540244032a7f4b31d3d3",
+      "expectation": "fixtures/manifests/symbols-v2/incompatible_species_compartment.json",
+      "expectation_sha256": "0ad813a170372cf829cdc00f9d7583ad30e03ec6902060c1a8deb36be345c95b",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "inline_species_mixed",
+      "path": "fixtures/symbols/inline_species_mixed.ant",
+      "sha256": "554e00c7ef7f1307dd312ec18400ee61b7836deff482f1a04df92b8537277793",
+      "expectation": "fixtures/manifests/symbols-v2/inline_species_mixed.json",
+      "expectation_sha256": "c5e2f4b3cd9d7dfddb736d3bc8e226a2dc2f9d0cd38cf6330ac4d657b26e799c",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "late_compartment_size",
+      "path": "fixtures/symbols/late_compartment_size.ant",
+      "sha256": "e2fed0f3d001dc07d7c46c6a86aa990902e6ec3c3e56fa7610f0fc54e5300619",
+      "expectation": "fixtures/manifests/symbols-v2/late_compartment_size.json",
+      "expectation_sha256": "acf44267a828e9d8166dabc1c4b03e6be85ccef49813f80fd7712d74b3b3de98",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "named_control",
+      "path": "fixtures/symbols/named_control.ant",
+      "sha256": "8d56048f5789909dfc77930e415b214f3b0f289ef40de6d2e5739d0d7bc33ab1",
+      "expectation": "fixtures/manifests/symbols-v2/named_control.json",
+      "expectation_sha256": "16b621077edaa4bf5fe06949c5f90788ffa78a8fc25352d26aff695eaca876a0",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "partial_cycle",
+      "path": "fixtures/symbols/partial_cycle.ant",
+      "sha256": "e20d32ae2fe2cd03f100fd24a26ecee961e1f683502fc208abcfbaa38a6cc6be",
+      "expectation": "fixtures/manifests/symbols-v2/partial_cycle.json",
+      "expectation_sha256": "961d75c2e2af8b59e529ed2d93159e3a922be2b54e91e0d05941458827fff0a6",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "initialization_cycle"
+    },
+    {
+      "id": "partial_domain_sibling",
+      "path": "fixtures/symbols/partial_domain_sibling.ant",
+      "sha256": "054487f109d6de920fbeffb18c317dd2cf16c14322e6459f4f030082c1e6f4df",
+      "expectation": "fixtures/manifests/symbols-v2/partial_domain_sibling.json",
+      "expectation_sha256": "80a74b4cf86a5553846082a7f8809e1a9a10e21ce3c6c7919027cda0fb8ce00c",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "partial_zero_divisor",
+      "path": "fixtures/symbols/partial_zero_divisor.ant",
+      "sha256": "da8de2da1463b66a126e293eb15967570e95f57b2f3159c9b7f953df08a16b2b",
+      "expectation": "fixtures/manifests/symbols-v2/partial_zero_divisor.json",
+      "expectation_sha256": "8ea6197bcb24b617e3815d74dea18a708b677ba83d79de180391fd97fbf72a4c",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "partial_zero_first",
+      "path": "fixtures/symbols/partial_zero_first.ant",
+      "sha256": "5a92400360e4ca17eada3f52c7b2bb0327f3d704a0aa12503c168bac43975826",
+      "expectation": "fixtures/manifests/symbols-v2/partial_zero_first.json",
+      "expectation_sha256": "45df6210ffffabfb5d98568880122a9b5c5017957f2739066e3a7a40c21319c1",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "partial_zero_sibling",
+      "path": "fixtures/symbols/partial_zero_sibling.ant",
+      "sha256": "9b9cf17d81dc19ec6ad607c02ed97373ae92cd0be78f01cfbb3d8e2381736034",
+      "expectation": "fixtures/manifests/symbols-v2/partial_zero_sibling.json",
+      "expectation_sha256": "ff8fe32d44b7de733c3f828bb69128f3d0ccecc958fb17661a6971369a4476bf",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "reaction_redefined",
+      "path": "fixtures/symbols/reaction_redefined.ant",
+      "sha256": "49dde2e1eab94c1a2d500a5de8a46855580cdfaeb4af3d7a31e2185222507332",
+      "expectation": "fixtures/manifests/symbols-v2/reaction_redefined.json",
+      "expectation_sha256": "07e8dc9f380f9f952072e010c93875aa39123eb25beb10cf60acb8f9c4cfa879",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "reassign_scalar_symbolic",
+      "path": "fixtures/symbols/reassign_scalar_symbolic.ant",
+      "sha256": "4a4ec3dbfa1774f5073b1301e3e9329fce1b09923d9466258b71ee4b4a91aa4a",
+      "expectation": "fixtures/manifests/symbols-v2/reassign_scalar_symbolic.json",
+      "expectation_sha256": "1c36dfb1054d0d25fb25a72307da0593742406a1af699b23b90abfc211d2495a",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "reassign_symbolic_scalar",
+      "path": "fixtures/symbols/reassign_symbolic_scalar.ant",
+      "sha256": "511033e730903dceeaa2e4c8db12abaeb32ae0e27776f2885531e326eee6c252",
+      "expectation": "fixtures/manifests/symbols-v2/reassign_symbolic_scalar.json",
+      "expectation_sha256": "8a43eb389c3adece2e86006e8a9a90cf6638a68aabfc9bed5945f9c92de254ff",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "repeated_initialization",
+      "path": "fixtures/symbols/repeated_initialization.ant",
+      "sha256": "b16a0ce4916f975a307e0f7fab3df26d9bbdaf01e9394aae81a3720ea603a641",
+      "expectation": "fixtures/manifests/symbols-v2/repeated_initialization.json",
+      "expectation_sha256": "eb82e4ea2c64782702b38a98e6af02a8200739209c69a9f058ec88b8ee739c1e",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "species_redeclaration",
+      "path": "fixtures/symbols/species_redeclaration.ant",
+      "sha256": "6593dd6c67dc250e0fb5a91e10c27844cc5d824a42c301114ee974ca028ecdb3",
+      "expectation": "fixtures/manifests/symbols-v2/species_redeclaration.json",
+      "expectation_sha256": "6b7236e82233039af504522231964813a15e9a229a9857f4ca4c51d6d7c0174b",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unnamed_before_named",
+      "path": "fixtures/symbols/unnamed_before_named.ant",
+      "sha256": "bc629299a9f9627492cd0e3db6b7baa1391585029afd207ec03837b7b4a43011",
+      "expectation": "fixtures/manifests/symbols-v2/unnamed_before_named.json",
+      "expectation_sha256": "c4d54544200b733cda6f4863aeacc69c4c175fc4b30ef954b6cf5423babdba73",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unnamed_boundary_stoich",
+      "path": "fixtures/symbols/unnamed_boundary_stoich.ant",
+      "sha256": "2253b71770f8d2056b9ed06117b8fb7282c3da11807b9fb5bb39a3ae76d6ab82",
+      "expectation": "fixtures/manifests/symbols-v2/unnamed_boundary_stoich.json",
+      "expectation_sha256": "67eb53d0861720b826e26f734d34652950f4b354ea62cc2ddb0a3c5aadfc24e3",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unnamed_collision_after",
+      "path": "fixtures/symbols/unnamed_collision_after.ant",
+      "sha256": "af775e346d675a50ed460b18e1da4907dd3d8eaad7586d30eb9ed9a1a1a77610",
+      "expectation": "fixtures/manifests/symbols-v2/unnamed_collision_after.json",
+      "expectation_sha256": "db3ce1e4967c0178f0870cc97c3abaa7816d3a65db950566c13700ef26310450",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unnamed_collision_before",
+      "path": "fixtures/symbols/unnamed_collision_before.ant",
+      "sha256": "2d7bbaf4551c7a31be17ae046269a5f1d3ce8c11d868abb975dc1023789acafb",
+      "expectation": "fixtures/manifests/symbols-v2/unnamed_collision_before.json",
+      "expectation_sha256": "44ad083e78f3dcf42d61619c88fef27b30c7f9e7bbbab69114d0ffc817471170",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unnamed_later_named_collision",
+      "path": "fixtures/symbols/unnamed_later_named_collision.ant",
+      "sha256": "631b183107df7f552e97909d3c4929c14ab65271f3c3aa043366549804354f42",
+      "expectation": "fixtures/manifests/symbols-v2/unnamed_later_named_collision.json",
+      "expectation_sha256": "9ef236d7bf557b5e6b9a5f794f42747e4f4b51a879d3cfb496cab337395c0b63",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unnamed_later_reference",
+      "path": "fixtures/symbols/unnamed_later_reference.ant",
+      "sha256": "cc592b0a59d126d985b85077d11fd21e327d3b5ba1f5e590b565b930fede767c",
+      "expectation": "fixtures/manifests/symbols-v2/unnamed_later_reference.json",
+      "expectation_sha256": "10fe2c14ac093ddb591bd48b53bc7363a60eba24d8b4dd5377efd4dd0e8bba1f",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "unnamed_mixed",
+      "path": "fixtures/symbols/unnamed_mixed.ant",
+      "sha256": "cb133657d54db99ee942a207f11bf76fc54d77f3a950d82d46923bab77bdcabc",
+      "expectation": "fixtures/manifests/symbols-v2/unnamed_mixed.json",
+      "expectation_sha256": "9d720a0ece9e3c7f8684ab2cb549640d80c70c0ac8604139dd15f51b84a1c0e3",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unnamed_named_collision",
+      "path": "fixtures/symbols/unnamed_named_collision.ant",
+      "sha256": "c68cdea74b8745e96239567828b98db3856c24282280d812f5e7e1108f895d8f",
+      "expectation": "fixtures/manifests/symbols-v2/unnamed_named_collision.json",
+      "expectation_sha256": "5303e06d1107250a2be5172bcfaab51e0f99651a2739be815782dcb09b8bd7d3",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unnamed_one",
+      "path": "fixtures/symbols/unnamed_one.ant",
+      "sha256": "848da75d08027a21672c84158495856c3d2a68b94a23279c8b04f60b2e6bb126",
+      "expectation": "fixtures/manifests/symbols-v2/unnamed_one.json",
+      "expectation_sha256": "67f9ee2e01c645b83c05ad470a9e9b25a4cfff3cea478fc0d8f8d39892a288d2",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unnamed_participant_collision",
+      "path": "fixtures/symbols/unnamed_participant_collision.ant",
+      "sha256": "7906962903a787b2c1f19807e55b65dc80ded5f122538f1e3dfdf41c67f4c6ab",
+      "expectation": "fixtures/manifests/symbols-v2/unnamed_participant_collision.json",
+      "expectation_sha256": "eb1bbc66e7d91c319b9b22b28d8994f81ded005fcda183267f5e32bd0706a6b2",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unnamed_rate_collision",
+      "path": "fixtures/symbols/unnamed_rate_collision.ant",
+      "sha256": "c5fce5c2b4e1bdc4034a9ce5abf400e3f29065c3631bace3dc50910c997bd8e9",
+      "expectation": "fixtures/manifests/symbols-v2/unnamed_rate_collision.json",
+      "expectation_sha256": "161e35f6b3a16663b6a85a530bbcba8d0f994b886fb9e831eb4812c8cdceec95",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unnamed_reserve_gap",
+      "path": "fixtures/symbols/unnamed_reserve_gap.ant",
+      "sha256": "df73de982f4d2baff67bf1f2d99565a375ea7ff5dbbd0550ffea2453c108d291",
+      "expectation": "fixtures/manifests/symbols-v2/unnamed_reserve_gap.json",
+      "expectation_sha256": "3b38f99f78bc7728a92f98d9008d545e4a247a885c031f244a863a413b256035",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unnamed_source_sink",
+      "path": "fixtures/symbols/unnamed_source_sink.ant",
+      "sha256": "f4783f1ef272070d5515bf591bbf260e0f84d7e29d36be81e275c71dc2704fd2",
+      "expectation": "fixtures/manifests/symbols-v2/unnamed_source_sink.json",
+      "expectation_sha256": "3de183b535f4114f834eb2cfa0587ed0eae707091d3ad4169032985aac8fd52f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unnamed_trivia",
+      "path": "fixtures/symbols/unnamed_trivia.ant",
+      "sha256": "15df985e74fac78af0987922513d80d43f5a6f9fd55e37466a35b3a14b01a9a5",
+      "expectation": "fixtures/manifests/symbols-v2/unnamed_trivia.json",
+      "expectation_sha256": "2e25f2f22f05c9d4f6c0f46cdd74cc4f29bb1b418d4113e03345834866598df7",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "unnamed_two",
+      "path": "fixtures/symbols/unnamed_two.ant",
+      "sha256": "cd1f3d8a0a2446d6e53d6368a6dd6a7f69aadf37601cbd8d0648e1229517ca9a",
+      "expectation": "fixtures/manifests/symbols-v2/unnamed_two.json",
+      "expectation_sha256": "c7e42c61ed42b93b2bb5dc6f78633a9557d5d873f109ebabf4a47857495ba977",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unset_compartment_species",
+      "path": "fixtures/symbols/unset_compartment_species.ant",
+      "sha256": "342bbf41c2faeafd760e2f85d0be744bc66904d8c0e806bbc91f34c288e5bd54",
+      "expectation": "fixtures/manifests/symbols-v2/unset_compartment_species.json",
+      "expectation_sha256": "2f5f08231bb05c18d2b39d4a1da8021cfde26c671d9ffb77757b239d342bb451",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unset_self_cycle",
+      "path": "fixtures/symbols/unset_self_cycle.ant",
+      "sha256": "5e2752e92bea5a77163b7764242547177f40d7a019545fd948826897d311cf3d",
+      "expectation": "fixtures/manifests/symbols-v2/unset_self_cycle.json",
+      "expectation_sha256": "25f46b9251223205038fac9d1c1e9f5a2094f15dd898578283d92c9b0c3c5ed3",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "initialization_cycle"
+    },
+    {
+      "id": "unset_symbolic_chain",
+      "path": "fixtures/symbols/unset_symbolic_chain.ant",
+      "sha256": "ad256fb8085796bf32130b7a8b55100c277afd2555c1289bec3014975e39a462",
+      "expectation": "fixtures/manifests/symbols-v2/unset_symbolic_chain.json",
+      "expectation_sha256": "a9d113ecbd557138b7576b9c772c158236f27694cf7e4e244ed7a3fb12e6e48c",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "var_compartment",
+      "path": "fixtures/symbols/var_compartment.ant",
+      "sha256": "1fce6d0b724df64b321676a1f6db5666a601d4a448bd594fb3eca66c408d9a09",
+      "expectation": "fixtures/manifests/symbols-v2/var_compartment.json",
+      "expectation_sha256": "f690d9a086dfc235954ec48d6a65109b9225c72d2254f4abc705db3b3432cc1a",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "var_formula",
+      "path": "fixtures/symbols/var_formula.ant",
+      "sha256": "c4c62bb7928a6ea4580b4c6622c21e912e286bfcf0c2da35f3927309bdadd7ce",
+      "expectation": "fixtures/manifests/symbols-v2/var_formula.json",
+      "expectation_sha256": "f0cff29ad208597bfd788d6ea0c52e5c0bab06a8ea06ad03af68c38a76411a97",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "var_formula_unset",
+      "path": "fixtures/symbols/var_formula_unset.ant",
+      "sha256": "70c6ae02855bc7eebcfa39ab58c5567e49636403f0e93bad96116712b73313e6",
+      "expectation": "fixtures/manifests/symbols-v2/var_formula_unset.json",
+      "expectation_sha256": "01df7e32ace8ee6e45a6f4d33ec0e6bf93980abe0a4eb83e2370eb00f60ef29f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "var_initial_species_dependency",
+      "path": "fixtures/symbols/var_initial_species_dependency.ant",
+      "sha256": "69f605c51a74c4f5ce99a3e610ece0700fc609396796ddf1ce193ba590fbae01",
+      "expectation": "fixtures/manifests/symbols-v2/var_initial_species_dependency.json",
+      "expectation_sha256": "3c370f2c1a93620ff7b3191657dcbb06a843ea78272f4e4d7f8bc65e363f64c5",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "var_species",
+      "path": "fixtures/symbols/var_species.ant",
+      "sha256": "c2bf50ad1591b33741e519fdfe7110c4551be60f97c837d850133bb592e9e0af",
+      "expectation": "fixtures/manifests/symbols-v2/var_species.json",
+      "expectation_sha256": "6e40a0b00a99e4951b41fe382477d7e2ec4e99f4caf5d754335c49f8e380bd37",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "var_then_const_species",
+      "path": "fixtures/symbols/var_then_const_species.ant",
+      "sha256": "c385092a9da83c82f11c0c34c15f1e94901c414b86365780efcda39a207999e5",
+      "expectation": "fixtures/manifests/symbols-v2/var_then_const_species.json",
+      "expectation_sha256": "c43b8ccee7f16bf35a3b3da5fd606208bb53f99e06087ecd0f88d91f443abc2a",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "var_untyped",
+      "path": "fixtures/symbols/var_untyped.ant",
+      "sha256": "93388f34aae79d52fb3c9c7ea03344ffa0a6667ec8ed1a75250333c76d3cfb52",
+      "expectation": "fixtures/manifests/symbols-v2/var_untyped.json",
+      "expectation_sha256": "649dfadf7cfb30c4cf494d36205eef51d939d76fc93a7860f482900107098184",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unit_name_reserves_reaction",
+      "path": "fixtures/symbols/unit_name_reserves_reaction.ant",
+      "sha256": "c442e0c88d4a555c9cf1850122271195ba9be4544b68f05af987adc494852289",
+      "expectation": "fixtures/manifests/symbols-v2/unit_name_reserves_reaction.json",
+      "expectation_sha256": "0c2f3daf21be703b278c7050166ddd76204b9d8b0840d242596f86792ba546ec",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "scalar_law_reassignment",
+      "path": "fixtures/symbols/scalar_law_reassignment.ant",
+      "sha256": "5e8b0e0656610e433b5603b2d8790fa53b392380e930a8515a16498fb2ee3fb5",
+      "expectation": "fixtures/manifests/symbols-v2/scalar_law_reassignment.json",
+      "expectation_sha256": "8753d633610f3635838a0499a2e8c942531edc354ea0c121ab8d193d51154efd",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "negative_scalar_law_reassignment",
+      "path": "fixtures/symbols/negative_scalar_law_reassignment.ant",
+      "sha256": "caaee4138a3bf2db183997f1a26555a9bca5c5dcaf0cb26f9d296447e2921b26",
+      "expectation": "fixtures/manifests/symbols-v2/negative_scalar_law_reassignment.json",
+      "expectation_sha256": "b27083f19426911af377fd925521d667fb97e9ae6ae7135dac0da4619f36ecdd",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "small_scalar_law_reassignment",
+      "path": "fixtures/symbols/small_scalar_law_reassignment.ant",
+      "sha256": "30971254cd610cf7e7fca1716728f8d4ec5b4d7ba8fe4c52e9f7407b76454c62",
+      "expectation": "fixtures/manifests/symbols-v2/small_scalar_law_reassignment.json",
+      "expectation_sha256": "23c24fdf8750d10f99dcbabbc148abf0bc48ef330fa0f823767bf5ccfde62256",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "repeated_species_location",
+      "path": "fixtures/symbols/repeated_species_location.ant",
+      "sha256": "d9969f37b35ed4c6a90a36dffa993b55132dca28a1bb577281aaadafe97c69e4",
+      "expectation": "fixtures/manifests/symbols-v2/repeated_species_location.json",
+      "expectation_sha256": "c01147737c45482ac8b47764c6f05b96f87f8b92bbc293e45749555229e49ae3",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "repeated_compartment_size",
+      "path": "fixtures/symbols/repeated_compartment_size.ant",
+      "sha256": "6a52c2f4a3cdd234fdb601e99ffc7f7bd86c97b33c746585a405e349dcf2abd5",
+      "expectation": "fixtures/manifests/symbols-v2/repeated_compartment_size.json",
+      "expectation_sha256": "7de554628188c75a2ce60074ac14a40343b03731ad8d99bbfbab6caeb650e53e",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unnamed_comment_roundtrip",
+      "path": "fixtures/symbols/unnamed_comment_roundtrip.ant",
+      "sha256": "749f915067683debbef446fe464947686d5e28dffa3d47587b427a7daff2760e",
+      "expectation": "fixtures/manifests/symbols-v2/unnamed_comment_roundtrip.json",
+      "expectation_sha256": "6cd2ce88d948f1c7e82defec44a8e4eb75607adc530916df88648be9b2774cea",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "unset_and_unnamed_combined",
+      "path": "fixtures/symbols/unset_and_unnamed_combined.ant",
+      "sha256": "69fb314160c4d4e76d60448293482af4a0faced7adea5fd15c97045adeb54c3b",
+      "expectation": "fixtures/manifests/symbols-v2/unset_and_unnamed_combined.json",
+      "expectation_sha256": "da89c384456a8e25048f19fb120fcd78b2157c9d011093e1bf708e1cc50eb06a",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    }
+  ]
+}

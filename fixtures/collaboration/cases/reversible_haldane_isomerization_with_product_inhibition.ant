@@ -1,0 +1,18 @@
+function rev_mm(S, P, Vf, Vr, KmS, KmP)
+  (Vf * (S / KmS) - Vr * (P / KmP)) / (1 + (S / KmS) + (P / KmP))
+end
+
+function comp_inh(S, I, Vm, Km, Ki)
+  Vm * S / (Km * (1 + I / Ki) + S)
+end
+
+model reversible_haldane_isomerization_with_product_inhibition()
+  species S = 6.0, I_mid = 0.5, P = 0.1;
+  Vf = 2.4; Vr = 0.8; KmS = 1.2; KmI = 0.9;
+  Vm2 = 1.6; Km2 = 0.7; Ki = 1.5;
+  k_drain = 0.2;
+  J1: S -> I_mid; rev_mm(S, I_mid, Vf, Vr, KmS, KmI);
+  J2: I_mid -> P; comp_inh(I_mid, P, Vm2, Km2, Ki);
+  J3: P -> ; k_drain * P;
+  mass_balance := S + I_mid + P;
+end

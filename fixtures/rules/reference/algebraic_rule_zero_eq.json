@@ -1,0 +1,15 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection_reasons": [
+    "Rule metadata is outside projection v1"
+  ],
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "7ca05f396d6c7a7c7be8b3b2ae0c348d6e0066c5ccb3cf1260132a9ac384f0c9",
+  "status": "PROJECTION_UNSUPPORTED"
+}

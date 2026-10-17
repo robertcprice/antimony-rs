@@ -1,0 +1,11 @@
+model vessel(S)
+  compartment V = 1;
+  V' = 0.05;
+  substanceOnly species S in V = 6;
+  k = 0.2;
+  S -> ; k*S;
+end
+model *main()
+  substanceOnly species X;
+  M: vessel(X);
+end

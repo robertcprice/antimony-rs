@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  Variables with rate rules may not be set to be type Reaction because these variables do not change during the course of the model.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "aabbb3852aaf7221befb4ff2be6981c8a345cc41a89b4a761f63de42ca4356f0",
+  "status": "REFERENCE_REJECTED"
+}

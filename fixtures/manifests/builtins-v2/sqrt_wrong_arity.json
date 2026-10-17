@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"sqrt(1, 2)\":  Error when parsing input 'sqrt(1,2)' at position 9:  The function 'sqrt' takes exactly one argument.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "9ed9df3ea63fae1ad6dff7cf8579815e66c0e3973e9b000aa417254669475cea",
+  "status": "REFERENCE_REJECTED"
+}

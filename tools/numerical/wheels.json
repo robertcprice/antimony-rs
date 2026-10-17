@@ -1,0 +1,30 @@
+{
+  "schema": "antimony-numerical-wheels-v1",
+  "packages": [
+    {
+      "package": "libroadrunner",
+      "version": "2.10.0",
+      "filename": "libroadrunner-2.10.0-cp312-cp312-macosx_14_0_arm64.whl",
+      "url": "https://files.pythonhosted.org/packages/1f/47/79bfe7d8ba017be1f6f29e96cbc0c6611b4590a658548e9fe72e44fd470a/libroadrunner-2.10.0-cp312-cp312-macosx_14_0_arm64.whl",
+      "sha256": "66f61f8ed7c40600895d2c8250e8515e25dc7648f5681a6e6a2e988701701e2a",
+      "size_bytes": 34214767,
+      "uploaded": "2026-08-05T06:04:27.549496Z",
+      "yanked": false,
+      "requires_dist": [
+        "numpy~=2.2"
+      ]
+    },
+    {
+      "package": "numpy",
+      "version": "2.2.6",
+      "filename": "numpy-2.2.6-cp312-cp312-macosx_14_0_arm64.whl",
+      "url": "https://files.pythonhosted.org/packages/3c/65/4baa99f1c53b30adf0acd9a5519078871ddde8d2339dc5a7fde80d9d87da/numpy-2.2.6-cp312-cp312-macosx_14_0_arm64.whl",
+      "sha256": "894b3a42502226a1cac872f840030665f33326fc3dac8e57c607905773cdcde3",
+      "size_bytes": 5084103,
+      "uploaded": "2025-05-17T21:35:10.622687Z",
+      "yanked": false,
+      "requires_dist": null
+    }
+  ],
+  "attestation": "PyPI publisher wheel metadata and hash-verified installation; not source-to-binary reproducibility proof."
+}

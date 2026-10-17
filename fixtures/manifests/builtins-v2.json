@@ -1,0 +1,1097 @@
+{
+  "schema": "antimony-builtins-corpus-v2",
+  "implemented_profile": "math-core-v0.2-slice",
+  "provenance": "Original project-authored numeric builtin/time/constant combinations; upstream-only snapshots; project license undecided.",
+  "fixtures": [
+    {
+      "id": "sin_rate",
+      "path": "fixtures/builtins/sin_rate.ant",
+      "sha256": "82f19554b95393709d2558cd0cb44e16eadee7fdd2511c1fadf916b984ea8635",
+      "expectation": "fixtures/manifests/builtins-v2/sin_rate.json",
+      "expectation_sha256": "9a5872728dfc857b5dfc52d33feb7b30defe689e0a757346cde020150ade410b",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "sin_initial",
+      "path": "fixtures/builtins/sin_initial.ant",
+      "sha256": "4145df51b3c2aa00f1bd99ef02f16198ff707d124f3fa462e6581bc0ada2d19c",
+      "expectation": "fixtures/manifests/builtins-v2/sin_initial.json",
+      "expectation_sha256": "ca951f46cbfc2934f9480758a1f2a9a26c8a798f39b19026d6435547e7b46274",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "cos_rate",
+      "path": "fixtures/builtins/cos_rate.ant",
+      "sha256": "4eeb237033ede09252953507db7d8caf448bbd99b516cf20273f63680bf47d4a",
+      "expectation": "fixtures/manifests/builtins-v2/cos_rate.json",
+      "expectation_sha256": "406393a082a572d5dd1f5545a1d5152ea7483ce21cc6255a123faaf87a9d22bf",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "cos_initial",
+      "path": "fixtures/builtins/cos_initial.ant",
+      "sha256": "9e4867b43cbe7504da69192dc33372fefaa71e828bb951fdbda5af920f2f817d",
+      "expectation": "fixtures/manifests/builtins-v2/cos_initial.json",
+      "expectation_sha256": "d1b36482b01130031de7a628eed4a0a266de7b69b1453d80cbd22d6e86c32277",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "tan_rate",
+      "path": "fixtures/builtins/tan_rate.ant",
+      "sha256": "a1a3194dfa2dc09228e9ee6e1289a987db514e9d03293a07c1fa1f98dbb4003e",
+      "expectation": "fixtures/manifests/builtins-v2/tan_rate.json",
+      "expectation_sha256": "bdf6235fa1c8c7ca38a13416a150edcf16039ea8719ae1c90732a10f0b36a731",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "tan_initial",
+      "path": "fixtures/builtins/tan_initial.ant",
+      "sha256": "5f7d8b626c2f36878e380b1f536b7e4d5e3d5cfa29ae2a3454400c86766356e4",
+      "expectation": "fixtures/manifests/builtins-v2/tan_initial.json",
+      "expectation_sha256": "954a4c743a73d40788452f0406e8143ae770e6677ceccfe30526370fe150dbc3",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "exp_rate",
+      "path": "fixtures/builtins/exp_rate.ant",
+      "sha256": "e65db5218c8b8ce5c854d5105607510bfc1a9b35a3c2febd4f3851c01e54659b",
+      "expectation": "fixtures/manifests/builtins-v2/exp_rate.json",
+      "expectation_sha256": "69bb7b1af6e21401a1beffb888760c5c983f5356b3df8a06791b6b3b4166231a",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "exp_initial",
+      "path": "fixtures/builtins/exp_initial.ant",
+      "sha256": "02a99d20a9d29c392b42735ba6168ff76d100eb5e323bb573c56c10d70623f7e",
+      "expectation": "fixtures/manifests/builtins-v2/exp_initial.json",
+      "expectation_sha256": "570c40a72d2318565cd8c9b11226e832d1ad6fcb05d0868a3fda372d7081fbea",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "ln_rate",
+      "path": "fixtures/builtins/ln_rate.ant",
+      "sha256": "79a6e97cf2bd95dbb3f851ff84d695290b256827157a2a2d00d26243d0666067",
+      "expectation": "fixtures/manifests/builtins-v2/ln_rate.json",
+      "expectation_sha256": "b057cbc6fc0f78e3bec1f353cd169894f2eb40e8038c692c8c9ddaee09bcd97b",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "ln_initial",
+      "path": "fixtures/builtins/ln_initial.ant",
+      "sha256": "b27f8838c795f4d6b0110ed44cf301764a6006b5f6cb6bb430fd7eaedb37633c",
+      "expectation": "fixtures/manifests/builtins-v2/ln_initial.json",
+      "expectation_sha256": "53929edcbeb4b76528c3f4dcdc71fac1d539fa90ed8dfdbd81f8e2eb526e1508",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "log_rate",
+      "path": "fixtures/builtins/log_rate.ant",
+      "sha256": "065af40568642e2cb21cc2eebc15934732b25d2a5cea66f3d31a41980b40ce73",
+      "expectation": "fixtures/manifests/builtins-v2/log_rate.json",
+      "expectation_sha256": "980108f65f7074b1e52e97a763a052403b890aeceaf1e9c88c12aca0b58224ff",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "log_initial",
+      "path": "fixtures/builtins/log_initial.ant",
+      "sha256": "39c43d76bc4ce382d8f0b46e4784bed46d7f94140694ec54b527a3436cb42bea",
+      "expectation": "fixtures/manifests/builtins-v2/log_initial.json",
+      "expectation_sha256": "a9a83ae5bc5366460d7790675da8c9366809d29402ea63aad8878be44c6539d1",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "log10_rate",
+      "path": "fixtures/builtins/log10_rate.ant",
+      "sha256": "77b6eba07a1ecbf54170fa52fe525fe28c4bb91b4acf15af03bfa0dcfc174760",
+      "expectation": "fixtures/manifests/builtins-v2/log10_rate.json",
+      "expectation_sha256": "95ad31af54b6616647dfa8268ee272680371cb8627e3d195c1b2131483e8c61e",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "log10_initial",
+      "path": "fixtures/builtins/log10_initial.ant",
+      "sha256": "966af951346cbba67f2d11f8375c2b1b028a1c50ebabc8d9e2b63c89983003b2",
+      "expectation": "fixtures/manifests/builtins-v2/log10_initial.json",
+      "expectation_sha256": "529a05549640caa499c3506d6e71df79f36cdc7d87abf78c747401ebfbe9f5aa",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "sqrt_rate",
+      "path": "fixtures/builtins/sqrt_rate.ant",
+      "sha256": "64440c50e1de1bd667b89adf76e97da6167b704e8214601b2c9c7ef3940e2736",
+      "expectation": "fixtures/manifests/builtins-v2/sqrt_rate.json",
+      "expectation_sha256": "812929e1541a41b3aaf3617b125b0cee0fe72e4920597624bd539bb86ceae2a3",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "sqrt_initial",
+      "path": "fixtures/builtins/sqrt_initial.ant",
+      "sha256": "0c6cfb60a7d23630b5a229db8bb07b77a82e13bb38a13c2a96e4c52a84c96bda",
+      "expectation": "fixtures/manifests/builtins-v2/sqrt_initial.json",
+      "expectation_sha256": "a651f84e70721fd92eba1655c200d793734b4372da9dec759a3ec67298fe4005",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "abs_rate",
+      "path": "fixtures/builtins/abs_rate.ant",
+      "sha256": "7f5800c0769245452cb2d45f26dcdd28b8e380899d6e1aa28baf86cded424e8c",
+      "expectation": "fixtures/manifests/builtins-v2/abs_rate.json",
+      "expectation_sha256": "a1715073f1a5903e6d47ceffcc45aac56ba7fbf96c168527bc85ca66d233ac1c",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "abs_initial",
+      "path": "fixtures/builtins/abs_initial.ant",
+      "sha256": "362bcd84db4b4af31035adcf2f368d266529c8e16ee59c88c3563d04ce50f546",
+      "expectation": "fixtures/manifests/builtins-v2/abs_initial.json",
+      "expectation_sha256": "da7e8fb9f8469923163c986ba8db4f2513ca0732396f544ce526cbb519c247af",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "floor_rate",
+      "path": "fixtures/builtins/floor_rate.ant",
+      "sha256": "9a7025e01cdf714839c2582e131d76c89300d3a2a0fdec47ed3d8a19173ffc5e",
+      "expectation": "fixtures/manifests/builtins-v2/floor_rate.json",
+      "expectation_sha256": "d0ff238fb44d0b0e19c4f8d8becb86fcb8074cdaad6a84609caf78352dcb1655",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "floor_initial",
+      "path": "fixtures/builtins/floor_initial.ant",
+      "sha256": "7c0e2da4c8011b1ff7a53a234bdb08264b040254fb64c26f5e529ea3778f0746",
+      "expectation": "fixtures/manifests/builtins-v2/floor_initial.json",
+      "expectation_sha256": "498f8f98f25724dc33fd4a6c4867288cec93bd36637435098aec366d11166a62",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "ceil_rate",
+      "path": "fixtures/builtins/ceil_rate.ant",
+      "sha256": "e1929707fe21cd8003803c364f5a26bbe2896175ffc0f425be6c9092fbd5b895",
+      "expectation": "fixtures/manifests/builtins-v2/ceil_rate.json",
+      "expectation_sha256": "c188f4a5337f0d74e43984b19fe4bfe9bba37a2cbf326b2011468feb0b1a231d",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "ceil_initial",
+      "path": "fixtures/builtins/ceil_initial.ant",
+      "sha256": "a052c2775ec412e97eb1c0d178e7f0c165df62eee416eb7ca4cc20555eb7e797",
+      "expectation": "fixtures/manifests/builtins-v2/ceil_initial.json",
+      "expectation_sha256": "d997d5a6ef4bb301cf55ba7303d7ea5d073e55a4f6c5464d1e0f8bed91885af0",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "ceiling_rate",
+      "path": "fixtures/builtins/ceiling_rate.ant",
+      "sha256": "e78ae9ca1c6da427bfab464ee67ba16e9e81dc56ba3e8858403ffac6e1a00e85",
+      "expectation": "fixtures/manifests/builtins-v2/ceiling_rate.json",
+      "expectation_sha256": "cdd51ce658d4cbe9a0c1dc3ec4d6cb4cb4e0c2b16273a6211d4098b94308ca23",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "ceiling_initial",
+      "path": "fixtures/builtins/ceiling_initial.ant",
+      "sha256": "fe26d3b9a70aa9d24c16017fdb0e19cda471fe1381a3f34ea2f063e7e39845f8",
+      "expectation": "fixtures/manifests/builtins-v2/ceiling_initial.json",
+      "expectation_sha256": "cb909bc589c1a2db82696d7c904c3b9586a540e00d4d9cb3e71f25549f6a9203",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "pow_rate",
+      "path": "fixtures/builtins/pow_rate.ant",
+      "sha256": "bcc80b3164de625848668c20b45ef54c1965e45154114dad67848b1f6a850f50",
+      "expectation": "fixtures/manifests/builtins-v2/pow_rate.json",
+      "expectation_sha256": "175e34b2383401e7de20b8bebe69d7af3f87bde74bc992cf92fc132c6282c446",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "pow_initial",
+      "path": "fixtures/builtins/pow_initial.ant",
+      "sha256": "bf12bffc67f4a1e9c96d93542cddc3847dcb45d1777f284357308a7903a44f93",
+      "expectation": "fixtures/manifests/builtins-v2/pow_initial.json",
+      "expectation_sha256": "ec778ea578046d082722c2123a2fc5b103c002114aceaee2125706a81dec9fca",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "power_rate",
+      "path": "fixtures/builtins/power_rate.ant",
+      "sha256": "bbb71051be73d87a527b015a86e82b868f8ddf91a58cf3d52185e9fed16dbde3",
+      "expectation": "fixtures/manifests/builtins-v2/power_rate.json",
+      "expectation_sha256": "e60bd0ab9fbf15ecee0ab36add4e7eeb24d4ad0553fbdc180a88fb395e752989",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "power_initial",
+      "path": "fixtures/builtins/power_initial.ant",
+      "sha256": "e149bf3f83e7c500974389fd97ccf9454cabb198caef290b816695f41000f3c9",
+      "expectation": "fixtures/manifests/builtins-v2/power_initial.json",
+      "expectation_sha256": "2e7694ffbe99f897781e350090c1810c8f6d5647a9292b86844600b104e4829e",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "min_rate",
+      "path": "fixtures/builtins/min_rate.ant",
+      "sha256": "2286da172826049ecbc6ad45a7c1b7ea9e7789628b3f73f703218d92e2f8f454",
+      "expectation": "fixtures/manifests/builtins-v2/min_rate.json",
+      "expectation_sha256": "cb8969f0a6229487d72988c73e6dd9c4d75ac4dbbe6ae95896ff5b975f92db20",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "min_initial",
+      "path": "fixtures/builtins/min_initial.ant",
+      "sha256": "320d0b7474bef7b370d23f31b90e263f5d14b1eb831fd04c4a36cd765aee8677",
+      "expectation": "fixtures/manifests/builtins-v2/min_initial.json",
+      "expectation_sha256": "f336637578d4de1e146ff702aaedcecc4eccb3f7fe422b364c6cdea216348342",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "max_rate",
+      "path": "fixtures/builtins/max_rate.ant",
+      "sha256": "3f53aa92e50553176c023f460174dfe5b6a1c3e4a2117a6ac13c848ca740c431",
+      "expectation": "fixtures/manifests/builtins-v2/max_rate.json",
+      "expectation_sha256": "4269032e845b2b1f82f22d1a6f82402c96a1625142c6b0efc4c95f94220daab4",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "max_initial",
+      "path": "fixtures/builtins/max_initial.ant",
+      "sha256": "0b7094e7971f80402ebed3c66d3e19585861a7650ebfb981c3198e2b8a558109",
+      "expectation": "fixtures/manifests/builtins-v2/max_initial.json",
+      "expectation_sha256": "dafa15c3d50d6bf3a1d27f0eaf5971babbea0635a8f5906ddaff719b7405dd77",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "sin_wrong_arity",
+      "path": "fixtures/builtins/sin_wrong_arity.ant",
+      "sha256": "bcc976b055407e818363cdfe47e83cb64b29cbc9fadbde32df109c226e73dbb5",
+      "expectation": "fixtures/manifests/builtins-v2/sin_wrong_arity.json",
+      "expectation_sha256": "0718c213ded933b1554bc055335bc253b7e7332a71cab14af446b746bb27a959",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "cos_wrong_arity",
+      "path": "fixtures/builtins/cos_wrong_arity.ant",
+      "sha256": "3c7204eb9e07e82fcadbd2090ac06b2571a483f4d824a4175eab8803b175d4ef",
+      "expectation": "fixtures/manifests/builtins-v2/cos_wrong_arity.json",
+      "expectation_sha256": "494de6fc253e1e440a5ff6e433e3a219da84d500f462f3dfb08fb8d27821d46e",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "tan_wrong_arity",
+      "path": "fixtures/builtins/tan_wrong_arity.ant",
+      "sha256": "7b12e503cc544a36f390dd13ac02392a3c7bef9ff52c2e7c1f6475a0d427469b",
+      "expectation": "fixtures/manifests/builtins-v2/tan_wrong_arity.json",
+      "expectation_sha256": "361dae6e0efa3c5bd4d781b27c0ace72ba88c675660a81dec5f8d90997f519bd",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "exp_wrong_arity",
+      "path": "fixtures/builtins/exp_wrong_arity.ant",
+      "sha256": "3dd90308135b6c745610d28728abb4b2206ead8fc8933abd2ca5a57f5d78b7ea",
+      "expectation": "fixtures/manifests/builtins-v2/exp_wrong_arity.json",
+      "expectation_sha256": "6aa4ec06ac6c3ad8172d7fc018ef6d42a53666f5577a6d6c69e00581b55d1106",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "ln_wrong_arity",
+      "path": "fixtures/builtins/ln_wrong_arity.ant",
+      "sha256": "49a6b1c5f33ac5a8d501cc7d8b11cd817fe1975d9edaf7897278f4c48780a678",
+      "expectation": "fixtures/manifests/builtins-v2/ln_wrong_arity.json",
+      "expectation_sha256": "a815bb878991309a2681393692bfd2a6b1f18ad26405fb574d46730e0f61ac3c",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "log10_wrong_arity",
+      "path": "fixtures/builtins/log10_wrong_arity.ant",
+      "sha256": "745f95f515a5fa88edfa19d5c7ceb10efb8f3f7d37ea753494121fd97c3b020b",
+      "expectation": "fixtures/manifests/builtins-v2/log10_wrong_arity.json",
+      "expectation_sha256": "2170d3cd6a6d0744c9fd9255a8a9173c9b82e1ef813689cc5ecbb4c4968727fe",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "sqrt_wrong_arity",
+      "path": "fixtures/builtins/sqrt_wrong_arity.ant",
+      "sha256": "9ed9df3ea63fae1ad6dff7cf8579815e66c0e3973e9b000aa417254669475cea",
+      "expectation": "fixtures/manifests/builtins-v2/sqrt_wrong_arity.json",
+      "expectation_sha256": "35365c4f4e9fe93d1587a978e8c9a940be6825660f2ae1817108ca3c0fca0fd9",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "abs_wrong_arity",
+      "path": "fixtures/builtins/abs_wrong_arity.ant",
+      "sha256": "5d2fb7c6236806b1b73ceaa9afa18b980b8d6192946210000a3bf1d1d20d5113",
+      "expectation": "fixtures/manifests/builtins-v2/abs_wrong_arity.json",
+      "expectation_sha256": "10cdaaea4afc9c9dfa04e36a1d85b439500c7dc38b7188cb981b505eff7bf13c",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "floor_wrong_arity",
+      "path": "fixtures/builtins/floor_wrong_arity.ant",
+      "sha256": "4c71b941c145fbf0948c269b3f42b8258c9c5e48715d5c5781accf45aa4f0dfa",
+      "expectation": "fixtures/manifests/builtins-v2/floor_wrong_arity.json",
+      "expectation_sha256": "780afb19961cc7145f098122a6429aadad41d8811b0e4d402e0d7b8a5faf0196",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "ceil_wrong_arity",
+      "path": "fixtures/builtins/ceil_wrong_arity.ant",
+      "sha256": "a7ceb80ba34aea915697dca89c40a153d99e8277d2bc0f345b5b7537e01be896",
+      "expectation": "fixtures/manifests/builtins-v2/ceil_wrong_arity.json",
+      "expectation_sha256": "bc71c33759e95c1f90ee067c13abf7044c4ff69f86d58b18f769b7407bb8be71",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "ceiling_wrong_arity",
+      "path": "fixtures/builtins/ceiling_wrong_arity.ant",
+      "sha256": "40730f6ef7e664f0635d617f951b856452c0794f488ee3c62bb1847cd09af380",
+      "expectation": "fixtures/manifests/builtins-v2/ceiling_wrong_arity.json",
+      "expectation_sha256": "982ca8823e10e5131791c214a56d5929f2f0bde8f86c5c9cc108b1016b25cea9",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "pow_wrong_arity",
+      "path": "fixtures/builtins/pow_wrong_arity.ant",
+      "sha256": "e3c08f0b5da898f9daeeb29efb8084d89b811710c9805a41691e96524b1b67f3",
+      "expectation": "fixtures/manifests/builtins-v2/pow_wrong_arity.json",
+      "expectation_sha256": "1c7d15a47dfa1a5a9c71d61674e0cd53f4313f5f693c90f7f5bbf4a6ae684962",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "power_wrong_arity",
+      "path": "fixtures/builtins/power_wrong_arity.ant",
+      "sha256": "caa6fdef39ec5f65e25df96fec81f875c27b3d83508c9311a04f5a1a2bd44661",
+      "expectation": "fixtures/manifests/builtins-v2/power_wrong_arity.json",
+      "expectation_sha256": "f21d6cc453d7a69ef4ccb7c394ec052b19618328fb3985f14cc3a1c0f314b1dd",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "log_base",
+      "path": "fixtures/builtins/log_base.ant",
+      "sha256": "6386b232882cb724f371f37e0ea9040a202a07df27b4b49b6f3b78e3295caeef",
+      "expectation": "fixtures/manifests/builtins-v2/log_base.json",
+      "expectation_sha256": "bd0e5bc044c431cd4d7887dfa52808336a315e200b5190f5e88c43a560900abd",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "log_base_symbols",
+      "path": "fixtures/builtins/log_base_symbols.ant",
+      "sha256": "db139ab1a1489d473f8a72093227272780fe361700cc85b59d598333f62fe150",
+      "expectation": "fixtures/manifests/builtins-v2/log_base_symbols.json",
+      "expectation_sha256": "bd89581a9a96a8a5dace15a1594ab103c0e6a53144467baf138708ad3a7208d1",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "min_one",
+      "path": "fixtures/builtins/min_one.ant",
+      "sha256": "627e0af410e0fd731d814f59d96285d907a62bf757ec2cd25c7a1c4ef449a01d",
+      "expectation": "fixtures/manifests/builtins-v2/min_one.json",
+      "expectation_sha256": "37002dc95a26579b09b7d05b46797e74b4a4d8f5e6837bef6fa6e2192d57f81d",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "max_one",
+      "path": "fixtures/builtins/max_one.ant",
+      "sha256": "8a0d06c7450d70155a287abf95becdb73137b924d7af20aabdfdb43e26dddc06",
+      "expectation": "fixtures/manifests/builtins-v2/max_one.json",
+      "expectation_sha256": "ff7661dfdfa3c7b9874070e1680cca2d485ae4c358518ae7732513fd3de3d4be",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "min_many",
+      "path": "fixtures/builtins/min_many.ant",
+      "sha256": "929352c8f19bbc4b7b69a669bf905225003698a7f3faa55e9b3d1fa9ba824fd2",
+      "expectation": "fixtures/manifests/builtins-v2/min_many.json",
+      "expectation_sha256": "d3fea065d4e6337823b4796a4f04f644fd8bfe1501d1dca182f70bfbd8118d8e",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "max_many",
+      "path": "fixtures/builtins/max_many.ant",
+      "sha256": "3a44eedabe7f55c5f58d18d667414544e17698a1b53be735527aecddae964533",
+      "expectation": "fixtures/manifests/builtins-v2/max_many.json",
+      "expectation_sha256": "3faa96003d3814967269e6f4cbecf588947dbf920cc0118b25d67de7e07b8bb7",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "constant_pi",
+      "path": "fixtures/builtins/constant_pi.ant",
+      "sha256": "731fb62b103813304e74ab2679cfe468d19da8fc9952abdcafbd5940f4567008",
+      "expectation": "fixtures/manifests/builtins-v2/constant_pi.json",
+      "expectation_sha256": "e1c72355eaea3346e79bed295f3597f94a63cb2a33d1bde5006a29c51fb6edaf",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "constant_euler",
+      "path": "fixtures/builtins/constant_euler.ant",
+      "sha256": "dfcd32673449fda3f5cffbe867a0b63e1a584595264bb6c3878140b84834987e",
+      "expectation": "fixtures/manifests/builtins-v2/constant_euler.json",
+      "expectation_sha256": "34da08d66ed0380f57f736d6a24b0fa54d7ff793cfd4e861a40d2128660c996a",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "constant_composed",
+      "path": "fixtures/builtins/constant_composed.ant",
+      "sha256": "03066a59b988338002034bc61ecd7cc61e4e18c0c376f477f1597ff0d0c50173",
+      "expectation": "fixtures/manifests/builtins-v2/constant_composed.json",
+      "expectation_sha256": "a2dcec8a2e2efb847026305a85273b19f61a070884e02a901888de6b41ae40d1",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "ordinary_e",
+      "path": "fixtures/builtins/ordinary_e.ant",
+      "sha256": "a988d71741404cad23d4622701ec6b6699ebee257f2c3a8766a3c9600b9cf15b",
+      "expectation": "fixtures/manifests/builtins-v2/ordinary_e.json",
+      "expectation_sha256": "7076796b0b51a2255d5dc6a2b3e7d8a3ad113d2e74b8ac9b0b27d4ca5cddb9f8",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "ordinary_upper_pi",
+      "path": "fixtures/builtins/ordinary_upper_pi.ant",
+      "sha256": "3e7ffa99aef63e3ece3d20b4bb55424a3d837652b4355ecc219d16d9924eccd7",
+      "expectation": "fixtures/manifests/builtins-v2/ordinary_upper_pi.json",
+      "expectation_sha256": "df44730755c002ba264f1cddc0955916bf4cbad81e1ec9e487aa60181beea257",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "time_rate",
+      "path": "fixtures/builtins/time_rate.ant",
+      "sha256": "cc09c1db2906ff8f57889e6656b0ccaca2eec9e9f52566217b3fb4ccef182b53",
+      "expectation": "fixtures/manifests/builtins-v2/time_rate.json",
+      "expectation_sha256": "4e88aa024142ce2b766b2248e8078b994d0e028d0f779bc0fa20f181ba1e1db0",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "time_call_rate",
+      "path": "fixtures/builtins/time_call_rate.ant",
+      "sha256": "9acf3bb3e98d343963ac962bcfb1eab2eb2e8e2eea6aafbcb61636c3936f493b",
+      "expectation": "fixtures/manifests/builtins-v2/time_call_rate.json",
+      "expectation_sha256": "156253912b9fcdc7cad8d88611a1f86d436b5d099b11b679cf2a02a2b93249a7",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "time_initial",
+      "path": "fixtures/builtins/time_initial.ant",
+      "sha256": "5e911a64f1c1354e8f16f772b578037f932243c80484220e8f3a7e96f1c27418",
+      "expectation": "fixtures/manifests/builtins-v2/time_initial.json",
+      "expectation_sha256": "e405c6de56ece6e868d3e0c87bf5bc8d85a0c2e47740054739dfc9e6d260dc12",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "time_call_initial",
+      "path": "fixtures/builtins/time_call_initial.ant",
+      "sha256": "79eaf4fd3c251e66d0176837ca47a039598005dc6229302e1dc64fc6b464a09a",
+      "expectation": "fixtures/manifests/builtins-v2/time_call_initial.json",
+      "expectation_sha256": "aec0d8c7012916345b54696710cb0b5affd09a1f6650f88ef9f51b3541f14f97",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "time_composed",
+      "path": "fixtures/builtins/time_composed.ant",
+      "sha256": "fcede6a002268ba2407d5fd0e637576f58a62d69e8fe31a7f243c4e9883c76ed",
+      "expectation": "fixtures/manifests/builtins-v2/time_composed.json",
+      "expectation_sha256": "972d052b8fb2f8cf2cd1d32a82d417de31b97dde85a3ae1a294f276df0251e06",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unknown_initial",
+      "path": "fixtures/builtins/unknown_initial.ant",
+      "sha256": "295e0e88651c9f9ecf070746f04483ae507f9928cdea7232dac4e0109ca32cb6",
+      "expectation": "fixtures/manifests/builtins-v2/unknown_initial.json",
+      "expectation_sha256": "5efcab9a469bbe03b472418a712da887012d26e5e7f2dc7f72ed536b5e8f2ab9",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unknown_chain",
+      "path": "fixtures/builtins/unknown_chain.ant",
+      "sha256": "4a0cc929bd1f9421a914a024d888e22ee6057998e3e7647e1404eb0d8556b936",
+      "expectation": "fixtures/manifests/builtins-v2/unknown_chain.json",
+      "expectation_sha256": "e33a3d0280e0a09d6ce90203f58bdc886021c1232d3dbec7546a2ee00621704f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "dynamic_initial_known",
+      "path": "fixtures/builtins/dynamic_initial_known.ant",
+      "sha256": "0aa0eb825214b77f59df9912ba61b7a82312e7a6dd5f38d9ae60861f9dfd8f57",
+      "expectation": "fixtures/manifests/builtins-v2/dynamic_initial_known.json",
+      "expectation_sha256": "e85c77872fa7b331fb1121b0ae85dfacb4d19423bd147d42b0478a674a5c026c",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "boundary_initial_known",
+      "path": "fixtures/builtins/boundary_initial_known.ant",
+      "sha256": "47e59ea201c2e0d3a5cabf4edf8f6f301feb2d2ac9464502691849f6d2b4d9db",
+      "expectation": "fixtures/manifests/builtins-v2/boundary_initial_known.json",
+      "expectation_sha256": "bce5ec67452b7de9ef3affddf9555392b290aabe62cb420556ef91a61a8cc0c5",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "modifier_builtin",
+      "path": "fixtures/builtins/modifier_builtin.ant",
+      "sha256": "3cf695d68581e2b4e9d002c1e098817e20f22e5c8b7b36728a9193b4f2c81e47",
+      "expectation": "fixtures/manifests/builtins-v2/modifier_builtin.json",
+      "expectation_sha256": "5c86d4220809e3208322c32c0f6fe79a1bd8cfedda9a4167b29275b9e5fdc80e",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "named_model_nested",
+      "path": "fixtures/builtins/named_model_nested.ant",
+      "sha256": "4c743f473875fe5b60525f07a200353e3abd36cff3904c741bcee4a925360436",
+      "expectation": "fixtures/manifests/builtins-v2/named_model_nested.json",
+      "expectation_sha256": "bd9feb07dcdac3eb9e8431e72a6705e7392ec4e105c417cfef5bcc534cbfc58f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "reassigned_law",
+      "path": "fixtures/builtins/reassigned_law.ant",
+      "sha256": "c0fb295e3a775173d1cc57128c75c8e60f2cdbc109df4186ed3bc6442afed4d8",
+      "expectation": "fixtures/manifests/builtins-v2/reassigned_law.json",
+      "expectation_sha256": "ddbddd5946bcdf348ecf4082442ca1d0fbc1687c8be428091c2491158c099d81",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "grouping_builtin",
+      "path": "fixtures/builtins/grouping_builtin.ant",
+      "sha256": "27547d34a218d81c84a21ddaacd0bd7f1703955cd2d2ceefd1bb9ea76eb388af",
+      "expectation": "fixtures/manifests/builtins-v2/grouping_builtin.json",
+      "expectation_sha256": "c0717b610ef93b59bf843ab596bd6523b0f5fc05dc867e1e1bbcd8d2e51d04e6",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "runtime_domain_unknown",
+      "path": "fixtures/builtins/runtime_domain_unknown.ant",
+      "sha256": "23eb2a4457fbea3915a7eb473e2e05b075a78a3b206a2ea4bd26398553ce8b9e",
+      "expectation": "fixtures/manifests/builtins-v2/runtime_domain_unknown.json",
+      "expectation_sha256": "dabe0aa905a4fed0f5f4a990b512070d6fec529c19f4d17c76fff18955f9313d",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "runtime_domain_negative",
+      "path": "fixtures/builtins/runtime_domain_negative.ant",
+      "sha256": "c1102f4b2e6129d30e88202d6eae47095da5c6fb729820fdb42dd466dc3f1962",
+      "expectation": "fixtures/manifests/builtins-v2/runtime_domain_negative.json",
+      "expectation_sha256": "1e9b6ea7add1d65a62d355e696af0798ebc0fbee532d7ebb06c7455fe716bfd2",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "units_explicit_dimensionless",
+      "path": "fixtures/builtins/units_explicit_dimensionless.ant",
+      "sha256": "e31ba2507f2590a26e7c6167e6d9059f61ff9ec2bc55eec9e3998622ec048001",
+      "expectation": "fixtures/manifests/builtins-v2/units_explicit_dimensionless.json",
+      "expectation_sha256": "f31ad2cef53a98fe1f6d4e5d7c09e35f3e94c2ef318172b2b3569496a39955eb",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "units_abs_preserves",
+      "path": "fixtures/builtins/units_abs_preserves.ant",
+      "sha256": "118af3d8201a10e20404f483079f911ebf268b05d574518d07a6a7ca8f007f46",
+      "expectation": "fixtures/manifests/builtins-v2/units_abs_preserves.json",
+      "expectation_sha256": "2e91059e56111409be7ffa3369242d1d4af3d726cd0cf65fe5155c9273b1df44",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "units_min_preserves",
+      "path": "fixtures/builtins/units_min_preserves.ant",
+      "sha256": "6a239df78a57c9576f1d7e315bc7e10be0a2cad7e4449d1d13b95a3df1f267e6",
+      "expectation": "fixtures/manifests/builtins-v2/units_min_preserves.json",
+      "expectation_sha256": "d59eaeb43a669176b093f8eda53c72fa919e6d8417a81d757e269ba4a8e66f28",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "builtin_trivia",
+      "path": "fixtures/builtins/builtin_trivia.ant",
+      "sha256": "4898341e1c2f9fdaa7907d04cec603f23cabc26a723599d35053e62331c8cc74",
+      "expectation": "fixtures/manifests/builtins-v2/builtin_trivia.json",
+      "expectation_sha256": "522323697e10db669bbccbb75fbb4d211246d9111cb71dcb44df526528a22a0a",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "min_empty",
+      "path": "fixtures/builtins/min_empty.ant",
+      "sha256": "2af50a8d08026b29151708b10a28112deae80a7d36eee3c005afef38723cef47",
+      "expectation": "fixtures/manifests/builtins-v2/min_empty.json",
+      "expectation_sha256": "50457411efbade6ffedb8894fb080d8a472685fa16be65da50df32877e7eaff1",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "max_empty",
+      "path": "fixtures/builtins/max_empty.ant",
+      "sha256": "73fc469238e1e9960fb9eeffb94c8856dc70475a06b06ec948c073ea2842bcca",
+      "expectation": "fixtures/manifests/builtins-v2/max_empty.json",
+      "expectation_sha256": "a9928a6049310c14b46f062c4815d2ed03d1580de3b6406395e21b948203c074",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "log_arity_three",
+      "path": "fixtures/builtins/log_arity_three.ant",
+      "sha256": "0330f37612fd5f3054b6a2695ce7e140c5a7b7a110210ee4fe77d90aca53c264",
+      "expectation": "fixtures/manifests/builtins-v2/log_arity_three.json",
+      "expectation_sha256": "ed855630de9c6076bc899b3862dfb18ef1123205d31b02ff7f4a92eef6660982",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "time_arity_one",
+      "path": "fixtures/builtins/time_arity_one.ant",
+      "sha256": "6e70751e29b93bae1df16563b012eef3004e5574d4cedbf5a0d544bd25b1c337",
+      "expectation": "fixtures/manifests/builtins-v2/time_arity_one.json",
+      "expectation_sha256": "2703b0bd128c422e1a271633994179689c81758ffbcadf59181c169448f671d1",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "zero_unary_arity",
+      "path": "fixtures/builtins/zero_unary_arity.ant",
+      "sha256": "c95f52ef406747486f8821cb2572889c612a3b689dd04db85237e563d6ff0622",
+      "expectation": "fixtures/manifests/builtins-v2/zero_unary_arity.json",
+      "expectation_sha256": "8880f9091361e0cc91ee72be34fc685f20fc839fef2dd530f1d96493e24f8e56",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "missing_argument",
+      "path": "fixtures/builtins/missing_argument.ant",
+      "sha256": "a7898f183f1c5c964d1b10031e003383cd0ed0ebb691e70fc3cc649997517e7b",
+      "expectation": "fixtures/manifests/builtins-v2/missing_argument.json",
+      "expectation_sha256": "1519eaa49a197912f7396c413077eb7607769900d9bf58e0d5a2b3dcc6faa9a1",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "unknown_call",
+      "path": "fixtures/builtins/unknown_call.ant",
+      "sha256": "65c626fcd04b62a432a09ea7161f1ef576116db59f2bcc2b1ee7b9de114617cc",
+      "expectation": "fixtures/manifests/builtins-v2/unknown_call.json",
+      "expectation_sha256": "c6ffdcbc218c2fc96321fdd419f1641469e37b2c37d9727a3d722d7827f7748d",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "wrong_case_call",
+      "path": "fixtures/builtins/wrong_case_call.ant",
+      "sha256": "cfaacd455f0995d37c0b0162848b792d52a6ec066c37df4f34e6c1e3a6aa04b0",
+      "expectation": "fixtures/manifests/builtins-v2/wrong_case_call.json",
+      "expectation_sha256": "d7bb430b5163875e31da79afa28b7404592d893ca9241b03748d2676c3f775b5",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "deferred_root",
+      "path": "fixtures/builtins/deferred_root.ant",
+      "sha256": "b4d6378c2c9f1d6e6d89101cb9e96e110f28b3ebbf73c8c4c36d2819c805fc8c",
+      "expectation": "fixtures/manifests/builtins-v2/deferred_root.json",
+      "expectation_sha256": "8575699c0c1dea7f80a62f3a7a9f0b43d9423bf683b0f8311dfded67e9bc1c04",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "domain_sqrt",
+      "path": "fixtures/builtins/domain_sqrt.ant",
+      "sha256": "568451db8557d9537723189e06efb34a1d41a30e73161e2060a925ae3101b2f1",
+      "expectation": "fixtures/manifests/builtins-v2/domain_sqrt.json",
+      "expectation_sha256": "08b1aff0525705791f089b7adaecf3803626c77c55e017b32dd0835f98ca1db4",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "domain_log",
+      "path": "fixtures/builtins/domain_log.ant",
+      "sha256": "3a45d86570bf9ebb54fbcc0ab40a37e8b412476d906f08edd3fea3b7bca21273",
+      "expectation": "fixtures/manifests/builtins-v2/domain_log.json",
+      "expectation_sha256": "ded51e48fdb935e09d87422c5b12926b27c75a1a50f54d75a0c914d864379e86",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "domain_exp",
+      "path": "fixtures/builtins/domain_exp.ant",
+      "sha256": "2db2f01f7a3b872cf7339495b394977e7279f219ebe90ba8ea556ae080e6131f",
+      "expectation": "fixtures/manifests/builtins-v2/domain_exp.json",
+      "expectation_sha256": "fcdb53bd9faf8a6c2fa376d80ba34b8dc8aee9a43e040c82d4c25875efff1fd8",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "domain_pow",
+      "path": "fixtures/builtins/domain_pow.ant",
+      "sha256": "f345337be4ed51600f7ccacd6d8babb989d7080e62afa72e96b737a25275d4e6",
+      "expectation": "fixtures/manifests/builtins-v2/domain_pow.json",
+      "expectation_sha256": "d13eed050601a525dd5b23da7290184cf9424670a0c406ce6095c75e3e4ce857",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "domain_logbase_one",
+      "path": "fixtures/builtins/domain_logbase_one.ant",
+      "sha256": "73070de7327df9fef904e21fce1006d3535dcebacaf46e89edf61d166b90e9d1",
+      "expectation": "fixtures/manifests/builtins-v2/domain_logbase_one.json",
+      "expectation_sha256": "93716aef7b38de72a734c8e242bc9a961168cc85500fddfb64f78219dc032732",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "domain_logbase_negative",
+      "path": "fixtures/builtins/domain_logbase_negative.ant",
+      "sha256": "3a4d4dbb43baa437bf4a5a4cb70a51b852708115dfd07cd088f7dfcc4b1c7cad",
+      "expectation": "fixtures/manifests/builtins-v2/domain_logbase_negative.json",
+      "expectation_sha256": "d25a8b3d513e147dfd50b972b278a986970b9b271656b93cb50c7b8cddf9dde0",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "domain_partial_sibling",
+      "path": "fixtures/builtins/domain_partial_sibling.ant",
+      "sha256": "d86a0fcfe53f48cd53f64de28016fd1fb64960da6696d3942f7b6b8bc472da40",
+      "expectation": "fixtures/manifests/builtins-v2/domain_partial_sibling.json",
+      "expectation_sha256": "a944d3d5454015a7a59d8fbf2c009747720a2ce5e69d3b2cc1c384a3a67d5e5f",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "units_trig_dimensioned",
+      "path": "fixtures/builtins/units_trig_dimensioned.ant",
+      "sha256": "084a9e154022e5084daf96f713811d137e074fc214fcda328366af08b5909acc",
+      "expectation": "fixtures/manifests/builtins-v2/units_trig_dimensioned.json",
+      "expectation_sha256": "24066a5792f89f345e7a919acac33d2e61bad4661e59fe4cbe4df946cc26af7a",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "units_inconsistency"
+    },
+    {
+      "id": "units_exp_dimensioned",
+      "path": "fixtures/builtins/units_exp_dimensioned.ant",
+      "sha256": "a99058124e74e80f9ea60cd020686421c98949c600c22a1a421bd144c26b9cdf",
+      "expectation": "fixtures/manifests/builtins-v2/units_exp_dimensioned.json",
+      "expectation_sha256": "8819df178d2e543bd9deaa76f2b234efcb49c1e4f7f87e72417a2dd21609a814",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "units_inconsistency"
+    },
+    {
+      "id": "units_min_incompatible",
+      "path": "fixtures/builtins/units_min_incompatible.ant",
+      "sha256": "8a4bc44d98b2353e05af090c1b9c07e7f567ac7f78e0ffb48b11f924ec20e1ee",
+      "expectation": "fixtures/manifests/builtins-v2/units_min_incompatible.json",
+      "expectation_sha256": "dd1fda98c119b5e6dc55229551d3e3802e3e95f169f258a22766e9cbf0366259",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "units_inconsistency"
+    },
+    {
+      "id": "builtin_target",
+      "path": "fixtures/builtins/builtin_target.ant",
+      "sha256": "34bba3c378d9722878237f8abc4833c759ccb940694d9bf747c2c72c592f944b",
+      "expectation": "fixtures/manifests/builtins-v2/builtin_target.json",
+      "expectation_sha256": "3e32b4123ec049325c535652439838c60ab78b2883afe963e4eca47b11e9e55a",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "constant_target",
+      "path": "fixtures/builtins/constant_target.ant",
+      "sha256": "d258be4f0d35e5faa69e5c805d815300b0e38883631686716f3e92feaa05c7a8",
+      "expectation": "fixtures/manifests/builtins-v2/constant_target.json",
+      "expectation_sha256": "827e9772f7778b9990689366b3ed0467067e3e23b862126482b522884de53e5f",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "time_default_units",
+      "path": "fixtures/builtins/time_default_units.ant",
+      "sha256": "d0d0a91a8c3623ecb73c4a753d32a3d1f8402859dd6c2c9448931a5f6806713e",
+      "expectation": "fixtures/manifests/builtins-v2/time_default_units.json",
+      "expectation_sha256": "877ecebe8e3dd1e2430237e6e4473bf2d7e9281f20df71c5f16dec3ec2d057f6",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "time_unannotated_units",
+      "path": "fixtures/builtins/time_unannotated_units.ant",
+      "sha256": "380735014a7f30c13675f7b5bc272c485cbb9fd3c97210fab120d7c2bac44c53",
+      "expectation": "fixtures/manifests/builtins-v2/time_unannotated_units.json",
+      "expectation_sha256": "53dce4c3447dbbd1c1a2e85708e4daf7886087f81f3e05525520b9b66c730333",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unknown_log_base_one",
+      "path": "fixtures/builtins/unknown_log_base_one.ant",
+      "sha256": "d2c6ac5f913e6d21767a6007bf4c790d080ebada9d46d87c15db9f633f4cefeb",
+      "expectation": "fixtures/manifests/builtins-v2/unknown_log_base_one.json",
+      "expectation_sha256": "2a1306e50cd940e1d94944b48990b266ddb11cfc273141f80c93fd5f2ece991d",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "unknown_log_negative_value",
+      "path": "fixtures/builtins/unknown_log_negative_value.ant",
+      "sha256": "f2bb56d641bf3babf45ca051b2992afd2da36f93471077123dd1f8f8e7d90617",
+      "expectation": "fixtures/manifests/builtins-v2/unknown_log_negative_value.json",
+      "expectation_sha256": "1f2fa605ac272ede99278a1f16c6e551965d4da709d9e3cff9c2029417ebaa1c",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "unknown_pow_base_zero_negative",
+      "path": "fixtures/builtins/unknown_pow_base_zero_negative.ant",
+      "sha256": "1fd614512c6bbb8f9eadbe524eaf3809e40ab9181a710d72c7ebd47bfeff7de5",
+      "expectation": "fixtures/manifests/builtins-v2/unknown_pow_base_zero_negative.json",
+      "expectation_sha256": "c82078bb2a69a6cddd1dfae8c7a627fd56879ac9e4c9a28d95847b7a6df04ede",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "builtin_cycle",
+      "path": "fixtures/builtins/builtin_cycle.ant",
+      "sha256": "af56bb417a6d59a10b7f32d6180979368c2d4a9a65f12c07243a4879f5cda4e3",
+      "expectation": "fixtures/manifests/builtins-v2/builtin_cycle.json",
+      "expectation_sha256": "e693c236363392085be39d187740420b54c165691f8248a490c14cf6342f1d72",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "initialization_cycle"
+    },
+    {
+      "id": "explicit_reinitialization_builtin",
+      "path": "fixtures/builtins/explicit_reinitialization_builtin.ant",
+      "sha256": "35c73bebefa3d2ae78d358281f7563cb589b4b91ec86be6850ab84e44aea49c5",
+      "expectation": "fixtures/manifests/builtins-v2/explicit_reinitialization_builtin.json",
+      "expectation_sha256": "edcbbd69bf309021e4c5ecc8064753254f526dde896590da8420e8f508283542",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "builtin_after_unit_declaration",
+      "path": "fixtures/builtins/builtin_after_unit_declaration.ant",
+      "sha256": "a219db480444d80eea4eaaa03cbc48d1de59fe981d2518acb6de89d66d2f3271",
+      "expectation": "fixtures/manifests/builtins-v2/builtin_after_unit_declaration.json",
+      "expectation_sha256": "0c0369c7a7f1058cf963f89ee9a9f5f6e6fb6969a4286e7e22a08d18b03a325e",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "time_rate_source",
+      "path": "fixtures/builtins/time_rate_source.ant",
+      "sha256": "06d4d9c3d08ac48a90d43af6f808b6013e8ed9c6c8fe7cc8e12a5b56d136ec85",
+      "expectation": "fixtures/manifests/builtins-v2/time_rate_source.json",
+      "expectation_sha256": "cf61bf838249e58de46c6029ced44267af12bed86d227f4240a8c58354985795",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "time_call_rate_source",
+      "path": "fixtures/builtins/time_call_rate_source.ant",
+      "sha256": "4f1c9a70c48f97f42e010cd7bc63e1f9859f742eca90b4aa7de53e0dedf166a1",
+      "expectation": "fixtures/manifests/builtins-v2/time_call_rate_source.json",
+      "expectation_sha256": "f0d713aa324e175a7a1bd17e17c457bf64b26ef88de5aff0dc0cc26a5d8ffa06",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "runtime_unknown_source",
+      "path": "fixtures/builtins/runtime_unknown_source.ant",
+      "sha256": "b2bcc9417cbc94fc9c53a06dbc650fdea70af27d6b5cc508128c5f7d0937cb1a",
+      "expectation": "fixtures/manifests/builtins-v2/runtime_unknown_source.json",
+      "expectation_sha256": "11ec5198ff5a2bf6cdc69bdfd3f36d972e36208f3b6baeb0f51c23b249e1423a",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "runtime_negative_parameter",
+      "path": "fixtures/builtins/runtime_negative_parameter.ant",
+      "sha256": "6f5d2b393691fcb8d736435b49caf26b732a8d64e1e3175f940dd681796d63a7",
+      "expectation": "fixtures/manifests/builtins-v2/runtime_negative_parameter.json",
+      "expectation_sha256": "1e5cada27514b50e65562f1385130454619fa50a1ed9f5a98ea38582247392ba",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "builtin_after_custom_unit",
+      "path": "fixtures/builtins/builtin_after_custom_unit.ant",
+      "sha256": "537529a68a23930184b50018e1dabe078512322b69b5d2a1f6f6e8412f927a3d",
+      "expectation": "fixtures/manifests/builtins-v2/builtin_after_custom_unit.json",
+      "expectation_sha256": "f57033b52e95e2ffc2ce83c7b365108762cd06ac33af87eab6cc52648f7f5c3f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    }
+  ]
+}

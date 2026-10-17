@@ -1,0 +1,21 @@
+{
+  "schema": "antimony-rs-fixture-migrations-v1",
+  "phase": "species-default-units",
+  "changes": [
+    {
+      "fixture": "units_species_annotation",
+      "source_sha256": "fc327f8b75c9eef7c36dd967da4076b340c8e4db4447df64c1564823f038ce29",
+      "prior_native_profile_expectation": "unsupported_profile",
+      "new_native_profile_expectation": "target_supported",
+      "reason": "Species/default unit increment; original source path and executed reference golden unchanged"
+    },
+    {
+      "fixture": "units_model_defaults",
+      "source_sha256": "d58c7d03ad2b2141411183351f8723dbd816caee54d0b094b3e286d313921ef5",
+      "prior_native_profile_expectation": "unsupported_profile",
+      "new_native_profile_expectation": "target_supported",
+      "reason": "Species/default unit increment; original source path and executed reference golden unchanged"
+    }
+  ],
+  "note": "Legacy rejected directory is provenance/history, not current support authority; manifest expectations are authoritative."
+}

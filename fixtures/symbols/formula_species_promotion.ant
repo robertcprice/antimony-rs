@@ -1,0 +1,1 @@
+formula S=2;P=0;k=0.1;J:S=>P;k*S;

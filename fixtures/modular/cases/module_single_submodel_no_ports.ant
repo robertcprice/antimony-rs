@@ -1,0 +1,8 @@
+model sub()
+  species S = 3, P = 0;
+  k = 0.4;
+  J0: S -> P; k*S;
+end
+model *main()
+  A: sub();
+end

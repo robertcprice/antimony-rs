@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 2:  Cannot define 'f' as a new function because it is already a defined function.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "e5600325740b49a3ea35cb6f75db2fe49b1daa4e51a99001c1c38c7aca5bb71c",
+  "status": "REFERENCE_REJECTED"
+}

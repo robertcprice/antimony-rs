@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 2:  syntax error, unexpected ';', expecting ')' or ','",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "65a4e320b9cffe7a8b89c72e1b494c78285a4283814b553cabc66d6a714c59e3",
+  "status": "REFERENCE_REJECTED"
+}

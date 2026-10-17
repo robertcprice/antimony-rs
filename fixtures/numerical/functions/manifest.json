@@ -1,0 +1,54 @@
+{
+  "schema": "antimony-functions-numerical-v1",
+  "implemented_profile": "functions-core-v0.5-slice",
+  "grid": {
+    "start": 0,
+    "end": 10,
+    "steps": 100
+  },
+  "comparison": {
+    "absolute": 1e-08,
+    "relative": 1e-07
+  },
+  "solver": {
+    "name": "cvode",
+    "relative_tolerance": 1e-10,
+    "absolute_tolerance": 1e-12,
+    "maximum_num_steps": 100000,
+    "variable_step_size": false,
+    "stiff": true
+  },
+  "cases": [
+    {
+      "id": "function_kinetic_law_and_observable",
+      "path": "fixtures/numerical/functions/function_kinetic_law_and_observable.ant",
+      "sha256": "cf981827c1660067034e9bfb998223ef85ea78351ca82016f23956288f2b459a",
+      "selections": [
+        "time",
+        "S",
+        "[S]",
+        "P",
+        "[P]",
+        "y",
+        "k",
+        "default_compartment"
+      ],
+      "provenance": "Independent hand-derived user-defined function kinetic law lin_rate(k, S) = k*S with S(0) = 4, P(0) = 0, k = 0.5 coupled to user-defined function assignment rule y := affine_obs(2, S, 1) = 2*S + 1; no fitted or solver-derived coefficients."
+    },
+    {
+      "id": "nested_function_rate_and_boundary_rule",
+      "path": "fixtures/numerical/functions/nested_function_rate_and_boundary_rule.ant",
+      "sha256": "30f51ae4b02fb7d0efd29fecc16e3cf3c76bbb5d4b36b1229bd9e3f26a2c36ab",
+      "selections": [
+        "time",
+        "S",
+        "[S]",
+        "B",
+        "[B]",
+        "u",
+        "default_compartment"
+      ],
+      "provenance": "Independent hand-derived zero-arg user function base_drive() = 1 driving rate rule du/dt = base_drive(), u(0) = 0 and nested user function ramp(u, 0.2) = base_drive() + 0.2*u driving boundary species B := ramp(u, 0.2) and reaction B => S with rate B, S(0) = 0; no fitted or solver-derived coefficients."
+    }
+  ]
+}

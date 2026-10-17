@@ -1,0 +1,5 @@
+compartment C;
+species S in C;
+var k;
+S -> ; C*k*S;
+at (time > 2): S = 1;

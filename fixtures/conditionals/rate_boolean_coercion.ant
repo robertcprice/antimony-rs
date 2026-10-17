@@ -1,0 +1,1 @@
+species S=0;J:=>S;and(time>0,S<2);

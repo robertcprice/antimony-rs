@@ -1,0 +1,5 @@
+compartment C_int = 2;
+C_int is cell;
+species S in cell = 4;
+J_int: S -> ; cell*0.2*S;
+J_int is v_deg;

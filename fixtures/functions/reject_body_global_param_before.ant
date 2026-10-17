@@ -1,0 +1,3 @@
+k = 5;
+function f(x) x + k end
+a = f(2);

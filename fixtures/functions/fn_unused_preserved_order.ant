@@ -1,0 +1,3 @@
+function z_fn(x) x + 1 end
+function a_fn(y) y * 2 end
+k = 1;

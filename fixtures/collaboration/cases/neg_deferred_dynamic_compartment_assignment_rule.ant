@@ -1,0 +1,4 @@
+compartment cell = 1;
+species S in cell;
+S = 2;
+cell := 1 + 0.05 * time;

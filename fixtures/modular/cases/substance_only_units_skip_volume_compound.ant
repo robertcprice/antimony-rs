@@ -1,0 +1,10 @@
+unit mmol = 1e-3 mole;
+unit L = litre;
+unit per_sec = 1 / second;
+compartment cell = 2;
+cell has L;
+substanceOnly species S in cell = 5;
+S has mmol;
+k = 0.1;
+k has per_sec;
+S -> ; k*S;

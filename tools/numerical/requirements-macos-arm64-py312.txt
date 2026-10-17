@@ -1,0 +1,3 @@
+# Only reviewed CPython 3.12/macOS 14+ arm64 wheels; no source builds.
+libroadrunner==2.10.0 --hash=sha256:66f61f8ed7c40600895d2c8250e8515e25dc7648f5681a6e6a2e988701701e2a
+numpy==2.2.6 --hash=sha256:894b3a42502226a1cac872f840030665f33326fc3dac8e57c607905773cdcde3

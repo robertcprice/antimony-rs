@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 2:  'f' is a reserved word in Antimony (the name of a built-in function) and cannot be used as the name of a variable or other named element.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "da6f27962bd832375528d9520c5317bedf99b16d0abe92f471611950138f7f4a",
+  "status": "REFERENCE_REJECTED"
+}

@@ -1,0 +1,1 @@
+a = /* comment */ sin ( 0 ); b=max(1, /* nested */ min(2,3));

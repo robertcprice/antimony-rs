@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"leq(1)\":  Error when parsing input 'leq(1)' at position 6:  The function 'leq' takes at least two arguments, but 1 were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "6bad3fe2d586145b3cb19b7067e714ed0019f2dd31dce541a35dc2698395fa9f",
+  "status": "REFERENCE_REJECTED"
+}

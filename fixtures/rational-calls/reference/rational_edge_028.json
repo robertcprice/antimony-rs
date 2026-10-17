@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"sin(1/2)\":  Error when parsing input 'sin(1/2)' at position 8:  syntax error, unexpected number in rational notation",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "f21a6b5fd1dbfc865f8870618af1e2e94e8ea34c3767998773cb0d41a6ea7ed5",
+  "status": "REFERENCE_REJECTED"
+}

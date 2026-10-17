@@ -1,0 +1,4 @@
+species S = 1, P = 0;
+k = 0.3;
+S -> P; k*S;
+at (time > 4): S = S + 5;

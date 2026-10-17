@@ -1,0 +1,5 @@
+compartment C = 1;
+species S in C = 4;
+k = 0.2;
+S -> ; C*k*S;
+E_dilute: at (time > 3): C = 2, S = S / 2;

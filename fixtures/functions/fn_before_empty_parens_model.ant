@@ -1,0 +1,4 @@
+function f(x) x * 4 end
+model m()
+  a = f(2);
+end

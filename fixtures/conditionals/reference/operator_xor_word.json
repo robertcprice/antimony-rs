@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"truexorfalse\":  Error when parsing input 'true xor false' at position 8:  syntax error, unexpected element name",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "9c4885a9f30096a060c06ad7822e66324fff48633766de81af651b7960e0e834",
+  "status": "REFERENCE_REJECTED"
+}

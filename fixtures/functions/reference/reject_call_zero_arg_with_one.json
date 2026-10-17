@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 2:  3 SBML error(s) when creating module '__main'.  libAntimony tries to catch these errors before libSBML complains, but sometimes cannot.  Error message(s) from libSBML:\n\nThe number of arguments used in a call to a function defined by a <functionDefinition> must equal the number of arguments accepted by that function, or in other words, the number of <bvar> elements inside the <lambda> element of the function definition.  \nReference: L3V2 Section 4.3.4\n The formula 'f(1)' in the math element of the <initialAssignment> uses the function 'f' which requires a different number of arguments than the number supplied.\n\nThe interpretation the Hierarchical Model Composition constructs to produce a kind of 'flattened' version of the model devoid of the comp package constructs must produce a valid SBML Level 3 model.\nReference: L3V1 Comp V1 Appendix A1\n Errors that follow relate to the flattened document produced using the CompFlatteningConverter.\n\nThe number of arguments used in a call to a function defined by a <functionDefinition> must equal the number of arguments accepted by that function, or in other words, the number of <bvar> elements inside the <lambda> element of the function definition.  \nReference: L3V2 Section 4.3.4\n The formula 'f(1)' in the math element of the <initialAssignment> uses the function 'f' which requires a different number of arguments than the number supplied.\n",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "be7c6a3c43cc25aa25cbd2e641eca3a217dedf2fdbf2fdec2fb88169b908e542",
+  "status": "REFERENCE_REJECTED"
+}

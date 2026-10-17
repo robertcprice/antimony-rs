@@ -1,0 +1,4 @@
+function bad_wave(amp)
+  amp * (1 + sin(time))
+end
+x := bad_wave(2);

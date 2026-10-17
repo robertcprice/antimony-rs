@@ -1,0 +1,13 @@
+function mm(S, Vm, Km)
+  Vm * S / (Km + S)
+end
+model pulse_mod(S)
+  Vm = 1.0;
+  Km = 2.0;
+  S -> ; mm(S, Vm, Km);
+  E0: at (time > 4): S = S + 3;
+end
+model *main()
+  species A = 5;
+  M: pulse_mod(A);
+end

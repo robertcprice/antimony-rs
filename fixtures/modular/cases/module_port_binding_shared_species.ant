@@ -1,0 +1,9 @@
+model step_mod(S_in, S_out)
+  k = 0.3;
+  S_in -> S_out; k*S_in;
+end
+model *cascade()
+  species A = 10, B = 0, C = 0;
+  M1: step_mod(A, B);
+  M2: step_mod(B, C);
+end

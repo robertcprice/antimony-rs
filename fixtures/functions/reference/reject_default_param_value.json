@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  syntax error, unexpected '=', expecting ')' or ','",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "f5951f5f2f5284052ee520a7ce862276260fd7d0ac3256fa3924ebde0be6f33a",
+  "status": "REFERENCE_REJECTED"
+}

@@ -1,0 +1,11 @@
+/target/
+/.venv*/
+/.cache/
+/artifacts/
+.DS_Store
+
+# Python reference-tool interpreter caches and local machine evidence receipts.
+__pycache__/
+*.py[cod]
+tools/**/*evidence.json
+

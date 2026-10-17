@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  syntax error, unexpected '\\n', expecting '$' or element name",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "53fbb626b5078ab62e6ce1ad073d22e10ec196b70238569b93febe8005e2b720",
+  "status": "REFERENCE_REJECTED"
+}

@@ -1,0 +1,7 @@
+model incomplete_unnamed_chain_with_unset_rates()
+  species A, B, C;
+  const k1, k2;
+  A -> B; k1 * A;
+  B -> C; k2 * B;
+  sum_abc := A + B + C;
+end

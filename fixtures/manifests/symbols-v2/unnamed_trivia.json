@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 2:  syntax error, unexpected '*'",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "15df985e74fac78af0987922513d80d43f5a6f9fd55e37466a35b3a14b01a9a5",
+  "status": "REFERENCE_REJECTED"
+}

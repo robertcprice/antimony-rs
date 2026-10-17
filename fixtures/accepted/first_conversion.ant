@@ -1,0 +1,6 @@
+model first_conversion()
+  compartment cell = 1;
+  species A in cell, B in cell;
+  A = 12; B = 0; k = 0.2;
+  J0: A => B; k*A*cell;
+end

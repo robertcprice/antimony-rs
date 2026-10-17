@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"not(true, false, true)\":  Error when parsing input 'not(true,false,true)' at position 20:  The function 'not' takes exactly one argument, but 3 were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "730e1079482dc8a63934a774c6d78bec73a440bd765e5146248d13bebb048c02",
+  "status": "REFERENCE_REJECTED"
+}

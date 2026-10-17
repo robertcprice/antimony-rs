@@ -1,0 +1,447 @@
+{
+  "schema_version": 1,
+  "profile_id": "kinetic-core-v0.1",
+  "status": "target_profile_partial_flat_declarations_verified",
+  "upstream_source": {
+    "repository": "https://github.com/sys-bio/antimony",
+    "research_commit": "f3f5c6b7f3f22ab48f8e382a9318ef50bce2b4b2",
+    "release_target": null,
+    "executable_oracle_verified": true,
+    "provisional_local_oracle": "antimony 3.2.0; independent python-libsbml 5.21.2",
+    "oracle_evidence": [
+      "docs/ORACLE.md",
+      "docs/reviews/phase1-review.md"
+    ]
+  },
+  "runtime": "native_rust_no_simulator",
+  "sbml_export": {
+    "level": 3,
+    "version": 2,
+    "packages": []
+  },
+  "features": [
+    {
+      "id": "F01",
+      "name": "source_and_trivia",
+      "target": "include",
+      "phase": "P2",
+      "implementation": "partial_flat_declarations_verified",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "tests/initialization.rs",
+        "docs/reviews/phase3-initialization-review.md",
+        "tests/flat_syntax.rs",
+        "tests/flat_syntax_review.rs",
+        "docs/reviews/flat-declarations-review.md"
+      ]
+    },
+    {
+      "id": "F02",
+      "name": "flat_model_boundary",
+      "target": "include",
+      "phase": "P2",
+      "implementation": "partial_flat_declarations_verified",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "tests/initialization.rs",
+        "docs/reviews/phase3-initialization-review.md",
+        "tests/flat_syntax.rs",
+        "tests/flat_syntax_review.rs",
+        "docs/reviews/flat-declarations-review.md"
+      ]
+    },
+    {
+      "id": "F03",
+      "name": "implicit_and_explicit_symbols",
+      "target": "include",
+      "phase": "P3",
+      "implementation": "partial_flat_declarations_verified",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "tests/initialization.rs",
+        "docs/reviews/phase3-initialization-review.md",
+        "tests/flat_syntax.rs",
+        "tests/flat_syntax_review.rs",
+        "docs/reviews/flat-declarations-review.md"
+      ]
+    },
+    {
+      "id": "F04",
+      "name": "species_boundary_flags",
+      "target": "include",
+      "phase": "P3",
+      "implementation": "partial_species_default_units_verified",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "tests/initialization.rs",
+        "docs/reviews/phase3-initialization-review.md",
+        "tests/species_units.rs",
+        "tests/species_units_review.rs",
+        "docs/reviews/species-default-units-review.md"
+      ]
+    },
+    {
+      "id": "F05",
+      "name": "fixed_compartments",
+      "target": "include",
+      "phase": "P3",
+      "implementation": "partial_species_default_units_verified",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "tests/initialization.rs",
+        "docs/reviews/phase3-initialization-review.md",
+        "tests/units.rs",
+        "docs/reviews/phase3-units-review.md",
+        "tests/species_units.rs",
+        "tests/species_units_review.rs",
+        "docs/reviews/species-default-units-review.md"
+      ]
+    },
+    {
+      "id": "F06",
+      "name": "scalar_parameters",
+      "target": "include",
+      "phase": "P3",
+      "implementation": "partial_flat_declarations_verified",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "tests/initialization.rs",
+        "docs/reviews/phase3-initialization-review.md",
+        "tests/units.rs",
+        "docs/reviews/phase3-units-review.md",
+        "tests/formatting.rs",
+        "tests/format_review.rs",
+        "docs/reviews/canonical-format-review.md",
+        "tests/flat_syntax.rs",
+        "tests/flat_syntax_review.rs",
+        "docs/reviews/flat-declarations-review.md"
+      ]
+    },
+    {
+      "id": "F07",
+      "name": "reactions_and_fixed_stoichiometry",
+      "target": "include",
+      "phase": "P2",
+      "implementation": "partial_initialization_slice_verified",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "tests/initialization.rs",
+        "docs/reviews/phase3-initialization-review.md",
+        "tests/formatting.rs",
+        "tests/format_review.rs",
+        "docs/reviews/canonical-format-review.md"
+      ]
+    },
+    {
+      "id": "F08",
+      "name": "arithmetic_expressions",
+      "target": "include",
+      "phase": "P2",
+      "implementation": "partial_units_slice_verified",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "tests/initialization.rs",
+        "docs/reviews/phase3-initialization-review.md",
+        "tests/units.rs",
+        "docs/reviews/phase3-units-review.md"
+      ]
+    },
+    {
+      "id": "F09",
+      "name": "acyclic_initial_expressions",
+      "target": "include",
+      "phase": "P3",
+      "implementation": "partial_flat_declarations_verified",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "tests/initialization.rs",
+        "docs/reviews/phase3-initialization-review.md",
+        "tests/units.rs",
+        "docs/reviews/phase3-units-review.md",
+        "tests/flat_syntax.rs",
+        "tests/flat_syntax_review.rs",
+        "docs/reviews/flat-declarations-review.md"
+      ]
+    },
+    {
+      "id": "F10",
+      "name": "bounded_unit_definitions",
+      "target": "include",
+      "phase": "P3",
+      "implementation": "partial_species_default_units_verified",
+      "evidence": [
+        "tests/units.rs",
+        "tests/units_review.rs",
+        "docs/reviews/phase3-units-review.md",
+        "tests/species_units.rs",
+        "tests/species_units_review.rs",
+        "docs/reviews/species-default-units-review.md"
+      ]
+    },
+    {
+      "id": "F11",
+      "name": "canonical_antimony",
+      "target": "include",
+      "phase": "P4",
+      "implementation": "partial_flat_declarations_verified",
+      "evidence": [
+        "tests/formatting.rs",
+        "tests/format_review.rs",
+        "docs/reviews/canonical-format-review.md",
+        "tools/oracle/formatter-evidence.json",
+        "tests/flat_syntax.rs",
+        "tests/flat_syntax_review.rs",
+        "docs/reviews/flat-declarations-review.md"
+      ]
+    },
+    {
+      "id": "F12",
+      "name": "sbml_l3v2_core_export",
+      "target": "include",
+      "phase": "P4",
+      "implementation": "partial_flat_declarations_verified",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "tests/initialization.rs",
+        "docs/reviews/phase3-initialization-review.md",
+        "tests/units.rs",
+        "docs/reviews/phase3-units-review.md",
+        "tests/species_units.rs",
+        "tests/species_units_review.rs",
+        "docs/reviews/species-default-units-review.md",
+        "tests/formatting.rs",
+        "tests/format_review.rs",
+        "docs/reviews/canonical-format-review.md",
+        "tests/flat_syntax.rs",
+        "tests/flat_syntax_review.rs",
+        "docs/reviews/flat-declarations-review.md"
+      ]
+    },
+    {
+      "id": "F13",
+      "name": "structured_diagnostics",
+      "target": "include",
+      "phase": "P1",
+      "implementation": "partial_flat_declarations_verified",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "tests/initialization.rs",
+        "docs/reviews/phase3-initialization-review.md",
+        "tests/units.rs",
+        "docs/reviews/phase3-units-review.md",
+        "tests/species_units.rs",
+        "tests/species_units_review.rs",
+        "docs/reviews/species-default-units-review.md",
+        "tests/formatting.rs",
+        "tests/format_review.rs",
+        "docs/reviews/canonical-format-review.md",
+        "tests/flat_syntax.rs",
+        "tests/flat_syntax_review.rs",
+        "docs/reviews/flat-declarations-review.md"
+      ]
+    },
+    {
+      "id": "X01",
+      "name": "function_calls_and_piecewise",
+      "target": "reject",
+      "phase": "P2",
+      "implementation": "partial_rejection_guards_tested_not_family_complete",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "docs/reviews/phase2-review.md"
+      ]
+    },
+    {
+      "id": "X02",
+      "name": "assignment_rate_algebraic_rules",
+      "target": "reject",
+      "phase": "P3",
+      "implementation": "partial_rejection_guards_tested_not_family_complete",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "docs/reviews/phase2-review.md"
+      ]
+    },
+    {
+      "id": "X03",
+      "name": "events_delays_rateof",
+      "target": "reject",
+      "phase": "P3",
+      "implementation": "partial_rejection_guards_tested_not_family_complete",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "docs/reviews/phase2-review.md"
+      ]
+    },
+    {
+      "id": "X04",
+      "name": "modules_imports_composition",
+      "target": "reject",
+      "phase": "P2",
+      "implementation": "partial_rejection_guards_tested_not_family_complete",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "docs/reviews/phase2-review.md"
+      ]
+    },
+    {
+      "id": "X05",
+      "name": "dynamic_compartments",
+      "target": "reject",
+      "phase": "P3",
+      "implementation": "rejection_coverage_not_verified",
+      "evidence": []
+    },
+    {
+      "id": "X06",
+      "name": "substance_only_conversion_factors",
+      "target": "reject",
+      "phase": "P3",
+      "implementation": "rejection_coverage_not_verified",
+      "evidence": []
+    },
+    {
+      "id": "X07",
+      "name": "dynamic_named_stoichiometry_fbc",
+      "target": "reject",
+      "phase": "P3",
+      "implementation": "rejection_coverage_not_verified",
+      "evidence": []
+    },
+    {
+      "id": "X08",
+      "name": "distributions_layout_render",
+      "target": "reject",
+      "phase": "P2",
+      "implementation": "rejection_coverage_not_verified",
+      "evidence": []
+    },
+    {
+      "id": "X09",
+      "name": "unsupported_annotations_metadata",
+      "target": "reject",
+      "phase": "P2",
+      "implementation": "partial_rejection_guards_tested_not_family_complete",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "docs/reviews/phase2-review.md"
+      ]
+    },
+    {
+      "id": "X10",
+      "name": "dna_interactions_sbol",
+      "target": "reject",
+      "phase": "P2",
+      "implementation": "rejection_coverage_not_verified",
+      "evidence": []
+    },
+    {
+      "id": "X11",
+      "name": "sbml_import_embedded_xml_code",
+      "target": "reject",
+      "phase": "P2",
+      "implementation": "rejection_coverage_not_verified",
+      "evidence": []
+    },
+    {
+      "id": "X12",
+      "name": "repeated_initialization",
+      "target": "reject",
+      "phase": "P3",
+      "implementation": "partial_rejection_guards_tested_not_family_complete",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "docs/reviews/phase2-review.md"
+      ]
+    },
+    {
+      "id": "X13",
+      "name": "unverified_arrow_aliases",
+      "target": "reject",
+      "phase": "P2",
+      "implementation": "partial_rejection_guards_tested_not_family_complete",
+      "evidence": [
+        "tests/vertical_slice.rs",
+        "docs/reviews/phase2-review.md"
+      ]
+    }
+  ],
+  "limits_proposed": {
+    "source_bytes": 4194304,
+    "tokens": 1000000,
+    "expression_depth": 128,
+    "model_entities": 100000,
+    "diagnostics": 100
+  },
+  "release_requires": [
+    "native_tests",
+    "reference_semantic_comparison",
+    "independent_sbml_validation",
+    "selected_numerical_comparison",
+    "negative_feature_tests",
+    "maintainer_review",
+    "publishing_authorization"
+  ],
+  "implemented_subset": {
+    "id": "arithmetic-v0.1-slice",
+    "status": "independently_verified_bounded_slice",
+    "evidence": [
+      "docs/reviews/species-default-units-review.md",
+      "tests/species_units.rs",
+      "tests/species_units_review.rs",
+      "tests/units.rs",
+      "tests/units_review.rs",
+      "tools/oracle/native-evidence.json",
+      "docs/reviews/canonical-format-review.md",
+      "tests/formatting.rs",
+      "tests/format_review.rs",
+      "tools/oracle/formatter-evidence.json",
+      "tests/flat_syntax.rs",
+      "tests/flat_syntax_review.rs",
+      "tools/oracle/test_flat_declarations.py",
+      "docs/reviews/flat-declarations-review.md",
+      "docs/reviews/numerical-review.md",
+      "tools/numerical/evidence.json",
+      "docs/reviews/arithmetic-review.md",
+      "fixtures/manifests/arithmetic-v1.json",
+      "tools/oracle/expression_check.py",
+      "tools/oracle/test_expression_check.py"
+    ],
+    "limitations": "Not full target profile or Phase3/4. Named headers require newline/semicolon after optional empty parentheses. Formula lists are parameter-only: later species promotion is a strict declaration_conflict rejection; const/var/$ qualifiers and nonempty ports deferred. No parameter declaration keyword. Unnamed reactions deferred. Canonical layout preserves source token/statement order, removes trivia, and does not normalize all equivalent models. Diagnostic classification is not universal: import \"secret.ant\" still reports syntax. No general unit algebra, automatic conversion, dimensional certification, compartment expressions or amount initialization. Eight separately selected original analytic models have numerical validation; this is not full-profile conformance. The original 90-case structural corpus retains numerical NOT_RUN stages. Expression literals retain 15 significant digits and zero-or-[1e-307,1e308] bounds; unit coefficient bounds unchanged. Group normalization follows pinned upstream behavior, not arbitrary algebra. Earlier evidence files/source receipt remain historical checkpoints; new arithmetic gate has no trajectory credit.",
+    "capabilities": [
+      "parse",
+      "analyze",
+      "sbml_export_optional",
+      "canonical_source_layout",
+      "optional_empty_model_header_parentheses",
+      "comma_separated_formula_parameter_declarations",
+      "reference_normalized_nested_arithmetic",
+      "verified_unary_combinations",
+      "scientific_mathml_literals"
+    ],
+    "scalar_literal_envelope": {
+      "zero_allowed_where_semantically_valid": true,
+      "nonzero_absolute_minimum": 1e-307,
+      "absolute_maximum": 1e+308,
+      "maximum_significant_mantissa_digits": 15,
+      "digit_count": "Ignore exponent and leading zeros; retain trailing zeros after first nonzero; all-zero mantissa counts zero.",
+      "nonzero_underflow": "rejected_not_clamped"
+    },
+    "expression_literal_envelope": {
+      "zero_allowed_where_semantically_valid": true,
+      "nonzero_absolute_minimum": 1e-307,
+      "absolute_maximum": 1e+308,
+      "maximum_significant_mantissa_digits": 15,
+      "digit_count": "Ignore exponent and leading zeros; retain trailing zeros after first nonzero; all-zero mantissa counts zero.",
+      "nonzero_underflow": "rejected_not_clamped"
+    }
+  },
+  "native_ci": {
+    "status": "configured_remote_not_run",
+    "matrix_cells": 6,
+    "evidence": [
+      ".github/workflows/native.yml",
+      "docs/reviews/phase3-initialization-review.md"
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+function clamp_step(x, lo, hi) min(hi, max(lo, floor(abs(x)) + ceiling(x / 2))) end
+a = clamp_step(-3.2, 0, 10);

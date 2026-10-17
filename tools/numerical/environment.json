@@ -1,0 +1,104 @@
+{
+  "all_integrator_settings": {
+    "absolute_tolerance": 1e-12,
+    "initial_time_step": 0.0,
+    "max_output_rows": 100000,
+    "maximum_adams_order": 12,
+    "maximum_bdf_order": 5,
+    "maximum_num_steps": 100000,
+    "maximum_time_step": 0.0,
+    "minimum_time_step": 0.0,
+    "multiple_steps": false,
+    "name": "cvode",
+    "relative_tolerance": 1e-10,
+    "stiff": true,
+    "variable_step_size": false
+  },
+  "installed_files": {
+    "libroadrunner-2.10.0.dist-info/METADATA": {
+      "sha256": "0e8e3ce50c540eb46d5d419293a9bd13569a3dd4f0edd5f1cd8cf094e5488413",
+      "size_bytes": 9768
+    },
+    "numpy-2.2.6.dist-info/METADATA": {
+      "sha256": "91d66d0d60ad467c679555c0e12ac739bb395940dc22bc5a39d45780aba129ad",
+      "size_bytes": 62048
+    },
+    "roadrunner/_roadrunner.so": {
+      "sha256": "502d6ac3a5c4350e5bc25bae93c16f4fe31191e011957b3eca0af8c69f2990a7",
+      "size_bytes": 49645584
+    },
+    "roadrunner/roadrunner.py": {
+      "sha256": "3e556fcf71fca44302f954caf9f41b316614053af10562ad8a0868da1d9b8e3b",
+      "size_bytes": 309801
+    },
+    "roadrunner/tests/test_roadrunner_map.py": {
+      "sha256": "f1e03f1135ff10653d0703698344376c58422f7eab1d2dc57518e5ab4347e057",
+      "size_bytes": 6048
+    }
+  },
+  "metadata": {
+    "api_signatures": {
+      "RoadRunner": "(*args)",
+      "simulate": "(start=None, end=None, points=None, selections=None, output_file=None, steps=None, times=None)"
+    },
+    "conserved_moiety_analysis": false,
+    "extended_version": "2.10.0; Compiler: clang \"15.0.0 (clang-1500.3.9.4)\", C++ version: 202002; Date: Aug  5 2026, 03:10:15; LibSBML Version: 5.21.1\nWorking Directory: <isolated-working-directory>\n",
+    "machine": "arm64",
+    "packages": {
+      "libroadrunner": "2.10.0",
+      "numpy": "2.2.6"
+    },
+    "platform": "macOS-15.5-arm64-arm-64bit",
+    "python": "3.12.12",
+    "roadrunner_version": "2.10.0; Compiler: clang \"15.0.0 (clang-1500.3.9.4)\", C++ version: 202002; JIT Compiler: LLVM-13.0; Date: Aug  5 2026, 03:10:15; LibSBML Version: 5.21.1"
+  },
+  "probe": {
+    "column_names": [
+      "time",
+      "[S]",
+      "S",
+      "[P]",
+      "P",
+      "k"
+    ],
+    "effective_absolute_tolerance_after": [
+      8e-12,
+      2e-12
+    ],
+    "effective_absolute_tolerance_before": [
+      8e-12,
+      2e-12
+    ],
+    "floating_species_ids": [
+      "S",
+      "P"
+    ],
+    "selections": [
+      "time",
+      "[S]",
+      "S",
+      "[P]",
+      "P",
+      "k"
+    ]
+  },
+  "schema": "antimony-numerical-environment-v1",
+  "solver_readback": {
+    "absolute_tolerance": 1e-12,
+    "maximum_num_steps": 100000,
+    "name": "cvode",
+    "relative_tolerance": 1e-10,
+    "stiff": true,
+    "variable_step_size": false
+  },
+  "solver_request": {
+    "absolute_tolerance": 1e-12,
+    "maximum_num_steps": 100000,
+    "name": "cvode",
+    "relative_tolerance": 1e-10,
+    "stiff": true,
+    "variable_step_size": false
+  },
+  "status": "PASS",
+  "verification": "Original stationary c=2, concentration S=4, P=0, parameter k=3; 101 explicit output rows from 0 to 10. Analytic kinetic anchor gate is separate."
+}

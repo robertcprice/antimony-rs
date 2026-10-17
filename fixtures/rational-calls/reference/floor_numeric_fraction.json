@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"floor(1/2)\":  Error when parsing input 'floor(1/2)' at position 10:  syntax error, unexpected number in rational notation",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "d3de8140d327a0fb57a2c86c6d0ea73701d3634e0ecdfceab4c227e306ffe2aa",
+  "status": "REFERENCE_REJECTED"
+}

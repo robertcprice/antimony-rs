@@ -1,0 +1,46 @@
+{
+  "antimony_library_version": "v3.2.0",
+  "exact_projection": "NOT_REPRESENTED",
+  "messages": [
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "message": "In situations where a mathematical expression refers to a compartment, species or parameter, it is necessary to know the units of the object to establish unit consistency. In models where the units of an object have not been declared, libSBML does not yet have the functionality to accurately verify the consistency of the units in mathematical expressions referring to that object. \n The units of the <parameter> 'a' cannot be fully checked. Unit consistency reported as either no errors or further unit errors related to this object may not be accurate.",
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "message": "If the attribute 'units' on a given Parameter object has not been set, then the unit of measurement associated with that parameter's value is undefined.\nReference: L3V2 Section 4.7.3\n The <parameter> with id 'a' does not have a 'units' attribute.",
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "message": "In situations where a mathematical expression contains literal numbers or parameters whose units have not been declared, it is not possible to verify accurately the consistency of the units in the expression. \n The units of the <initialAssignment> <math> expression 'f(1)' cannot be fully checked. Unit consistency reported as either no errors or further unit errors related to this object may not be accurate.",
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "message": "As a principle of best modeling practice, the units of a <parameter> should be declared rather than be left undefined. Doing so improves the ability of software to check the consistency of units and helps make it easier to detect potential errors in models.\n The <parameter> with the id 'a' does not have a 'units' attribute.",
+      "severity": "Warning"
+    }
+  ],
+  "nonfinite_math": [
+    {
+      "ast_type": 257,
+      "owner": "f",
+      "value": "NaN"
+    }
+  ],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "sbml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- Created by libAntimony version v3.2.0 with libSBML version 5.21.1. -->\n<sbml xmlns=\"http://www.sbml.org/sbml/level3/version2/core\" level=\"3\" version=\"2\">\n  <model metaid=\"__main\" id=\"__main\">\n    <listOfFunctionDefinitions>\n      <functionDefinition id=\"f\">\n        <math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n          <lambda>\n            <bvar>\n              <ci> x </ci>\n            </bvar>\n            <apply>\n              <plus/>\n              <ci> x </ci>\n              <notanumber/>\n            </apply>\n          </lambda>\n        </math>\n      </functionDefinition>\n    </listOfFunctionDefinitions>\n    <listOfParameters>\n      <parameter id=\"a\" constant=\"true\"/>\n    </listOfParameters>\n    <listOfInitialAssignments>\n      <initialAssignment symbol=\"a\">\n        <math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n          <apply>\n            <ci> f </ci>\n            <cn type=\"integer\"> 1 </cn>\n          </apply>\n        </math>\n      </initialAssignment>\n    </listOfInitialAssignments>\n  </model>\n</sbml>\n",
+  "sbml_sha256": "51dba132452f3c1734aa5db8aa9773d0e3f140302df64ecfa596faf87ef14c88",
+  "schema": "antimony-rational-nonfinite-reference-v1",
+  "source_sha256": "5ba5ad59c8f893f2dd1c2ef4940e25bdb56d48c2dfafa8e0623013cc415c4059",
+  "status": "REFERENCE_NONFINITE"
+}

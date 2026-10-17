@@ -1,0 +1,3 @@
+function g(x, y) x + y end
+function f(x) g(x) end
+a = f(1);

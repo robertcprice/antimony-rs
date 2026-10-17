@@ -1,0 +1,4 @@
+S=base+delta;
+formula k=p/2, p=0.8, base=2, delta=1;
+held=S;
+J: S => ; k*S;

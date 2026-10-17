@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  syntax error, unexpected '\\n'",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "5a4737c5781e9834d46adb47579f7f386852d9dfe9625a7e4d7a3e0fe65dfdae",
+  "status": "REFERENCE_REJECTED"
+}

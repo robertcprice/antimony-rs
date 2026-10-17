@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 2:  In the user-defined function 'f', the variable 'k' was found in the formula itself, but was not exported.  All variables in user-defined functions must be exported, or you end up with formulas with undefined elements.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "aebf7f1ff171636866512d4d8c924d95c5b834104fb519860d87618ad09876eb",
+  "status": "REFERENCE_REJECTED"
+}

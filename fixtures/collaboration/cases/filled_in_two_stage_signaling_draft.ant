@@ -1,0 +1,17 @@
+function hill(x, Vm, K, n)
+  Vm * (x ^ n) / ((K ^ n) + (x ^ n))
+end
+
+model filled_in_two_stage_signaling_draft()
+  species R, Rp, E, Ep;
+  const V_r, K_r, k_dr, V_e, K_e, k_de;
+  J_r_on: R -> Rp; hill(1.5, V_r, K_r, 2) * R;
+  J_r_off: Rp -> R; k_dr * Rp;
+  J_e_on: E -> Ep; Rp * V_e * E / (K_e + E);
+  J_e_off: Ep -> E; k_de * Ep;
+  R_tot := R + Rp;
+  E_tot := E + Ep;
+  R = 2.0; Rp = 0.0; E = 5.0; Ep = 0.0;
+  V_r = 1.2; K_r = 0.8; k_dr = 0.3;
+  V_e = 0.9; K_e = 1.0; k_de = 0.25;
+end

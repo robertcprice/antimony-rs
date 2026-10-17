@@ -1,0 +1,1 @@
+species S=2,P=0;J:S=>P;pow(S,2);

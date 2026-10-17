@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  Error when parsing input 'lambda(x, )' at position 11:  syntax error, unexpected ')'",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "af6fb4c1905c898eb03467276078d3b17471590710292b87787e295563d84dd4",
+  "status": "REFERENCE_REJECTED"
+}

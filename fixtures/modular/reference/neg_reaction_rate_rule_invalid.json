@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 3:  The variable 'J0' is the type Reaction, and may not have a rate rule associated with it.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "4805aec1212f477278e5509eda71fd952a6fb5b6c14e0eee9cabf27ccc17269c",
+  "status": "REFERENCE_REJECTED"
+}

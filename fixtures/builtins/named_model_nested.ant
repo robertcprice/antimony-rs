@@ -1,0 +1,2 @@
+model nested()
+S=2;P=0;k=0.1;S=>P;k*exp(-time)*S/(1+pow(S,2));end

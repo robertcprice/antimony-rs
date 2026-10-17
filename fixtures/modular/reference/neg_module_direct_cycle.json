@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 3:  1 SBML error(s) when creating module 'mod_a'.  libAntimony tries to catch these errors before libSBML complains, but sometimes cannot.  Error message(s) from libSBML:\n\nA <model> or <modelDefinition> object must not contain a <submodel> which references that model object itself. That is, the value of a 'comp:modelRef' attribute on a <submodel> must not be the value of the parent <model> or <modelDefinition>'s 'id' attribute.\nReference: L3V1 Comp V1 Section 3.5.1\n The <submodel> with the id 'A_inst' in the model 'mod_a' refers to the enclosing model with id 'mod_a'.\n",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "0940fb245110328b2acd61ebe1caee0b756390e67ee11cb8f6e03b38ee1f6eed",
+  "status": "REFERENCE_REJECTED"
+}

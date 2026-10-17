@@ -1,0 +1,64 @@
+{
+  "antimony_library_version": "v3.2.0",
+  "exact_projection": "NOT_REPRESENTED",
+  "messages": [
+    {
+      "category": "SBML unit consistency",
+      "id": 99506,
+      "message": "In situations where a mathematical expression refers to time, the units of time should be consistent with the global time units of the model. In models where the 'timeUnits' attribute has not been declared, libSBML does not yet have the functionality to verify accurately the consistency of the units in such expressions.",
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99507,
+      "message": "In situations where a mathematical expression refers to extent, the units of extent should be consistent with the global extent units of the model. In models where the 'extentUnits' attribute has not been declared, libSBML does not yet have the functionality to verify accurately the consistency of the units in such expressions.",
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "message": "In situations where a mathematical expression refers to a compartment, species or parameter, it is necessary to know the units of the object to establish unit consistency. In models where the units of an object have not been declared, libSBML does not yet have the functionality to accurately verify the consistency of the units in mathematical expressions referring to that object. \n The units of the <compartment> 'default_compartment' cannot be fully checked. Unit consistency reported as either no errors or further unit errors related to this object may not be accurate.",
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20513,
+      "message": "If the attribute 'units' on a Compartment object having a 'spatialDimensions' attribute value of '3' has not been set, then the unit of measurement associated with the compartment's size is determined by the value of the enclosing Model object's 'volumeUnits' attribute. If neither the Compartment object's 'units' nor the enclosing Model object's 'volumeUnits' attributes are set, the unit of compartment size is undefined.\nReference: L3V2 Section 4.5.4",
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "message": "In situations where a mathematical expression refers to a compartment, species or parameter, it is necessary to know the units of the object to establish unit consistency. In models where the units of an object have not been declared, libSBML does not yet have the functionality to accurately verify the consistency of the units in mathematical expressions referring to that object. \n The units of the <species> 'S' cannot be fully checked. Unit consistency reported as either no errors or further unit errors related to this object may not be accurate.",
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "message": "If the attribute 'substanceUnits' in a Species object has not been set, then the unit of measurement associated with the species' quantity is determined by the value of the enclosing Model object's 'substanceUnits' attribute. If neither the Species object's 'substanceUnits' attribute nor the enclosing Model object's 'substanceUnits' attribute are set, then the unit of that species' quantity is undefined.\nReference: L3V2 Section 4.6.5\n The <species> with id 'S' does not have a substanceUnits attribute, nor does its enclosing <model>.",
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "message": "In situations where a mathematical expression contains literal numbers or parameters whose units have not been declared, it is not possible to verify accurately the consistency of the units in the expression. \n The units of the <kineticLaw> <math> expression 'INF' cannot be fully checked. Unit consistency reported as either no errors or further unit errors related to this object may not be accurate.",
+      "severity": "Warning"
+    }
+  ],
+  "nonfinite_math": [
+    {
+      "ast_type": 257,
+      "owner": "J",
+      "value": "INF"
+    }
+  ],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "sbml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- Created by libAntimony version v3.2.0 with libSBML version 5.21.1. -->\n<sbml xmlns=\"http://www.sbml.org/sbml/level3/version2/core\" level=\"3\" version=\"2\">\n  <model metaid=\"__main\" id=\"__main\">\n    <listOfCompartments>\n      <compartment sboTerm=\"SBO:0000410\" id=\"default_compartment\" spatialDimensions=\"3\" size=\"1\" constant=\"true\"/>\n    </listOfCompartments>\n    <listOfSpecies>\n      <species id=\"S\" compartment=\"default_compartment\" initialConcentration=\"0\" hasOnlySubstanceUnits=\"false\" boundaryCondition=\"false\" constant=\"false\"/>\n    </listOfSpecies>\n    <listOfReactions>\n      <reaction id=\"J\" reversible=\"false\">\n        <listOfProducts>\n          <speciesReference species=\"S\" stoichiometry=\"1\" constant=\"true\"/>\n        </listOfProducts>\n        <kineticLaw>\n          <math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n            <infinity/>\n          </math>\n        </kineticLaw>\n      </reaction>\n    </listOfReactions>\n  </model>\n</sbml>\n",
+  "sbml_sha256": "de28fbd7007625aebb05386d3d8b22570270f04e854e35c00c5d1f53e0802d8e",
+  "schema": "antimony-rational-nonfinite-reference-v1",
+  "source_sha256": "ae63b3cd9bd037bde432274c59dbbce79a3f89d8775fae68ae53e7bef9d17285",
+  "status": "REFERENCE_NONFINITE"
+}

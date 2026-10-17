@@ -1,0 +1,4 @@
+function rec(x)
+  piecewise(1, x <= 0, rec(x - 1))
+end
+a = 1;

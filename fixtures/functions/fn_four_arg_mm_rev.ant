@@ -1,0 +1,3 @@
+function rev_mm(s, p, vf, vr) (vf * s - vr * p) / (1 + s + p) end
+species S = 4, P = 1;
+S -> P; rev_mm(S, P, 2, 0.5);

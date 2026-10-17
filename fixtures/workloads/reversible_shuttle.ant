@@ -1,0 +1,5 @@
+compartment left=2;compartment right=5;
+species A in left,B in right,C in right;A=2;B=1;C=0.5;
+kt=0.2;kr=0.1;kb=0.3;kc=0.15;
+Exchange:A->B;kt*A*left-kr*B*right;
+Convert:B=>C;kb*B*right;Return:C=>A;kc*C*right;

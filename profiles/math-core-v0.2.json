@@ -1,0 +1,66 @@
+{
+  "schema": "antimony-rs-implementation-boundary-v2",
+  "implementation_id": "math-core-v0.2-slice",
+  "status": "experimental_bounded_implementation",
+  "extends_implementation": "flat-model-v0.2-slice",
+  "historical_corpus_profile": "kinetic-core-v0.1",
+  "relationship_to_historical_target": "Extension: numeric builtin functions are excluded by the frozen kinetic-core-v0.1 target. Reusing its corpus with an explicit native-outcome overlay does not change that target or claim target conformance.",
+  "new_scope": {
+    "unary_numeric": [
+      "sin",
+      "cos",
+      "tan",
+      "exp",
+      "ln",
+      "log",
+      "log10",
+      "sqrt",
+      "abs",
+      "floor",
+      "ceil",
+      "ceiling"
+    ],
+    "binary_numeric": [
+      "pow",
+      "power",
+      "log(base,value)"
+    ],
+    "variadic_numeric": [
+      "min (one or more arguments)",
+      "max (one or more arguments)"
+    ],
+    "constants": [
+      "pi",
+      "exponentiale"
+    ],
+    "time": [
+      "time",
+      "time()"
+    ]
+  },
+  "retained_exclusions": [
+    "Conditionals, boolean expressions and piecewise",
+    "User-defined functions",
+    "Assignment/rate rules",
+    "Events/delays",
+    "Hierarchical models/imports",
+    "Empty min/max outside the finite real boundary",
+    "General root(degree,value)",
+    "Computed compartment sizes and reaction-valued expressions",
+    "A simulator or simulation-readiness guarantee"
+  ],
+  "verification_contracts": {
+    "builtin_manifest": "fixtures/manifests/builtins-v2.json",
+    "current_outcome_overlay": "fixtures/manifests/math-core-v2-overlay.json",
+    "historical_parent_overlay": "fixtures/manifests/flat-model-v2-overlay.json",
+    "evidence": "tools/oracle/builtins-evidence.json",
+    "guide": "docs/BUILTINS.md",
+    "review": "docs/reviews/builtins-review.md"
+  },
+  "claims": {
+    "full_antimony": false,
+    "frozen_target_conformance": false,
+    "published": false,
+    "upstream_endorsement": false
+  }
+}

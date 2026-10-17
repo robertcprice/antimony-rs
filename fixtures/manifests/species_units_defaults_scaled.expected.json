@@ -1,0 +1,153 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection": {
+    "compartments": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "default_compartment",
+        "name": null,
+        "sbo_term": 410,
+        "size": 1.0,
+        "spatial_dimensions": 3,
+        "units": null
+      }
+    ],
+    "constraints": [],
+    "events": [],
+    "function_definitions": [],
+    "initial_assignments": [],
+    "level": 3,
+    "model": {
+      "annotation": null,
+      "id": "__main",
+      "name": null,
+      "sbo_term": null
+    },
+    "model_units": {
+      "AreaUnits": "area",
+      "ConversionFactor": null,
+      "ExtentUnits": "extent",
+      "LengthUnits": "length",
+      "SubstanceUnits": "substance",
+      "TimeUnits": "time_unit",
+      "VolumeUnits": "volume"
+    },
+    "packages": [],
+    "parameters": [],
+    "reactions": [],
+    "rules": [],
+    "species": [
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "default_compartment",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "S",
+        "initial_amount": null,
+        "initial_concentration": 2.0,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      }
+    ],
+    "unit_definitions": [
+      {
+        "annotation": null,
+        "id": "time_unit",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 28,
+            "multiplier": 6.0,
+            "scale": 1
+          }
+        ]
+      },
+      {
+        "annotation": null,
+        "id": "substance",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 23,
+            "multiplier": 1.0,
+            "scale": -3
+          }
+        ]
+      },
+      {
+        "annotation": null,
+        "id": "volume",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 18,
+            "multiplier": 1.0,
+            "scale": -3
+          }
+        ]
+      },
+      {
+        "annotation": null,
+        "id": "area",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 2.0,
+            "kind": 22,
+            "multiplier": 1.0,
+            "scale": 0
+          }
+        ]
+      },
+      {
+        "annotation": null,
+        "id": "length",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 22,
+            "multiplier": 1.0,
+            "scale": -2
+          }
+        ]
+      },
+      {
+        "annotation": null,
+        "id": "extent",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 23,
+            "multiplier": 1.0,
+            "scale": -3
+          }
+        ]
+      }
+    ],
+    "version": 2
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "e7d610e08e5b9176fe30ea6226e7ce3b98e065f85f08634f5a022089e4fd0120",
+  "status": "PASS"
+}

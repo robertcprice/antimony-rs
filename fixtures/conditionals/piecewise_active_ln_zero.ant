@@ -1,0 +1,1 @@
+a=piecewise(ln(0),true,7);

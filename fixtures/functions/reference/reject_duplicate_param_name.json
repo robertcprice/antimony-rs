@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  Unable to add 'x' to the interface to module f because that variable is already in the interface.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "4e9a35c977ea3782b7925177d84e150c8564af9f69803d6aa391284ca7199160",
+  "status": "REFERENCE_REJECTED"
+}

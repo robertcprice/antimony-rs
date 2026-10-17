@@ -1,0 +1,6 @@
+species $B;
+species S = 0;
+u = 0;
+u' = 1;
+B := 1 + 0.2 * u;
+J: B => S; B;

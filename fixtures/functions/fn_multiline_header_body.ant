@@ -1,0 +1,4 @@
+function f(x, y)
+  x * y + 1
+end
+a = f(2, 3);

@@ -1,0 +1,4 @@
+function f(x) x * 2 end
+species S = 1;
+J: S -> ; 0.1 * S;
+J := f(S);

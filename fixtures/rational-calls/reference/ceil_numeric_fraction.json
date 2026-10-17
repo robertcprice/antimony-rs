@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"ceil(1/2)\":  Error when parsing input 'ceil(1/2)' at position 9:  syntax error, unexpected number in rational notation",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "478829b51907d98592db39e4aa3a58b3840bd2b8b0a555c887f19555de1a4cf8",
+  "status": "REFERENCE_REJECTED"
+}

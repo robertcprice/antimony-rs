@@ -1,0 +1,6 @@
+compartment outside=2;compartment inside=5;
+species A in outside,B in inside,F in inside,C in inside,P in inside;
+A=4;B=1;F=2;C=0;P=0;kt=0.2;kon=0.3;koff=0.1;kcat=0.05;
+Transport:A=>B;kt*A*outside;
+Bind:B+F->C;(kon*B*F-koff*C)*inside;
+Cat:C=>F+P;kcat*C*inside;

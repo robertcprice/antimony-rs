@@ -1,0 +1,4 @@
+model m
+  a = 1;
+end
+function unused_after(x) x * 3 end

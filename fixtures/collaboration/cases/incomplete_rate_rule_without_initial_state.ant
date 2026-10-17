@@ -1,0 +1,6 @@
+model incomplete_rate_rule_without_initial_state()
+  species X;
+  const k_decay;
+  X' = -k_decay * X;
+  half_x := X / 2;
+end

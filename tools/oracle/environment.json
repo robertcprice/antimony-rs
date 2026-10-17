@@ -1,0 +1,42 @@
+{
+  "oracle": {
+    "antimony_api_signatures": {
+      "clearPreviousLoads": "()",
+      "getLastError": "()",
+      "getMainModuleName": "()",
+      "getSBMLString": "(moduleName=None)",
+      "getVersionStr": "()",
+      "loadAntimonyString": "(model)",
+      "setWriteSBMLTimestamp": "(writeTimestamp)"
+    },
+    "antimony_library_version": "v3.2.0",
+    "antimony_python_wrapper_sha256": "cdddf10de23cc746cb8cf2dec236c2318836497b0a3bfdea801bbdb458ea5a21",
+    "libsbml_dependencies": {
+      "bzip2": "1.0.5, 10-Dec-2007",
+      "expat": "expat_2.8.4",
+      "libxml": null,
+      "zlib": "1.2.3"
+    },
+    "libsbml_registered_packages": [
+      "comp",
+      "distrib",
+      "fbc",
+      "groups",
+      "layout",
+      "render",
+      "l3v2extendedmath",
+      "multi",
+      "qual",
+      "spatial"
+    ],
+    "libsbml_version": "5.21.2",
+    "packages": {
+      "antimony": "3.2.0",
+      "python-libsbml": "5.21.2"
+    },
+    "platform": "macOS-15.5-arm64-arm-64bit",
+    "python": "3.12.12"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "status": "PASS"
+}

@@ -1,0 +1,4 @@
+const substanceOnly species $S_in = 2*k0;
+var substanceOnly species S_pool = S_in + 1;
+k0 = 3;
+S_in -> S_pool; 0.1*S_in;

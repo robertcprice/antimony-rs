@@ -1,0 +1,6 @@
+unit s_u = second;
+unit m_u = metre;
+function add2(x, y) x + y end
+t0 = 1; t0 has s_u;
+x0 = 2; x0 has m_u;
+a = add2(t0, x0);

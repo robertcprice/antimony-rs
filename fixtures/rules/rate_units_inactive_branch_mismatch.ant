@@ -1,0 +1,1 @@
+unit time_unit=second;unit rate_u=mole/second;a=1;a has mole;k=2;k has rate_u;bad=3;bad has metre;a'=piecewise(k,true,bad);

@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  'myhelper' was used as a function, but no such function was defined.  Please define the function using 'function myhelper([arguments]) [function definition] end'.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "65c626fcd04b62a432a09ea7161f1ef576116db59f2bcc2b1ee7b9de114617cc",
+  "status": "REFERENCE_REJECTED"
+}

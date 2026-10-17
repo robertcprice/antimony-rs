@@ -1,0 +1,1 @@
+compartment c=1;species S in c=1,P in c=0;J:S=>P;S;c'=time+1;

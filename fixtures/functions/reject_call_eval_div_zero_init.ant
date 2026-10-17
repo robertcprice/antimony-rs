@@ -1,0 +1,2 @@
+function inv(x) 1 / x end
+a = inv(0);

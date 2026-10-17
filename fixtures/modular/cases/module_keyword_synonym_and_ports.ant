@@ -1,0 +1,13 @@
+module step_unit(S, P)
+  compartment c = 1;
+  species S in c, P in c;
+  k = 0.25;
+  J: S -> P; c * k * S;
+end
+
+module *cascade()
+  compartment c = 1;
+  species A in c = 8, B in c = 0, C in c = 0;
+  U1: step_unit(A, B);
+  U2: step_unit(B, C);
+end

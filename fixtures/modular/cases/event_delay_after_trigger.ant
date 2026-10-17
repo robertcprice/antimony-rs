@@ -1,0 +1,5 @@
+species S = 5, P = 0;
+k = 0.2;
+tau = 1.5;
+S -> P; k*S;
+E_delayed: at tau after (time > 2): S = S + 3;

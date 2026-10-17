@@ -1,0 +1,3 @@
+compartment C = 1;
+function f(x) x + C end
+a = f(1);

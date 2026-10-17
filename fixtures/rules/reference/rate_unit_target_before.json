@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  Variables with rate rules may not be set to be type Unit Definition because these variables do not change during the course of the model.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "f93ab50cf5bf460971073a71fbd9dcc97309add1eda899b825f93292685ceb6d",
+  "status": "REFERENCE_REJECTED"
+}

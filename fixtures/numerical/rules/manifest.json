@@ -1,0 +1,53 @@
+{
+  "schema": "antimony-rules-numerical-v1",
+  "implemented_profile": "rules-core-v0.4-slice",
+  "grid": {
+    "start": 0,
+    "end": 10,
+    "steps": 100
+  },
+  "comparison": {
+    "absolute": 1e-08,
+    "relative": 1e-07
+  },
+  "solver": {
+    "name": "cvode",
+    "relative_tolerance": 1e-10,
+    "absolute_tolerance": 1e-12,
+    "maximum_num_steps": 100000,
+    "variable_step_size": false,
+    "stiff": true
+  },
+  "cases": [
+    {
+      "id": "coupled_rate_and_assignment_rule",
+      "path": "fixtures/numerical/rules/coupled_rate_and_assignment_rule.ant",
+      "sha256": "a2cd7eccac0494a5eb14cefbc612d70b743a66dcbf43a662d689453c432fcc56",
+      "selections": [
+        "time",
+        "S",
+        "[S]",
+        "x",
+        "y",
+        "k",
+        "default_compartment"
+      ],
+      "provenance": "Independent hand-derived exponential rate rule dx/dt = -k*x, x(0) = 4, k = 0.5 coupled to assignment rule y := 2*x and product reaction dS/dt = y, S(0) = 0; no fitted or solver-derived coefficients."
+    },
+    {
+      "id": "boundary_species_assignment_and_rate_rule",
+      "path": "fixtures/numerical/rules/boundary_species_assignment_and_rate_rule.ant",
+      "sha256": "99515a49a525b17f8d52b85f93415083a9abab5fae5d1481bf637b860a0bd1e3",
+      "selections": [
+        "time",
+        "S",
+        "[S]",
+        "B",
+        "[B]",
+        "u",
+        "default_compartment"
+      ],
+      "provenance": "Independent hand-derived parameter rate rule du/dt = 1, u(0) = 0 driving boundary species assignment rule B := 1 + 0.2*u and reaction B => S with rate B, S(0) = 0; no fitted or solver-derived coefficients."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"geq(1)\":  Error when parsing input 'geq(1)' at position 6:  The function 'geq' takes at least two arguments, but 1 were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "44f937fd461f2bf6f85a167dde23f99f79973f3aea8af89dfdf574a61cf42e74",
+  "status": "REFERENCE_REJECTED"
+}

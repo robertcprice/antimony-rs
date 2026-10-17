@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 11:  Unable to use tf as the time conversion factor for submodel M1 because that variable is of type Species and only variables of type Formula may be used as conversion factors.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "fe3b1d0b99d0b7f1b88abe371836dce8f5bd05fdfc517c59d75fec9acae48765",
+  "status": "REFERENCE_REJECTED"
+}

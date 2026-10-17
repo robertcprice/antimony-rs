@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 2:  'p' was used as a function, but no such function was defined.  Please define the function using 'function p([arguments]) [function definition] end'.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "c2076490c714981073bbd2e9b2e78f0c4086cd24d91070c0d489fbbbf086492f",
+  "status": "REFERENCE_REJECTED"
+}

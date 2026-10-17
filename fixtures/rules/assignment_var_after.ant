@@ -1,0 +1,1 @@
+S:=2;var species S;species P=0;J:S=>P;S;

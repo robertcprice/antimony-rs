@@ -1,0 +1,119 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    }
+  ],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection": {
+    "compartments": [],
+    "constraints": [],
+    "events": [],
+    "function_definitions": [],
+    "initial_assignments": [
+      {
+        "math": {
+          "children": [
+            {
+              "integer": 7,
+              "type": 256
+            },
+            {
+              "type": 266
+            },
+            {
+              "integer": 8,
+              "type": 256
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "integer": 2,
+                      "type": 256
+                    },
+                    {
+                      "integer": -1,
+                      "type": 256
+                    }
+                  ],
+                  "type": 297
+                },
+                {
+                  "integer": 0,
+                  "type": 256
+                }
+              ],
+              "type": 310
+            },
+            {
+              "integer": 9,
+              "type": 256
+            }
+          ],
+          "type": 295
+        },
+        "symbol": "a"
+      }
+    ],
+    "level": 3,
+    "model": {
+      "annotation": null,
+      "id": "__main",
+      "name": null,
+      "sbo_term": null
+    },
+    "model_units": {
+      "AreaUnits": null,
+      "ConversionFactor": null,
+      "ExtentUnits": null,
+      "LengthUnits": null,
+      "SubstanceUnits": null,
+      "TimeUnits": null,
+      "VolumeUnits": null
+    },
+    "packages": [],
+    "parameters": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "a",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": null
+      }
+    ],
+    "reactions": [],
+    "rules": [],
+    "species": [],
+    "unit_definitions": [],
+    "version": 2
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "c40dba95c9a3ae7d500f8a50b5c6c0a491942c8981ae069063298836c1e6b41c",
+  "status": "PASS"
+}

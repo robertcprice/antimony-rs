@@ -1,0 +1,2 @@
+function f(pi) pi + 1 end
+a = f(2);

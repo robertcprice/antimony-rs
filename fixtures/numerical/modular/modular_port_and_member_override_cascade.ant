@@ -1,0 +1,9 @@
+model decay_stage(X, Y)
+  k = 0.1;
+  J: X => Y; k * X;
+end
+model *main()
+  species A = 6, B = 0;
+  M: decay_stage(A, B);
+  M.k = 0.25;
+end

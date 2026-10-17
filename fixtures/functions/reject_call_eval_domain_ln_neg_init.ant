@@ -1,0 +1,2 @@
+function lnf(x) ln(x) end
+a = lnf(-1);

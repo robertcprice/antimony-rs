@@ -1,0 +1,4 @@
+species S = 4, P = 0, Reg = 2;
+k = 0.2;
+J0: S -> P; k*S;
+J0 := k*S*Reg;

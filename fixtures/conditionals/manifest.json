@@ -1,0 +1,2487 @@
+{
+  "schema": "antimony-conditional-corpus-v1",
+  "implemented_profile": "conditional-core-v0.3-slice",
+  "provenance": "Original conditional and near-neighbor sources; expected structures captured only from pinned upstream processes before native output; finite/lazy/static policy from approved contract.",
+  "fixtures": [
+    {
+      "id": "operator_lt",
+      "path": "fixtures/conditionals/operator_lt.ant",
+      "sha256": "f03b7d2c6d396d6bbbc6af267692c75fb5db7404903338fc6fc5510e26169433",
+      "expectation": "fixtures/conditionals/reference/operator_lt.json",
+      "expectation_sha256": "aff541d1904a792ce19f9ad96760dda3547906c50d9cf4aeacff6f783fe96090",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_le",
+      "path": "fixtures/conditionals/operator_le.ant",
+      "sha256": "9d27d9608fd563d06bc14c16615936350dd69c7776e48aedf2543cb7d028ab99",
+      "expectation": "fixtures/conditionals/reference/operator_le.json",
+      "expectation_sha256": "17b9627b1bca136d62a31cf60fb2fbffdcf3ab8460c05dfbccb35d4b1ccaf48b",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_gt",
+      "path": "fixtures/conditionals/operator_gt.ant",
+      "sha256": "994cc1e8dbdc89063897554d872ae546730c1cbd6e3088c3e9110157951ac166",
+      "expectation": "fixtures/conditionals/reference/operator_gt.json",
+      "expectation_sha256": "ba307b9e88131aaf301195f9f58564fc28aff83a7fc70dce883688fe9d61b62c",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_ge",
+      "path": "fixtures/conditionals/operator_ge.ant",
+      "sha256": "84a83c4c1d96a277e0337cf67dc1de274f3f54af1957d8a1da53984c0946793f",
+      "expectation": "fixtures/conditionals/reference/operator_ge.json",
+      "expectation_sha256": "6b547e4b442565db1576bf9617f27ad4da23b6342f14211af87f145885168293",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_eq",
+      "path": "fixtures/conditionals/operator_eq.ant",
+      "sha256": "8bf633d6abd1ace633d872595ebab5a9c28c56e13d35bb6ea4d7e2f84a70653b",
+      "expectation": "fixtures/conditionals/reference/operator_eq.json",
+      "expectation_sha256": "d871b4b7358aa243a7af66951c4d78e79d87fb4f41728a6b3a0a94611d338893",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_neq",
+      "path": "fixtures/conditionals/operator_neq.ant",
+      "sha256": "a001222032f484834d9cde81f04b2ebbb95d3af9d5015aa28673868c9aaa4ae6",
+      "expectation": "fixtures/conditionals/reference/operator_neq.json",
+      "expectation_sha256": "f050bd15cabbe1776019d0a3f1544ac3880e023a55c30079344c1621ebb7ccd4",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_eq_single",
+      "path": "fixtures/conditionals/operator_eq_single.ant",
+      "sha256": "7939610e20e721ca053f2fc24558fba096cae14a1b0b6aef5e476dbb01c4ccf1",
+      "expectation": "fixtures/conditionals/reference/operator_eq_single.json",
+      "expectation_sha256": "daf4b84604d71363327f0efd349cd9b7d4c09e5f23f4855bd5bbc83d04c667ca",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "operator_and_op",
+      "path": "fixtures/conditionals/operator_and_op.ant",
+      "sha256": "de179bd1f8e83e72276215ed7042065aded64fc953ebc0405eab641df3de63f5",
+      "expectation": "fixtures/conditionals/reference/operator_and_op.json",
+      "expectation_sha256": "6fbbb5f19e349ea60f1c76400d244dfe69c945d4454298f25f996b9695f0e35a",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_and_single",
+      "path": "fixtures/conditionals/operator_and_single.ant",
+      "sha256": "83d7627faf5e659270c1354c45523d1275f2340735968e6dca0636b77becba6a",
+      "expectation": "fixtures/conditionals/reference/operator_and_single.json",
+      "expectation_sha256": "44fb50c8cf1ce96761844674a02b2bef33531e867bc19b4958d1219f53434ad1",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "operator_or_op",
+      "path": "fixtures/conditionals/operator_or_op.ant",
+      "sha256": "9e205d80428a2da22955b05f80269022474f60c0362a20dab0e056ead55b7610",
+      "expectation": "fixtures/conditionals/reference/operator_or_op.json",
+      "expectation_sha256": "877705021d4f7018483cc83cb663849a53760f26d7b4485ded91d83e4e8280dd",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_or_single",
+      "path": "fixtures/conditionals/operator_or_single.ant",
+      "sha256": "9267ad74aa299cdf4842827638d5776846835e9f8be278319ccbeeec8c541c27",
+      "expectation": "fixtures/conditionals/reference/operator_or_single.json",
+      "expectation_sha256": "045caa0809ec2dbc4e997987a8dcff0c97b7aa4d7fda6e71af67ff3ee094d4a6",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "operator_not_op",
+      "path": "fixtures/conditionals/operator_not_op.ant",
+      "sha256": "f9843d567accd8b811fb57227297d71a93b2da78af042d96dc4c9c7043515c78",
+      "expectation": "fixtures/conditionals/reference/operator_not_op.json",
+      "expectation_sha256": "2898ce21088fdbeb911d82231b606e3848d526dc833b63200b5e0232dae6f36f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_and_word",
+      "path": "fixtures/conditionals/operator_and_word.ant",
+      "sha256": "e51506040e3e33fea41926783f4edf378008bd4f781f37bc6094d8f870da2610",
+      "expectation": "fixtures/conditionals/reference/operator_and_word.json",
+      "expectation_sha256": "f83a0e0d6ae51cedfffdbedf21ce1c45a1380f999063d727aaf566e649c7ac55",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "operator_or_word",
+      "path": "fixtures/conditionals/operator_or_word.ant",
+      "sha256": "f7fc7fd4606cf3e6b2262c4468f361d15b8098f7d9e910efc3e8589d91a2ff38",
+      "expectation": "fixtures/conditionals/reference/operator_or_word.json",
+      "expectation_sha256": "e56752829c2e0b6da90b420544343dc4c63f159a6bce9260deefc5f4162dbb93",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "operator_xor_word",
+      "path": "fixtures/conditionals/operator_xor_word.ant",
+      "sha256": "9c4885a9f30096a060c06ad7822e66324fff48633766de81af651b7960e0e834",
+      "expectation": "fixtures/conditionals/reference/operator_xor_word.json",
+      "expectation_sha256": "e970d596480842d89daebceeef5a180b906e995c12be486a177b1ec0e7e8b589",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "operator_chain_lt",
+      "path": "fixtures/conditionals/operator_chain_lt.ant",
+      "sha256": "df85766a3fbb7ac7c2ed9861a9ba4f7ad9fe1e844f7596df3bf2b00b3ffdc121",
+      "expectation": "fixtures/conditionals/reference/operator_chain_lt.json",
+      "expectation_sha256": "018cfc3dd53e5d0ce0f346523c35c7dcf069358acfa9ff8fa0fb8843d102a411",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "operator_chain_eq",
+      "path": "fixtures/conditionals/operator_chain_eq.ant",
+      "sha256": "c79c4e1e1f561e28315e0e8e858608c18f6ce161efd37a9ae54c12ac9e0e9ac9",
+      "expectation": "fixtures/conditionals/reference/operator_chain_eq.json",
+      "expectation_sha256": "3dcbe04150c41f242050699bed1676617759c3612f62f43ad411c084a4d49ab9",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "operator_chain_mixed",
+      "path": "fixtures/conditionals/operator_chain_mixed.ant",
+      "sha256": "1293e543f65ab5060afee00bdea96abbfacf3d4d40aad0c323a4162893601b17",
+      "expectation": "fixtures/conditionals/reference/operator_chain_mixed.json",
+      "expectation_sha256": "6d13e3895d1dfc68ef2fbe7db5cacc51b01d8d34468e15eeff38de8f7b90a9f1",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "operator_chain_gt",
+      "path": "fixtures/conditionals/operator_chain_gt.ant",
+      "sha256": "17e6efca66e2e81d56e2021391222d236034d1fb27e4d5018b69759a88684288",
+      "expectation": "fixtures/conditionals/reference/operator_chain_gt.json",
+      "expectation_sha256": "448196fdfd289093209ed6e61e153315d38711b95fd2c900fb4513156e84e235",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "operator_arithmetic_precedence",
+      "path": "fixtures/conditionals/operator_arithmetic_precedence.ant",
+      "sha256": "f442e0679583ffbddf8f303272f451c728b1ba8154d4fb37b0db89b616281524",
+      "expectation": "fixtures/conditionals/reference/operator_arithmetic_precedence.json",
+      "expectation_sha256": "94408cd13262dfc8c67ab49672205819e81ef3f102db125431676d85ef765171",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_and_or_precedence",
+      "path": "fixtures/conditionals/operator_and_or_precedence.ant",
+      "sha256": "1806db7771c42c963b3fe29169eeaf36471e35da020024a641b644c5c5d29716",
+      "expectation": "fixtures/conditionals/reference/operator_and_or_precedence.json",
+      "expectation_sha256": "86ca22cda34ac3e32f743216525b0c72f1ea3c34662b499f9202fe8d44062c95",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_not_compare_precedence",
+      "path": "fixtures/conditionals/operator_not_compare_precedence.ant",
+      "sha256": "73d34bc1363a739f8e9ccff9609fed493ab20298d615e9af2766186d3a1addd5",
+      "expectation": "fixtures/conditionals/reference/operator_not_compare_precedence.json",
+      "expectation_sha256": "ac4ac7212ef564627e7b1b861238a7f54784e7b0759a613f6ece9c8e035caf8a",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_not_equality_precedence",
+      "path": "fixtures/conditionals/operator_not_equality_precedence.ant",
+      "sha256": "6577a5264da34b47e569eb13d12dfa578d79a858a8ce7b660478a1306d3d1a88",
+      "expectation": "fixtures/conditionals/reference/operator_not_equality_precedence.json",
+      "expectation_sha256": "688ae0c3d1544368661e80abfc451c42638d53ab855f844986a3cb047f546da7",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_compare_and_precedence",
+      "path": "fixtures/conditionals/operator_compare_and_precedence.ant",
+      "sha256": "89279405b61edc1ba35aeb1214cf452331f0ddbe55a3a9c93e78ed64d51f381d",
+      "expectation": "fixtures/conditionals/reference/operator_compare_and_precedence.json",
+      "expectation_sha256": "2b39e94ca1db9034a737554b36845edc6a8c05f282720d82755b4b9adaa423b9",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_compare_eq_precedence",
+      "path": "fixtures/conditionals/operator_compare_eq_precedence.ant",
+      "sha256": "4d6bc65b8c111fe01ea9fcb13082046f49f3f69887dbeb2e65be524f1ecf9278",
+      "expectation": "fixtures/conditionals/reference/operator_compare_eq_precedence.json",
+      "expectation_sha256": "e7018483a7cb6db1a88f9090e808483dc1308820966ec56f034c88b1107ac5dd",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "operator_comparison_paren",
+      "path": "fixtures/conditionals/operator_comparison_paren.ant",
+      "sha256": "77138caaadeea1260ecd056a34bf332f32a690d95e03c9dad6561b3875d37736",
+      "expectation": "fixtures/conditionals/reference/operator_comparison_paren.json",
+      "expectation_sha256": "359d066b395ccb44e318d1f806af83d22c606fcaafd4409502ff458f67114d25",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "operator_arithmetic_bool",
+      "path": "fixtures/conditionals/operator_arithmetic_bool.ant",
+      "sha256": "5cd95d85db59e090abb6d80431c2cc9161c073e903b6cb04e5675da942ed8557",
+      "expectation": "fixtures/conditionals/reference/operator_arithmetic_bool.json",
+      "expectation_sha256": "d9ff715773e280ae11c3c40043f562e54cf529d794a84a7c5acbf2e4a8db40ac",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_multiply_bool",
+      "path": "fixtures/conditionals/operator_multiply_bool.ant",
+      "sha256": "9387cc63f751c04b931ea3666eaefe93bf04f992543866a96f50c3bc51db2467",
+      "expectation": "fixtures/conditionals/reference/operator_multiply_bool.json",
+      "expectation_sha256": "855f6d863f7f7ab1e4a313aae86e8caff052c8691815fcc68706270bba057ec1",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_function_bool",
+      "path": "fixtures/conditionals/operator_function_bool.ant",
+      "sha256": "267bccffa72e7dcc890d0d9eb8cb22607f656af47a685c6bedf7458368de18fa",
+      "expectation": "fixtures/conditionals/reference/operator_function_bool.json",
+      "expectation_sha256": "1e97e2f359c05503d99a92985832d27dc9994300babb6aa1bf21a820a22efe41",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_compare_bool",
+      "path": "fixtures/conditionals/operator_compare_bool.ant",
+      "sha256": "af49ba42f6b54d0911f36aeda40950bc4de94e8c22dd0c91ca6901fb04c79e70",
+      "expectation": "fixtures/conditionals/reference/operator_compare_bool.json",
+      "expectation_sha256": "34ae212d5e8803cc61c4dceb34aeb5f6223b2134386c323efe7af09b00ab2304",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_equality_bool",
+      "path": "fixtures/conditionals/operator_equality_bool.ant",
+      "sha256": "252c75c7dec3eaadd9dd7c9bb80d7a5bc8599cd40c6257714d45adfaaf4342bb",
+      "expectation": "fixtures/conditionals/reference/operator_equality_bool.json",
+      "expectation_sha256": "dc2c603cbfb509fa39b928842a8562cfb82a099ca1cf69ecb018ef8252ef8f9b",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_numeric_not",
+      "path": "fixtures/conditionals/operator_numeric_not.ant",
+      "sha256": "14807c780e29fc590fb49aaa160bae9f911b1bd5f2428fe0f120e00bdc4c184e",
+      "expectation": "fixtures/conditionals/reference/operator_numeric_not.json",
+      "expectation_sha256": "d37e877de72330f42ef2089f3b27522b5d73ae8f9eabd8008bc009adbf25aa53",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_numeric_and",
+      "path": "fixtures/conditionals/operator_numeric_and.ant",
+      "sha256": "d98c761380949fea07e90f0138816f3f90784331fa1b8b1ef67ae650de842955",
+      "expectation": "fixtures/conditionals/reference/operator_numeric_and.json",
+      "expectation_sha256": "3c6ddf7e2f9375671c4f27520f7a30ec7ff6c36506c39507a4ce0c7ec68c637f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "operator_numeric_or",
+      "path": "fixtures/conditionals/operator_numeric_or.ant",
+      "sha256": "f494620958b722647d557feb9d1f1f0426a0bfc2de8fea9ad9cb338ab40755c9",
+      "expectation": "fixtures/conditionals/reference/operator_numeric_or.json",
+      "expectation_sha256": "e41f9e44debc4c8a353a8d6cb6417486718034f83805f8921d0f69f634b68864",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_eq_0",
+      "path": "fixtures/conditionals/function_eq_0.ant",
+      "sha256": "4afb73ae668a6e86bfd1f9af193244d7161fd5c587dbd3d870b0703a71479d68",
+      "expectation": "fixtures/conditionals/reference/function_eq_0.json",
+      "expectation_sha256": "b74db0ef779c82c4b994a5449c36d45a2fd4739a52cbb65df4f18950b8d7205e",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_eq_1",
+      "path": "fixtures/conditionals/function_eq_1.ant",
+      "sha256": "54b9f2e6d1bbc8ba9977a24f248f0b538d5ed99d893c37f26551288226b061f0",
+      "expectation": "fixtures/conditionals/reference/function_eq_1.json",
+      "expectation_sha256": "18eda903810a3b3c0d0be67fdbe2dbab980f2f27adfc7cd7690a1f1fc7985d11",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_eq_2",
+      "path": "fixtures/conditionals/function_eq_2.ant",
+      "sha256": "f273f7339fa22dbe4a31683e4c9856b3bf74f35fa28a3e1a3cfc158a0b8d3ed5",
+      "expectation": "fixtures/conditionals/reference/function_eq_2.json",
+      "expectation_sha256": "b2c6b9726f0d43ec110bbb4697ed022d063c80b6215ea533df190309b141e0ff",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_eq_3",
+      "path": "fixtures/conditionals/function_eq_3.ant",
+      "sha256": "2c72d0ca29e1eaa81b8ffdb74bc7c98d8a2d1fcbfec3a8fb94f329dd1c1a2c17",
+      "expectation": "fixtures/conditionals/reference/function_eq_3.json",
+      "expectation_sha256": "a4c91f81b945ce001f4535e017199e95c1ab5eca4ac9ee0b319ce38bfe53ab07",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_equals_0",
+      "path": "fixtures/conditionals/function_equals_0.ant",
+      "sha256": "6299b993419bdbe208694cb781d1e851a24cb4931f4a21c5569a46c888c5a303",
+      "expectation": "fixtures/conditionals/reference/function_equals_0.json",
+      "expectation_sha256": "7dac00d5247c825a20cad636721f144d17eb2f58c45faa84d1924a2838d46301",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_equals_1",
+      "path": "fixtures/conditionals/function_equals_1.ant",
+      "sha256": "7869912aff5451a30377c956c949089e8b6dab55ae4bf04bf5a59089d757106b",
+      "expectation": "fixtures/conditionals/reference/function_equals_1.json",
+      "expectation_sha256": "9346866f496200ea176ffdcc842cc10c5fc8a53fba0172156e6b2b259f9311ad",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_equals_2",
+      "path": "fixtures/conditionals/function_equals_2.ant",
+      "sha256": "f855cbf87850fda0e05bcb25ce4e17fba39c89926c758e0d27784111d48d5839",
+      "expectation": "fixtures/conditionals/reference/function_equals_2.json",
+      "expectation_sha256": "d1aadcf5f4b64e3a5f30deb18173e152bfcb3863d1b351356447a803561c411c",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_equals_3",
+      "path": "fixtures/conditionals/function_equals_3.ant",
+      "sha256": "e1f0bddb5b61d5ca013baef1498b2c46a18ec24ea3b14606c2443c0c215d6245",
+      "expectation": "fixtures/conditionals/reference/function_equals_3.json",
+      "expectation_sha256": "a8630a555179047e88b64b8f014136f2e93319a383303ab4718e56c18671e9ee",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_neq_0",
+      "path": "fixtures/conditionals/function_neq_0.ant",
+      "sha256": "85aa995f581acf341008156f9c42012955531778e6eaa8ece84a65e258e45ee6",
+      "expectation": "fixtures/conditionals/reference/function_neq_0.json",
+      "expectation_sha256": "18c1934bf51ba7bcb9d0702c19e1aeabaabb98d7c02abeff9605cca675ace9de",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_neq_1",
+      "path": "fixtures/conditionals/function_neq_1.ant",
+      "sha256": "ef898eb7ffb3ba4d555c0678a652a8f205593b0306b249809a2ea0914a2f41e7",
+      "expectation": "fixtures/conditionals/reference/function_neq_1.json",
+      "expectation_sha256": "66b7f4eb8233ff4aa63f359b2be498cd61f537ac133a1bdbd3b40ddcf9c9d7b7",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_neq_2",
+      "path": "fixtures/conditionals/function_neq_2.ant",
+      "sha256": "6844a618da046d04bb53de1309c62bce1663d33bad2230fc6e49184f4102bfa3",
+      "expectation": "fixtures/conditionals/reference/function_neq_2.json",
+      "expectation_sha256": "ebaf09131ffa0cc0d41dcca6ef06e6952feefd731a5873a5eb6aa22ac7265627",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_neq_3",
+      "path": "fixtures/conditionals/function_neq_3.ant",
+      "sha256": "717e6a006035c8b97b2e30a0d803c6361a7ae1c933831f211d69fb59e08bd8f1",
+      "expectation": "fixtures/conditionals/reference/function_neq_3.json",
+      "expectation_sha256": "99cf0734f6db3ac57250de08b1b605d539b3b156eeb5ce586248c7a0dbf678fe",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_gt_0",
+      "path": "fixtures/conditionals/function_gt_0.ant",
+      "sha256": "a949745f9f440988a31d28d45757a55c0e79e3f86e0ab46101f976465a5ad155",
+      "expectation": "fixtures/conditionals/reference/function_gt_0.json",
+      "expectation_sha256": "183404d33e8c800caab4d18062a2cecc2e4ed930ce10468113d0bc2e6d283e54",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_gt_1",
+      "path": "fixtures/conditionals/function_gt_1.ant",
+      "sha256": "d66f049224780e894fae5d8fd03edac83765c93a7ff609a7a5986313d27162ce",
+      "expectation": "fixtures/conditionals/reference/function_gt_1.json",
+      "expectation_sha256": "e8f051b1304be84731c930a1a6fe21efe3a6a2e80426e88af11972fac97d1376",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_gt_2",
+      "path": "fixtures/conditionals/function_gt_2.ant",
+      "sha256": "9bc912697509a08d75c7808e2fa09133ccc8337f03d5d48a8c1824145330dc53",
+      "expectation": "fixtures/conditionals/reference/function_gt_2.json",
+      "expectation_sha256": "08709af0854702fb1db29dd964735a534f575b2771355f71fc8757ab11e00331",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_gt_3",
+      "path": "fixtures/conditionals/function_gt_3.ant",
+      "sha256": "22523f863657bbe4ab61274fd372713109ffa5df2a9520a46936b9722504566c",
+      "expectation": "fixtures/conditionals/reference/function_gt_3.json",
+      "expectation_sha256": "9685ac360783918bbff8fa48d970cfd46fad3e02cbb596f399512ba54edd5390",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_geq_0",
+      "path": "fixtures/conditionals/function_geq_0.ant",
+      "sha256": "8317ce16a1985009b3c719c40640095906d4f834a30d527d118b3e0d0eb23b8a",
+      "expectation": "fixtures/conditionals/reference/function_geq_0.json",
+      "expectation_sha256": "22f89512beb1261ba373f8def7b692859b54e0cb184b1f54117841a357106e27",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_geq_1",
+      "path": "fixtures/conditionals/function_geq_1.ant",
+      "sha256": "44f937fd461f2bf6f85a167dde23f99f79973f3aea8af89dfdf574a61cf42e74",
+      "expectation": "fixtures/conditionals/reference/function_geq_1.json",
+      "expectation_sha256": "ab5f769e31e57e6f7858068764bb913dcd53b168141aa0d036d8cb81d63096fb",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_geq_2",
+      "path": "fixtures/conditionals/function_geq_2.ant",
+      "sha256": "4112c59ee8806a9d7f820abb80b028f084efbec72d1a4e2b3c5ea86f625d9597",
+      "expectation": "fixtures/conditionals/reference/function_geq_2.json",
+      "expectation_sha256": "5511dff71c9ef6d7f7ba7c0ac55db4d76b1e2046e9d9a519417916a96c541ee5",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_geq_3",
+      "path": "fixtures/conditionals/function_geq_3.ant",
+      "sha256": "d87178fa87b45dc22d21bec6e42b89c2a697f3bd419f7f7991024913a58187bf",
+      "expectation": "fixtures/conditionals/reference/function_geq_3.json",
+      "expectation_sha256": "e85e46fdea54f7f199d80d0b46bbf44859c737eb0e266ba3bc1bc2d6da00e3d5",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_lt_0",
+      "path": "fixtures/conditionals/function_lt_0.ant",
+      "sha256": "1de477267066b3101b530484fb725afef2e744058fcb9bc089f2c71f3b6b0bc6",
+      "expectation": "fixtures/conditionals/reference/function_lt_0.json",
+      "expectation_sha256": "36d457e4dcd74ef2792fe9830ab5a019f6c2d8d6eabf0657fd41f7b0ffe4df9c",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_lt_1",
+      "path": "fixtures/conditionals/function_lt_1.ant",
+      "sha256": "304f6769ae696ad7b6a93ac442c233a8edc100ebe09a7f7eaa1c6cc2b55f68e1",
+      "expectation": "fixtures/conditionals/reference/function_lt_1.json",
+      "expectation_sha256": "50855f2ad53529b6371db6d1a1c15dd6b2810395002d3e382aae58e9b93d278c",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_lt_2",
+      "path": "fixtures/conditionals/function_lt_2.ant",
+      "sha256": "022981c2aa1eef24a9b788df0cdc78964839d08b5a3278b2ca33db22f11e31d6",
+      "expectation": "fixtures/conditionals/reference/function_lt_2.json",
+      "expectation_sha256": "38913dca54fa083296a15592a3e3a073b61985ac615fcfe12a60d38e34f352f2",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_lt_3",
+      "path": "fixtures/conditionals/function_lt_3.ant",
+      "sha256": "9e6de3bc694070a7d6daca92157b5be4460e3c665e78c7dee22d726bf78c1790",
+      "expectation": "fixtures/conditionals/reference/function_lt_3.json",
+      "expectation_sha256": "c4effd2a085364fe57c9e7e9a13e23509b349bca4446bd8b04fc248c83996832",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_leq_0",
+      "path": "fixtures/conditionals/function_leq_0.ant",
+      "sha256": "f4f2c85c8f0f88b8e69e6dd44874fc3259fc3ae9026f282768c23009a3f4f44c",
+      "expectation": "fixtures/conditionals/reference/function_leq_0.json",
+      "expectation_sha256": "511ca6aee86406a65c6da5704a3cb0b9f84872171fb37dcc6a6b57577742038b",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_leq_1",
+      "path": "fixtures/conditionals/function_leq_1.ant",
+      "sha256": "6bad3fe2d586145b3cb19b7067e714ed0019f2dd31dce541a35dc2698395fa9f",
+      "expectation": "fixtures/conditionals/reference/function_leq_1.json",
+      "expectation_sha256": "21bd6891d0a58e4bdb7ddccdd9d27e3e598def166b84ab62365b918d38ab8e61",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_leq_2",
+      "path": "fixtures/conditionals/function_leq_2.ant",
+      "sha256": "db06905fe8bad8187f8d79d05c2440a3dbfe85a77c5bb683e5cf27c3166331a6",
+      "expectation": "fixtures/conditionals/reference/function_leq_2.json",
+      "expectation_sha256": "d44d0ba2dfadd988f5edb7cf01538fca1f246b4ca13f4d98c6f7ec91811619a4",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_leq_3",
+      "path": "fixtures/conditionals/function_leq_3.ant",
+      "sha256": "c209a766e336b50f48fad0670a0c1f5d664ab2b0f25dc568f929ba997359b4ae",
+      "expectation": "fixtures/conditionals/reference/function_leq_3.json",
+      "expectation_sha256": "540265b32519341336a7f0638f9de2b9c5f316ea9858f1e41cccd35425a334d5",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_and_0",
+      "path": "fixtures/conditionals/function_and_0.ant",
+      "sha256": "5f5790a0e8b780aebb5fa486866bf93ff3486ace14960e9cead1e77b834c6d93",
+      "expectation": "fixtures/conditionals/reference/function_and_0.json",
+      "expectation_sha256": "72594a9cedd5fb6c6d4ac0eba9dc03f564462c8833e2a4b6ee3dd6fc27adb1d4",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_and_1",
+      "path": "fixtures/conditionals/function_and_1.ant",
+      "sha256": "f6e8e31fd4aceecae13b53ce08a7eea2b876d52778d22079a3df7b2398f50348",
+      "expectation": "fixtures/conditionals/reference/function_and_1.json",
+      "expectation_sha256": "c7731a4c285ca784349d45d0a6cf236bf46dcb3da4d41d4992fce47d2de8ece2",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_and_2",
+      "path": "fixtures/conditionals/function_and_2.ant",
+      "sha256": "efe425cd197c04b13b84d824e30e526ec500f3a78bad5b8719f5075794e0370f",
+      "expectation": "fixtures/conditionals/reference/function_and_2.json",
+      "expectation_sha256": "9cc7fcf5e0c3a4912f1c1307fd4b1e2583e8368bf9b007fdce3b45399a0cccc0",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_and_3",
+      "path": "fixtures/conditionals/function_and_3.ant",
+      "sha256": "ff23076b5f8099a3ccbbc06fcaf78995d88414583353b2d28b3a9c81c3dd994f",
+      "expectation": "fixtures/conditionals/reference/function_and_3.json",
+      "expectation_sha256": "88aa0248b5ef6571e3228aa82c509db4d1bc292b5de1b1bc8ff9ab4fe5a4886b",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_or_0",
+      "path": "fixtures/conditionals/function_or_0.ant",
+      "sha256": "cd76a1cf27c50674047bc8b3134b298d083ef50776ffcab226809ba2e31c7a26",
+      "expectation": "fixtures/conditionals/reference/function_or_0.json",
+      "expectation_sha256": "8c6857f96ba259ed82eec4bc99f16768671039a2e96236ab9509d75ef3f98137",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_or_1",
+      "path": "fixtures/conditionals/function_or_1.ant",
+      "sha256": "c5adfa7a187fdac41b80336933dec7a6dc776965c23297ca718edd99704a3c53",
+      "expectation": "fixtures/conditionals/reference/function_or_1.json",
+      "expectation_sha256": "9195eae3932ba1da283186085798f29c2ae060615740f5922f00d78fffdc9c72",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_or_2",
+      "path": "fixtures/conditionals/function_or_2.ant",
+      "sha256": "5c849e76bbb5cd24576bdb1901a16554954f6b4bc7b52d9d5cde760bca2a359d",
+      "expectation": "fixtures/conditionals/reference/function_or_2.json",
+      "expectation_sha256": "02958a5af07230b17f55b1731951e01d44cc05abc916f3bfd4179ef1b53d9870",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_or_3",
+      "path": "fixtures/conditionals/function_or_3.ant",
+      "sha256": "acf97b26e457d25c6f946060914f98b4484526824ab1af72288a81c80ff6b157",
+      "expectation": "fixtures/conditionals/reference/function_or_3.json",
+      "expectation_sha256": "e8695ef55ccea9aed7cc37418d8354c490269c8acf6bccc709beb61105f1a667",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_xor_0",
+      "path": "fixtures/conditionals/function_xor_0.ant",
+      "sha256": "fa922ad8a287809481b3f5ade442204bd215cb980e6ce518584b07784bad61c7",
+      "expectation": "fixtures/conditionals/reference/function_xor_0.json",
+      "expectation_sha256": "0e12ac4903a925c35eb50550c60ef7e8bf5b02a9186a28ebd606e60c6684ae56",
+      "reference_status": "PROJECTION_UNSUPPORTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "function_xor_1",
+      "path": "fixtures/conditionals/function_xor_1.ant",
+      "sha256": "6c12c2c1013d12ac2ea40a676374948a645e07a42d996ea29fb2cd2547ae5195",
+      "expectation": "fixtures/conditionals/reference/function_xor_1.json",
+      "expectation_sha256": "eb7a4fda355eebae46e403cb97138d5aed7864e69c971b7b576fa0ace4d12318",
+      "reference_status": "PROJECTION_UNSUPPORTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "function_xor_2",
+      "path": "fixtures/conditionals/function_xor_2.ant",
+      "sha256": "380557a60c1189250fd2e727d3474c6595ce52dc05ac92574e8f5e7aa4af584c",
+      "expectation": "fixtures/conditionals/reference/function_xor_2.json",
+      "expectation_sha256": "3c205b9388985cfe0e075bf6960a87cf2b212c4607cef69a65831f09b7e13b19",
+      "reference_status": "PROJECTION_UNSUPPORTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "function_xor_3",
+      "path": "fixtures/conditionals/function_xor_3.ant",
+      "sha256": "ed4d4783d4b595109429bec45d6a745d9a391db07efdb5f2a4b093d75a4f17dc",
+      "expectation": "fixtures/conditionals/reference/function_xor_3.json",
+      "expectation_sha256": "afb43596e55ea6f89aa84e7095a118791c772d1d8b39ce962122f549fcb49fc7",
+      "reference_status": "PROJECTION_UNSUPPORTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "function_not_0",
+      "path": "fixtures/conditionals/function_not_0.ant",
+      "sha256": "929dd870ce9baf98360d3dd318dc44ee381795652a4a9771adb36c7cda4696bf",
+      "expectation": "fixtures/conditionals/reference/function_not_0.json",
+      "expectation_sha256": "0ba9c62866c9dcf84793ce1a0d8c107e757853dc7723ac36fe0041b5a0fad014",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_not_1",
+      "path": "fixtures/conditionals/function_not_1.ant",
+      "sha256": "acfa743174752936670b6d683f40e3b1ca6e727ae2f3a294e8cb762b2ac19641",
+      "expectation": "fixtures/conditionals/reference/function_not_1.json",
+      "expectation_sha256": "4d377a44e84dba22cda380dc4aedb6e9802b33f08e9a06dfbcf73168c73fa074",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "function_not_2",
+      "path": "fixtures/conditionals/function_not_2.ant",
+      "sha256": "213bcd83c8a1e553bd1ec94eda5cd1e78c3a9c79b22ae074c275dded54d6eb1b",
+      "expectation": "fixtures/conditionals/reference/function_not_2.json",
+      "expectation_sha256": "b1074636f4880fe81caab88728fde6f9eddebcc0f2102648266d5010605dc118",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_not_3",
+      "path": "fixtures/conditionals/function_not_3.ant",
+      "sha256": "730e1079482dc8a63934a774c6d78bec73a440bd765e5146248d13bebb048c02",
+      "expectation": "fixtures/conditionals/reference/function_not_3.json",
+      "expectation_sha256": "7e75fd7ce5d2a0f9b9f6b848b2668c5fdccd4360b01d712c11d590c5f0b13dc0",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "function_implies_0",
+      "path": "fixtures/conditionals/function_implies_0.ant",
+      "sha256": "edc905570d4faaad92888ea7a78158b94f6e0500b0722c8ae4b4c0d4c63420e9",
+      "expectation": "fixtures/conditionals/reference/function_implies_0.json",
+      "expectation_sha256": "572914d23fa4816bac1f5793a5cece823bbe2c866859a3c25e015e5163341634",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "function_implies_1",
+      "path": "fixtures/conditionals/function_implies_1.ant",
+      "sha256": "93ee0cd5078db5a5fc58be8ff0c921416ccaa821573830550c03bdeaedcd514e",
+      "expectation": "fixtures/conditionals/reference/function_implies_1.json",
+      "expectation_sha256": "358a50093c8f2d1d0fcdd6c3ab741f76589a5dbdd8cb3a863f741ad43afe5404",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "function_implies_2",
+      "path": "fixtures/conditionals/function_implies_2.ant",
+      "sha256": "ea099d56a90427c24095173826888fd57f7b4023646fa0484dbbcbfae05f356c",
+      "expectation": "fixtures/conditionals/reference/function_implies_2.json",
+      "expectation_sha256": "d4ed756245a3ef026efb8b3924fa99288c9abf2cc7283c54d5979d72b868a41c",
+      "reference_status": "PROJECTION_UNSUPPORTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "function_implies_3",
+      "path": "fixtures/conditionals/function_implies_3.ant",
+      "sha256": "eb2f46b487db9cd3eeecdd22f686f34069a05093a6e8366811e35de97a0151ea",
+      "expectation": "fixtures/conditionals/reference/function_implies_3.json",
+      "expectation_sha256": "db784d07b22500c2028924c5d82c3396f52f3fb06d107e42700b4e430a5abc81",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "constant_true_lower",
+      "path": "fixtures/conditionals/constant_true_lower.ant",
+      "sha256": "aab1ae1423a6e5557e298506d0eed9d52b0a53da2f892d938d2a8bb9104d2c1e",
+      "expectation": "fixtures/conditionals/reference/constant_true_lower.json",
+      "expectation_sha256": "26e59d1e028d44fc08c1191217e4ab5ae186dd889e90b153519f2b6ed57cd6e5",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "constant_true_title",
+      "path": "fixtures/conditionals/constant_true_title.ant",
+      "sha256": "a2b4807469ff84361994ad70c73967e8884d7250640d001868b58135dd328731",
+      "expectation": "fixtures/conditionals/reference/constant_true_title.json",
+      "expectation_sha256": "bbe3603c7dce652b24976a0de255bae5dc9d0e93c7ce9962f393103e0492951e",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "constant_true_upper",
+      "path": "fixtures/conditionals/constant_true_upper.ant",
+      "sha256": "638e5943b946af0bde7eab45ba8338744e71d6be0e424a4dbdf46bf099401314",
+      "expectation": "fixtures/conditionals/reference/constant_true_upper.json",
+      "expectation_sha256": "03052109cca0f2b92ce4f6f7408a1ffc79a0db1ee8ea0e128a0392ab8a803166",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "constant_false_lower",
+      "path": "fixtures/conditionals/constant_false_lower.ant",
+      "sha256": "6db4986027036f635bfd1eb026705e6ea4a71d8a4a67975ef9f751f22f4a7fc9",
+      "expectation": "fixtures/conditionals/reference/constant_false_lower.json",
+      "expectation_sha256": "eb0cb95cbdcfebc5f42b71ada91b50799080c89939ea1438e3f7f162820c3a0e",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "constant_false_title",
+      "path": "fixtures/conditionals/constant_false_title.ant",
+      "sha256": "ff9b2b128c76131f6ee85bbb90f63df30e172a65f857404465be230dbd789413",
+      "expectation": "fixtures/conditionals/reference/constant_false_title.json",
+      "expectation_sha256": "767cd0d10cb525fdacb63344f695c7a3d6d7fcc21665be931fdd05670d2099e8",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "constant_false_upper",
+      "path": "fixtures/conditionals/constant_false_upper.ant",
+      "sha256": "6dae53430556b3f4a6d34d6fbbdd23dd3098832a7889d30d3284f851f3010ca4",
+      "expectation": "fixtures/conditionals/reference/constant_false_upper.json",
+      "expectation_sha256": "e8cd8ad401ee34c2088031659b727ac11c5c34ef924a85367160efca4be41e28",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_empty",
+      "path": "fixtures/conditionals/piecewise_empty.ant",
+      "sha256": "e7cb2a2d6d711de84c5a6ee107fcf639ab0b07b2a5c4493f1f16bf475fc8cbe8",
+      "expectation": "fixtures/conditionals/reference/piecewise_empty.json",
+      "expectation_sha256": "dc9a3645f72fa99ab7a2e159eff01ec067bd96c069bcfb0af5b58e45d6845ebc",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "piecewise_only_default",
+      "path": "fixtures/conditionals/piecewise_only_default.ant",
+      "sha256": "655c5f6dea9229b37f35bb79560f6fd2895fbd87096c7c68062b60f464ab9c7b",
+      "expectation": "fixtures/conditionals/reference/piecewise_only_default.json",
+      "expectation_sha256": "1ae1086f48f16a2e2a0196175e94440062894158188a120aacc790dec97fdf48",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_pair_true",
+      "path": "fixtures/conditionals/piecewise_pair_true.ant",
+      "sha256": "879379fb78ff36bf253f68e778dc156eb8508209b2611461d39c7a1a7565112d",
+      "expectation": "fixtures/conditionals/reference/piecewise_pair_true.json",
+      "expectation_sha256": "b4495579584887755764b2fd405dc97f64bdc2ca2f9b35e86585c6158cbcad2f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_pair_false",
+      "path": "fixtures/conditionals/piecewise_pair_false.ant",
+      "sha256": "4fc87fa50f0cc518d8ff6edc36143631d5fe8bc31093d02dea7bfb6a50087d98",
+      "expectation": "fixtures/conditionals/reference/piecewise_pair_false.json",
+      "expectation_sha256": "ccd543f629a4adcc2226e1416a18ea92d4ee45a23a265dfa41d1cf20a56245f9",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "piecewise_default_true",
+      "path": "fixtures/conditionals/piecewise_default_true.ant",
+      "sha256": "79fd885a9898b6b4765a8bf41306b65cb56213d9a967a1eaa64dbc9515765dc7",
+      "expectation": "fixtures/conditionals/reference/piecewise_default_true.json",
+      "expectation_sha256": "f4070b94e83b89ce0fc8d2f07b3eb9f77a4364a310b04f450fb6d1c98e0f6892",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_default_false",
+      "path": "fixtures/conditionals/piecewise_default_false.ant",
+      "sha256": "f4fe071def1edf483b4403197e32fb886890d3d10adc32c9a8ce10fb528f9b7b",
+      "expectation": "fixtures/conditionals/reference/piecewise_default_false.json",
+      "expectation_sha256": "acdf322f609caa35e7db32f57a08ac703cdd1729b37ddb0d2e3cab4a2d6b9606",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_two_pairs",
+      "path": "fixtures/conditionals/piecewise_two_pairs.ant",
+      "sha256": "548108e2d41fa404af237ef82ca43c65610eadbbfe738eac8df27de292e7d3e9",
+      "expectation": "fixtures/conditionals/reference/piecewise_two_pairs.json",
+      "expectation_sha256": "2bf50f81f22e5156ae8cfd59132fafe902e69ac17576f850ae3c5b237141aa4f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_two_pairs_none",
+      "path": "fixtures/conditionals/piecewise_two_pairs_none.ant",
+      "sha256": "7f0d634472fc1b78e1e30246d69e50147536690fc8ff49d3bdf4064b038b499f",
+      "expectation": "fixtures/conditionals/reference/piecewise_two_pairs_none.json",
+      "expectation_sha256": "e0d517187c54ab0afb2981e7e726b0dbd53fa6de71df1f0255c8acb8982e049c",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "piecewise_ordered_true",
+      "path": "fixtures/conditionals/piecewise_ordered_true.ant",
+      "sha256": "fc36a258e490171eb1728f9f10d58c80a69a85abdcf1b0761959941de8670074",
+      "expectation": "fixtures/conditionals/reference/piecewise_ordered_true.json",
+      "expectation_sha256": "5051190a07054dba9bc2585eafc502de0bfd28df33d7af7bd78836fef4bebc85",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_ordered_second",
+      "path": "fixtures/conditionals/piecewise_ordered_second.ant",
+      "sha256": "c89825fd3bbdad3d93d1580860ae0fdf5209920df2242a9551546af32e3c2f36",
+      "expectation": "fixtures/conditionals/reference/piecewise_ordered_second.json",
+      "expectation_sha256": "311d4537d96c51bd294675bfe47071280f0f312d521c4ddaf6fdbb94cbcbc0ad",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_numeric_condition",
+      "path": "fixtures/conditionals/piecewise_numeric_condition.ant",
+      "sha256": "d119c29af3a054fb5db7b704ecb1b8de386d7226318dea1404fc59bb8c49d831",
+      "expectation": "fixtures/conditionals/reference/piecewise_numeric_condition.json",
+      "expectation_sha256": "8f30deaff38e07b9fed3909fe89776d3103d3c69072cdc8af02732a211852d19",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_zero_condition",
+      "path": "fixtures/conditionals/piecewise_zero_condition.ant",
+      "sha256": "a0587cd304d0dbfd8a9bb78bf252903522b4d3006daf547eb27a6542cdc01e6a",
+      "expectation": "fixtures/conditionals/reference/piecewise_zero_condition.json",
+      "expectation_sha256": "71634f19c20cb9229f86239359a82e68517200411831d3ba7219ed8e94f33326",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_symbol_condition",
+      "path": "fixtures/conditionals/piecewise_symbol_condition.ant",
+      "sha256": "dac20103a560203113e8071d2b9a399c3469a2ca2d00e7fcd5c138decd869441",
+      "expectation": "fixtures/conditionals/reference/piecewise_symbol_condition.json",
+      "expectation_sha256": "a894502796d89d2ad773a56ad3ac866729d1a6cfba0a6f976794d5ee69ed69b8",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_symbol_compare",
+      "path": "fixtures/conditionals/piecewise_symbol_compare.ant",
+      "sha256": "bdc8b1f00462ccea70fa38ff6b808ef25dd2c6ac62e6f7597e9feff0924ffca4",
+      "expectation": "fixtures/conditionals/reference/piecewise_symbol_compare.json",
+      "expectation_sha256": "d55c409016c28b403d41055587b5ba409c871c18eb88ca3a1c89ca8ad411c0e0",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_time_condition",
+      "path": "fixtures/conditionals/piecewise_time_condition.ant",
+      "sha256": "019601d3febd685c7357938b0b321e680f371680778275925344f55ab18707d6",
+      "expectation": "fixtures/conditionals/reference/piecewise_time_condition.json",
+      "expectation_sha256": "cf27e1a8881c734084306175cd0b81b3e86e961820c53aff9df5dd2f1b57194c",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_boolean_values",
+      "path": "fixtures/conditionals/piecewise_boolean_values.ant",
+      "sha256": "94ca2dbe4d491340d529d50a60a461bfaf73c04f6821130a74b39a922ce2fec4",
+      "expectation": "fixtures/conditionals/reference/piecewise_boolean_values.json",
+      "expectation_sha256": "40a595ef65ff221c86fe527d6c1d43e9d06cfdcee45993cd9c463b8f626c43e7",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_mixed_values",
+      "path": "fixtures/conditionals/piecewise_mixed_values.ant",
+      "sha256": "195ca8741b38a355538147ed52cd1f88e44c557e933b352827ddaace665a332c",
+      "expectation": "fixtures/conditionals/reference/piecewise_mixed_values.json",
+      "expectation_sha256": "f0215825199040e75bb6b5caa2861079149811a188a0c0fbeb9bfcf67c69dc5a",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_bool_nested",
+      "path": "fixtures/conditionals/piecewise_bool_nested.ant",
+      "sha256": "2865e9cfca864969a1bfcc4c8225a2f33bb082773925b2746be8d27f917f49bd",
+      "expectation": "fixtures/conditionals/reference/piecewise_bool_nested.json",
+      "expectation_sha256": "8b3be079c02468f306957fe488610ff7fe7c44f46472a5e26968ea06b30736d9",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_inactive_sqrt",
+      "path": "fixtures/conditionals/piecewise_inactive_sqrt.ant",
+      "sha256": "9b7139ce36e1067c669e307f8d2afc019b513f9158ee1d424b0481020e93e4c5",
+      "expectation": "fixtures/conditionals/reference/piecewise_inactive_sqrt.json",
+      "expectation_sha256": "492797e24a68e925ab62e36805f9aed1d24bfa59332aede320dc57a6701603c6",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_inactive_first_sqrt",
+      "path": "fixtures/conditionals/piecewise_inactive_first_sqrt.ant",
+      "sha256": "788578b78c4e440125fd84af9683dfde716275c5fc08eb87b3518e02266aa443",
+      "expectation": "fixtures/conditionals/reference/piecewise_inactive_first_sqrt.json",
+      "expectation_sha256": "265cff91b1e7e79185a8a777b4c3c7858a01e5ffcf3caf0fbed4e03ecd8973ee",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_inactive_divzero",
+      "path": "fixtures/conditionals/piecewise_inactive_divzero.ant",
+      "sha256": "ecd0b61fe8483efd452b8836f1b3e530ffad6b20db481fd0aae0c4b2a20515af",
+      "expectation": "fixtures/conditionals/reference/piecewise_inactive_divzero.json",
+      "expectation_sha256": "d7a8794d05669f9d35e022d9c3d91b26d6f496a9fdcd1282402c52bd10d41cdb",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_inactive_lognonpositive",
+      "path": "fixtures/conditionals/piecewise_inactive_lognonpositive.ant",
+      "sha256": "b5da4629329db61b51589903182d673f7a9abfd577e1e0ff73ae52b251ea68b8",
+      "expectation": "fixtures/conditionals/reference/piecewise_inactive_lognonpositive.json",
+      "expectation_sha256": "5cd0b2e9155026c7c35f3f2a86c32f25e085c25714f0cd33daa85fcb14c1078c",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_active_sqrt",
+      "path": "fixtures/conditionals/piecewise_active_sqrt.ant",
+      "sha256": "e4b85dd9a5ecfb3767e9521f4e95b375b3538e97ad9b9e91128513e112fa68c8",
+      "expectation": "fixtures/conditionals/reference/piecewise_active_sqrt.json",
+      "expectation_sha256": "feb186f4bf12faaae7cae7dc7fd5a6c1efd128a12e6564524efa2f8a03a5e18b",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "piecewise_active_divzero",
+      "path": "fixtures/conditionals/piecewise_active_divzero.ant",
+      "sha256": "1fa39a0c87d728191a22272f3676eac782116869d102a85df34bfb0755c9a3ec",
+      "expectation": "fixtures/conditionals/reference/piecewise_active_divzero.json",
+      "expectation_sha256": "999b57677fa512863d760b7734ae2241134f591e70b1f119d911b6afcc5f1765",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "piecewise_unknown_condition_bad_branch",
+      "path": "fixtures/conditionals/piecewise_unknown_condition_bad_branch.ant",
+      "sha256": "af82708e24ed00b07375e98f497b656c69da41056babe8b200d7f3d19b0808fd",
+      "expectation": "fixtures/conditionals/reference/piecewise_unknown_condition_bad_branch.json",
+      "expectation_sha256": "5ab69f81b1228f56b1d76b7fb1dee4ecee21ed8eb2c952c38918400855df7769",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_inactive_bad_condition",
+      "path": "fixtures/conditionals/piecewise_inactive_bad_condition.ant",
+      "sha256": "c40dba95c9a3ae7d500f8a50b5c6c0a491942c8981ae069063298836c1e6b41c",
+      "expectation": "fixtures/conditionals/reference/piecewise_inactive_bad_condition.json",
+      "expectation_sha256": "501fffe5ebb856e1d4a13b7c34bfe151587487d250a3cd0903b931f325041237",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_logical_short_and",
+      "path": "fixtures/conditionals/piecewise_logical_short_and.ant",
+      "sha256": "ff5460a769138e32a8484d0cb7665e08b1fcba3a1f57cae4e8b08dcab7841b9f",
+      "expectation": "fixtures/conditionals/reference/piecewise_logical_short_and.json",
+      "expectation_sha256": "d3250f3c5bfcae55fa14335b54f5b5b57e4dbef223ff2623e4ee904ed0ef00bd",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_logical_short_or",
+      "path": "fixtures/conditionals/piecewise_logical_short_or.ant",
+      "sha256": "9fcd49698badd746e76176fbff54de69aaabecc41be721c41b63e0d9a16d6581",
+      "expectation": "fixtures/conditionals/reference/piecewise_logical_short_or.json",
+      "expectation_sha256": "160bc6cf30f37a809c7e57415ca2dd902e74ea6fee6b267528d59fe7a1f0bb68",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_nested_default",
+      "path": "fixtures/conditionals/piecewise_nested_default.ant",
+      "sha256": "1cd470ede63e86b6620bcab17a0c6dbf2318465bf5ad5edf9bb0b35e920fd8bf",
+      "expectation": "fixtures/conditionals/reference/piecewise_nested_default.json",
+      "expectation_sha256": "3ec42d9abe678d96cf1a6d81b3a624298d4779d2c653a02abbdb055d76711cea",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "coerce_and",
+      "path": "fixtures/conditionals/coerce_and.ant",
+      "sha256": "58a7d1b118dc12bd1721793afd6d126530ad879d160ebe86982dea7fd8b594a8",
+      "expectation": "fixtures/conditionals/reference/coerce_and.json",
+      "expectation_sha256": "2ef159223400ed38e39665100a45280544d820bec60008a83473be9aae0799e0",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "coerce_or",
+      "path": "fixtures/conditionals/coerce_or.ant",
+      "sha256": "51d0eb6fc429cfe0e6588e0785d493e26aa3cff7e9e34944dcc2462df36d324c",
+      "expectation": "fixtures/conditionals/reference/coerce_or.json",
+      "expectation_sha256": "cfe81fa2bf2702a458ba3786daa3c64f505a422ba3004cc5a22158fbc26dd38b",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "coerce_xor",
+      "path": "fixtures/conditionals/coerce_xor.ant",
+      "sha256": "7b702db3eeeecc669fd4c675a52961c0ba6272be601be81041fb6777450b6f39",
+      "expectation": "fixtures/conditionals/reference/coerce_xor.json",
+      "expectation_sha256": "3e70fb463585999d74c7c5b14791bcb7ed08895cb44651d897eb3bae79cef892",
+      "reference_status": "PROJECTION_UNSUPPORTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "coerce_not",
+      "path": "fixtures/conditionals/coerce_not.ant",
+      "sha256": "4d0c7dc2c4eca8c0c52cad2ae3903b93e3e667e2323bb744f444109d60fa8c8f",
+      "expectation": "fixtures/conditionals/reference/coerce_not.json",
+      "expectation_sha256": "348e1d3a27ce5face4af66ee42221c2f9b7162ac555fedb8a2cd74c9fb53d4b2",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "coerce_implies",
+      "path": "fixtures/conditionals/coerce_implies.ant",
+      "sha256": "ded9779724b104b93ad85d8ff9138a41bc1243171acaed310aaf0b465c16e554",
+      "expectation": "fixtures/conditionals/reference/coerce_implies.json",
+      "expectation_sha256": "ec6179ba0dcc30695cd55cd8c04a8955299b7f52025fa2b510604e6cfeae9c7c",
+      "reference_status": "PROJECTION_UNSUPPORTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "model_inactive_self",
+      "path": "fixtures/conditionals/model_inactive_self.ant",
+      "sha256": "69e1dc418d5c8566a93d8f8adbc442b6b62f05917daf331234944a796c226f17",
+      "expectation": "fixtures/conditionals/reference/model_inactive_self.json",
+      "expectation_sha256": "d50d54ba86b6ae398d2007629a94c65df84e25c87e71ca2572b5c2a7cb86a09c",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "initialization_cycle"
+    },
+    {
+      "id": "model_active_self",
+      "path": "fixtures/conditionals/model_active_self.ant",
+      "sha256": "e9671c56514a1e8d514080d09a62f112b7aec5e28b1b8dc14d8a5095adf2e213",
+      "expectation": "fixtures/conditionals/reference/model_active_self.json",
+      "expectation_sha256": "2931690a6344c37104d5296e68330e621e3f582b1cda3d6710820dba9e1bbb2a",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "initialization_cycle"
+    },
+    {
+      "id": "model_inactive_cycle",
+      "path": "fixtures/conditionals/model_inactive_cycle.ant",
+      "sha256": "39ed2c0e31f65b30f531e99da496c1e4db4acbb5db441f792ff94b6f7458d9de",
+      "expectation": "fixtures/conditionals/reference/model_inactive_cycle.json",
+      "expectation_sha256": "7897a1685fffa24599f2984846ff8cc8467b74f62441c9c73c7818fd93df294b",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "initialization_cycle"
+    },
+    {
+      "id": "model_inactive_unknown",
+      "path": "fixtures/conditionals/model_inactive_unknown.ant",
+      "sha256": "7b599ebdb4b7bca5014cc863a096a96e65cbe060925a06ce21e99df656af3899",
+      "expectation": "fixtures/conditionals/reference/model_inactive_unknown.json",
+      "expectation_sha256": "7bb3e8a971e0779dd16392c91cf125c62ecdba07d3e56035bc6570f637ad97ce",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "model_known_symbol_condition",
+      "path": "fixtures/conditionals/model_known_symbol_condition.ant",
+      "sha256": "7ce9bba75066bc781c85b0b178091b151c00779c2a8c11d1be389c4e2a463fa3",
+      "expectation": "fixtures/conditionals/reference/model_known_symbol_condition.json",
+      "expectation_sha256": "3ad3f0a4f4599ee2acdab89128fd9b8d3d2f1810e9631eeb77c74ccca8994f58",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "model_known_symbol_compare",
+      "path": "fixtures/conditionals/model_known_symbol_compare.ant",
+      "sha256": "9440da36e3dafdee50006f59b836bd2294f1493d30920dfdfc2321b46e42f100",
+      "expectation": "fixtures/conditionals/reference/model_known_symbol_compare.json",
+      "expectation_sha256": "81cc2d582fce846000295cbe91e7bb985807e4ff8e998645d371a48a0ab2f7d6",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "model_branch_units_match",
+      "path": "fixtures/conditionals/model_branch_units_match.ant",
+      "sha256": "a136be2f759686a9c457536d23ea8c274c9cb7b0c2bdf4aa04c73ed245e298bf",
+      "expectation": "fixtures/conditionals/reference/model_branch_units_match.json",
+      "expectation_sha256": "7567cbea8e4968dbbd2af1659c4c89de6b141180e8fbf4c9cbb96ba6b0f577df",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "model_branch_units_mismatch",
+      "path": "fixtures/conditionals/model_branch_units_mismatch.ant",
+      "sha256": "c40d34205076b80c30f8d288f6ff4e57d332fae5513507eae24e7795e20609cd",
+      "expectation": "fixtures/conditionals/reference/model_branch_units_mismatch.json",
+      "expectation_sha256": "4c77a20d100ba4002a3169d29ad0cd3c507698f63c9bbae38631286e45cd12f5",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "units_inconsistency"
+    },
+    {
+      "id": "model_compare_units_mismatch",
+      "path": "fixtures/conditionals/model_compare_units_mismatch.ant",
+      "sha256": "e0f5564a795eda53e8646d144271feae67535d0cbed2e1e883973123d5713e1e",
+      "expectation": "fixtures/conditionals/reference/model_compare_units_mismatch.json",
+      "expectation_sha256": "90548bc70f6cb84ed3a1bded8e81d5ef9097a6c917ba129b5769a539c9fb2ea6",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "units_inconsistency"
+    },
+    {
+      "id": "model_unknown_branch_units",
+      "path": "fixtures/conditionals/model_unknown_branch_units.ant",
+      "sha256": "e9e4373ebef7b6e009692d90c772ce75158dc4d6f845f2c3ff33f852cbbcb6f5",
+      "expectation": "fixtures/conditionals/reference/model_unknown_branch_units.json",
+      "expectation_sha256": "bc7128eaa76c3615585951ef49292c18cf54df9010b55a5b289558882c159b35",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "model_boolean_rate",
+      "path": "fixtures/conditionals/model_boolean_rate.ant",
+      "sha256": "c60a1c40ea3ce2b7d5b2b57250763890c04212e2522ecea22ecb36ef27c3ec2b",
+      "expectation": "fixtures/conditionals/reference/model_boolean_rate.json",
+      "expectation_sha256": "f5de222bf2d10269dc47cc3135bc4370adbf7ba5bd213f945a299b2ae12fdeb4",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "model_compare_rate",
+      "path": "fixtures/conditionals/model_compare_rate.ant",
+      "sha256": "06f465fca0b18381dcdec271976c769558a7ba1ebbbb3593517adfbd6a3777b3",
+      "expectation": "fixtures/conditionals/reference/model_compare_rate.json",
+      "expectation_sha256": "c9707bb36bc6c91785d1b258034ec44a863dc02a77fd4b617ecb3728fae896e8",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "model_piecewise_rate",
+      "path": "fixtures/conditionals/model_piecewise_rate.ant",
+      "sha256": "a7ab7d10992a45cae392b668922bfd9d3aca0011f2e89a0d1c7a1159acd4e041",
+      "expectation": "fixtures/conditionals/reference/model_piecewise_rate.json",
+      "expectation_sha256": "c7c4d046a2c7880dc9d19459503748be0bfe04c447f163e07f9bb423880fb912",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_derived_nan_condition",
+      "path": "fixtures/conditionals/extended_derived_nan_condition.ant",
+      "sha256": "82f5027729fb93eb3e75ff31e8523f4561b06718f059f678e3df3b2285fe1b6e",
+      "expectation": "fixtures/conditionals/reference/extended_derived_nan_condition.json",
+      "expectation_sha256": "33dda8eb0de3a8445f814dc001da953e99f73ffa3d1eb2c63930dadc8a56660e",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "extended_derived_inf_condition",
+      "path": "fixtures/conditionals/extended_derived_inf_condition.ant",
+      "sha256": "05dce1e265088f1e3dbc06e3329eee61bf3f20a851a7be1b11a243eb7a7dfb7d",
+      "expectation": "fixtures/conditionals/reference/extended_derived_inf_condition.json",
+      "expectation_sha256": "7d39bc26a07b83c3897d03c17ad774d42579970fcb9bf1cef622065b4869108d",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "extended_derived_nan_not",
+      "path": "fixtures/conditionals/extended_derived_nan_not.ant",
+      "sha256": "6c19279c64afcdfddf471c7a9bec342c9ec47c239981a262d6b0e79e51d05c5c",
+      "expectation": "fixtures/conditionals/reference/extended_derived_nan_not.json",
+      "expectation_sha256": "a39c3f378c47be24b462dbeed794428851e3945eaa1ad4cb3645425f4fcecb69",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "extended_derived_inf_not",
+      "path": "fixtures/conditionals/extended_derived_inf_not.ant",
+      "sha256": "75e905146ac6ea19427e53ef3b05af0b9b9040dca6db8ce4f9e42244997cf897",
+      "expectation": "fixtures/conditionals/reference/extended_derived_inf_not.json",
+      "expectation_sha256": "3b004c1602c8599d8aa40a53e55a7745d79120c92bed5bf3b3263a20eb041de7",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "extended_false_and_invalid",
+      "path": "fixtures/conditionals/extended_false_and_invalid.ant",
+      "sha256": "f2805367dd22ecd79ec8865b6a4dd611e0da18defa57baf0dd156082ce922232",
+      "expectation": "fixtures/conditionals/reference/extended_false_and_invalid.json",
+      "expectation_sha256": "42f5d8b3a4c72f60de8592e7ce08605b20412293ece3262120e75237f575e9d4",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_true_or_invalid",
+      "path": "fixtures/conditionals/extended_true_or_invalid.ant",
+      "sha256": "76c27cd4f5c91966d35cfa36f9bf138c119f8fe2280a43827e9b4b29ec620af9",
+      "expectation": "fixtures/conditionals/reference/extended_true_or_invalid.json",
+      "expectation_sha256": "b67ec53f95b32b2a2198c7852a35ef9ac84c4747ba1096ea8556bfa756d13551",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_invalid_and_false",
+      "path": "fixtures/conditionals/extended_invalid_and_false.ant",
+      "sha256": "75da9ab8bfdac91fbfd21863a8ac94caee8d96da303edbed4d8f45135628e039",
+      "expectation": "fixtures/conditionals/reference/extended_invalid_and_false.json",
+      "expectation_sha256": "a104cafa6571b88d5b692f052bcc4eddfd99b00cfa3d787a53150d78f9a4d65c",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "extended_invalid_or_true",
+      "path": "fixtures/conditionals/extended_invalid_or_true.ant",
+      "sha256": "411b28774b68868799fd82a0bafcd73f8fa2de8109cd7db03e5d1b2d8d0756ee",
+      "expectation": "fixtures/conditionals/reference/extended_invalid_or_true.json",
+      "expectation_sha256": "73aa892de3f7926e9bfec33d1b5a2f3194bf674d89b59a7241ff2a9360bad0d4",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "extended_negative_condition",
+      "path": "fixtures/conditionals/extended_negative_condition.ant",
+      "sha256": "29a4f5545daa7d72c5b7ff65115c4f6b0fb61491f8bd5e79f2a9c83c601029f3",
+      "expectation": "fixtures/conditionals/reference/extended_negative_condition.json",
+      "expectation_sha256": "72e055e709fc8e474bfddea9c4357e09812fe4ca2cd8823798a10f6b69133263",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_fraction_condition",
+      "path": "fixtures/conditionals/extended_fraction_condition.ant",
+      "sha256": "c46d14ceabd2314fc4b188022d99b3b187e887ac71e43a9bb4147e152e437671",
+      "expectation": "fixtures/conditionals/reference/extended_fraction_condition.json",
+      "expectation_sha256": "0c2c8ae30ff5184cd690587220a180922fe77c2b4111dd0750f0632aab54f115",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_inf_condition",
+      "path": "fixtures/conditionals/extended_inf_condition.ant",
+      "sha256": "76594a01420bc34f3b8afcabcb1b7b0930cd9448c01d5d2c20ac698ef16af3cb",
+      "expectation": "fixtures/conditionals/reference/extended_inf_condition.json",
+      "expectation_sha256": "ab4b8dd41b9def744d48d934ea8725596cfe1446060300fc7e339061accf51fe",
+      "reference_status": "REFERENCE_NONFINITE",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "extended_negative_not",
+      "path": "fixtures/conditionals/extended_negative_not.ant",
+      "sha256": "1f43088a2ee648a296baa5d0e2a394d89e3a53707f14c435f3c88dbd1b3a6e30",
+      "expectation": "fixtures/conditionals/reference/extended_negative_not.json",
+      "expectation_sha256": "ce34296fc5ef3a28267cd72b24b8f7fa9524472be48f6008f3ba19704a7137ec",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_zero_not",
+      "path": "fixtures/conditionals/extended_zero_not.ant",
+      "sha256": "92be3871bd13838bc265f22dd9671186baa3dc4a9938986457a2e78f374dcf65",
+      "expectation": "fixtures/conditionals/reference/extended_zero_not.json",
+      "expectation_sha256": "ed08603eb3a273f6127e92cd4216fb4140b1351c5a553e48999f5e87516b40b3",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_fraction_not",
+      "path": "fixtures/conditionals/extended_fraction_not.ant",
+      "sha256": "10d45f3e04a4fc3f4140dfddbd5f63ce673f7156954f919dcd266e885158d403",
+      "expectation": "fixtures/conditionals/reference/extended_fraction_not.json",
+      "expectation_sha256": "a6bb0ad057d2ef4077d67e255bf1cf5d3621188eadbe0fc8e656c2388cc3834b",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_negative_and",
+      "path": "fixtures/conditionals/extended_negative_and.ant",
+      "sha256": "8da5c3eecae1096396b58dac9e59b002a4067810fbd0a8520c8212c9cb0ea064",
+      "expectation": "fixtures/conditionals/reference/extended_negative_and.json",
+      "expectation_sha256": "c6a9de518df64ee6c9aeac3f5953e2a2f9aaca5dd4d30c8aa55b832ef2a25938",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_unknown_invalid_later",
+      "path": "fixtures/conditionals/extended_unknown_invalid_later.ant",
+      "sha256": "522e75742d114c1aebb5e25611cd2c2783a65a0c8dfab4c7b3edf8ae020ad780",
+      "expectation": "fixtures/conditionals/reference/extended_unknown_invalid_later.json",
+      "expectation_sha256": "2ff526ca5040903840424a8c1647739b21c242efc442fbb5a3fa178756716d67",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_unknown_equal_values",
+      "path": "fixtures/conditionals/extended_unknown_equal_values.ant",
+      "sha256": "96f8d295cfdda5e7f6d6fd93922426658eaf90177790fcdcee789b92adf3b427",
+      "expectation": "fixtures/conditionals/reference/extended_unknown_equal_values.json",
+      "expectation_sha256": "d0a10fa935aa98e35b73d88acd4611beb18c4b4578b91d6b7b5728412814ee0e",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_true_unknown_later",
+      "path": "fixtures/conditionals/extended_true_unknown_later.ant",
+      "sha256": "69634821f626f618292dc9994dd6580c84e2d1d70d69668ed5805ebe557a515b",
+      "expectation": "fixtures/conditionals/reference/extended_true_unknown_later.json",
+      "expectation_sha256": "7f4ac19bed5ccab10a6c89efcdcf62b9233dd19ece9be7354332e8229e530b79",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_bool_numeric_power",
+      "path": "fixtures/conditionals/extended_bool_numeric_power.ant",
+      "sha256": "33105f50a4c1f2c17ab2e5d520efda22b92fa334f2de7d3f528b4d60598c747a",
+      "expectation": "fixtures/conditionals/reference/extended_bool_numeric_power.json",
+      "expectation_sha256": "367eb6bd8a8856ea4002c152d044484253a4935ef7de9034fa613e6e9c84cb6f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_bool_numeric_negate",
+      "path": "fixtures/conditionals/extended_bool_numeric_negate.ant",
+      "sha256": "d2b7c3ef915a20a7e6d6dcb8b71cee422a7b4a05a62ce4f3958251f4a8f8317b",
+      "expectation": "fixtures/conditionals/reference/extended_bool_numeric_negate.json",
+      "expectation_sha256": "ed9271121405f68fcce100fefd0869e1032183b697760fa6ef0007144c1ec650",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_chain_neq",
+      "path": "fixtures/conditionals/extended_chain_neq.ant",
+      "sha256": "fd1bc84b513471260815aaf4a2d7104d33f8b02865ce158f26528aa82fc43160",
+      "expectation": "fixtures/conditionals/reference/extended_chain_neq.json",
+      "expectation_sha256": "c0b523c54ad6b47416103244ccf642ae7d16735759bcf398948450093c36a954",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "extended_chain_mixed_neq",
+      "path": "fixtures/conditionals/extended_chain_mixed_neq.ant",
+      "sha256": "cb3315be09e7b86921c967a8351d3a0202c3b6f50fcb250157c8389d88ed031c",
+      "expectation": "fixtures/conditionals/reference/extended_chain_mixed_neq.json",
+      "expectation_sha256": "e4f475cc085e76448e568da5bd7f98bef3a8d0ceabf28273ada31193ed569ce3",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "extended_nested_right_compare",
+      "path": "fixtures/conditionals/extended_nested_right_compare.ant",
+      "sha256": "2b46d77f0e51d46f6236113a6870966cee0205a560d7d7e6c7ec922891cf9be8",
+      "expectation": "fixtures/conditionals/reference/extended_nested_right_compare.json",
+      "expectation_sha256": "0dfa7893da46f6fe5720ac4037d628d4cabb72afd1882925d6c580e4c9cd1bba",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_nested_function_compare",
+      "path": "fixtures/conditionals/extended_nested_function_compare.ant",
+      "sha256": "271be4ddbfb2e4bb8bbbe78e95ee74bfb175f5fe0dce0a45f003cc4cbc10adde",
+      "expectation": "fixtures/conditionals/reference/extended_nested_function_compare.json",
+      "expectation_sha256": "3eb49d2eafe6ff38ab1aa6ec217bbf7f39aef904640915c6e027103d60f3f357",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_and_right_group",
+      "path": "fixtures/conditionals/extended_and_right_group.ant",
+      "sha256": "1a4d13a2b3b72385cbd7758540b1a2ca48490ace493fd12693fd37660a514a25",
+      "expectation": "fixtures/conditionals/reference/extended_and_right_group.json",
+      "expectation_sha256": "5734b3e47b0508f33cc35d02aad2d3a7830e405ed9401a4a043b8a73032692d5",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_and_or_right_group",
+      "path": "fixtures/conditionals/extended_and_or_right_group.ant",
+      "sha256": "bb9ef465b046034f549bb8d9b9dc58664f1cbf6a6d3809697dbb93efd80647eb",
+      "expectation": "fixtures/conditionals/reference/extended_and_or_right_group.json",
+      "expectation_sha256": "95c4d7bfbdbe359d8662a4fdcfdb9eccee2ce5b6d42c1a1d9392dad0ef592b1e",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "extended_word_precedence",
+      "path": "fixtures/conditionals/extended_word_precedence.ant",
+      "sha256": "387255c303381ca2d6dc33aa355e4ed0a76999b3758102ad70a3ff6d2120f497",
+      "expectation": "fixtures/conditionals/reference/extended_word_precedence.json",
+      "expectation_sha256": "e353edb5f5d11501e3bf08cf324fa41d5b552bbab4ff671735ac2122938accfb",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "extended_word_not",
+      "path": "fixtures/conditionals/extended_word_not.ant",
+      "sha256": "c6bf8a275f2c9513d88172f11f0a7625940e8ce894b7858799daf844d1b65b3a",
+      "expectation": "fixtures/conditionals/reference/extended_word_not.json",
+      "expectation_sha256": "3b1a1b761fb385e67ddd04b8f95cbb832125d8b446d949adbed943e9883e9cdc",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "extended_boolean_function_case",
+      "path": "fixtures/conditionals/extended_boolean_function_case.ant",
+      "sha256": "4df02840f886d8e98ffe542390dc027adb1c2f8731c303520fca0af6189c2970",
+      "expectation": "fixtures/conditionals/reference/extended_boolean_function_case.json",
+      "expectation_sha256": "4c92b07511d34cf2e782fc208641c125d4d404e33fcfc1c02976c7286ca58c35",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "extended_mixed_constant_case",
+      "path": "fixtures/conditionals/extended_mixed_constant_case.ant",
+      "sha256": "2749ef51ba716648825d06b50d0db383a0b17576e051285a7ed8dd152f02bc00",
+      "expectation": "fixtures/conditionals/reference/extended_mixed_constant_case.json",
+      "expectation_sha256": "3fb4b3eb03d0fde57eeb13f1ba6eb8656de1c9b12e8967f27707d6562e9ea818",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "left_function_and_append",
+      "path": "fixtures/conditionals/left_function_and_append.ant",
+      "sha256": "f02f6656e002dc33c68322b44030f10fd6e1adab88d811b1bed5f494ab0d415b",
+      "expectation": "fixtures/conditionals/reference/left_function_and_append.json",
+      "expectation_sha256": "3536867cd6b1964b2c8aae291fb157124a668f9c5d442ddb1745234ae835f8f2",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "left_function_or_append",
+      "path": "fixtures/conditionals/left_function_or_append.ant",
+      "sha256": "0b7917f03604441836f1845a615a97b78eb307fd1723e56ba8a5f2d47c6fa23a",
+      "expectation": "fixtures/conditionals/reference/left_function_or_append.json",
+      "expectation_sha256": "dbb942aed23597adbf9b3e6aa38b156de590e0f7dd44058cb5312a2f2fb42ffd",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "functional_nested_and",
+      "path": "fixtures/conditionals/functional_nested_and.ant",
+      "sha256": "bde91704356229784a3e834ece42425d06743b94ece6b66b454bfcf831705803",
+      "expectation": "fixtures/conditionals/reference/functional_nested_and.json",
+      "expectation_sha256": "55323d687a65a6c13fb7909d5e8f8759e788d7abd20c3d5b55636c332706bd47",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "functional_nested_or",
+      "path": "fixtures/conditionals/functional_nested_or.ant",
+      "sha256": "cf5a9ee75a8d35c2feacab4271d009b6757045a06066c7760cdb1d6cb1263f37",
+      "expectation": "fixtures/conditionals/reference/functional_nested_or.json",
+      "expectation_sha256": "90568b08006d5e1455c1ab036f7fc9abf8c625b882273d3fbc00f322b372cbe0",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "right_function_and",
+      "path": "fixtures/conditionals/right_function_and.ant",
+      "sha256": "707e90428e882bd8a8e9bae62844ee839faada53a218f4521a436e78a9684972",
+      "expectation": "fixtures/conditionals/reference/right_function_and.json",
+      "expectation_sha256": "22877ec896cb8b8616de635c14481cd62f9bd2a428cf40700123ab906d358504",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "right_function_or",
+      "path": "fixtures/conditionals/right_function_or.ant",
+      "sha256": "941510f2d88df0873b889c7e4088d5abfb05ee62c2a4227bcecb7cf9eeea8e27",
+      "expectation": "fixtures/conditionals/reference/right_function_or.json",
+      "expectation_sha256": "595a703974a22b6333a7c1e045a0c7ef1a7e5480636020ccf0478fb29779ca15",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "empty_left_and",
+      "path": "fixtures/conditionals/empty_left_and.ant",
+      "sha256": "66e3e055a24144a0792f9d4a780e7bebda151c238597dd4c419517a9ea2b64bd",
+      "expectation": "fixtures/conditionals/reference/empty_left_and.json",
+      "expectation_sha256": "88f61dba826d200acad27fdd6bb858577fab58be9ae739b0b0926634ffa92015",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "empty_left_or",
+      "path": "fixtures/conditionals/empty_left_or.ant",
+      "sha256": "f61238d897645d391fe31f3b1207fa3c2a8d51f9ea31fa8c121ab17e2134e897",
+      "expectation": "fixtures/conditionals/reference/empty_left_or.json",
+      "expectation_sha256": "1d72876d541e8d0f3604d230814204c8fc1e0035f1fd2d6fed75e414f7a10ff5",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "functional_left_relation_chain",
+      "path": "fixtures/conditionals/functional_left_relation_chain.ant",
+      "sha256": "23fe9a4966f72aa6628c42dabbaf8b24fa0ab503e1187b7ac83a156d4b83685c",
+      "expectation": "fixtures/conditionals/reference/functional_left_relation_chain.json",
+      "expectation_sha256": "b0c06f8d3e54a8a6b38c353a2a449700f09fb5ea165c17e5973c30630ef097cf",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "relational_and_chain",
+      "path": "fixtures/conditionals/relational_and_chain.ant",
+      "sha256": "8a74e88317ce76efcb095fec0d3cdd48a7a4934b7724bbc01be8b904e25d93ed",
+      "expectation": "fixtures/conditionals/reference/relational_and_chain.json",
+      "expectation_sha256": "cd9a870cf29f28b4438373e5004d9227495f32eea75625afc8b48d938af1609d",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "single_relation_and_not_chain",
+      "path": "fixtures/conditionals/single_relation_and_not_chain.ant",
+      "sha256": "345f361ad03cde087330e2c520dd59b4d1bb0c203da9ace6d60fd6218042a541",
+      "expectation": "fixtures/conditionals/reference/single_relation_and_not_chain.json",
+      "expectation_sha256": "d3ca7e32eaebb874809d2bf896aab96b64d52577f75a83ee7bb90ad3718a9491",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "mixed_boolean_and_not_chain",
+      "path": "fixtures/conditionals/mixed_boolean_and_not_chain.ant",
+      "sha256": "0165d23152c1986f58b0ca69685d70f07f54269953a35950c8204c70daf00ea1",
+      "expectation": "fixtures/conditionals/reference/mixed_boolean_and_not_chain.json",
+      "expectation_sha256": "37a7b8ab4e12581407c7bc6331a24fc327464f49c769729984131a7d8dde78dc",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "relational_or_not_chain",
+      "path": "fixtures/conditionals/relational_or_not_chain.ant",
+      "sha256": "70f7a3e53ed2b9e64b057c608c0aee2d2df6ed451d76ccd34fbf533e2d83548d",
+      "expectation": "fixtures/conditionals/reference/relational_or_not_chain.json",
+      "expectation_sha256": "37d7f957f26a156adcca65c5eff91a2f49a9695a0ae4c1e316f135c5e880ac3b",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "plus_wrapped_chain",
+      "path": "fixtures/conditionals/plus_wrapped_chain.ant",
+      "sha256": "df3735313bad0b95219b275917f0bce2f258b1e4ecc7ecabb162b7b32e6c6f2b",
+      "expectation": "fixtures/conditionals/reference/plus_wrapped_chain.json",
+      "expectation_sha256": "e64767ff3cd5caebbab4cf6d8aa3791ac5419757bb8aa1d088a7c6b89a62e905",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "double_minus_wrapped_chain",
+      "path": "fixtures/conditionals/double_minus_wrapped_chain.ant",
+      "sha256": "6af37db8dc497fc9bfb009608264be950a5e56e2445cef12d2e00c89ab122b04",
+      "expectation": "fixtures/conditionals/reference/double_minus_wrapped_chain.json",
+      "expectation_sha256": "6ef484570b1d8c8190772468f8b1d27fdb2a385ce35794c7784b416ab8526104",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "single_minus_no_chain",
+      "path": "fixtures/conditionals/single_minus_no_chain.ant",
+      "sha256": "2e83af2c7d1c1bd3f7bea28459b9cb01edf22b79afafde3c50bee5069a96c0f3",
+      "expectation": "fixtures/conditionals/reference/single_minus_no_chain.json",
+      "expectation_sha256": "f9b67667fe9921197ed58d9f6858065dc6d0ca63c88271158bebdd351bd9c962",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "functional_left_nested_relation",
+      "path": "fixtures/conditionals/functional_left_nested_relation.ant",
+      "sha256": "c3b927d40e360f979f1bc0f73c86cf22b3e724603e1ad399a29c978a939c8560",
+      "expectation": "fixtures/conditionals/reference/functional_left_nested_relation.json",
+      "expectation_sha256": "de6ed8252f04ee4dbf9b69828d15c145be689d4e0f80b753ec37156ffed0baf3",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "functional_left_nested_and",
+      "path": "fixtures/conditionals/functional_left_nested_and.ant",
+      "sha256": "4b1ca2aa7a5bd9a1a193cc8f4bab2729a2e810574227e2720f9d68ff49300dcf",
+      "expectation": "fixtures/conditionals/reference/functional_left_nested_and.json",
+      "expectation_sha256": "4df3002b1cf376ba8003ef1e577ea98240911c8c0f8fc6c89f44da265c46fb78",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "not_wrapped_relation",
+      "path": "fixtures/conditionals/not_wrapped_relation.ant",
+      "sha256": "fd1552091b8829420dd25b4a2b8f14287eac9152fe030a3c3490d867ee227fe6",
+      "expectation": "fixtures/conditionals/reference/not_wrapped_relation.json",
+      "expectation_sha256": "d80743660585f5912609ccd7e138f78234d927aaeffb81acb01414bea548d06e",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "double_not_retained",
+      "path": "fixtures/conditionals/double_not_retained.ant",
+      "sha256": "ab612f446c13d2935d963ffac610ad068914a3014265d9c9c907aee7e3349786",
+      "expectation": "fixtures/conditionals/reference/double_not_retained.json",
+      "expectation_sha256": "16ce53ab7dac221a4ca06668abd6f6d40074f4f1f6260638d8a1e563b6afea9f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "not_function_spaced",
+      "path": "fixtures/conditionals/not_function_spaced.ant",
+      "sha256": "c8c3c02345c7314e679fe8e8c192e6aad3acb84a7a4572854daed4bd674fc4c1",
+      "expectation": "fixtures/conditionals/reference/not_function_spaced.json",
+      "expectation_sha256": "d2b6919ac25b7c6445149684a7e493c4acf1397d3c6401694025a8a04100d7ea",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "not_rational_call",
+      "path": "fixtures/conditionals/not_rational_call.ant",
+      "sha256": "16e4ed66d28b6b2a53e29dbf5dd1e8f3989f104098d86cdae86cd3c332cea4f9",
+      "expectation": "fixtures/conditionals/reference/not_rational_call.json",
+      "expectation_sha256": "88a93a3167ab9c0c79539a9e49ff1bd546aa2f773b5cb4726d13ca26db71cdbb",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "not_rational_atom",
+      "path": "fixtures/conditionals/not_rational_atom.ant",
+      "sha256": "ec9855c8767dc4e53d090fecb9a76a24757094a676bc173873065bb9474ed863",
+      "expectation": "fixtures/conditionals/reference/not_rational_atom.json",
+      "expectation_sha256": "0f600f5b5f8294401990b5939a7cc585dade606fc34271a07be427397b01910c",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "not_divide_argument",
+      "path": "fixtures/conditionals/not_divide_argument.ant",
+      "sha256": "6ae2af65d670e6bdf62c426072a537a45d29f8711b9afe9c8bc113e7b98e7862",
+      "expectation": "fixtures/conditionals/reference/not_divide_argument.json",
+      "expectation_sha256": "6795b8c99681bcf53c3ad6ad3c3215af58a245b6014658886658337aa39bd8b0",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "nary_equal_bool_coercion",
+      "path": "fixtures/conditionals/nary_equal_bool_coercion.ant",
+      "sha256": "6b413f168e8dd4b878073f5039ca2c8a151f6c565c50febb16153282b69c32f0",
+      "expectation": "fixtures/conditionals/reference/nary_equal_bool_coercion.json",
+      "expectation_sha256": "9253e19ef0abb408c4b3bfa68dc29cd832edcd0b1480f5c69982cf6f7b3da941",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "nary_lt_bool_coercion",
+      "path": "fixtures/conditionals/nary_lt_bool_coercion.ant",
+      "sha256": "17eecc17901acf12c4183adf97f922623d370a549e1626413833bfecd2491f55",
+      "expectation": "fixtures/conditionals/reference/nary_lt_bool_coercion.json",
+      "expectation_sha256": "54fdc56218cdae1a9949a2dae9e25880ef2440e10f7c394a1d93292b43903b4c",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "nary_geq_bool_coercion",
+      "path": "fixtures/conditionals/nary_geq_bool_coercion.ant",
+      "sha256": "023434784071f0b725159d6c5966e9a7862976b36565e1887d69741c1872b311",
+      "expectation": "fixtures/conditionals/reference/nary_geq_bool_coercion.json",
+      "expectation_sha256": "4ae92f1630508f73ed96a18df09717743c897055a005cf7149ace49c92b5d41e",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "nary_neq_bad_arity",
+      "path": "fixtures/conditionals/nary_neq_bad_arity.ant",
+      "sha256": "717e6a006035c8b97b2e30a0d803c6361a7ae1c933831f211d69fb59e08bd8f1",
+      "expectation": "fixtures/conditionals/reference/nary_neq_bad_arity.json",
+      "expectation_sha256": "99cf0734f6db3ac57250de08b1b605d539b3b156eeb5ce586248c7a0dbf678fe",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "piecewise_inside_sin",
+      "path": "fixtures/conditionals/piecewise_inside_sin.ant",
+      "sha256": "f95f8fab92c65ce771c2e5a918c1985b3db6341e8d4305acae07af5a3d1a2e2e",
+      "expectation": "fixtures/conditionals/reference/piecewise_inside_sin.json",
+      "expectation_sha256": "394cf29eabe70f9aac3f08278d076cc05da6b8cb821ceebb96db72880b1d1803",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_inside_comparison",
+      "path": "fixtures/conditionals/piecewise_inside_comparison.ant",
+      "sha256": "9d22c99797cd4e9815b704b0110936694095dc5dbbf276dc046bcafe5cbbd698",
+      "expectation": "fixtures/conditionals/reference/piecewise_inside_comparison.json",
+      "expectation_sha256": "9661424148105f33e3ada0e34605abd6b6fc4eb27345a6d211501db9efe6af5b",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "otherwise_only_boolean",
+      "path": "fixtures/conditionals/otherwise_only_boolean.ant",
+      "sha256": "fa274227cd48075d25816a2f4e05a5c0b1ad741f5e358a3fdf0428b40f96c3c0",
+      "expectation": "fixtures/conditionals/reference/otherwise_only_boolean.json",
+      "expectation_sha256": "b232c244dfaae663a7178979351cd478eb1506f1f28765b5eecd5d4565ab2dd1",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "conditional_nested_rational",
+      "path": "fixtures/conditionals/conditional_nested_rational.ant",
+      "sha256": "9738e5b5f58be178e535c25cf869886a8fe6a6da21f6baf2b90765a775af556b",
+      "expectation": "fixtures/conditionals/reference/conditional_nested_rational.json",
+      "expectation_sha256": "14d3985bdbf6ac65e82d9e6ebbda7aa52af3cc7421e4af98e2d8ae3c5ab344e5",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "boolean_numeric_abs",
+      "path": "fixtures/conditionals/boolean_numeric_abs.ant",
+      "sha256": "09b6f25e8ce336eeedb472ea69cea07dc3c0e31341c41d85e656b922d2a75be4",
+      "expectation": "fixtures/conditionals/reference/boolean_numeric_abs.json",
+      "expectation_sha256": "08905fc958a51c3f88a4320e8b1d9c94fb84460bd84d75b40bd056edf4943068",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "boolean_numeric_min",
+      "path": "fixtures/conditionals/boolean_numeric_min.ant",
+      "sha256": "05357ac849f782d0566f36bb58111eea529c3374130ea3ef7080a70fe750dccc",
+      "expectation": "fixtures/conditionals/reference/boolean_numeric_min.json",
+      "expectation_sha256": "c0761c84a59ec312342638ce6b6353e152495a7e8f6060f9923c7a5424e8408c",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "boolean_numeric_power",
+      "path": "fixtures/conditionals/boolean_numeric_power.ant",
+      "sha256": "5b8567535f183bcbff892a1dc446b6fbffc00ca044516c5c55932b9b02e52647",
+      "expectation": "fixtures/conditionals/reference/boolean_numeric_power.json",
+      "expectation_sha256": "0c5ce1bb7ec83345f2fd160d9042d2e5516fe08fa0845aeb40d1e7f30e470a6b",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "boolean_numeric_log",
+      "path": "fixtures/conditionals/boolean_numeric_log.ant",
+      "sha256": "32d89dda43f3a834c5c35112b17ba78aa8a524bf23c81be028b073be9e85150c",
+      "expectation": "fixtures/conditionals/reference/boolean_numeric_log.json",
+      "expectation_sha256": "004be49e6984fc83fe7b6aa7a75fde4b3b63bc9001a583ae6dd71fc40727e01c",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "literal_inf_inactive",
+      "path": "fixtures/conditionals/literal_inf_inactive.ant",
+      "sha256": "dfb5bda7bfca53ddddeb54f47449627d23f33f4e3e8fabaa5d8c622d526c3be5",
+      "expectation": "fixtures/conditionals/reference/literal_inf_inactive.json",
+      "expectation_sha256": "a97630594d8402e282d06f3639d099e7ffee1a1475120b399108a74a6072fe23",
+      "reference_status": "REFERENCE_NONFINITE",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "literal_rational_zero_inactive",
+      "path": "fixtures/conditionals/literal_rational_zero_inactive.ant",
+      "sha256": "fc002ce6c429f092d2be1a2c50c834c4f1d293589c3010cbd6c6bef784e9aa0b",
+      "expectation": "fixtures/conditionals/reference/literal_rational_zero_inactive.json",
+      "expectation_sha256": "f1ca446628d1557a9a9c8fc9b4804c290e70e51b33e24cbd6cb64451f332acf7",
+      "reference_status": "REFERENCE_NONFINITE",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "literal_precision_inactive",
+      "path": "fixtures/conditionals/literal_precision_inactive.ant",
+      "sha256": "0188fc7213feead5898af36eb9cd921f794061f98cc0af0be583bdc38398fc0b",
+      "expectation": "fixtures/conditionals/reference/literal_precision_inactive.json",
+      "expectation_sha256": "1566fd8640eae0a1031a5efb2f59e0f7b3ea16996d3a9f4f9c3abfda7304f899",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "literal_underflow_inactive",
+      "path": "fixtures/conditionals/literal_underflow_inactive.ant",
+      "sha256": "8888699a2418a5ce615f48acff769c048d2556e330b8ad43de2c57c1bad723ca",
+      "expectation": "fixtures/conditionals/reference/literal_underflow_inactive.json",
+      "expectation_sha256": "686c05f528f4fa764482388ad3d0d56e308dcafb8a88fa3b5bf230b04fca5418",
+      "reference_status": "PROJECTION_UNSUPPORTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "and_unknown_first",
+      "path": "fixtures/conditionals/and_unknown_first.ant",
+      "sha256": "74dadb750c7a47d326fff8cc3dcfea9872abaf68effcc6776cd1777156b6b775",
+      "expectation": "fixtures/conditionals/reference/and_unknown_first.json",
+      "expectation_sha256": "62fafceebf7308aea447c28ace8b625ebf4a61bedb19af81430001bca4f13982",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "or_unknown_first",
+      "path": "fixtures/conditionals/or_unknown_first.ant",
+      "sha256": "dc290dc797996f3294020e4c96a829c018a5a4838d8b719523128fb5ef22ee63",
+      "expectation": "fixtures/conditionals/reference/or_unknown_first.json",
+      "expectation_sha256": "48834eb1719ed2a5dbbcc89630344a1ecc0504b3eae709652a503cf6f253558f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "and_false_before_unknown",
+      "path": "fixtures/conditionals/and_false_before_unknown.ant",
+      "sha256": "613aa26ad342ed7a5e9831500b1bfc996b673eb73d6572ed1bf7724672e02548",
+      "expectation": "fixtures/conditionals/reference/and_false_before_unknown.json",
+      "expectation_sha256": "409ae5e3f9f610318110f23f5a645abc5847cc879a8ec1624e8ffbb3530a697d",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "or_true_before_unknown",
+      "path": "fixtures/conditionals/or_true_before_unknown.ant",
+      "sha256": "2509e3c05c1eff728a02412084e85acb0998ade1d86b436dba096a3618a54a22",
+      "expectation": "fixtures/conditionals/reference/or_true_before_unknown.json",
+      "expectation_sha256": "586171c4e0e5ebc0b26a3c178e5f88ce672246e74312b437e94c9e9b79576f3d",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "and_unknown_before_false",
+      "path": "fixtures/conditionals/and_unknown_before_false.ant",
+      "sha256": "3036e2aab60e9da97da203fcf7160e9f03dd602245626e67593b0dff923507bf",
+      "expectation": "fixtures/conditionals/reference/and_unknown_before_false.json",
+      "expectation_sha256": "1f48986e2048de2cd792042976e73695059db4430e70565a9a927350a772db23",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "or_unknown_before_true",
+      "path": "fixtures/conditionals/or_unknown_before_true.ant",
+      "sha256": "a34e981c773c0267fb416ee662b241cf73d485d890bf5298cd3ff96b44b2e507",
+      "expectation": "fixtures/conditionals/reference/or_unknown_before_true.json",
+      "expectation_sha256": "570f0d3d649bd243161cfbe863e7310845d03084d3c00943453915c4efc764b4",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "and_invalid_before_unknown",
+      "path": "fixtures/conditionals/and_invalid_before_unknown.ant",
+      "sha256": "dce01d0dbdfa6895104935703646b2c47e1f22fa146cd47eea86ff0a1e3ff77e",
+      "expectation": "fixtures/conditionals/reference/and_invalid_before_unknown.json",
+      "expectation_sha256": "2b8f4ca84b79d8d2295e8e8d6b120364a8b7fd1f6e2501f08cdf35e3a13a745e",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "or_invalid_before_unknown",
+      "path": "fixtures/conditionals/or_invalid_before_unknown.ant",
+      "sha256": "86ff43d65e5bf63a294085d35e71907bb9dcb57103168bcb24b98786bd39a995",
+      "expectation": "fixtures/conditionals/reference/or_invalid_before_unknown.json",
+      "expectation_sha256": "e50b33ffebb34a9d31d61aace2b65451824c82f5871d984a6a9192c49e4f514e",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "comparison_unknown_then_invalid",
+      "path": "fixtures/conditionals/comparison_unknown_then_invalid.ant",
+      "sha256": "d504125aedc10757acaa27ceaf3eefd93cac65791b7c8735f9e9ee071f57b713",
+      "expectation": "fixtures/conditionals/reference/comparison_unknown_then_invalid.json",
+      "expectation_sha256": "3cff15b2d9fadcb6dc73607c79598b048b6a5fbcc2ab63a115a728cfeed84f60",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "comparison_invalid_then_unknown",
+      "path": "fixtures/conditionals/comparison_invalid_then_unknown.ant",
+      "sha256": "9ad04e3c3074e80e9b4714ff36df40e30d4a57a9764e0bcc6a1b9502ddb7b7ab",
+      "expectation": "fixtures/conditionals/reference/comparison_invalid_then_unknown.json",
+      "expectation_sha256": "4989b3a6e636a20d61f4c5a4dca7df26bd3e88f684b90bb757302e086f645d37",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "nary_comparison_unknown_middle",
+      "path": "fixtures/conditionals/nary_comparison_unknown_middle.ant",
+      "sha256": "83d5c6e53463a12cc07d5f0824a2698e63f12377979d3e62e4824cc4ba4afc44",
+      "expectation": "fixtures/conditionals/reference/nary_comparison_unknown_middle.json",
+      "expectation_sha256": "8aa3b9a50d31187ba57206547ecce361c183972004c9d59f751b32f7064ae31b",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "piecewise_unknown_then_invalid_condition",
+      "path": "fixtures/conditionals/piecewise_unknown_then_invalid_condition.ant",
+      "sha256": "f64096410dae48d3d343a4e2091085950fda8eda2d9acb2308844573b4b5e72f",
+      "expectation": "fixtures/conditionals/reference/piecewise_unknown_then_invalid_condition.json",
+      "expectation_sha256": "728beee65d05142de327df0672ef6ad62019e192ba1bf0e94c9e5562c5fa28d9",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_unknown_with_no_else",
+      "path": "fixtures/conditionals/piecewise_unknown_with_no_else.ant",
+      "sha256": "fcb8d5b9b12d4ff908ad8b93487cd7ee114f5069294da61d4c26e0ba153423e5",
+      "expectation": "fixtures/conditionals/reference/piecewise_unknown_with_no_else.json",
+      "expectation_sha256": "39003204bd3610edc09d64980121ab07b77dab93dafd41d26c84cda40725c641",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_unknown_equal_branches",
+      "path": "fixtures/conditionals/piecewise_unknown_equal_branches.ant",
+      "sha256": "7726cbc0dccfec127746da1745c3616e5e294b3b2c31b5990563e81b61491e91",
+      "expectation": "fixtures/conditionals/reference/piecewise_unknown_equal_branches.json",
+      "expectation_sha256": "32e74f709a762ab6086378e4ed5585b3fa1d084c6cbe4c0457cd0ec348f16baf",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_true_first_invalid_next",
+      "path": "fixtures/conditionals/piecewise_true_first_invalid_next.ant",
+      "sha256": "ca40d9dd20f119193aa828ac66e7a8d576a1737a35c4f9b66956c2405047ffbe",
+      "expectation": "fixtures/conditionals/reference/piecewise_true_first_invalid_next.json",
+      "expectation_sha256": "69c929f870ffdc4b2c0a86288dfcaabe722de72f06eb8cdd5ea735fc0c3afddb",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_false_invalid_value",
+      "path": "fixtures/conditionals/piecewise_false_invalid_value.ant",
+      "sha256": "788578b78c4e440125fd84af9683dfde716275c5fc08eb87b3518e02266aa443",
+      "expectation": "fixtures/conditionals/reference/piecewise_false_invalid_value.json",
+      "expectation_sha256": "265cff91b1e7e79185a8a777b4c3c7858a01e5ffcf3caf0fbed4e03ecd8973ee",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_false_then_unknown",
+      "path": "fixtures/conditionals/piecewise_false_then_unknown.ant",
+      "sha256": "c34d9479389f3c84193fe4290e7f80ca27b31a2a74b819d270873eae80b6fb1d",
+      "expectation": "fixtures/conditionals/reference/piecewise_false_then_unknown.json",
+      "expectation_sha256": "3827b6559be60012e72e2c8d8c33ea511fd54ff7216883f3599e9dee3fad3e5d",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "piecewise_invalid_first_condition",
+      "path": "fixtures/conditionals/piecewise_invalid_first_condition.ant",
+      "sha256": "82f5027729fb93eb3e75ff31e8523f4561b06718f059f678e3df3b2285fe1b6e",
+      "expectation": "fixtures/conditionals/reference/piecewise_invalid_first_condition.json",
+      "expectation_sha256": "33dda8eb0de3a8445f814dc001da953e99f73ffa3d1eb2c63930dadc8a56660e",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "piecewise_active_ln_zero",
+      "path": "fixtures/conditionals/piecewise_active_ln_zero.ant",
+      "sha256": "bd8e403c574e95b56b1a98054f4397c655f816ee15b147a95df5de576855aef2",
+      "expectation": "fixtures/conditionals/reference/piecewise_active_ln_zero.json",
+      "expectation_sha256": "69a27c6d729f15aa80ac331e83c5db32458be704396d09256d5679738b077092",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "piecewise_inactive_power_domain",
+      "path": "fixtures/conditionals/piecewise_inactive_power_domain.ant",
+      "sha256": "b9b32d95aac0370c223e8deff8282944077f9c239c483ab92f136d755f46e0c6",
+      "expectation": "fixtures/conditionals/reference/piecewise_inactive_power_domain.json",
+      "expectation_sha256": "ecf004b3cdf174d7dde2d31a8fd3a7d3ca9deb15f15c2b28edc762953860ae49",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "logical_time_unknown",
+      "path": "fixtures/conditionals/logical_time_unknown.ant",
+      "sha256": "9cb5c40d33aef25be6d010868c215a361572012367b7255f48399d882378f10e",
+      "expectation": "fixtures/conditionals/reference/logical_time_unknown.json",
+      "expectation_sha256": "37581b544876a4b523b1a1d1ef4277d6dd824aec0c5375701c44db98bb30347e",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "rate_without_else",
+      "path": "fixtures/conditionals/rate_without_else.ant",
+      "sha256": "e07bbc8a804f02ade017a4c56ec7cba8f9b8b4b1eacd4c594dce50b74b3bbc4c",
+      "expectation": "fixtures/conditionals/reference/rate_without_else.json",
+      "expectation_sha256": "395e43bae4482605c7f3d79088e7608e5bfb7aa227fbfa406bf4b41d0283c9bd",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "rate_known_no_match",
+      "path": "fixtures/conditionals/rate_known_no_match.ant",
+      "sha256": "459159c1a38ec16baa37a81820dcac891f77289c7cd51dcc36763023fe05bf09",
+      "expectation": "fixtures/conditionals/reference/rate_known_no_match.json",
+      "expectation_sha256": "c787ecc08e2e84542594d060afe62c2ad8ee9ce8f6e8c25ddc1a3f90a3851e9c",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "rate_boolean_coercion",
+      "path": "fixtures/conditionals/rate_boolean_coercion.ant",
+      "sha256": "637619156317da967690eee065b45e3b987cdcd2f28f6ff8f21a5a67a8717d64",
+      "expectation": "fixtures/conditionals/reference/rate_boolean_coercion.json",
+      "expectation_sha256": "54395db14b38897ed086d7986c6d56b6edf858f0967ee0d2187a36015e7c95ff",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "inactive_modifier_retained",
+      "path": "fixtures/conditionals/inactive_modifier_retained.ant",
+      "sha256": "8f3da11b89ec7ef72bc3cda31cfc0ceed266269fb8ad632d87b0797156cc3122",
+      "expectation": "fixtures/conditionals/reference/inactive_modifier_retained.json",
+      "expectation_sha256": "1617d35504e3885f4b4d430d0ead5c4117d4b34c2e05bab021de70400f7afc4f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "inactive_known_negative_rate",
+      "path": "fixtures/conditionals/inactive_known_negative_rate.ant",
+      "sha256": "895519fbdafa2adc0e11179e33f5182e0751084e4d29bc051e3603041d4aaef2",
+      "expectation": "fixtures/conditionals/reference/inactive_known_negative_rate.json",
+      "expectation_sha256": "5584f242c5992637a7fb0d1eb235ff524aa470db5550ce51beabf47e57941e23",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "inactive_cycle_hidden",
+      "path": "fixtures/conditionals/inactive_cycle_hidden.ant",
+      "sha256": "8641432c2c7b1e3be7ec6c0cd82bc8980b352756a13d42cd31e7f706e644b003",
+      "expectation": "fixtures/conditionals/reference/inactive_cycle_hidden.json",
+      "expectation_sha256": "b01f0d258da0529693ece9f190d06ce3e305cf8ac20f10bcf886cb866e399916",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "initialization_cycle"
+    },
+    {
+      "id": "logical_cycle_hidden",
+      "path": "fixtures/conditionals/logical_cycle_hidden.ant",
+      "sha256": "5aeaf13a3f07e83ebf9a81de272eb354f7308cf40a31a7bebd9d8fb128aea308",
+      "expectation": "fixtures/conditionals/reference/logical_cycle_hidden.json",
+      "expectation_sha256": "0ac99e1706b881257d4e67e285dae13313397e4d730c079f32f73c9fc35b0f9e",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "initialization_cycle"
+    },
+    {
+      "id": "inactive_unknown_forward",
+      "path": "fixtures/conditionals/inactive_unknown_forward.ant",
+      "sha256": "c84b5488888f4654e402123c8beb0f77d8d131c719425876217a6429a9836135",
+      "expectation": "fixtures/conditionals/reference/inactive_unknown_forward.json",
+      "expectation_sha256": "e007bedabaa9297e4e70fb5e4a284b7289f1955dace43c9fedba0999c2c538d3",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unknown_branch_units_conflict",
+      "path": "fixtures/conditionals/unknown_branch_units_conflict.ant",
+      "sha256": "a14c5fd8d5fe3b8bbb27f4946974fa3894f657437248160d128194e26684ecf5",
+      "expectation": "fixtures/conditionals/reference/unknown_branch_units_conflict.json",
+      "expectation_sha256": "7b25437c40469d14995026a529dd8705eaa201fdd7d36b8a6602f32f63c1d901",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "units_inconsistency"
+    },
+    {
+      "id": "inactive_branch_units_conflict",
+      "path": "fixtures/conditionals/inactive_branch_units_conflict.ant",
+      "sha256": "e27101441fce4be6a1e2910c6e650b49c9a238890b5c348869813a6c52041caa",
+      "expectation": "fixtures/conditionals/reference/inactive_branch_units_conflict.json",
+      "expectation_sha256": "f378cd7ea7a10b50e594bd719a30581dd1e90b6eec2a01d53e87d7399f6e1ee7",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "units_inconsistency"
+    },
+    {
+      "id": "numeric_condition_units",
+      "path": "fixtures/conditionals/numeric_condition_units.ant",
+      "sha256": "d64c1999ad9fab128a65ff34bfd022c895fb94c4759679a1c555a3f77251e4ad",
+      "expectation": "fixtures/conditionals/reference/numeric_condition_units.json",
+      "expectation_sha256": "b9e4ce667ce1c5f4a4a9ad030afee27f5367377ac0b4ca2dc057db6d4a4a63e1",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "units_inconsistency"
+    },
+    {
+      "id": "logical_units",
+      "path": "fixtures/conditionals/logical_units.ant",
+      "sha256": "7cd0e31f2d29498b528c63a065d7ef28dccfd308dea08c0080b9595ad604404d",
+      "expectation": "fixtures/conditionals/reference/logical_units.json",
+      "expectation_sha256": "f6e0c4cd69a5f7ccd9adb8945fa203dcc2818f10c6aab5d4c0a6af9a2ded9e36",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "units_inconsistency"
+    },
+    {
+      "id": "comparison_partial_units",
+      "path": "fixtures/conditionals/comparison_partial_units.ant",
+      "sha256": "fbbc3ce55775acbb0389d0ca469217bf7c2ae526a2be580f80518b2cc6c6064c",
+      "expectation": "fixtures/conditionals/reference/comparison_partial_units.json",
+      "expectation_sha256": "66e972c355b2f96aba91613c80e1aae854b26e2a23b8a53c71b395a0d144c12a",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "units_inconsistency"
+    },
+    {
+      "id": "boolean_branch_dimensional_conflict",
+      "path": "fixtures/conditionals/boolean_branch_dimensional_conflict.ant",
+      "sha256": "8990c02a422d6dd21aa452562fed121e9f3fc9c5dfd5da222321f764a5b71f71",
+      "expectation": "fixtures/conditionals/reference/boolean_branch_dimensional_conflict.json",
+      "expectation_sha256": "9211c11def7b4d5b9b6806d1ebd32b275cb0b1e5add3369f8d252183e0b22089",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "units_inconsistency"
+    },
+    {
+      "id": "boolean_parameter_annotation",
+      "path": "fixtures/conditionals/boolean_parameter_annotation.ant",
+      "sha256": "17e102234ed77a4fe30d4e0f6faf135f32be671fbfe99d36005a8e3ca4331faa",
+      "expectation": "fixtures/conditionals/reference/boolean_parameter_annotation.json",
+      "expectation_sha256": "50c04ef98f2dbd65d3a5513e074293fc5bc4fa40ac7caaac60bc7bddf0ba2623",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "boolean_species",
+      "path": "fixtures/conditionals/boolean_species.ant",
+      "sha256": "3945e7a061df6031c17f75daec56123fc40b051a3e2fd09f021cb5da4c42ba00",
+      "expectation": "fixtures/conditionals/reference/boolean_species.json",
+      "expectation_sha256": "d6349df49b9ea9bc29129608a562554af2de72f4bf25b71f5bcfb190d099f9a6",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "boolean_species_negative",
+      "path": "fixtures/conditionals/boolean_species_negative.ant",
+      "sha256": "af132b8c7223d81f14f14f8ae327f588d9fec06ef99d28fd7223c980a0c7a66d",
+      "expectation": "fixtures/conditionals/reference/boolean_species_negative.json",
+      "expectation_sha256": "158dd938bb28108bdfaeff7155a63acf30149477ec1a772739d91d64af152fd1",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "conditional_compartment_deferred",
+      "path": "fixtures/conditionals/conditional_compartment_deferred.ant",
+      "sha256": "cb697a5eb9c601ec4b27b8ef2a0075727eb6d42e1857218449a235c0e178980e",
+      "expectation": "fixtures/conditionals/reference/conditional_compartment_deferred.json",
+      "expectation_sha256": "05b0da9f7450f279012f3e1a8bf6186b25290f5c1ddbc245b1d4570d05102722",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "word_and_symbol",
+      "path": "fixtures/conditionals/word_and_symbol.ant",
+      "sha256": "85c2223865a8fda71dcceabe20179dae06b4b7ce04a32e981a5f07071b7b1dbe",
+      "expectation": "fixtures/conditionals/reference/word_and_symbol.json",
+      "expectation_sha256": "417ea4bc3c3150f090f7966ca25543eeab3682c41fac2baa4678a50d769abbed",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "word_or_group",
+      "path": "fixtures/conditionals/word_or_group.ant",
+      "sha256": "c452830a0b1b90e98a4099f8bb26722f236923f7c719c3232d48871f88c46ccc",
+      "expectation": "fixtures/conditionals/reference/word_or_group.json",
+      "expectation_sha256": "666ed18eccef2549d4afb1aea564ad93b15bd5865a9fd0e25e9ecca161b413c3",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "word_not_symbol",
+      "path": "fixtures/conditionals/word_not_symbol.ant",
+      "sha256": "c7d16d507730460c90720eb194a4523dfcebcac20cafe11aedf867be8aba155e",
+      "expectation": "fixtures/conditionals/reference/word_not_symbol.json",
+      "expectation_sha256": "cac3c77406072907ab5ef4de8ef4d1a0e20b718561a4e324abe67079e5e4cfc5",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "upper_word_and",
+      "path": "fixtures/conditionals/upper_word_and.ant",
+      "sha256": "fe12820a60c7130a39ae553e3338df3c01f1ba3529d9f7efac9e13b617a7a09a",
+      "expectation": "fixtures/conditionals/reference/upper_word_and.json",
+      "expectation_sha256": "fba93cb7454a5564ab574d135a39c3b07c4ab5963c0b8739f64b4ca8082fcdec",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    }
+  ]
+}

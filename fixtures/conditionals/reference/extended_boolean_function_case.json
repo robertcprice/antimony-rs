@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  'And' was used as a function, but no such function was defined.  Please define the function using 'function And([arguments]) [function definition] end'.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "4df02840f886d8e98ffe542390dc027adb1c2f8731c303520fca0af6189c2970",
+  "status": "REFERENCE_REJECTED"
+}

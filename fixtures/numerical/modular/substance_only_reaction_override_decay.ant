@@ -1,0 +1,6 @@
+compartment V = 2;
+substanceOnly species S in V = 4, P in V = 0;
+k_slow = 0.1;
+k_fast = 0.5;
+J: S => P; k_slow * S;
+J := k_fast * S;

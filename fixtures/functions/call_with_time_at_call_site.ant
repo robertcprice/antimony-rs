@@ -1,0 +1,3 @@
+function decay(x, t) x * exp(-0.1 * t) end
+species S = 5;
+a := decay(S, time);

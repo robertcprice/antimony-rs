@@ -1,0 +1,8 @@
+model sub_draft(S, P)
+  var k_unset;
+  S -> P; k_unset*S;
+end
+model *main_draft()
+  species A, B;
+  M: sub_draft(A, B);
+end

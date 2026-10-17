@@ -1,0 +1,3 @@
+model broken()
+  J: S => ; (2 + ;
+end

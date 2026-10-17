@@ -1,0 +1,2 @@
+function tau() 2 * pi end
+a = tau();

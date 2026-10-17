@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"sin()\":  Error when parsing input 'sin()' at position 5:  The function 'sin' takes exactly one argument, but 0 were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "c95f52ef406747486f8821cb2572889c612a3b689dd04db85237e563d6ff0622",
+  "status": "REFERENCE_REJECTED"
+}

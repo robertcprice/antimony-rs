@@ -1,0 +1,179 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    }
+  ],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection": {
+    "compartments": [],
+    "constraints": [],
+    "events": [],
+    "function_definitions": [
+      {
+        "annotation": null,
+        "id": "select_conc",
+        "math": {
+          "children": [
+            {
+              "name": "x",
+              "type": 260
+            },
+            {
+              "name": "y",
+              "type": 260
+            },
+            {
+              "name": "flag",
+              "type": 260
+            },
+            {
+              "children": [
+                {
+                  "name": "x",
+                  "type": 260
+                },
+                {
+                  "children": [
+                    {
+                      "name": "flag",
+                      "type": 260
+                    },
+                    {
+                      "integer": 0,
+                      "type": 256
+                    }
+                  ],
+                  "type": 310
+                },
+                {
+                  "name": "y",
+                  "type": 260
+                }
+              ],
+              "type": 295
+            }
+          ],
+          "type": 267
+        },
+        "name": null,
+        "sbo_term": null
+      }
+    ],
+    "initial_assignments": [
+      {
+        "math": {
+          "children": [
+            {
+              "name": "c1",
+              "type": 260
+            },
+            {
+              "name": "c2",
+              "type": 260
+            },
+            {
+              "integer": 1,
+              "type": 256
+            }
+          ],
+          "name": "select_conc",
+          "type": 268
+        },
+        "symbol": "c_out"
+      }
+    ],
+    "level": 3,
+    "model": {
+      "annotation": null,
+      "id": "__main",
+      "name": null,
+      "sbo_term": null
+    },
+    "model_units": {
+      "AreaUnits": null,
+      "ConversionFactor": null,
+      "ExtentUnits": null,
+      "LengthUnits": null,
+      "SubstanceUnits": null,
+      "TimeUnits": null,
+      "VolumeUnits": null
+    },
+    "packages": [],
+    "parameters": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "c1",
+        "name": null,
+        "sbo_term": null,
+        "units": "mM",
+        "value": 2.0
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "c2",
+        "name": null,
+        "sbo_term": null,
+        "units": "mM",
+        "value": 5.0
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "c_out",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": null
+      }
+    ],
+    "reactions": [],
+    "rules": [],
+    "species": [],
+    "unit_definitions": [
+      {
+        "annotation": null,
+        "id": "mM",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 23,
+            "multiplier": 1.0,
+            "scale": -3
+          },
+          {
+            "exponent": -1.0,
+            "kind": 18,
+            "multiplier": 1.0,
+            "scale": 0
+          }
+        ]
+      }
+    ],
+    "version": 2
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "8b997a3747e89535b0ef7e00e89930e6e860ee0b2a693cc251182a423e502d9d",
+  "status": "PASS"
+}

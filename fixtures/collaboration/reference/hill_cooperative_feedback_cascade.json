@@ -1,0 +1,865 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [
+    {
+      "category": "SBML unit consistency",
+      "id": 99506,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99507,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20513,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    }
+  ],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection": {
+    "compartments": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "default_compartment",
+        "name": null,
+        "sbo_term": 410,
+        "size": 1.0,
+        "spatial_dimensions": 3,
+        "units": null
+      }
+    ],
+    "constraints": [],
+    "events": [],
+    "function_definitions": [
+      {
+        "annotation": null,
+        "id": "hill_act",
+        "math": {
+          "children": [
+            {
+              "name": "x",
+              "type": 260
+            },
+            {
+              "name": "Vm",
+              "type": 260
+            },
+            {
+              "name": "K",
+              "type": 260
+            },
+            {
+              "name": "n",
+              "type": 260
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "Vm",
+                      "type": 260
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "x",
+                          "type": 260
+                        },
+                        {
+                          "name": "n",
+                          "type": 260
+                        }
+                      ],
+                      "type": 296
+                    }
+                  ],
+                  "type": 42
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "K",
+                          "type": 260
+                        },
+                        {
+                          "name": "n",
+                          "type": 260
+                        }
+                      ],
+                      "type": 296
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "x",
+                          "type": 260
+                        },
+                        {
+                          "name": "n",
+                          "type": 260
+                        }
+                      ],
+                      "type": 296
+                    }
+                  ],
+                  "type": 43
+                }
+              ],
+              "type": 47
+            }
+          ],
+          "type": 267
+        },
+        "name": null,
+        "sbo_term": null
+      },
+      {
+        "annotation": null,
+        "id": "hill_inh",
+        "math": {
+          "children": [
+            {
+              "name": "x",
+              "type": 260
+            },
+            {
+              "name": "Vm",
+              "type": 260
+            },
+            {
+              "name": "K",
+              "type": 260
+            },
+            {
+              "name": "n",
+              "type": 260
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "Vm",
+                      "type": 260
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "K",
+                          "type": 260
+                        },
+                        {
+                          "name": "n",
+                          "type": 260
+                        }
+                      ],
+                      "type": 296
+                    }
+                  ],
+                  "type": 42
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "K",
+                          "type": 260
+                        },
+                        {
+                          "name": "n",
+                          "type": 260
+                        }
+                      ],
+                      "type": 296
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "x",
+                          "type": 260
+                        },
+                        {
+                          "name": "n",
+                          "type": 260
+                        }
+                      ],
+                      "type": 296
+                    }
+                  ],
+                  "type": 43
+                }
+              ],
+              "type": 47
+            }
+          ],
+          "type": 267
+        },
+        "name": null,
+        "sbo_term": null
+      }
+    ],
+    "initial_assignments": [],
+    "level": 3,
+    "model": {
+      "annotation": null,
+      "id": "hill_cooperative_feedback_cascade",
+      "name": null,
+      "sbo_term": null
+    },
+    "model_units": {
+      "AreaUnits": null,
+      "ConversionFactor": null,
+      "ExtentUnits": null,
+      "LengthUnits": null,
+      "SubstanceUnits": null,
+      "TimeUnits": null,
+      "VolumeUnits": null
+    },
+    "packages": [],
+    "parameters": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "K1",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 0.8
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "K2",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 0.5
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "K3",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 0.6
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "Vm1",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 2.0
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "Vm2",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 1.5
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "Vm3",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 1.2
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "kd",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 0.3
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "n1",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 3.0
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "n2",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 2.0
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "n3",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 2.0
+      },
+      {
+        "annotation": null,
+        "constant": false,
+        "id": "total_signal",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": null
+      }
+    ],
+    "reactions": [
+      {
+        "annotation": null,
+        "compartment": null,
+        "id": "J1",
+        "local_parameters": [],
+        "math": {
+          "children": [
+            {
+              "name": "C",
+              "type": 260
+            },
+            {
+              "name": "Vm1",
+              "type": 260
+            },
+            {
+              "name": "K1",
+              "type": 260
+            },
+            {
+              "name": "n1",
+              "type": 260
+            }
+          ],
+          "name": "hill_inh",
+          "type": 268
+        },
+        "modifiers": [
+          "C"
+        ],
+        "name": null,
+        "products": [
+          {
+            "constant": true,
+            "species": "A",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reactants": [],
+        "reversible": true,
+        "sbo_term": null
+      },
+      {
+        "annotation": null,
+        "compartment": null,
+        "id": "J2",
+        "local_parameters": [],
+        "math": {
+          "children": [
+            {
+              "name": "A",
+              "type": 260
+            },
+            {
+              "name": "Vm2",
+              "type": 260
+            },
+            {
+              "name": "K2",
+              "type": 260
+            },
+            {
+              "name": "n2",
+              "type": 260
+            }
+          ],
+          "name": "hill_act",
+          "type": 268
+        },
+        "modifiers": [
+          "A"
+        ],
+        "name": null,
+        "products": [
+          {
+            "constant": true,
+            "species": "B",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reactants": [],
+        "reversible": true,
+        "sbo_term": null
+      },
+      {
+        "annotation": null,
+        "compartment": null,
+        "id": "J3",
+        "local_parameters": [],
+        "math": {
+          "children": [
+            {
+              "name": "B",
+              "type": 260
+            },
+            {
+              "name": "Vm3",
+              "type": 260
+            },
+            {
+              "name": "K3",
+              "type": 260
+            },
+            {
+              "name": "n3",
+              "type": 260
+            }
+          ],
+          "name": "hill_act",
+          "type": 268
+        },
+        "modifiers": [
+          "B"
+        ],
+        "name": null,
+        "products": [
+          {
+            "constant": true,
+            "species": "C",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reactants": [],
+        "reversible": true,
+        "sbo_term": null
+      },
+      {
+        "annotation": null,
+        "compartment": null,
+        "id": "J4",
+        "local_parameters": [],
+        "math": {
+          "children": [
+            {
+              "name": "kd",
+              "type": 260
+            },
+            {
+              "name": "A",
+              "type": 260
+            }
+          ],
+          "type": 42
+        },
+        "modifiers": [],
+        "name": null,
+        "products": [],
+        "reactants": [
+          {
+            "constant": true,
+            "species": "A",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reversible": true,
+        "sbo_term": null
+      },
+      {
+        "annotation": null,
+        "compartment": null,
+        "id": "J5",
+        "local_parameters": [],
+        "math": {
+          "children": [
+            {
+              "name": "kd",
+              "type": 260
+            },
+            {
+              "name": "B",
+              "type": 260
+            }
+          ],
+          "type": 42
+        },
+        "modifiers": [],
+        "name": null,
+        "products": [],
+        "reactants": [
+          {
+            "constant": true,
+            "species": "B",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reversible": true,
+        "sbo_term": null
+      },
+      {
+        "annotation": null,
+        "compartment": null,
+        "id": "J6",
+        "local_parameters": [],
+        "math": {
+          "children": [
+            {
+              "name": "kd",
+              "type": 260
+            },
+            {
+              "name": "C",
+              "type": 260
+            }
+          ],
+          "type": 42
+        },
+        "modifiers": [],
+        "name": null,
+        "products": [],
+        "reactants": [
+          {
+            "constant": true,
+            "species": "C",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reversible": true,
+        "sbo_term": null
+      }
+    ],
+    "rules": [
+      {
+        "kind": "assignmentRule",
+        "math": {
+          "children": [
+            {
+              "children": [
+                {
+                  "name": "A",
+                  "type": 260
+                },
+                {
+                  "name": "B",
+                  "type": 260
+                }
+              ],
+              "type": 43
+            },
+            {
+              "name": "C",
+              "type": 260
+            }
+          ],
+          "type": 43
+        },
+        "variable": "total_signal"
+      }
+    ],
+    "species": [
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "default_compartment",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "A",
+        "initial_amount": null,
+        "initial_concentration": 1.0,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      },
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "default_compartment",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "B",
+        "initial_amount": null,
+        "initial_concentration": 0.2,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      },
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "default_compartment",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "C",
+        "initial_amount": null,
+        "initial_concentration": 0.1,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      }
+    ],
+    "unit_definitions": [],
+    "version": 2
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "7461bdc97002e03089383c4424980d297e207903f8c2da4e20e3b4817c4b490f",
+  "status": "PASS"
+}

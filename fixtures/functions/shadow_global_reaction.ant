@@ -1,0 +1,4 @@
+species S = 1;
+J0: S -> ; 0.1 * S;
+function f(J0) J0 + 2 end
+a = f(3);

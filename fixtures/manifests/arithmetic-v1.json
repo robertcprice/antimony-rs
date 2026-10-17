@@ -1,0 +1,547 @@
+{
+  "schema": "antimony-arithmetic-corpus-v1",
+  "implemented_profile": "arithmetic-v0.1-slice",
+  "provenance": "Original project-authored arithmetic combinations; not copied upstream. Project license undecided.",
+  "fixtures": [
+    {
+      "id": "context_sum_balanced",
+      "path": "fixtures/arithmetic/context_sum_balanced.ant",
+      "sha256": "e7eaa447e4d7a11b27e211169dfa6be544ff810af0eb4ca265958012260c698d",
+      "expectation": "fixtures/manifests/arithmetic-v1/context_sum_balanced.json",
+      "expectation_sha256": "81b31eb307070fd72b3e47940ef6ac68a140654911793ed751cc8dc89f77b1d5",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "context_sum_left",
+      "path": "fixtures/arithmetic/context_sum_left.ant",
+      "sha256": "14057c6f6f86c55ecf47a5f5fed90515693a5316aa9b576b55a31500b9d78b0f",
+      "expectation": "fixtures/manifests/arithmetic-v1/context_sum_left.json",
+      "expectation_sha256": "c48e04b4d5a912472f8e1332c3e8e094be012bebc17171b5ab2dad8d4e046d33",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "context_sum_right",
+      "path": "fixtures/arithmetic/context_sum_right.ant",
+      "sha256": "1d8c03383163472d3f04b8adb7da7a25149b5a1b3232098b705f4fbb8056da03",
+      "expectation": "fixtures/manifests/arithmetic-v1/context_sum_right.json",
+      "expectation_sha256": "4734981a19d2b6453a7d6c0f250d9b7011f84d875d7512a2b85b1ab832b3a64c",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "context_nested_sum",
+      "path": "fixtures/arithmetic/context_nested_sum.ant",
+      "sha256": "54710d95f153d7dc0978f1854c0d0b57abe5e881dfd90eef8414da0e8a7318e8",
+      "expectation": "fixtures/manifests/arithmetic-v1/context_nested_sum.json",
+      "expectation_sha256": "ddd2c9d8902631ef513d65bf09363bb41e6cdba2c6bf50c7b2bf1a12fb9974e2",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "context_product_balanced",
+      "path": "fixtures/arithmetic/context_product_balanced.ant",
+      "sha256": "236da9027f5605a9ce6b323b44ce4911d66cfde1c47dcac6af1fbb5aea8127ad",
+      "expectation": "fixtures/manifests/arithmetic-v1/context_product_balanced.json",
+      "expectation_sha256": "594768835d572222de57d0a19a9a22b9e30bd71a1f0674891ae19e7be4a948f3",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "context_product_left",
+      "path": "fixtures/arithmetic/context_product_left.ant",
+      "sha256": "4dbfadfb8d72115e0f11b4849be4a8999345ca539da9a7c0c79105b023e360c4",
+      "expectation": "fixtures/manifests/arithmetic-v1/context_product_left.json",
+      "expectation_sha256": "8963a26100fe97b92306ed49b777bb27e828d4d197b2c5f274f96af49b54f2a7",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "context_product_right",
+      "path": "fixtures/arithmetic/context_product_right.ant",
+      "sha256": "6ba37cfc19df7e6b813dc2d38cefc1b1782765d437e231b80c34ed528d4d9368",
+      "expectation": "fixtures/manifests/arithmetic-v1/context_product_right.json",
+      "expectation_sha256": "c0e348bf780de44bf3a1ebd9230caca4250d57b1c346a867575b81422ec48e6f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "context_nested_product",
+      "path": "fixtures/arithmetic/context_nested_product.ant",
+      "sha256": "6f38e6b7a7273e7188733db2e532dfbdde2cb1221b50517ea9ace3b4fd3df24b",
+      "expectation": "fixtures/manifests/arithmetic-v1/context_nested_product.json",
+      "expectation_sha256": "74ceac8812ce4c6d0b62ea626df84aaa0ab790bb60eb4eed568e2f7700cdbe08",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "right_sum",
+      "path": "fixtures/arithmetic/right_sum.ant",
+      "sha256": "b7e91c1c65ded77e55237afca6cab279ec204fcb0ebfa84acc0f418f5f544555",
+      "expectation": "fixtures/manifests/arithmetic-v1/right_sum.json",
+      "expectation_sha256": "c26f20524b5cf11333c9e5ab1519e643018a85b831dfc7b01b9d5520c7412b1f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "right_product",
+      "path": "fixtures/arithmetic/right_product.ant",
+      "sha256": "bdb5a4008c2523204a26a82c1d53f8c90839e5c3ad6c9e0a2da825b72a8638ee",
+      "expectation": "fixtures/manifests/arithmetic-v1/right_product.json",
+      "expectation_sha256": "05e0fd5125b96518f0ea9fc68c8caf795f50998b57f6f4b559a38fde338bf620",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "balanced_sum",
+      "path": "fixtures/arithmetic/balanced_sum.ant",
+      "sha256": "5107dc9cae73a45f8eff80e556d513d2851f07d8fc5560fc3ae01c1127edcb71",
+      "expectation": "fixtures/manifests/arithmetic-v1/balanced_sum.json",
+      "expectation_sha256": "5d415a5338a314086ba508a9f7e2e73c7a8e781894427f7ebd6e390c088350da",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "balanced_product",
+      "path": "fixtures/arithmetic/balanced_product.ant",
+      "sha256": "0666902e9fef94be9068a5e2c64793b23733f464f3ea416740d4921137220741",
+      "expectation": "fixtures/manifests/arithmetic-v1/balanced_product.json",
+      "expectation_sha256": "ffdf74fb58117a624b62463b126373d0789754c713731ea8ceacbfadfbd799f0",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "nested_sum",
+      "path": "fixtures/arithmetic/nested_sum.ant",
+      "sha256": "25009bcd91eb5b4e9e260997c6b0272bb94de636b94a0f6a49cb2beb173a37e5",
+      "expectation": "fixtures/manifests/arithmetic-v1/nested_sum.json",
+      "expectation_sha256": "16e53ae60b6a1e974eced467536c27c83e5b7ddc624c1766bd03182bf59ef26e",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "nested_product",
+      "path": "fixtures/arithmetic/nested_product.ant",
+      "sha256": "79bd630d0ea6bbfe4b1c509215ef701d706d5e4d4d27510fe53e69a987a008ab",
+      "expectation": "fixtures/manifests/arithmetic-v1/nested_product.json",
+      "expectation_sha256": "38843861d0bee7ac44ec047a94fd9dd80abdd4cba23b39ed1cc8ebde6afc99a8",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "grouped_subtraction",
+      "path": "fixtures/arithmetic/grouped_subtraction.ant",
+      "sha256": "cee29e8e864fbbc5f22da2f62111fafc3c5eb86619006989be6e3c53b412fd35",
+      "expectation": "fixtures/manifests/arithmetic-v1/grouped_subtraction.json",
+      "expectation_sha256": "995b1e6c6d738891989c282f376f28c0f6521cd5e1e8f8f7d64bb47e7ad93fff",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "grouped_division",
+      "path": "fixtures/arithmetic/grouped_division.ant",
+      "sha256": "58da44ea3b9892f9fea1ac1d8b667f892cdd7f113aa18559d68aa03a4198e829",
+      "expectation": "fixtures/manifests/arithmetic-v1/grouped_division.json",
+      "expectation_sha256": "89a4cfb794d2ad01d8ef3ba15f911bc035e726d5b0355e3f68cda5c711f8dd70",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "mixed_right_sum",
+      "path": "fixtures/arithmetic/mixed_right_sum.ant",
+      "sha256": "aab3d6d47acdefc7a70ee06557f7187054a48f4e8d997bb301a973f56d6f8603",
+      "expectation": "fixtures/manifests/arithmetic-v1/mixed_right_sum.json",
+      "expectation_sha256": "b66978036f5aace26a6a9bad02f99457c930f12f2e20bc0bf94a0b9047af99a9",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "mixed_right_product",
+      "path": "fixtures/arithmetic/mixed_right_product.ant",
+      "sha256": "0deb715d3428e74782844d502c3c63dd33f420ba645b3a29ba9953ac7389e26f",
+      "expectation": "fixtures/manifests/arithmetic-v1/mixed_right_product.json",
+      "expectation_sha256": "29d3beadecfd4ebbd30c160d9309512d8f98b19a98ff33d6b565cc0340bcbf7c",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "power_right",
+      "path": "fixtures/arithmetic/power_right.ant",
+      "sha256": "635eec2b188e91bebe26e03247dec27b65bdfc36c42435cd07544ae48d229ba6",
+      "expectation": "fixtures/manifests/arithmetic-v1/power_right.json",
+      "expectation_sha256": "f1f54efd85113c872bf04153a4b557950e3a9ea0ddb86110d0e72bbc2946d440",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "power_left",
+      "path": "fixtures/arithmetic/power_left.ant",
+      "sha256": "b5291ca56d423fe82d6350ef7656f6350422c86796171de3c05db80f812a668f",
+      "expectation": "fixtures/manifests/arithmetic-v1/power_left.json",
+      "expectation_sha256": "794d5bcf3bd5fa2ec88a3ee920d2ad552e7a06d03a8565939a24633b14aa6f41",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unary_plus_minus",
+      "path": "fixtures/arithmetic/unary_plus_minus.ant",
+      "sha256": "bba879898af0c65a1b2bacf2bfe0f5afd8035101c632f2d921ae63bf2797bda6",
+      "expectation": "fixtures/manifests/arithmetic-v1/unary_plus_minus.json",
+      "expectation_sha256": "02b71077e9a2a1907f2be96a62939ca2b55feb006ee5a7912f0eb2c4b0eeea74",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unary_minus_plus",
+      "path": "fixtures/arithmetic/unary_minus_plus.ant",
+      "sha256": "3206ca145771c5d1bbfccdf561b015ddf5fb4709cdc372b9e4916ec19a97ca72",
+      "expectation": "fixtures/manifests/arithmetic-v1/unary_minus_plus.json",
+      "expectation_sha256": "469ca4651b659e127054cfa45c0b660cb7d4baf89c8af14024cb95ca5f2eb503",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unary_double_grouped",
+      "path": "fixtures/arithmetic/unary_double_grouped.ant",
+      "sha256": "94e38695255c784465be4c31bfc33e618b153998cb3da183787330989180dd94",
+      "expectation": "fixtures/manifests/arithmetic-v1/unary_double_grouped.json",
+      "expectation_sha256": "548706719535ce112bbd01081f0a15f22e8a90271a848b233c1cdff531040601",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unary_triple_grouped",
+      "path": "fixtures/arithmetic/unary_triple_grouped.ant",
+      "sha256": "a86d78286df238a0919bbc7465132517a38bacf41ea05e95f91b347c9dbb1658",
+      "expectation": "fixtures/manifests/arithmetic-v1/unary_triple_grouped.json",
+      "expectation_sha256": "a6cebc18929bef2dc13c10b18f71d4ebffb1ceaa8372c6686c09410dbc170bc1",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unary_nested_sum",
+      "path": "fixtures/arithmetic/unary_nested_sum.ant",
+      "sha256": "76c52fe43322b5b1a8e80905f6483fceeb852ffb3f83d5f6c6769ae351c66a2f",
+      "expectation": "fixtures/manifests/arithmetic-v1/unary_nested_sum.json",
+      "expectation_sha256": "d83d66181b2b34ebf4f2de23a8b3eb09275d5419d01604daa9c7abfa16057276",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unary_power",
+      "path": "fixtures/arithmetic/unary_power.ant",
+      "sha256": "b461aafff4470d48cb38215eadcb3534a6f8d775b141aaa9e64b09a57aab7ecd",
+      "expectation": "fixtures/manifests/arithmetic-v1/unary_power.json",
+      "expectation_sha256": "2b4dc91e95ee98c92c27b1849c781c7088886750b08e9e8109186f82486ee2d8",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "small_rate",
+      "path": "fixtures/arithmetic/small_rate.ant",
+      "sha256": "7003fe9e80786e0452bc3a280dfc39bc38de45645fa83ad46d54891af788b375",
+      "expectation": "fixtures/manifests/arithmetic-v1/small_rate.json",
+      "expectation_sha256": "a02e70e9ff9499a04797012a5108d6b20363d8397eed0658d384347054aac5d7",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "large_rate",
+      "path": "fixtures/arithmetic/large_rate.ant",
+      "sha256": "01d98e510c22df89ecc2842cc662eba98b167cf83b9134c7493ceb2597d8095b",
+      "expectation": "fixtures/manifests/arithmetic-v1/large_rate.json",
+      "expectation_sha256": "e6be9f724bbe065bed7726ce2fae3bfd0a82b5ab16feaf08c06ff3803225957f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "lower_boundary",
+      "path": "fixtures/arithmetic/lower_boundary.ant",
+      "sha256": "33da807df95990a5ae12f94592355f9a05fe5d32e7f2328db0dd033ecba44326",
+      "expectation": "fixtures/manifests/arithmetic-v1/lower_boundary.json",
+      "expectation_sha256": "5ddcd953d98d215d281f27415b159d6e33885da40a0271f7b02f39b4805e0778",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "upper_boundary",
+      "path": "fixtures/arithmetic/upper_boundary.ant",
+      "sha256": "4398a3edf41b579e3b4a92377fa7013a3dc44a99b23f28c4d5feb9b10660af48",
+      "expectation": "fixtures/manifests/arithmetic-v1/upper_boundary.json",
+      "expectation_sha256": "db103c58ec9463f2e519c90bcd35b96d61649dcea02fa3527073f1b7cda4e867",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "scientific_mantissa",
+      "path": "fixtures/arithmetic/scientific_mantissa.ant",
+      "sha256": "6931512fb8b18ff5da409bb28af9978862ef26606ce325f0f294e9e86a5bebb7",
+      "expectation": "fixtures/manifests/arithmetic-v1/scientific_mantissa.json",
+      "expectation_sha256": "63d6a594ebc24e91c9583ee6e2ede7df1deeaddb7a8bdc76948f3fc088f1ddf5",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "fixed_threshold_low",
+      "path": "fixtures/arithmetic/fixed_threshold_low.ant",
+      "sha256": "ff7c7db91b5fb916a382eb81b1e57e92a6738b86675513f71518af0561b9721c",
+      "expectation": "fixtures/manifests/arithmetic-v1/fixed_threshold_low.json",
+      "expectation_sha256": "f51d27b5fabb84c33b2156f59a279736397f62beec729439947dcb4766c5853a",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "scientific_threshold_low",
+      "path": "fixtures/arithmetic/scientific_threshold_low.ant",
+      "sha256": "c395ff42fdbb34f5cf2cbc78b51d9d6ae6f92f052497660af699d669419173b0",
+      "expectation": "fixtures/manifests/arithmetic-v1/scientific_threshold_low.json",
+      "expectation_sha256": "ea29d17c4cd3304191ea1bad28d03fc1a9f99cb826cd2fcafa607ef063adc11b",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "integer_threshold",
+      "path": "fixtures/arithmetic/integer_threshold.ant",
+      "sha256": "5ad8ce25d3d31d639d70ba05c30d2bde3894798aee02e2ff7575653ee9c92d76",
+      "expectation": "fixtures/manifests/arithmetic-v1/integer_threshold.json",
+      "expectation_sha256": "c415fd41c2fd9c778613608e076e0f2c0adc1e9b0f084e868485994a302885ce",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "scientific_threshold_high",
+      "path": "fixtures/arithmetic/scientific_threshold_high.ant",
+      "sha256": "e6b57f0890a1e5f8baba97957146a403877be90709affa95ba9c299814fb149c",
+      "expectation": "fixtures/manifests/arithmetic-v1/scientific_threshold_high.json",
+      "expectation_sha256": "18083481d9d6afde984d348154da8d9fdf9be34b5448477f130c5ec44bad2900",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "mantissa_roundtrip",
+      "path": "fixtures/arithmetic/mantissa_roundtrip.ant",
+      "sha256": "493b99dbd86a49c6fab6db776d7ca51830e2b1ef877e90546d8df103790cf138",
+      "expectation": "fixtures/manifests/arithmetic-v1/mantissa_roundtrip.json",
+      "expectation_sha256": "722ee2205403e2876e6c2b904a947c21c0e15ab1dcee69451e81d1bfd42b0226",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "decimal_threshold",
+      "path": "fixtures/arithmetic/decimal_threshold.ant",
+      "sha256": "251d97f25a4c83d47682bfbaf4c55e85d2b914a8a1a1a62d2e53458f3e922093",
+      "expectation": "fixtures/manifests/arithmetic-v1/decimal_threshold.json",
+      "expectation_sha256": "db437cfef1fb1e77707dd6cd70fb547805894f2ddf71fae7e1af6236b7c6b77d",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "scientific_threshold",
+      "path": "fixtures/arithmetic/scientific_threshold.ant",
+      "sha256": "6aee4d9fef70511213b2eed7f70977befee681e5d89691558fb718d68af4d4a9",
+      "expectation": "fixtures/manifests/arithmetic-v1/scientific_threshold.json",
+      "expectation_sha256": "a2c5d0e9167986a93b14e177dda43a4974e8fae75897be6d48e1d9b8003270c0",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "unary_double_plus",
+      "path": "fixtures/arithmetic/unary_double_plus.ant",
+      "sha256": "3707420957f4ae84799b67e1c18b4ea1b0a2c2d0d555cfeedfa19ce88045f19c",
+      "expectation": "fixtures/manifests/arithmetic-v1/unary_double_plus.json",
+      "expectation_sha256": "f5e46a11c646b239f2c97d157f6878ac4eb6780978d7141dcf40c76ca420cc85",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "negative_small",
+      "path": "fixtures/arithmetic/negative_small.ant",
+      "sha256": "d28a58ac6a34234b4e3419e344eb40e7dbb9b4470f1582c0a822775f964bf5c6",
+      "expectation": "fixtures/manifests/arithmetic-v1/negative_small.json",
+      "expectation_sha256": "34f6493edaef2b8f65b19805e2ff8b5361712b976ab4fb7aabc04adca7d6feeb",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "signed_zero",
+      "path": "fixtures/arithmetic/signed_zero.ant",
+      "sha256": "ef3a98b83915699b0cb9713ddcaee445ea895dcfdb66b429f0690e36d8b7c9a4",
+      "expectation": "fixtures/manifests/arithmetic-v1/signed_zero.json",
+      "expectation_sha256": "e8355226edda2d6913b998be6ac7e90c8bacc7199e89646b46c8500eff87f8d4",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "zero_exponent",
+      "path": "fixtures/arithmetic/zero_exponent.ant",
+      "sha256": "56cece4405d0e6e919b55a386f9b76a884df19cfe11acd8c963112be9877116a",
+      "expectation": "fixtures/manifests/arithmetic-v1/zero_exponent.json",
+      "expectation_sha256": "b3df5e7ddcf20c0a998c2dda775f113f1e34dd0786270f11b0bebfd0a6a99db5",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "double_minus",
+      "path": "fixtures/arithmetic/double_minus.ant",
+      "sha256": "86dae43d28e09b00455b3b3741d23ea666b40a894def56072e370ddaaae3ed49",
+      "expectation": "fixtures/manifests/arithmetic-v1/double_minus.json",
+      "expectation_sha256": "fd2c10f632ac5ee75ef0c8efedad4e811f89d41c12bd38ece9986995d28ed8f5",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "overflow",
+      "path": "fixtures/arithmetic/overflow.ant",
+      "sha256": "8bf5ea6a7c21b3ad427bf2822adb2f69bca0f4b5aa0a7fb1eaf8508e00d08521",
+      "expectation": "fixtures/manifests/arithmetic-v1/overflow.json",
+      "expectation_sha256": "a100cf18b1145e3bbbc88dd5987cc549378fbf0bd2b555c2919527aeb7da47a9",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "declaration_conflict"
+    },
+    {
+      "id": "underflow",
+      "path": "fixtures/arithmetic/underflow.ant",
+      "sha256": "c966374ddc70122f0a7335ad76e31bb8311b2e4226cb39e8cc9cdf69c3eee43e",
+      "expectation": "fixtures/manifests/arithmetic-v1/underflow.json",
+      "expectation_sha256": "e3d7fbc626291688f6644bbb07b778dd0168a0a63016e187e1b2b890150f4bfe",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "subnormal",
+      "path": "fixtures/arithmetic/subnormal.ant",
+      "sha256": "8f83b55450f2c8257f0cfa63f1bfc5f389178e15b33138f59f71c1f482d52824",
+      "expectation": "fixtures/manifests/arithmetic-v1/subnormal.json",
+      "expectation_sha256": "92d1095c0818c17d067c6e2dce7ce0e2d35e254297dd5037199a38f3f0533a6c",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "excess_precision",
+      "path": "fixtures/arithmetic/excess_precision.ant",
+      "sha256": "ae355cf4c6048d0b324b0db4dac472aceba7705f927f9e8d6d9a922f01a2180e",
+      "expectation": "fixtures/manifests/arithmetic-v1/excess_precision.json",
+      "expectation_sha256": "d0a3e99346afa0dc73c613a56c1a38b43f43634d8ee9f5605730f6ed56740b25",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "deferred_builtin",
+      "path": "fixtures/arithmetic/deferred_builtin.ant",
+      "sha256": "1665dc92d346c5e463d03803d9c0e8c6b87a53586f50ca32ec0850e9007169ef",
+      "expectation": "fixtures/manifests/arithmetic-v1/deferred_builtin.json",
+      "expectation_sha256": "7d02f5b7f6f015c28aa482a1e3c9d3648f2dc361a7d96f67f02c52354487691a",
+      "reference_status": "PASS",
+      "native": "rejected",
+      "diagnostic_code": "unsupported_feature"
+    },
+    {
+      "id": "missing_operand",
+      "path": "fixtures/arithmetic/missing_operand.ant",
+      "sha256": "522a4c155ec0cbf600d67bf83a1777f1bb2941ecac55a8d9d16c761b484b9ba5",
+      "expectation": "fixtures/manifests/arithmetic-v1/missing_operand.json",
+      "expectation_sha256": "0b9d9925ce6e9cc2d96e3f4d9744c2d8855d96a69ab7dba58114e31673284e8a",
+      "reference_status": "REFERENCE_REJECTED",
+      "native": "rejected",
+      "diagnostic_code": "syntax"
+    },
+    {
+      "id": "context_initial_sum",
+      "path": "fixtures/arithmetic/context_initial_sum.ant",
+      "sha256": "302e8a9dbcd789d287430c142ea8030632d0145ca0e11999c943d6a6e10db3dd",
+      "expectation": "fixtures/manifests/arithmetic-v1/context_initial_sum.json",
+      "expectation_sha256": "4a5e7f8bf2f7ab2b1194b2990133e00fbf67d3303d4a1d3d1641e90cd5c1511f",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "context_initial_product",
+      "path": "fixtures/arithmetic/context_initial_product.ant",
+      "sha256": "ae23cdd8efc23bf80897e70858272b0b39f52126c6c6332da6f5c4a619305114",
+      "expectation": "fixtures/manifests/arithmetic-v1/context_initial_product.json",
+      "expectation_sha256": "5c41429d0fc032a6f22a422b15c9bc8a0ccf3e101b89b58d8c8ce1beca50eec6",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "symbolic_small",
+      "path": "fixtures/arithmetic/symbolic_small.ant",
+      "sha256": "4e085c2432f2b097551dac824ed9fac8fac10d343454dbe809ea309e8670aa42",
+      "expectation": "fixtures/manifests/arithmetic-v1/symbolic_small.json",
+      "expectation_sha256": "5542b2ce3df7131579b10f76605f196d135a804d4f1bbc29b57be12b6857ecf9",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "symbolic_grouped",
+      "path": "fixtures/arithmetic/symbolic_grouped.ant",
+      "sha256": "45a5fe29bd2e11484287fda793dba9f999c7df5c530539c875fc51fbebaffc3f",
+      "expectation": "fixtures/manifests/arithmetic-v1/symbolic_grouped.json",
+      "expectation_sha256": "91289df1b8a2cc1179d30a40d163f4a11333dfa156c47388b140080bc9ab9e49",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    },
+    {
+      "id": "symbolic_unary",
+      "path": "fixtures/arithmetic/symbolic_unary.ant",
+      "sha256": "498b7674b01c81c9c85ac9d9073cc445a9ce2aeeaa1dbbd08c2aa468adbfdc74",
+      "expectation": "fixtures/manifests/arithmetic-v1/symbolic_unary.json",
+      "expectation_sha256": "86e71d1d39f70e32e98c87d6bcf4ffe538b36941026aba827b7f776eaa0b9869",
+      "reference_status": "PASS",
+      "native": "accepted",
+      "diagnostic_code": null
+    }
+  ]
+}

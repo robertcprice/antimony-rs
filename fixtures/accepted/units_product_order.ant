@@ -1,0 +1,1 @@
+unit product=mole*second; unit reverse=second*mole; unit rate=mole/second; a=2; a has product; b=2; b has reverse; c=2; c has rate;

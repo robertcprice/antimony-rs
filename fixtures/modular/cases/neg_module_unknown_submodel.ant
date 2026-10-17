@@ -1,0 +1,6 @@
+model helper()
+  species S = 1;
+end
+model *main()
+  A: unknown_mod();
+end

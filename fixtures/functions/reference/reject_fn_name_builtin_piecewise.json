@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  Cannot define 'piecewise' as a new function because it is already a defined function.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "e4e75eb2aacc50ed8268e31dbac45b6551707647c8e98ff418ac91573f7d5791",
+  "status": "REFERENCE_REJECTED"
+}

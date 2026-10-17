@@ -1,0 +1,4 @@
+species S = 10, P = 0;
+k = 0.2;
+S -> P; k*S;
+E_reset: at (S < 3): S = 8, k = 0.1;

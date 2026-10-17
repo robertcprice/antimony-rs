@@ -1,0 +1,1 @@
+compartment cell=3; species S in cell; S=2; a=S*cell; b=a+1;

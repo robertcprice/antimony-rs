@@ -1,0 +1,2 @@
+function rootf(x) sqrt(x) end
+a = rootf(-4);

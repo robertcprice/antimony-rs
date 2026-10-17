@@ -1,0 +1,1 @@
+unit square=2*metre^2; p=2; p has square;

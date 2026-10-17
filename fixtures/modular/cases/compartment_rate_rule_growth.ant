@@ -1,0 +1,6 @@
+compartment C = 1;
+g = 0.05;
+C' = g*C;
+species S in C = 10;
+k = 0.1;
+S -> ; C*k*S;

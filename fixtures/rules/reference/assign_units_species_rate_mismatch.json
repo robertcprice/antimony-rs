@@ -1,0 +1,120 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [
+    {
+      "category": "SBML unit consistency",
+      "id": 10512,
+      "severity": "Warning"
+    }
+  ],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection": {
+    "compartments": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "default_compartment",
+        "name": null,
+        "sbo_term": 410,
+        "size": 1.0,
+        "spatial_dimensions": 3,
+        "units": null
+      }
+    ],
+    "constraints": [],
+    "events": [],
+    "function_definitions": [],
+    "initial_assignments": [],
+    "level": 3,
+    "model": {
+      "annotation": null,
+      "id": "__main",
+      "name": null,
+      "sbo_term": null
+    },
+    "model_units": {
+      "AreaUnits": null,
+      "ConversionFactor": null,
+      "ExtentUnits": null,
+      "LengthUnits": null,
+      "SubstanceUnits": "mole",
+      "TimeUnits": "second",
+      "VolumeUnits": "litre"
+    },
+    "packages": [],
+    "parameters": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "k",
+        "name": null,
+        "sbo_term": null,
+        "units": "u",
+        "value": 2.0
+      }
+    ],
+    "reactions": [],
+    "rules": [
+      {
+        "kind": "assignmentRule",
+        "math": {
+          "name": "k",
+          "type": 260
+        },
+        "variable": "S"
+      }
+    ],
+    "species": [
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "default_compartment",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "S",
+        "initial_amount": null,
+        "initial_concentration": null,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      }
+    ],
+    "unit_definitions": [
+      {
+        "annotation": null,
+        "id": "u",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 23,
+            "multiplier": 1.0,
+            "scale": 0
+          },
+          {
+            "exponent": -1.0,
+            "kind": 18,
+            "multiplier": 1.0,
+            "scale": 0
+          },
+          {
+            "exponent": -1.0,
+            "kind": 28,
+            "multiplier": 1.0,
+            "scale": 0
+          }
+        ]
+      }
+    ],
+    "version": 2
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "4eb9694e0527de71e4f5e17a611a59d6d5938939dd9a8494190a67228f554503",
+  "status": "PASS"
+}

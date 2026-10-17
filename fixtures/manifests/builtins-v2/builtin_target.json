@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  'sin' is a reserved word in Antimony (the name of a built-in function) and cannot be used as the name of a variable or other named element.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "34bba3c378d9722878237f8abc4833c759ccb940694d9bf747c2c72c592f944b",
+  "status": "REFERENCE_REJECTED"
+}

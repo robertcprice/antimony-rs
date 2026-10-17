@@ -1,0 +1,12 @@
+model leaf(X)
+  k = 0.25;
+  X -> ; k*X;
+end
+model branch(Y)
+  L: leaf(Y);
+  L.k = 0.5;
+end
+model *top_model()
+  species S = 8;
+  B: branch(S);
+end

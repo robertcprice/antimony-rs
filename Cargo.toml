@@ -1,0 +1,44 @@
+[package]
+name = "antimony-rs"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.96"
+description = "Pure-Rust Antimony biological modeling language parser, bidirectional SBML L2/L3 translator, and native ODE/event/MCA engine"
+repository = "https://github.com/robertcprice/antimony-rs"
+license = "BSD-3-Clause"
+keywords = ["sbml", "antimony", "systems-biology", "simulation", "bioinformatics"]
+categories = ["science", "parser-implementations", "simulation"]
+publish = false
+# Explicit exclusions also protect the package before the first Git commit.
+exclude = ["**/__pycache__/**", "**/*.py[cod]", ".venv*/**", ".cache/**", "artifacts/**", "target/**", "tools/**/*evidence.json"]
+
+[lib]
+name = "antimony"
+path = "src/lib.rs"
+
+[lints.rust]
+unsafe_code = "forbid"
+missing_docs = "warn"
+
+[features]
+default = ["sbml"]
+sbml = ["dep:quick-xml"]
+cli = ["dep:serde_json"]
+
+[dependencies]
+quick-xml = { version = "=0.42.0", default-features = false, optional = true }
+serde_json = { version = "=1.0.150", optional = true }
+
+[[bin]]
+name = "antimony"
+path = "src/bin/antimony.rs"
+required-features = ["cli"]
+
+[[example]]
+name = "export_sbml"
+required-features = ["sbml"]
+
+[[example]]
+name = "import_sbml"
+required-features = ["sbml"]
+

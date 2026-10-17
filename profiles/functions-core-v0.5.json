@@ -1,0 +1,43 @@
+{
+  "schema": "antimony-rs-implementation-boundary-v2",
+  "implementation_id": "functions-core-v0.5-slice",
+  "status": "experimental_bounded_implementation",
+  "extends_implementation": "rules-core-v0.4-slice",
+  "historical_corpus_profile": "kinetic-core-v0.1",
+  "relationship_to_historical_target": "Separate bounded extension: top-level user-defined functions, flat parameter/species assignment and rate rules, Boolean/conditional operators, and numeric functions extend beyond frozen kinetic-core-v0.1; old corpus reuse is not target conformance.",
+  "syntax": {
+    "function_definitions": "Top-level function name(param1, param2, ...) body end blocks before, within (anonymous models), or after model declarations; optional star prefix function *name(...) and model *name(...); optional trailing semicolon after body expression or end.",
+    "function_calls": "Exact-arity user-defined function calls in parameter/species initializers, assignment/rate rules, reaction kinetic laws, and subsequent user-defined function bodies.",
+    "empty_function_rejections": "Empty function bodies (function f(x) end or function f(x) ; end) reject UnsupportedFeature; never silently emit empty lambdas.",
+    "scoping_and_recursion_rejections": "Function bodies may only reference their formal parameters, mathematical constants (pi, exponentiale), numeric/Boolean/conditional builtins, and previously declared user functions. Forward calls reject UnsupportedFeature; direct recursion, time/time() inside function bodies, and free model symbol references inside function bodies reject DeclarationConflict."
+  },
+  "semantics": {
+    "namespace_and_ordering": "Function definitions export in source declaration order to <listOfFunctionDefinitions> with <lambda> and <bvar><ci>...</ci></bvar>. Function identifiers share a flat namespace with model name, compartments, species, parameters, reactions, and unit definitions (collisions reject DeclarationConflict).",
+    "initialization_evaluation": "Parameter and species initializers calling user-defined functions evaluate iteratively across parameter frames when all arguments are known finite values; unknown arguments propagate None cleanly unless short-circuited by logical/piecewise operators; domain/divide-by-zero/nonfinite errors inside called functions reject DeclarationConflict.",
+    "constancy_and_dependencies": "Static dependency analysis traverses call-site arguments for cycle detection, parameter constancy propagation, and reaction modifier discovery. Assignment-rule targets still populate SBML scalar attributes only for verified lexical finite bare numeric/-numeric forms, never for function calls.",
+    "dimensions": "Call-site argument DimensionalStatus values are substituted into the called function body iteratively to verify internal dimensional consistency and return-dimension compatibility with annotated targets."
+  },
+  "retained_exclusions": [
+    "Empty function bodies (function f(x) end)",
+    "Forward/out-of-order function calls and recursive or mutually recursive functions",
+    "Compartment expression initialization (including compartment C = f(...)) and compartment assignment/rate rules",
+    "Reaction assignment rules replacing kinetic laws, algebraic rules (0 = expr), and empty rule clearing (a := ;)",
+    "Events, delay, and submodel hierarchy/imports",
+    "All textual infix/prefix logical aliases, comparison chains, XOR, and implies",
+    "Nonfinite constants and existing scalar/rational restrictions",
+    "A solver or general simulation-readiness guarantee"
+  ],
+  "verification_contracts": {
+    "manifest": "fixtures/functions/manifest.json",
+    "overlay": "fixtures/manifests/functions-core-v5-overlay.json",
+    "evidence": "tools/oracle/functions-evidence.json",
+    "guide": "docs/FUNCTIONS.md",
+    "analytic_manifest": "fixtures/numerical/functions/manifest.json"
+  },
+  "claims": {
+    "full_antimony": false,
+    "frozen_target_conformance": false,
+    "published": false,
+    "upstream_endorsement": false
+  }
+}

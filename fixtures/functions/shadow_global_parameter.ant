@@ -1,0 +1,4 @@
+p = 10;
+function f(p) p * 2 end
+a = f(3);
+b = p;

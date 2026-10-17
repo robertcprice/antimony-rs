@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"not(1/0)\":  Error when parsing input 'not(1/0)' at position 8:  syntax error, unexpected number in rational notation",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "75e905146ac6ea19427e53ef3b05af0b9b9040dca6db8ce4f9e42244997cf897",
+  "status": "REFERENCE_REJECTED"
+}

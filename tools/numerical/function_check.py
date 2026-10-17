@@ -1,0 +1,76 @@
+#!/usr/bin/env python3
+"""Two bounded user-defined function trajectories against independent analytic solutions."""
+import argparse
+from pathlib import Path
+import check as shared
+import functions_anchors
+import profile_overlay
+
+SCHEMA = 'antimony-functions-numerical-check-v1'
+
+
+def fingerprint(manifest, native, python):
+    values = shared.fingerprints(manifest, native, python)
+    for path in [functions_anchors.MANIFEST, Path(__file__), Path(functions_anchors.__file__), profile_overlay.boundary_path()]:
+        values[str(path.relative_to(shared.ROOT))] = shared.digest(path.read_bytes())
+    return values
+
+
+def check_all(native, python=None, reference_python=None):
+    if profile_overlay.PROFILE not in ('functions-core-v0.5-slice', 'modular-core-v0.8-slice'):
+        raise ValueError('Functions numerical gate requires functions-core-v0.5-slice or successor profile')
+    manifest = functions_anchors.load_manifest()
+    try:
+        before = fingerprint(manifest, native, python)
+    except FileNotFoundError as e:
+        return {'schema': SCHEMA, 'status': 'ORACLE_BLOCKED', 'reason': str(e), 'counts': {'passed': 0, 'blocked': 2, 'failed': 0}, 'cases': []}
+    cases = [shared.check_case(c, native, python, reference_python, anchor_contract=functions_anchors) for c in manifest['cases']]
+    try:
+        after = fingerprint(manifest, native, python)
+    except OSError:
+        after = {}
+    changed = [k for k, v in before.items() if after.get(k) != v]
+    counts = {
+        'passed': sum(c['status'] == 'PASS' for c in cases),
+        'blocked': sum(c['status'] == 'ORACLE_BLOCKED' for c in cases),
+        'failed': sum(c['status'] not in ('PASS', 'ORACLE_BLOCKED') for c in cases),
+    }
+    return {
+        'schema': SCHEMA,
+        'implemented_profile': profile_overlay.PROFILE,
+        'corpus_profile': 'functions-core-v0.5-slice',
+        'status': 'PASS' if counts['passed'] == 2 and not changed else 'FAIL',
+        'counts': counts,
+        'cases': cases,
+        'input_sha256': before,
+        'changed_inputs': changed,
+        'grid': shared.GRID,
+        'comparison': shared.COMPARISON,
+        'solver': shared.SOLVER,
+        'scope': 'Two independently derived closed-form user-defined function models only; not general DAE/ODE certification or simulation readiness.',
+    }
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--native', required=True)
+    parser.add_argument('--trusted-native', action='store_true')
+    parser.add_argument('--python')
+    parser.add_argument('--reference-python')
+    args = parser.parse_args()
+    if not args.trusted_native:
+        parser.error('Explicit --trusted-native required; no builds or installation')
+    try:
+        result = check_all(
+            Path(args.native).resolve(),
+            str(Path(args.python).absolute()) if args.python else None,
+            str(Path(args.reference_python).absolute()) if args.reference_python else None,
+        )
+    except (OSError, ValueError, TypeError, KeyError) as e:
+        result = {'schema': SCHEMA, 'status': 'FAIL', 'reason': str(e)}
+    shared.emit(result)
+    return 0 if result['status'] == 'PASS' else 2
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

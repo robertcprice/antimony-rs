@@ -1,0 +1,1 @@
+unit cube=metre^3; compartment cell=3; cell has cube; species S in cell; S=2;

@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  'time' is a reserved word in Antimony (the name of a built-in constant) and cannot be used as the name of a variable or other named element.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "bf5999c1669bd5b1039c27430635618a21be97bf15d164adfd9a152490c8514e",
+  "status": "REFERENCE_REJECTED"
+}

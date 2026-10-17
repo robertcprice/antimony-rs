@@ -1,0 +1,1 @@
+unit inv=1/litre;compartment c=3;c has litre;species S in c;S=2;S has inv;

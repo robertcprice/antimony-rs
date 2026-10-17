@@ -1,0 +1,16 @@
+model producer()
+  species P = 0;
+  k_prod = 1.2;
+  -> P; k_prod;
+end
+model consumer()
+  species S = 4;
+  k_deg = 0.3;
+  S -> ; k_deg*S;
+end
+model *coupled()
+  A: producer();
+  B: consumer();
+  A.P is shared_pool;
+  B.S is shared_pool;
+end

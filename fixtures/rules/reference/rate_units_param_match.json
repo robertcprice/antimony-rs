@@ -1,0 +1,91 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection": {
+    "compartments": [],
+    "constraints": [],
+    "events": [],
+    "function_definitions": [],
+    "initial_assignments": [],
+    "level": 3,
+    "model": {
+      "annotation": null,
+      "id": "__main",
+      "name": null,
+      "sbo_term": null
+    },
+    "model_units": {
+      "AreaUnits": null,
+      "ConversionFactor": null,
+      "ExtentUnits": null,
+      "LengthUnits": null,
+      "SubstanceUnits": null,
+      "TimeUnits": "second",
+      "VolumeUnits": null
+    },
+    "packages": [],
+    "parameters": [
+      {
+        "annotation": null,
+        "constant": false,
+        "id": "a",
+        "name": null,
+        "sbo_term": null,
+        "units": "mole",
+        "value": 1.0
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "k",
+        "name": null,
+        "sbo_term": null,
+        "units": "rate_u",
+        "value": 2.0
+      }
+    ],
+    "reactions": [],
+    "rules": [
+      {
+        "kind": "rateRule",
+        "math": {
+          "name": "k",
+          "type": 260
+        },
+        "variable": "a"
+      }
+    ],
+    "species": [],
+    "unit_definitions": [
+      {
+        "annotation": null,
+        "id": "rate_u",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 23,
+            "multiplier": 1.0,
+            "scale": 0
+          },
+          {
+            "exponent": -1.0,
+            "kind": 28,
+            "multiplier": 1.0,
+            "scale": 0
+          }
+        ]
+      }
+    ],
+    "version": 2
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "0fad0b3c384650b80bf69776881461012a3afabaa79ba975fee75c1e58d64cf6",
+  "status": "PASS"
+}

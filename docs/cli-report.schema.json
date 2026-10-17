@@ -1,0 +1,307 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Antimony CLI report v1",
+  "description": "CLI adapter report; not a scientific model interchange schema. All fields required; unavailable optional values are null.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "command",
+    "status",
+    "exit_code",
+    "profile_id",
+    "source",
+    "model",
+    "output",
+    "diagnostics"
+  ],
+  "properties": {
+    "schema": {
+      "const": "antimony-cli-report-v1"
+    },
+    "command": {
+      "enum": [
+        null,
+        "check",
+        "format",
+        "export"
+      ]
+    },
+    "status": {
+      "enum": [
+        "success",
+        "rejected",
+        "error"
+      ]
+    },
+    "exit_code": {
+      "enum": [
+        0,
+        1,
+        2
+      ]
+    },
+    "profile_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/display"
+        }
+      ]
+    },
+    "model": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/model"
+        }
+      ]
+    },
+    "output": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/output"
+        }
+      ]
+    },
+    "diagnostics": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/diagnostic"
+      }
+    }
+  },
+  "$defs": {
+    "display": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "display",
+        "lossy"
+      ],
+      "properties": {
+        "display": {
+          "type": "string"
+        },
+        "lossy": {
+          "type": "boolean"
+        }
+      }
+    },
+    "position": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "line",
+        "column",
+        "byte_column"
+      ],
+      "properties": {
+        "line": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "column": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "byte_column": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "compartments",
+        "species",
+        "parameters",
+        "reactions",
+        "initial_assignments",
+        "unit_definitions"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "compartments": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "species": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "parameters": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "reactions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "initial_assignments": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unit_definitions": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "destination",
+        "path",
+        "written"
+      ],
+      "properties": {
+        "destination": {
+          "enum": [
+            "stdout",
+            "file"
+          ]
+        },
+        "path": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/display"
+            }
+          ]
+        },
+        "written": {
+          "type": "boolean"
+        }
+      }
+    },
+    "label": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "style",
+        "source_id",
+        "start_byte",
+        "end_byte",
+        "start",
+        "end",
+        "message"
+      ],
+      "properties": {
+        "style": {
+          "enum": [
+            "primary",
+            "secondary",
+            "unknown"
+          ]
+        },
+        "source_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "start_byte": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end_byte": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "start": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/position"
+            }
+          ]
+        },
+        "end": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/position"
+            }
+          ]
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "diagnostic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stage",
+        "severity",
+        "code",
+        "message",
+        "labels",
+        "notes"
+      ],
+      "properties": {
+        "stage": {
+          "enum": [
+            "usage",
+            "input",
+            "syntax",
+            "resolve",
+            "format",
+            "export",
+            "output"
+          ]
+        },
+        "severity": {
+          "enum": [
+            "error",
+            "warning",
+            "note",
+            "unknown"
+          ]
+        },
+        "code": {
+          "type": "string",
+          "minLength": 1
+        },
+        "message": {
+          "type": "string"
+        },
+        "labels": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/label"
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

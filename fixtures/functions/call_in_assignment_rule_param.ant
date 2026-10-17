@@ -1,0 +1,3 @@
+function f(x) x * 2 + 1 end
+p = 3;
+a := f(p);

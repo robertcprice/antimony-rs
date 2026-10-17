@@ -1,0 +1,118 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [
+    {
+      "category": "SBML unit consistency",
+      "id": 10501,
+      "severity": "Warning"
+    }
+  ],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection": {
+    "compartments": [],
+    "constraints": [],
+    "events": [],
+    "function_definitions": [],
+    "initial_assignments": [],
+    "level": 3,
+    "model": {
+      "annotation": null,
+      "id": "__main",
+      "name": null,
+      "sbo_term": null
+    },
+    "model_units": {
+      "AreaUnits": null,
+      "ConversionFactor": null,
+      "ExtentUnits": null,
+      "LengthUnits": null,
+      "SubstanceUnits": null,
+      "TimeUnits": "second",
+      "VolumeUnits": null
+    },
+    "packages": [],
+    "parameters": [
+      {
+        "annotation": null,
+        "constant": false,
+        "id": "a",
+        "name": null,
+        "sbo_term": null,
+        "units": "mole",
+        "value": 1.0
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "bad",
+        "name": null,
+        "sbo_term": null,
+        "units": "metre",
+        "value": 3.0
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "k",
+        "name": null,
+        "sbo_term": null,
+        "units": "rate_u",
+        "value": 2.0
+      }
+    ],
+    "reactions": [],
+    "rules": [
+      {
+        "kind": "rateRule",
+        "math": {
+          "children": [
+            {
+              "name": "k",
+              "type": 260
+            },
+            {
+              "type": 266
+            },
+            {
+              "name": "bad",
+              "type": 260
+            }
+          ],
+          "type": 295
+        },
+        "variable": "a"
+      }
+    ],
+    "species": [],
+    "unit_definitions": [
+      {
+        "annotation": null,
+        "id": "rate_u",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 23,
+            "multiplier": 1.0,
+            "scale": 0
+          },
+          {
+            "exponent": -1.0,
+            "kind": 28,
+            "multiplier": 1.0,
+            "scale": 0
+          }
+        ]
+      }
+    ],
+    "version": 2
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "b9ecc038e743752aff73ffa51f61fd89748a314f121c8675b5d8c33492a9321f",
+  "status": "PASS"
+}

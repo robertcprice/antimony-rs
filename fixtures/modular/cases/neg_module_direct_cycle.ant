@@ -1,0 +1,6 @@
+model mod_a()
+  A_inst: mod_a();
+end
+model *main()
+  X: mod_a();
+end

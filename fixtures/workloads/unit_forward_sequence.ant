@@ -1,0 +1,4 @@
+unit time_unit=second;unit substance=mole;unit extent=mole;unit volume=litre;
+unit per=1/second;compartment cell=4;species S in cell,I in cell,P in cell;
+S=3;I=0;P=1;formula kfast=kslow*2,kslow=0.1;kfast has per;kslow has per;
+First:S=>I;kfast*S*cell;Second:I=>P;kslow*I*cell;

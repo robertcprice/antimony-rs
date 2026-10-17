@@ -1,0 +1,129 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection": {
+    "compartments": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "c",
+        "name": null,
+        "sbo_term": null,
+        "size": 3.0,
+        "spatial_dimensions": 3,
+        "units": "small"
+      }
+    ],
+    "constraints": [],
+    "events": [],
+    "function_definitions": [],
+    "initial_assignments": [],
+    "level": 3,
+    "model": {
+      "annotation": null,
+      "id": "__main",
+      "name": null,
+      "sbo_term": null
+    },
+    "model_units": {
+      "AreaUnits": null,
+      "ConversionFactor": null,
+      "ExtentUnits": null,
+      "LengthUnits": null,
+      "SubstanceUnits": null,
+      "TimeUnits": null,
+      "VolumeUnits": null
+    },
+    "packages": [],
+    "parameters": [],
+    "reactions": [],
+    "rules": [],
+    "species": [
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "c",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "S",
+        "initial_amount": null,
+        "initial_concentration": 2.0,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": "conc_small"
+      }
+    ],
+    "unit_definitions": [
+      {
+        "annotation": null,
+        "id": "small",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 18,
+            "multiplier": 1.0,
+            "scale": -3
+          }
+        ]
+      },
+      {
+        "annotation": null,
+        "id": "conc",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 23,
+            "multiplier": 1.0,
+            "scale": 0
+          },
+          {
+            "exponent": -1.0,
+            "kind": 18,
+            "multiplier": 1.0,
+            "scale": 0
+          }
+        ]
+      },
+      {
+        "annotation": null,
+        "id": "conc_small",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 23,
+            "multiplier": 1.0,
+            "scale": 0
+          },
+          {
+            "exponent": -1.0,
+            "kind": 18,
+            "multiplier": 1.0,
+            "scale": 0
+          },
+          {
+            "exponent": 1.0,
+            "kind": 18,
+            "multiplier": 1.0,
+            "scale": -3
+          }
+        ]
+      }
+    ],
+    "version": 2
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "1ce42f9f2835db56a2065a54bf50c981c7d1bcad8e28c01ba15834a315de28ee",
+  "status": "PASS"
+}

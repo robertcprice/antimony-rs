@@ -1,0 +1,15 @@
+model sub_clock()
+  compartment c = 1;
+  species S in c = 6;
+  species P in c = 0;
+  k = 0.4;
+  J1: S -> P; c * k * S;
+  var x = 1;
+  x' = -0.2 * x + 0.05 * time;
+  E1: at (time > 2): S = S + 1;
+end
+
+model *scaled_clock()
+  tf = 10;
+  M1: sub_clock(), timeconv = tf;
+end

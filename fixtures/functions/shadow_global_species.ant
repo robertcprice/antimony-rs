@@ -1,0 +1,3 @@
+species S = 10;
+function f(S) S + 1 end
+a = f(4);

@@ -1,0 +1,15 @@
+module sub_flux(S)
+  compartment c = 1;
+  species S in c = 10;
+  species P in c = 0;
+  k = 0.5;
+  J1: S -> P; c * k * S;
+end
+
+module *scaled_flux()
+  compartment c = 1;
+  species A in c = 12;
+  tf = 2;
+  ef = 0.5;
+  M1: sub_flux(A), timeconv = tf, extentconv = ef;
+end

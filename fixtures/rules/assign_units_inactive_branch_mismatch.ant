@@ -1,0 +1,1 @@
+unit time_unit=second;c=1;c has mole;b=2;b has second;a has mole;a:=piecewise(c,true,b);

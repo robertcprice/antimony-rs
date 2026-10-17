@@ -1,0 +1,4 @@
+unit s_u = second;
+function p(x, y) x ^ y end
+t0 = 2; t0 has s_u;
+a = p(2, t0);

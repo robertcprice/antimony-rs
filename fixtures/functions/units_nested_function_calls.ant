@@ -1,0 +1,7 @@
+unit liter_u = liter;
+function add_v(x, y) x + y end
+function tot(a, b, c) add_v(add_v(a, b), c) end
+v1 = 1; v1 has liter_u;
+v2 = 2; v2 has liter_u;
+v3 = 3; v3 has liter_u;
+v_sum = tot(v1, v2, v3);

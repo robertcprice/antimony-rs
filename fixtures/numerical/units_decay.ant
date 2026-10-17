@@ -1,0 +1,5 @@
+unit time_unit=second; unit substance=mole; unit extent=mole; unit volume=litre;
+unit per_second=second^-1;
+compartment cell=1; species S in cell;
+S=3; k=0.4; k has per_second;
+J: S => ; k*S*cell;

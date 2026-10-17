@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"gt()\":  Error when parsing input 'gt()' at position 4:  The function 'gt' takes at least two arguments, but 0 were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "a949745f9f440988a31d28d45757a55c0e79e3f86e0ab46101f976465a5ad155",
+  "status": "REFERENCE_REJECTED"
+}

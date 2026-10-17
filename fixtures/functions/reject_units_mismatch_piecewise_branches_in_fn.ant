@@ -1,0 +1,6 @@
+unit s_u = second;
+unit m_u = metre;
+function sel(x, y) piecewise(x, true, y) end
+t0 = 1; t0 has s_u;
+x0 = 2; x0 has m_u;
+a = sel(t0, x0);

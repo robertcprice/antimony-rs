@@ -1,0 +1,13 @@
+function midpoint(a, b)
+  (a + b) / 2
+end
+
+model symbolic_initial_assignments_with_user_functions_and_rules()
+  species S = midpoint(2, 6), P = 0;
+  k_base = 0.2;
+  k_fast = midpoint(k_base, 0.8);
+  dyn_drive := 1 + 0.1 * time;
+  init_scaled = k_fast * dyn_drive;
+  J1: S -> P; k_fast * S;
+  tot := S + P;
+end

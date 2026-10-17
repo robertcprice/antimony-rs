@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"ln(1, 2)\":  Error when parsing input 'ln(1,2)' at position 7:  The function 'ln' takes exactly one argument, but 2 were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "49a6b1c5f33ac5a8d501cc7d8b11cd817fe1975d9edaf7897278f4c48780a678",
+  "status": "REFERENCE_REJECTED"
+}

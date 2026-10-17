@@ -1,0 +1,5 @@
+function f(x) x + 1 end
+species S = 1;
+function g(x) f(x) * 2 end
+p := g(S);
+S -> ; f(S);

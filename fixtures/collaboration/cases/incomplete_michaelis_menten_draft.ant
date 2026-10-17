@@ -1,0 +1,11 @@
+function mm(S, Vm, Km)
+  Vm * S / (Km + S)
+end
+
+model incomplete_michaelis_menten_draft()
+  compartment cell;
+  species S in cell, P in cell;
+  const Vm, Km;
+  J1: S -> P; mm(S, Vm, Km);
+  total_pool := S + P;
+end

@@ -1,0 +1,17 @@
+function adenylate_charge(atp, adp, amp)
+  (atp + (1 / 2) * adp) / (atp + adp + amp)
+end
+
+model derived_assignment_conserved_moiety_and_energy_charge()
+  species ATP = 3.2, ADP = 0.6, AMP = 0.2;
+  k_load = 0.35;
+  k_regen = 1.1;
+  k_ak_f = 0.5;
+  k_ak_r = 0.4;
+  J_use: ATP -> ADP; k_load * ATP;
+  J_oxphos: ADP -> ATP; k_regen * ADP;
+  J_ak_f: 2 ADP -> ATP + AMP; k_ak_f * ADP * ADP;
+  J_ak_r: ATP + AMP -> 2 ADP; k_ak_r * ATP * AMP;
+  A_total := ATP + ADP + AMP;
+  EC := adenylate_charge(ATP, ADP, AMP);
+end

@@ -1,0 +1,4 @@
+function f(x) x + 5 end
+model *m()
+  a = f(3);
+end

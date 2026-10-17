@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 2:  2 SBML error(s) when creating module '__main'.  libAntimony tries to catch these errors before libSBML complains, but sometimes cannot.  Error message(s) from libSBML:\n\nThe value of the 'id' field on every instance of the following type of object in a model must be unique: <model>, <functionDefinition>, <compartmentType>, <compartment>, <speciesType>, <species>, <reaction>, <speciesReference>, <modifierSpeciesReference>, <event>, and model-wide <parameter>s. Note that <unitDefinition> and parameters defined inside a reaction are treated separately. \nReference: L3V2 Section 3.3\n   The <parameter> id 'f' conflicts with the previously defined <functionDefinition> id 'f' at line 5.\n\n(Extends validation rule #10301 in the SBML Level 3 Version 1 Core specification.) Within a <model> or <modelDefinition> object, the values of the attributes id and comp:id on every instance of the following classes of objects must be unique across the set of all id and comp:id attribute values of all such objects in a model: the model itself, plus all contained <functionDefinition>, <compartment>, <species>, <reaction>, <speciesReference>, <modifierSpeciesReference>, <event>, and <parameter> objects, plus the <submodel> and <deletion> objects defined by the Hierarchical Model Composition package, plus any objects defined by any other package with 'package:id' attributes defined as falling in the 'SId' namespace.\nReference: L3V1 Comp V1 Section 3.9\n   The <parameter> id 'f' conflicts with the previously defined <functionDefinition> id 'f' at line 5.\n",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "b5ef76c1db6149e0cf5eb2e1d877610bb1140be0f1c51a18dfaa23ea8e083c1a",
+  "status": "REFERENCE_REJECTED"
+}

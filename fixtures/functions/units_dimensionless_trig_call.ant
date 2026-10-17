@@ -1,0 +1,6 @@
+unit s_u = second;
+unit per_sec = 1 / second;
+function phase(w, t) sin(w * t) end
+w = 2; w has per_sec;
+t0 = 0.5; t0 has s_u;
+a = phase(w, t0);

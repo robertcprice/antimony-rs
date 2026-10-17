@@ -1,0 +1,2 @@
+function f(x, y) piecewise(1, implies(x > 0, y > 0), 0) end
+a = f(1, 2);

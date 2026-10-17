@@ -1,0 +1,17 @@
+function norm_ratio(S, K)
+  S / (K + S)
+end
+
+function scaled_mm(S, Vm, K)
+  Vm * norm_ratio(S, K)
+end
+
+model nested_user_functions_with_shadowed_formal_parameters()
+  species S = 3.0, P = 0.2;
+  Vm = 1.8;
+  K = 0.9;
+  k_clear = 0.2;
+  J1: S -> P; scaled_mm(S, Vm, K);
+  J2: P -> ; k_clear * P;
+  instantaneous_rate := scaled_mm(S, Vm, K);
+end

@@ -1,0 +1,2 @@
+function band(x, lo, hi) piecewise(1, (x >= lo) && (x <= hi) && !(x == 0), 0) end
+a = band(2, 1, 5);

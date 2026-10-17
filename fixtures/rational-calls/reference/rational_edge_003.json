@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  syntax error, unexpected --, expecting end of line or '\\n' or ';'",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "d66099e5e9bb1f036d1e2abfc63561e32805f6d9ca0df499f90073924c867b3d",
+  "status": "REFERENCE_REJECTED"
+}

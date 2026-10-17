@@ -1,0 +1,11 @@
+model sub(S)
+  compartment c = 1;
+  species S in c = 10;
+end
+
+model *main()
+  compartment c = 1;
+  species A in c = 5;
+  M1: sub(A);
+  delete M1.S;
+end

@@ -1,0 +1,3 @@
+function hill(s, km, n) (s^n) / (km^n + s^n) end
+species S = 2;
+S -> ; hill(S, 1.5, 2);

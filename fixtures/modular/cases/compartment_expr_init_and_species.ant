@@ -1,0 +1,5 @@
+k_vol = 1.5;
+compartment C = 2*k_vol + 1;
+species S in C = 4;
+k = 0.25;
+S -> ; C*k*S;

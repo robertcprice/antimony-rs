@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 3:  'f' was used as a function, but no such function was defined.  Please define the function using 'function f([arguments]) [function definition] end'.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "32aed413e786af2a94e674fd525ec76956b72d25c141bd01350a772914b499dd",
+  "status": "REFERENCE_REJECTED"
+}

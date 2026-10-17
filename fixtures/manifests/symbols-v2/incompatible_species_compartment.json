@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  Unable to set the type of variable 'S' to Compartment because it is already set to be the incompatible type Species.  This situation can occur either with explicit type declaration or by using the variable in different, incompatible contexts.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "1a7aecd828651b1e1a0ffbbfc5edaaa9afb450ddc4a5540244032a7f4b31d3d3",
+  "status": "REFERENCE_REJECTED"
+}

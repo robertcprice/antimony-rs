@@ -1,0 +1,2 @@
+species S=2,P=0; S /* arrow */ => P;
+0.1*S

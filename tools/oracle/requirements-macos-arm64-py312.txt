@@ -1,0 +1,2 @@
+antimony==3.2.0 --hash=sha256:5b8cce9b7140ec210cf5380f14095b1ce639d0ec591ac676a185006e8002f93e
+python-libsbml==5.21.2 --hash=sha256:8272c1eab3bf79ee3e492f618150ec5d625deecb11388e89b9d372ecccedcb33

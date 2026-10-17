@@ -1,0 +1,2 @@
+function f(f) f + 1 end
+a = f(2);

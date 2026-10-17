@@ -1,0 +1,15 @@
+function mm(S, Vm, Km)
+  Vm * S / (Km + S)
+end
+
+model rate_controlled_state_coupled_to_enzymatic_sink()
+  species U = 2.0, X = 0.5, Y = 0.0;
+  k_u = 0.2;
+  Vm = 1.5;
+  Km = 0.75;
+  k_y = 0.3;
+  U' = -k_u * U;
+  J1: X -> Y; U * mm(X, Vm, Km);
+  J2: Y -> ; k_y * Y;
+  xy_sum := X + Y;
+end

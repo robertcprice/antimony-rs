@@ -1,0 +1,4 @@
+function f(x) // header comment
+  /* body comment */ x + 2
+end
+a = f(3);

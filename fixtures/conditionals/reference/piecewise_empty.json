@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"piecewise()\":  Error when parsing input 'piecewise()' at position 11:  The function 'piecewise' takes at least one argument, but none were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "e7cb2a2d6d711de84c5a6ee107fcf639ab0b07b2a5c4493f1f16bf475fc8cbe8",
+  "status": "REFERENCE_REJECTED"
+}

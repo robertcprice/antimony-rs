@@ -1,0 +1,15 @@
+model branch_pathway()
+  compartment c = 1;
+  species S in c = 10;
+  species P in c = 0;
+  species W in c = 0;
+  k_main = 0.3;
+  k_leak = 0.05;
+  J_main: S -> P; c * k_main * S;
+  J_leak: S -> W; c * k_leak * S;
+end
+
+model *trimmed_pathway()
+  M1: branch_pathway();
+  delete M1.J_leak, M1.W;
+end

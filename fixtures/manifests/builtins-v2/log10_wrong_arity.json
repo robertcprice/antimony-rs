@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"log10(1, 2)\":  Error when parsing input 'log10(1,2)' at position 10:  The function 'log10' takes exactly two arguments, but 3 were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "745f95f515a5fa88edfa19d5c7ceb10efb8f3f7d37ea753494121fd97c3b020b",
+  "status": "REFERENCE_REJECTED"
+}

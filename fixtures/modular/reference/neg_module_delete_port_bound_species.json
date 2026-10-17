@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 10:  Unable to delete variable A because it is already synchronized to the variable A.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "6733e25d21f37a8afac774be0a561d4e671c4ed103b8bbca14d2a8923a06febe",
+  "status": "REFERENCE_REJECTED"
+}

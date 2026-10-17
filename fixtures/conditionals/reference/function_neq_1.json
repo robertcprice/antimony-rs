@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"neq(1)\":  Error when parsing input 'neq(1)' at position 6:  The function 'neq' takes exactly two arguments, but 1 were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "ef898eb7ffb3ba4d555c0678a652a8f205593b0306b249809a2ea0914a2f41e7",
+  "status": "REFERENCE_REJECTED"
+}

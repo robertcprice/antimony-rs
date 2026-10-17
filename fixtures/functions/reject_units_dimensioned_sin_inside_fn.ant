@@ -1,0 +1,4 @@
+unit s_u = second;
+function s(x) sin(x) end
+t0 = 1; t0 has s_u;
+a = s(t0);

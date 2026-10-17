@@ -1,0 +1,3 @@
+function f(x) x / 2 end
+species S = 4, P;
+P := f(S);

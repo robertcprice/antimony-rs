@@ -1,0 +1,5 @@
+compartment C = 1;
+C := 1 + 0.2*sin(time);
+species S in C = 2;
+k = 0.3;
+S -> ; C*k*S;

@@ -1,0 +1,5 @@
+function mm(s, vmax, km) vmax * s / (km + s) end
+species S = 10, P = 0;
+vmax = 2;
+km = 5;
+S -> P; mm(S, vmax, km);

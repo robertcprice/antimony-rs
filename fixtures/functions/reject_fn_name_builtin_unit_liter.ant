@@ -1,0 +1,2 @@
+function liter(x) x + 1 end
+a = liter(2);

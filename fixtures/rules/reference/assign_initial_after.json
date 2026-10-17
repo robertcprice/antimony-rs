@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  Cannot set 'a' to have the initial value '1' because it already has an assignment rule, which applies at all times, including time=0.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "ff798f9f7da9fd183f024d200f95efd4afaebeb25e19b899b6d3c105ae891395",
+  "status": "REFERENCE_REJECTED"
+}

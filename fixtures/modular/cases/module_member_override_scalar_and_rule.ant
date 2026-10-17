@@ -1,0 +1,12 @@
+model osc_unit()
+  species X = 1;
+  k = 0.2;
+  X -> ; k*X;
+end
+model *main()
+  U1: osc_unit();
+  U2: osc_unit();
+  U1.X = 5;
+  U1.k = 0.8;
+  U2.k := 0.1 + 0.05*time;
+end

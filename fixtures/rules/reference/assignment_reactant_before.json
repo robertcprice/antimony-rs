@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  3 SBML error(s) when creating module '__main'.  libAntimony tries to catch these errors before libSBML complains, but sometimes cannot.  Error message(s) from libSBML:\n\nA <species>'s quantity cannot be determined simultaneously by both reactions and rules. More formally, if the identifier of a <species> definition having 'boundaryCondition'='false' and 'constant'='false' is referenced by a <speciesReference> anywhere in a model, then this identifier cannot also appear as the value of a 'variable' in an <assignmentRule> or a <rateRule>.\nReference: L3V2 Section 4.6.6\n The species 'S' occurs in both a rule and reaction 'J'.\n\nThe interpretation the Hierarchical Model Composition constructs to produce a kind of 'flattened' version of the model devoid of the comp package constructs must produce a valid SBML Level 3 model.\nReference: L3V1 Comp V1 Appendix A1\n Errors that follow relate to the flattened document produced using the CompFlatteningConverter.\n\nA <species>'s quantity cannot be determined simultaneously by both reactions and rules. More formally, if the identifier of a <species> definition having 'boundaryCondition'='false' and 'constant'='false' is referenced by a <speciesReference> anywhere in a model, then this identifier cannot also appear as the value of a 'variable' in an <assignmentRule> or a <rateRule>.\nReference: L3V2 Section 4.6.6\n The species 'S' occurs in both a rule and reaction 'J'.\n",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "1590cde02d348c9a26ebd7f38494b686ab972b71981427c1b90913ebb2724b50",
+  "status": "REFERENCE_REJECTED"
+}

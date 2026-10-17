@@ -1,0 +1,5 @@
+compartment cell=2;const species Feed in cell;
+species X in cell,Y in cell,Z in cell;Feed=2;X=1;Y=0;Z=0.5;
+q=0.4;Ki=2;k1=0.3;k2=0.2;d=0.1;
+Input:Feed=>X;q*Feed/(1+(Z/Ki)^2)*cell;
+XY:X=>Y;k1*X*cell;YZ:Y=>Z;k2*Y*cell;Drain:Z=>;d*Z*cell;

@@ -1,0 +1,93 @@
+{
+  "schema": "antimony-rs-implementation-boundary-v2",
+  "implementation_id": "conditional-core-v0.3-slice",
+  "status": "experimental_bounded_implementation",
+  "extends_implementation": "math-core-v0.2.1-slice",
+  "historical_corpus_profile": "kinetic-core-v0.1",
+  "relationship_to_historical_target": "Separate bounded extension: Boolean/conditional operators and numeric functions extend beyond frozen kinetic-core-v0.1; old corpus reuse is not target conformance.",
+  "syntax": {
+    "binary_comparisons": [
+      "<",
+      "<=",
+      ">",
+      ">=",
+      "==",
+      "!="
+    ],
+    "functional_comparisons": {
+      "at_least_two": [
+        "eq",
+        "equals",
+        "gt",
+        "geq",
+        "lt",
+        "leq"
+      ],
+      "exactly_two": [
+        "neq"
+      ]
+    },
+    "logical": [
+      "!",
+      "&&",
+      "||",
+      "not(one argument)",
+      "and(zero or more)",
+      "or(zero or more)"
+    ],
+    "boolean_constants": [
+      "true",
+      "True",
+      "TRUE",
+      "false",
+      "False",
+      "FALSE"
+    ],
+    "piecewise": "One or more ordered arguments: value/condition pairs plus optional otherwise; otherwise-only allowed.",
+    "boolean_zero_argument_calls": [
+      "True()",
+      "TRUE()",
+      "False()",
+      "FALSE()"
+    ],
+    "boolean_call_rejections": "Lowercase calls and every nonzero-argument Boolean call reject Syntax; null MathML from reference is not supported evidence."
+  },
+  "normalization": {
+    "logical": "Equal-precedence left-associative AND/OR; outer infix appends same-kind left node, even functional. Outer functions retain nested children; right subtrees stay nested.",
+    "deferred_chains": "Infix comparison rejects normalized left comparison or AND with at least two direct comparison children. Unary simplification happens before this check."
+  },
+  "evaluation": {
+    "finite_context_conversion": "Boolean to numeric 1/0; finite numeric zero false, other finite values true. Unknown never becomes zero or false.",
+    "piecewise": "Demand conditions in order and selected value only; first unknown condition gives unknown; known no-match without otherwise rejects initialization only.",
+    "logical": "Sequential demand; first decisive known Boolean stops; first unknown stops with unknown; demanded nonfinite domain rejects initialization.",
+    "comparisons": "Eagerly demand all operands, retaining known domain errors even beside unknown; compare successive pairs, not left-fold Boolean results.",
+    "static": "All branches participate in references, cycles, dimensional checking and finite literal restrictions regardless of demand."
+  },
+  "dimensions": {
+    "bare_numeric_and_rational_literals": "Unspecified, not known dimensionless.",
+    "boolean_results_and_boolean_numeric_conversion": "Known dimensionless.",
+    "erratum": "docs/MATH_UNITS_ERRATUM.md"
+  },
+  "retained_exclusions": [
+    "All textual infix/prefix logical aliases",
+    "Infix comparison chains including relational-AND and simplified wrappers",
+    "XOR and implies",
+    "Rules, events, delay, user-defined functions and hierarchy",
+    "Nonfinite constants and existing scalar/rational restrictions",
+    "A solver or general simulation-readiness guarantee"
+  ],
+  "verification_contracts": {
+    "manifest": "fixtures/conditionals/manifest.json",
+    "overlay": "fixtures/manifests/conditional-core-v3-overlay.json",
+    "evidence": "tools/oracle/conditional-evidence.json",
+    "guide": "docs/CONDITIONALS.md",
+    "analytic_manifest": "fixtures/numerical/conditionals/manifest.json",
+    "alias_supplement": "fixtures/conditionals/aliases-v1.json"
+  },
+  "claims": {
+    "full_antimony": false,
+    "frozen_target_conformance": false,
+    "published": false,
+    "upstream_endorsement": false
+  }
+}

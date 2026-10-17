@@ -1,0 +1,18 @@
+[
+  {
+    "name": "antimony",
+    "version": "3.2.0",
+    "filename": "antimony-3.2.0-py3-none-macosx_14_0_arm64.whl",
+    "sha256": "5b8cce9b7140ec210cf5380f14095b1ce639d0ec591ac676a185006e8002f93e",
+    "url": "https://files.pythonhosted.org/packages/90/68/0866a28bca6b6a86662eca5d8c273b365890cb9e37f77e84ba9161d1b22c/antimony-3.2.0-py3-none-macosx_14_0_arm64.whl",
+    "pypi_json": "https://pypi.org/pypi/antimony/3.2.0/json"
+  },
+  {
+    "name": "python-libsbml",
+    "version": "5.21.2",
+    "filename": "python_libsbml-5.21.2-cp312-cp312-macosx_11_0_arm64.whl",
+    "sha256": "8272c1eab3bf79ee3e492f618150ec5d625deecb11388e89b9d372ecccedcb33",
+    "url": "https://files.pythonhosted.org/packages/39/5b/fb39ef0a0c601c3c3ceb9b27d5c462be4df5a489ab31065478440f9bfa17/python_libsbml-5.21.2-cp312-cp312-macosx_11_0_arm64.whl",
+    "pypi_json": "https://pypi.org/pypi/python-libsbml/5.21.2/json"
+  }
+]

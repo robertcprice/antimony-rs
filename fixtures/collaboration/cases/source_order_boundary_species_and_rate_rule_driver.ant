@@ -1,0 +1,11 @@
+model source_order_boundary_species_and_rate_rule_driver()
+  S_feed := 1.5 + 0.5 * cos(0.4 * time);
+  species M1 = 0.5, M2 = 0.0;
+  species Reg = 1.0;
+  k1 = 0.6;
+  k2 = 0.3;
+  Reg' = -0.1 * Reg;
+  J1: S_feed -> M1; k1 * Reg * S_feed;
+  J2: M1 -> M2; k2 * M1;
+  total_internal := M1 + M2;
+end

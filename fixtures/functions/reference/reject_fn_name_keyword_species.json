@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  syntax error, unexpected \"'species'\", expecting element name or name of an existing function or name of an existing module",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "42cdde1a2620819a78040a97daaa7de6258f836d79f0c39828debcc18b733441",
+  "status": "REFERENCE_REJECTED"
+}

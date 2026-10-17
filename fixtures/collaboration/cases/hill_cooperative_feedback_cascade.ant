@@ -1,0 +1,22 @@
+function hill_act(x, Vm, K, n)
+  Vm * (x ^ n) / ((K ^ n) + (x ^ n))
+end
+
+function hill_inh(x, Vm, K, n)
+  Vm * (K ^ n) / ((K ^ n) + (x ^ n))
+end
+
+model hill_cooperative_feedback_cascade()
+  species A = 1.0, B = 0.2, C = 0.1;
+  Vm1 = 2.0; K1 = 0.8; n1 = 3;
+  Vm2 = 1.5; K2 = 0.5; n2 = 2;
+  Vm3 = 1.2; K3 = 0.6; n3 = 2;
+  kd = 0.3;
+  J1: -> A; hill_inh(C, Vm1, K1, n1);
+  J2: -> B; hill_act(A, Vm2, K2, n2);
+  J3: -> C; hill_act(B, Vm3, K3, n3);
+  J4: A -> ; kd * A;
+  J5: B -> ; kd * B;
+  J6: C -> ; kd * C;
+  total_signal := A + B + C;
+end

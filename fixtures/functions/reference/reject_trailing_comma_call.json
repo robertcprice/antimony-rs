@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 2:  In the formula \"f(1, )\":  Error when parsing input 'f(1,)' at position 5:  syntax error, unexpected ')'",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "72f1c912882d8a27234cedbb34cb221da84014140c3a3131132366813a070eec",
+  "status": "REFERENCE_REJECTED"
+}

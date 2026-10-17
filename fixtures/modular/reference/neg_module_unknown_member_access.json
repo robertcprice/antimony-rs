@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 6:  'nonexistent' is not a subvariable of 'M'.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "872bf22d4a46ab0c91c9c28152df4695b2bb3d2fdde3a973e04b313de10f29cd",
+  "status": "REFERENCE_REJECTED"
+}

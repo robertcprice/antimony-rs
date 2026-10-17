@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"log(1/2)\":  Error when parsing input 'log(1/2)' at position 8:  syntax error, unexpected number in rational notation",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "10693b2ac2a1e6aaf9a0f57cd84162fd57b3b2a96f40b4862310fa9a61f8eefd",
+  "status": "REFERENCE_REJECTED"
+}

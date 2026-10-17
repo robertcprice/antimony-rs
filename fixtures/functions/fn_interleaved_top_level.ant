@@ -1,0 +1,5 @@
+a = 1;
+function f(x) x + 2 end
+b = f(a);
+function g(x) f(x) * 3 end
+c = g(b);

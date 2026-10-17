@@ -1,0 +1,7 @@
+species S = 6, P = 0;
+k = 0.25;
+p_hi = 10;
+p_lo = 1;
+S -> P; k*S;
+E1: at (time >= 3), t0=false, priority=p_hi, persistent=false, fromTrigger=false: S = S + 2;
+E2: at (time >= 3), priority=p_lo, fromTrigger=true: P = P + 1;

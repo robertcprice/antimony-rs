@@ -1,0 +1,5 @@
+unit mM = 1e-3 mole / liter;
+function select_conc(x, y, flag) piecewise(x, flag > 0, y) end
+c1 = 2; c1 has mM;
+c2 = 5; c2 has mM;
+c_out = select_conc(c1, c2, 1);

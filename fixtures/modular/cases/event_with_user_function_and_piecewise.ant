@@ -1,0 +1,7 @@
+function step_dose(x, d)
+  x + d
+end
+species S = 2;
+k = 0.15;
+S -> ; k*S;
+E_dose: at (time > 5): S = step_dose(S, piecewise(4, S < 1, 2));

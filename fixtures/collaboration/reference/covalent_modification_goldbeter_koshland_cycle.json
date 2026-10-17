@@ -1,0 +1,463 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [
+    {
+      "category": "SBML unit consistency",
+      "id": 99506,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99507,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20513,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    }
+  ],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection": {
+    "compartments": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "cell",
+        "name": null,
+        "sbo_term": null,
+        "size": 1.0,
+        "spatial_dimensions": 3,
+        "units": null
+      }
+    ],
+    "constraints": [],
+    "events": [],
+    "function_definitions": [
+      {
+        "annotation": null,
+        "id": "mm",
+        "math": {
+          "children": [
+            {
+              "name": "S",
+              "type": 260
+            },
+            {
+              "name": "Vm",
+              "type": 260
+            },
+            {
+              "name": "Km",
+              "type": 260
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "Vm",
+                      "type": 260
+                    },
+                    {
+                      "name": "S",
+                      "type": 260
+                    }
+                  ],
+                  "type": 42
+                },
+                {
+                  "children": [
+                    {
+                      "name": "Km",
+                      "type": 260
+                    },
+                    {
+                      "name": "S",
+                      "type": 260
+                    }
+                  ],
+                  "type": 43
+                }
+              ],
+              "type": 47
+            }
+          ],
+          "type": 267
+        },
+        "name": null,
+        "sbo_term": null
+      }
+    ],
+    "initial_assignments": [],
+    "level": 3,
+    "model": {
+      "annotation": null,
+      "id": "covalent_modification_goldbeter_koshland_cycle",
+      "name": null,
+      "sbo_term": null
+    },
+    "model_units": {
+      "AreaUnits": null,
+      "ConversionFactor": null,
+      "ExtentUnits": null,
+      "LengthUnits": null,
+      "SubstanceUnits": null,
+      "TimeUnits": null,
+      "VolumeUnits": null
+    },
+    "packages": [],
+    "parameters": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "K1",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 0.1
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "K2",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 0.1
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "V1",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 1.2
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "V2",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 0.8
+      },
+      {
+        "annotation": null,
+        "constant": false,
+        "id": "W_star_frac",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": null
+      },
+      {
+        "annotation": null,
+        "constant": false,
+        "id": "W_total",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": null
+      }
+    ],
+    "reactions": [
+      {
+        "annotation": null,
+        "compartment": null,
+        "id": "J_kinase",
+        "local_parameters": [],
+        "math": {
+          "children": [
+            {
+              "name": "W",
+              "type": 260
+            },
+            {
+              "name": "V1",
+              "type": 260
+            },
+            {
+              "name": "K1",
+              "type": 260
+            }
+          ],
+          "name": "mm",
+          "type": 268
+        },
+        "modifiers": [],
+        "name": null,
+        "products": [
+          {
+            "constant": true,
+            "species": "Wp",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reactants": [
+          {
+            "constant": true,
+            "species": "W",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reversible": true,
+        "sbo_term": null
+      },
+      {
+        "annotation": null,
+        "compartment": null,
+        "id": "J_phosphatase",
+        "local_parameters": [],
+        "math": {
+          "children": [
+            {
+              "name": "Wp",
+              "type": 260
+            },
+            {
+              "name": "V2",
+              "type": 260
+            },
+            {
+              "name": "K2",
+              "type": 260
+            }
+          ],
+          "name": "mm",
+          "type": 268
+        },
+        "modifiers": [],
+        "name": null,
+        "products": [
+          {
+            "constant": true,
+            "species": "W",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reactants": [
+          {
+            "constant": true,
+            "species": "Wp",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reversible": true,
+        "sbo_term": null
+      }
+    ],
+    "rules": [
+      {
+        "kind": "assignmentRule",
+        "math": {
+          "children": [
+            {
+              "name": "W",
+              "type": 260
+            },
+            {
+              "name": "Wp",
+              "type": 260
+            }
+          ],
+          "type": 43
+        },
+        "variable": "W_total"
+      },
+      {
+        "kind": "assignmentRule",
+        "math": {
+          "children": [
+            {
+              "name": "Wp",
+              "type": 260
+            },
+            {
+              "name": "W_total",
+              "type": 260
+            }
+          ],
+          "type": 47
+        },
+        "variable": "W_star_frac"
+      }
+    ],
+    "species": [
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "cell",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "W",
+        "initial_amount": null,
+        "initial_concentration": 1.0,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      },
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "cell",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "Wp",
+        "initial_amount": null,
+        "initial_concentration": 0.0,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      }
+    ],
+    "unit_definitions": [],
+    "version": 2
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "98c60bef803216bc0beef99d43090f31f2b66827b48aa5ba863da51c9ecd997e",
+  "status": "PASS"
+}

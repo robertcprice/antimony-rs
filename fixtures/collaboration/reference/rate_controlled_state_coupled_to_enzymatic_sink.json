@@ -1,0 +1,468 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [
+    {
+      "category": "SBML unit consistency",
+      "id": 99506,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99507,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20513,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20616,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99508,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 20702,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "SBML unit consistency",
+      "id": 99505,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    },
+    {
+      "category": "Modeling practice",
+      "id": 80701,
+      "severity": "Warning"
+    }
+  ],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection": {
+    "compartments": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "default_compartment",
+        "name": null,
+        "sbo_term": 410,
+        "size": 1.0,
+        "spatial_dimensions": 3,
+        "units": null
+      }
+    ],
+    "constraints": [],
+    "events": [],
+    "function_definitions": [
+      {
+        "annotation": null,
+        "id": "mm",
+        "math": {
+          "children": [
+            {
+              "name": "S",
+              "type": 260
+            },
+            {
+              "name": "Vm",
+              "type": 260
+            },
+            {
+              "name": "Km",
+              "type": 260
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "name": "Vm",
+                      "type": 260
+                    },
+                    {
+                      "name": "S",
+                      "type": 260
+                    }
+                  ],
+                  "type": 42
+                },
+                {
+                  "children": [
+                    {
+                      "name": "Km",
+                      "type": 260
+                    },
+                    {
+                      "name": "S",
+                      "type": 260
+                    }
+                  ],
+                  "type": 43
+                }
+              ],
+              "type": 47
+            }
+          ],
+          "type": 267
+        },
+        "name": null,
+        "sbo_term": null
+      }
+    ],
+    "initial_assignments": [],
+    "level": 3,
+    "model": {
+      "annotation": null,
+      "id": "rate_controlled_state_coupled_to_enzymatic_sink",
+      "name": null,
+      "sbo_term": null
+    },
+    "model_units": {
+      "AreaUnits": null,
+      "ConversionFactor": null,
+      "ExtentUnits": null,
+      "LengthUnits": null,
+      "SubstanceUnits": null,
+      "TimeUnits": null,
+      "VolumeUnits": null
+    },
+    "packages": [],
+    "parameters": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "Km",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 0.75
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "Vm",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 1.5
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "k_u",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 0.2
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "k_y",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": 0.3
+      },
+      {
+        "annotation": null,
+        "constant": false,
+        "id": "xy_sum",
+        "name": null,
+        "sbo_term": null,
+        "units": null,
+        "value": null
+      }
+    ],
+    "reactions": [
+      {
+        "annotation": null,
+        "compartment": null,
+        "id": "J1",
+        "local_parameters": [],
+        "math": {
+          "children": [
+            {
+              "name": "U",
+              "type": 260
+            },
+            {
+              "children": [
+                {
+                  "name": "X",
+                  "type": 260
+                },
+                {
+                  "name": "Vm",
+                  "type": 260
+                },
+                {
+                  "name": "Km",
+                  "type": 260
+                }
+              ],
+              "name": "mm",
+              "type": 268
+            }
+          ],
+          "type": 42
+        },
+        "modifiers": [
+          "U"
+        ],
+        "name": null,
+        "products": [
+          {
+            "constant": true,
+            "species": "Y",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reactants": [
+          {
+            "constant": true,
+            "species": "X",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reversible": true,
+        "sbo_term": null
+      },
+      {
+        "annotation": null,
+        "compartment": null,
+        "id": "J2",
+        "local_parameters": [],
+        "math": {
+          "children": [
+            {
+              "name": "k_y",
+              "type": 260
+            },
+            {
+              "name": "Y",
+              "type": 260
+            }
+          ],
+          "type": 42
+        },
+        "modifiers": [],
+        "name": null,
+        "products": [],
+        "reactants": [
+          {
+            "constant": true,
+            "species": "Y",
+            "stoichiometry": 1.0
+          }
+        ],
+        "reversible": true,
+        "sbo_term": null
+      }
+    ],
+    "rules": [
+      {
+        "kind": "rateRule",
+        "math": {
+          "children": [
+            {
+              "children": [
+                {
+                  "name": "k_u",
+                  "type": 260
+                }
+              ],
+              "type": 45
+            },
+            {
+              "name": "U",
+              "type": 260
+            }
+          ],
+          "type": 42
+        },
+        "variable": "U"
+      },
+      {
+        "kind": "assignmentRule",
+        "math": {
+          "children": [
+            {
+              "name": "X",
+              "type": 260
+            },
+            {
+              "name": "Y",
+              "type": 260
+            }
+          ],
+          "type": 43
+        },
+        "variable": "xy_sum"
+      }
+    ],
+    "species": [
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "default_compartment",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "U",
+        "initial_amount": null,
+        "initial_concentration": 2.0,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      },
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "default_compartment",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "X",
+        "initial_amount": null,
+        "initial_concentration": 0.5,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      },
+      {
+        "annotation": null,
+        "boundary_condition": false,
+        "compartment": "default_compartment",
+        "constant": false,
+        "conversion_factor": null,
+        "has_only_substance_units": false,
+        "id": "Y",
+        "initial_amount": null,
+        "initial_concentration": 0.0,
+        "name": null,
+        "sbo_term": null,
+        "substance_units": null
+      }
+    ],
+    "unit_definitions": [],
+    "version": 2
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "cde4a9986039f8578b361ab9c67cb22ce1d38879947041103112553a44cd500c",
+  "status": "PASS"
+}

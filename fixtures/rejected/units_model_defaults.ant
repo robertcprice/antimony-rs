@@ -1,0 +1,1 @@
+unit time_unit=60 second; unit substance=0.001 mole; unit volume=0.001 litre; compartment cell=3; species S in cell; S=2;

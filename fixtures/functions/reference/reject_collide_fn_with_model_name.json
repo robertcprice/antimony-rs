@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 2:  Cannot define 'm' as a module because it is already a defined function.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "d438f81aa7f016bb0a56e57bf1f15862334851210993a7fb82c650443885bacf",
+  "status": "REFERENCE_REJECTED"
+}

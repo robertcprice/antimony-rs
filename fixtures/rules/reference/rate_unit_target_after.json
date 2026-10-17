@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  The variable 'u' is the type Unit Definition, and may not have a rate rule associated with it.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "e3c207e1ff967f8609dfdf4910d8245ffa3accd7718e61eae312799822a4abf5",
+  "status": "REFERENCE_REJECTED"
+}

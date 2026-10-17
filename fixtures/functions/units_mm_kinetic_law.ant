@@ -1,0 +1,9 @@
+unit substance = mole;
+unit volume = litre;
+unit mM = mole / litre;
+unit mole_per_sec = mole / second;
+function mm(s, vmax, km) vmax * s / (km + s) end
+species S = 2;
+vmax = 0.5; vmax has mole_per_sec;
+km = 1; km has mM;
+a = mm(S, vmax, km);

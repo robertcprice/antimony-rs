@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"trueor(false)\":  Error when parsing input 'true or(false)' at position 7:  syntax error, unexpected element name",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "c452830a0b1b90e98a4099f8bb26722f236923f7c719c3232d48871f88c46ccc",
+  "status": "REFERENCE_REJECTED"
+}

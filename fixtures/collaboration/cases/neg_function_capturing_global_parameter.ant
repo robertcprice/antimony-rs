@@ -1,0 +1,6 @@
+Vmax = 2.5;
+function bad_mm(S, Km)
+  Vmax * S / (Km + S)
+end
+species S = 1, P = 0;
+J1: S -> P; bad_mm(S, 0.5);

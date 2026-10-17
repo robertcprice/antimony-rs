@@ -1,0 +1,159 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection": {
+    "compartments": [],
+    "constraints": [],
+    "events": [],
+    "function_definitions": [],
+    "initial_assignments": [],
+    "level": 3,
+    "model": {
+      "annotation": null,
+      "id": "__main",
+      "name": null,
+      "sbo_term": null
+    },
+    "model_units": {
+      "AreaUnits": null,
+      "ConversionFactor": null,
+      "ExtentUnits": null,
+      "LengthUnits": null,
+      "SubstanceUnits": null,
+      "TimeUnits": null,
+      "VolumeUnits": null
+    },
+    "packages": [],
+    "parameters": [
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "a",
+        "name": null,
+        "sbo_term": null,
+        "units": "small",
+        "value": 2.0
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "b",
+        "name": null,
+        "sbo_term": null,
+        "units": "hour",
+        "value": 2.0
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "c",
+        "name": null,
+        "sbo_term": null,
+        "units": "large",
+        "value": 2.0
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "d",
+        "name": null,
+        "sbo_term": null,
+        "units": "fraction",
+        "value": 2.0
+      },
+      {
+        "annotation": null,
+        "constant": true,
+        "id": "e",
+        "name": null,
+        "sbo_term": null,
+        "units": "precise",
+        "value": 2.0
+      }
+    ],
+    "reactions": [],
+    "rules": [],
+    "species": [],
+    "unit_definitions": [
+      {
+        "annotation": null,
+        "id": "small",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 23,
+            "multiplier": 2.0,
+            "scale": -3
+          }
+        ]
+      },
+      {
+        "annotation": null,
+        "id": "hour",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 28,
+            "multiplier": 3.6,
+            "scale": 3
+          }
+        ]
+      },
+      {
+        "annotation": null,
+        "id": "large",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 23,
+            "multiplier": 1.23,
+            "scale": 2
+          }
+        ]
+      },
+      {
+        "annotation": null,
+        "id": "fraction",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 28,
+            "multiplier": 1.2,
+            "scale": -1
+          }
+        ]
+      },
+      {
+        "annotation": null,
+        "id": "precise",
+        "name": null,
+        "sbo_term": null,
+        "units": [
+          {
+            "exponent": 1.0,
+            "kind": 23,
+            "multiplier": 1.2345,
+            "scale": 0
+          }
+        ]
+      }
+    ],
+    "version": 2
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "4c0ccfe36c9f7ec3daa25419459d81dfceb4e2b67b851e000504438dfac8672e",
+  "status": "PASS"
+}

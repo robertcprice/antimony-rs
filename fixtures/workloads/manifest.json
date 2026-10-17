@@ -1,0 +1,65 @@
+{
+  "schema": "antimony-workload-manifest-v1",
+  "cases": [
+    {
+      "id": "enzyme_binding_catalysis",
+      "kind": "motif",
+      "path": "fixtures/workloads/enzyme_binding_catalysis.ant",
+      "sha256": "2e716ec9193f60f4f156ddea1c49ea80758ca40133d34d6407e155d8d707e1cd",
+      "expectation_id": "enzyme_binding_catalysis",
+      "numerical": "NOT_RUN",
+      "provenance": "Original repository-authored synthetic motif; not a copied published model, calibrated system or biological validation.",
+      "derivation": "docs/WORKLOAD_MODELS.md#enzyme-binding-catalysis"
+    },
+    {
+      "id": "branched_pathway",
+      "kind": "motif",
+      "path": "fixtures/workloads/branched_pathway.ant",
+      "sha256": "95bb7705963d57646054bd922565cec85dc4ad3b075a76c2b61247f7c289171d",
+      "expectation_id": "branched_pathway",
+      "numerical": "NOT_RUN",
+      "provenance": "Original repository-authored synthetic motif; not a copied published model, calibrated system or biological validation.",
+      "derivation": "docs/WORKLOAD_MODELS.md#branched-pathway"
+    },
+    {
+      "id": "coupled_transport_catalysis",
+      "kind": "motif",
+      "path": "fixtures/workloads/coupled_transport_catalysis.ant",
+      "sha256": "e745359e451ed301c56de8290749a71a9fcda7ff98e44ed7d17e5dac020be59a",
+      "expectation_id": "coupled_transport_catalysis",
+      "numerical": "NOT_RUN",
+      "provenance": "Original repository-authored synthetic motif; not a copied published model, calibrated system or biological validation.",
+      "derivation": "docs/WORKLOAD_MODELS.md#coupled-transport-catalysis"
+    },
+    {
+      "id": "rational_feedback",
+      "kind": "motif",
+      "path": "fixtures/workloads/rational_feedback.ant",
+      "sha256": "41a46c25cf3c1b5dd3c072d43b14fe7a74737244f6ebdb7fd5c3515840897394",
+      "expectation_id": "rational_feedback",
+      "numerical": "NOT_RUN",
+      "provenance": "Original repository-authored synthetic motif; not a copied published model, calibrated system or biological validation.",
+      "derivation": "docs/WORKLOAD_MODELS.md#rational-feedback"
+    },
+    {
+      "id": "reversible_shuttle",
+      "kind": "motif",
+      "path": "fixtures/workloads/reversible_shuttle.ant",
+      "sha256": "f6acde6aeaacb34a628ea0c0837b034bc11e203cb69f3d76da72c1966269240c",
+      "expectation_id": "reversible_shuttle",
+      "numerical": "NOT_RUN",
+      "provenance": "Original repository-authored synthetic motif; not a copied published model, calibrated system or biological validation.",
+      "derivation": "docs/WORKLOAD_MODELS.md#reversible-shuttle"
+    },
+    {
+      "id": "unit_forward_sequence",
+      "kind": "motif",
+      "path": "fixtures/workloads/unit_forward_sequence.ant",
+      "sha256": "1c447ec91b13c88c2cb9c34269e05b3305faef67330463606ec3310b12220538",
+      "expectation_id": "unit_forward_sequence",
+      "numerical": "NOT_RUN",
+      "provenance": "Original repository-authored synthetic motif; not a copied published model, calibrated system or biological validation.",
+      "derivation": "docs/WORKLOAD_MODELS.md#unit-forward-sequence"
+    }
+  ]
+}

@@ -1,0 +1,888 @@
+{
+  "cases": [
+    {
+      "id": "grid_dag_00",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dag",
+        "index": 0
+      },
+      "seed_id": "8c5011185867033fff4e37d629f05abd9ad266ed2199fa51cdd27191dfd27fa6",
+      "source_sha256": "3c028dae8453e3658bf643d148742d3353d823acdcf4c204e10ac258eff30774"
+    },
+    {
+      "id": "grid_dag_01",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dag",
+        "index": 1
+      },
+      "seed_id": "fb076261fd3b847abd86f87ce5436641aec7c95ab3f017915bd06c567ab9915e",
+      "source_sha256": "27bb11f815d64370a9bcecf26dda0ae822d0cf2ca3c724c44d3e80ae1c773726"
+    },
+    {
+      "id": "grid_dag_02",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dag",
+        "index": 2
+      },
+      "seed_id": "18b52a85ad60f7889c93d5b3275af1e4b81a75a0a1446fcba97ffc9aef8f5b83",
+      "source_sha256": "5a9ef944a0e28e55ed0408367c45016069e784adfb68cc1f8d31fd05edf81dfb"
+    },
+    {
+      "id": "grid_dag_03",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dag",
+        "index": 3
+      },
+      "seed_id": "bd332d493499115e29f06fdff3e83dfcf1e072389eaf05c2f48286d556d9b6f1",
+      "source_sha256": "7d3033f56633aa00bacabec9a2a9fea8faeebed62af64e5a662189a12f8b7bf8"
+    },
+    {
+      "id": "grid_dag_04",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dag",
+        "index": 4
+      },
+      "seed_id": "725b5abfa60436fb3211f218af738c401d4c64cf70b2fa39684f5b0e9bea2470",
+      "source_sha256": "c4e08ccb5ea4e307c2efecb6118789c93cb7ea47f183eb372195aa9b268d17ca"
+    },
+    {
+      "id": "grid_dag_05",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dag",
+        "index": 5
+      },
+      "seed_id": "2aa557dd327b2fc6965f7b712d2bd0d4ab7806fd7d7943ee1e7d56d25590c7db",
+      "source_sha256": "d69567dafbf9c5c82ff4905c6d7c02bcb00ef8166dfb189cfe04834e541909b2"
+    },
+    {
+      "id": "grid_dag_06",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dag",
+        "index": 6
+      },
+      "seed_id": "2d624cd30a477c3b38f1a9ea28ae785b80df7c9052e2665641fcf6a7c943d520",
+      "source_sha256": "7f1b4aa466c53f01c7d707352813284b430e0c5a56ca851f7511857b8a7e15ab"
+    },
+    {
+      "id": "grid_dag_07",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dag",
+        "index": 7
+      },
+      "seed_id": "fb343aaaa6393255d5da207625b90d60c84215b840eb6e9091faf03006ea19fd",
+      "source_sha256": "167aeebc4c4d7ed175031afdc7dccb77b64da97fdce33a6137e3a58392811da7"
+    },
+    {
+      "id": "grid_dag_08",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dag",
+        "index": 8
+      },
+      "seed_id": "39019d52713d1fa7c18cec86d3a3e0669302e8e16c8c9380a294067174822994",
+      "source_sha256": "7c9c67d13b6912e19c224f9dc5063e2175ce4fa8422ba9ab8e79520722359f95"
+    },
+    {
+      "id": "grid_dag_09",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dag",
+        "index": 9
+      },
+      "seed_id": "74e26de5a9e9025dd6376128f0bd182a45b28fd70a19aa007fbe180b031e654c",
+      "source_sha256": "0d244143599e2da07823c4fd86309d74eedda7fb8fffd6f757d718885ddaee1c"
+    },
+    {
+      "id": "grid_dag_10",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dag",
+        "index": 10
+      },
+      "seed_id": "b962795ec3d0cd3deb181e34eec7faf2c5a33839031587765359b7c0363d747e",
+      "source_sha256": "2f0745b65c7a8a1e59ea5c164968a9eeb61ecde2e807d2e0215dfc984446e166"
+    },
+    {
+      "id": "grid_dag_11",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dag",
+        "index": 11
+      },
+      "seed_id": "bc690bc157192ed3cbe7d3a4d2f4e06950750ccb0ac2099f36b35b33d6534e3a",
+      "source_sha256": "fc75b9fba87e74391495fcba3317fa7c60da105ae2a808de5f1a4c02f041b687"
+    },
+    {
+      "id": "grid_dag_12",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dag",
+        "index": 12
+      },
+      "seed_id": "fcb0610f70e63db13029cec925d8046e2a1260fce4612ff2bca1025797e15f32",
+      "source_sha256": "8589eed91df68e8445e43bd93c4a23d3c684092b86096c81232042601e28d277"
+    },
+    {
+      "id": "grid_dag_13",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dag",
+        "index": 13
+      },
+      "seed_id": "1c7734ca5da43c1a3348ad85571db72364c8bfa5d9c3a0d7185e81681fdfe97f",
+      "source_sha256": "72b9bebd64f946f015bba910466bdbbfa22c31d994021c590defdb3b78c5c7f5"
+    },
+    {
+      "id": "grid_dag_14",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dag",
+        "index": 14
+      },
+      "seed_id": "911fa8bd4cb027bdc22c5b48a0e54a983f0bea7d13e6c7cd8148de7846e55b7a",
+      "source_sha256": "91e5ae66ae7a8cf11cfaf2afe5e53ee13d183a5dff70a5f85a78bec0263fbee9"
+    },
+    {
+      "id": "grid_dag_15",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dag",
+        "index": 15
+      },
+      "seed_id": "3b875d0a5310a51a55ef89655d97d7f0a5abb3bfcf5396b4562c6d28c7354264",
+      "source_sha256": "72a9274a72d746cf2675bc7589babcefbbd99907848ae8ff64e8280e7b7dfb3b"
+    },
+    {
+      "id": "grid_compartments_00",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "compartments",
+        "index": 0
+      },
+      "seed_id": "dc40a1ce92490addb19cc61b747dc88e89c8b6042346fac14c23db2ba4f105ee",
+      "source_sha256": "b2137806b89c539a2c17669c304c64e997a00a11fed0857a8ff9d7258688c251"
+    },
+    {
+      "id": "grid_compartments_01",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "compartments",
+        "index": 1
+      },
+      "seed_id": "a02a17c1cf05081761d5add77aab7d9939d584abbda461be57b23fa13c95f617",
+      "source_sha256": "c45ea4777cb6c63de02568dd57a0d558c2bb80b360473a81fe878b840f082d60"
+    },
+    {
+      "id": "grid_compartments_02",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "compartments",
+        "index": 2
+      },
+      "seed_id": "1b0b4a6fbe11af3d8b701dc90a76f4ccd06c13d1ef02c97a7b43703cc5f6f543",
+      "source_sha256": "7e13cb239b75a4430f4865b8fd0455a908b39934fb0fd2e0a8b79fbb388a6570"
+    },
+    {
+      "id": "grid_compartments_03",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "compartments",
+        "index": 3
+      },
+      "seed_id": "b7ed8d4d284792d2bffb6a5ea5e88b877a335e21e4131991ef35280bfbe16b16",
+      "source_sha256": "8f7d78aa87e9c488267f8ee2685be4430e52a50d83273a62fc42099a48360c81"
+    },
+    {
+      "id": "grid_compartments_04",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "compartments",
+        "index": 4
+      },
+      "seed_id": "5d39498d58027bd6002f80c916638b3f723a1a312d39ca99675b58b4c662eeb1",
+      "source_sha256": "ed1e23b76c953dfe2cb22bdd27d4fff563109f7010734ba3c464a7659035b49d"
+    },
+    {
+      "id": "grid_compartments_05",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "compartments",
+        "index": 5
+      },
+      "seed_id": "bb85c97e0c24591ace1dfa46dbd235dd44fdc35f554f1708c2788a53bd62348a",
+      "source_sha256": "3a4c618efa24a687be8122428d486080c6a1064644e246440c7f85372f858db2"
+    },
+    {
+      "id": "grid_compartments_06",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "compartments",
+        "index": 6
+      },
+      "seed_id": "5ff9b92f2d4f7bf97664aaaa8bee670bcfe03e8fce97ed6bfdc377b688d3a0aa",
+      "source_sha256": "f91482fe59a8c5b047cd6370ba476ca2a3c50b654ebd718b30fa34e703a32bab"
+    },
+    {
+      "id": "grid_compartments_07",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "compartments",
+        "index": 7
+      },
+      "seed_id": "9ceba999c12a2202bceaa0a8330d1a15ebe55d4d42a6d6b1d5f2ffb0f5d71569",
+      "source_sha256": "8affedfc15b4aaf903458a8475111ff17a6e3800c2c2496f584b4785d3547b41"
+    },
+    {
+      "id": "grid_compartments_08",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "compartments",
+        "index": 8
+      },
+      "seed_id": "63cb0df7aabe66d8f6ff45d9effcec490b2f10847c2a52446f9e4e867fe8c440",
+      "source_sha256": "02683ae321d09c4ed98d0d676c7a4bf93658a402deb9249b3199f67410afc74c"
+    },
+    {
+      "id": "grid_compartments_09",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "compartments",
+        "index": 9
+      },
+      "seed_id": "30765001fa502e87c35ec5c90dfebd869066bf5e4cbb77621217404fd73fa56f",
+      "source_sha256": "91d5241617f7e8d7d3b726284ebe89cd3626e317095ab9ac25c5672ae48867ed"
+    },
+    {
+      "id": "grid_compartments_10",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "compartments",
+        "index": 10
+      },
+      "seed_id": "a370de2bd2a3b206f69c3a28a8e951525b08ce31a3cf2c9b2d9f40d0bba4f73b",
+      "source_sha256": "3db286f424f412ae267127bedef0b3cacf059556651f367dba704081e0eded46"
+    },
+    {
+      "id": "grid_compartments_11",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "compartments",
+        "index": 11
+      },
+      "seed_id": "3bcfda75a8bfa2b5061bc1272d679fa6686764ae88acf1ae46f396a56ba7a2c8",
+      "source_sha256": "be894f20884b3282ad212a1b60b8198a45f5c6f3284ec0bec873304baea3fde6"
+    },
+    {
+      "id": "grid_compartments_12",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "compartments",
+        "index": 12
+      },
+      "seed_id": "af91d70a19a3ed7268e87db1acb60683c591c58709f59914910c00317f4dd338",
+      "source_sha256": "b62337a320ad53fe2b4fac9882cd4fbc308bdba84cba810828a76e5cfd9a79a5"
+    },
+    {
+      "id": "grid_compartments_13",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "compartments",
+        "index": 13
+      },
+      "seed_id": "1296a4c30424699986288fa2a37e93db5cf571392b742e802102f973172d35f0",
+      "source_sha256": "bb82168c35be6397538a8c951a83bb6bf4c5f9b790e20acde77511d7a8ea12d2"
+    },
+    {
+      "id": "grid_compartments_14",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "compartments",
+        "index": 14
+      },
+      "seed_id": "286c68145b52f9daa1a471c3d6f5283dbe4adc72e997c024de65f492ddd4dc45",
+      "source_sha256": "963f6f1bcf91678204ece3931a55f9ae99dfeaf075a2b275c76a1b7ef73790fd"
+    },
+    {
+      "id": "grid_compartments_15",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "compartments",
+        "index": 15
+      },
+      "seed_id": "579347e5c8ba13914b121b89fa5de5053fa40c4ab6cb1dbaadf1cb38af13660b",
+      "source_sha256": "787c7e6434adef9cb3764f3b181999e1d3a25f3c663ccbc0abc0c863f740529a"
+    },
+    {
+      "id": "grid_units_00",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "units",
+        "index": 0
+      },
+      "seed_id": "eabd7274f3e3b883720bbbf0d4e109d26db001a5a58ab96b7a5e8e0b250834b1",
+      "source_sha256": "1fb09d0d91b3b3550f01134a085fb13e035896abd51178f3c2c1aa9bf390dc74"
+    },
+    {
+      "id": "grid_units_01",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "units",
+        "index": 1
+      },
+      "seed_id": "31a92975b3ee9fa1bc516bbeec521dcbb26526280f429b0ccb63d50654b39d6e",
+      "source_sha256": "ea66402075f284cd234fc59f571a86a99ee1501eec1a074d7b6db1906eacc024"
+    },
+    {
+      "id": "grid_units_02",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "units",
+        "index": 2
+      },
+      "seed_id": "2c51cc1d08588daff19d4d0dc21fd00eee3734613875885b950205ba81d9b4a3",
+      "source_sha256": "ef0698354539bebef4eca4f69bac6f4b3009ddb7b0b234d932399821a91ecfa6"
+    },
+    {
+      "id": "grid_units_03",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "units",
+        "index": 3
+      },
+      "seed_id": "41a43d6edea9f5146fb3e0d39e046ce64474e2edd694067d38c0af6209dca043",
+      "source_sha256": "4711c718a210825a8f043f568d542793c969639a415f139ad40e065f429f071e"
+    },
+    {
+      "id": "grid_units_04",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "units",
+        "index": 4
+      },
+      "seed_id": "ca570c06e554379875eb12d0a8aa69b5a76bc43ede020347d00325aed46cba40",
+      "source_sha256": "f171b19c9340a005296c54952cffedb5f792eee95c45f18a67b3064f34ab0f75"
+    },
+    {
+      "id": "grid_units_05",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "units",
+        "index": 5
+      },
+      "seed_id": "2688de02d8a9cb44f7e44bfbd939623f01f795cfcd66f635c3842724aaa2451e",
+      "source_sha256": "39ca6d81d679e6911ae38e5b2758e5d1ff99bec7b9ed003eee4e0161395b0494"
+    },
+    {
+      "id": "grid_units_06",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "units",
+        "index": 6
+      },
+      "seed_id": "fba19d6d8e0f9d723abf3582974c671a56a222320d9a2f9d1c193997d62aa4e9",
+      "source_sha256": "76f4c5396836faf50ae8bfa7bc013c3b702f46943c1ea9b6260116111a417979"
+    },
+    {
+      "id": "grid_units_07",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "units",
+        "index": 7
+      },
+      "seed_id": "eb9d21f88aa66fac1c593815e8799b2b303fc8965f7925ffc0d9f263ea6ca737",
+      "source_sha256": "f5960ce01bdb6269f6d8dc2bc5846c797071a3462a6302187e65f7312df73d31"
+    },
+    {
+      "id": "grid_units_08",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "units",
+        "index": 8
+      },
+      "seed_id": "fa750d9cd9b8c348d9741956e298d8598ff170bac7f466210573ead619ab70f7",
+      "source_sha256": "21a2d701cf3c45254df713f3b4ea7dfb9846fec87b664a28b4de9da1ddbd3ccc"
+    },
+    {
+      "id": "grid_units_09",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "units",
+        "index": 9
+      },
+      "seed_id": "0cb0a03ef830b3c96abaab72a513e62e75c8f58913ef2327aa537373a634609c",
+      "source_sha256": "c0f41f0dc43063ec37344c3531524dacee777c1427b4d064a5820b25c5340289"
+    },
+    {
+      "id": "grid_units_10",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "units",
+        "index": 10
+      },
+      "seed_id": "e700114e6cb9b4084e4de23267f93f7513274b4dcf3ae0a4881e3930c0ad8296",
+      "source_sha256": "c60bb87e3c8575e4330a8cbdbfb7b77dd5ee2592cc799204acdd841e0a4ba2a8"
+    },
+    {
+      "id": "grid_units_11",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "units",
+        "index": 11
+      },
+      "seed_id": "04c95d70051cea34d206bb4ea5aef3bd011f34e4b6d23d2e14fc23a99dadaf19",
+      "source_sha256": "c15be16811378c89db2dd26855e0a67a634f05e50ceac56f22d824bc8bb52bd3"
+    },
+    {
+      "id": "grid_units_12",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "units",
+        "index": 12
+      },
+      "seed_id": "27a961f43abfe8c3238d7dbb40c0b271ab19297c4e2b1795a72a162f2f357bcf",
+      "source_sha256": "0601acbaf9c4503451fca4565178b33f4bf1fe257745e4908f19817a9e3bdc46"
+    },
+    {
+      "id": "grid_units_13",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "units",
+        "index": 13
+      },
+      "seed_id": "5e569e722f883b25fd9bbc25fcf44b51a7f4fe92136f5a11921914af11e4daf4",
+      "source_sha256": "b0d94ad05c8261db71203c6a5c8158590ceef90d486898a91de1b582e7dd6c7f"
+    },
+    {
+      "id": "grid_units_14",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "units",
+        "index": 14
+      },
+      "seed_id": "520122a8bbce7534005b8b28f49f6c07628f7dad8658cce7be2454af2d26f4c9",
+      "source_sha256": "71f437e35ab48a52875ca9ac1f368e810ea9b7ab38e01456fb49c4ec4c8975bc"
+    },
+    {
+      "id": "grid_units_15",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "units",
+        "index": 15
+      },
+      "seed_id": "03e69fdcc183713a7e1dc0667b8be0fdbbe43940e1b7cccc6a4c2842506d3b43",
+      "source_sha256": "2856f6eb4e1cb1f620d3eac98cd43bcfe5633c2109c4345d28ef275ec5f8010a"
+    },
+    {
+      "id": "grid_numeric_00",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "numeric",
+        "index": 0
+      },
+      "seed_id": "1cefed7167e699c3d188214cf6905300d23ca4150d22fde56be8a89423a7fa15",
+      "source_sha256": "78b5dc450e7c3ba00ca0ddac27e60c55fcfe6b852b3b05635b4fb6ee7f57a5f1"
+    },
+    {
+      "id": "grid_numeric_01",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "numeric",
+        "index": 1
+      },
+      "seed_id": "97a27284c3dac3f6baeebed660f2ae583a32f7dc2233c41338d3b3755081c696",
+      "source_sha256": "479c5823fab9edc6c6ca86f35590ba931df72291476bbe1bc06abcf326accda9"
+    },
+    {
+      "id": "grid_numeric_02",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "numeric",
+        "index": 2
+      },
+      "seed_id": "d1dfd14dda3d7700326eb03706ee3f074b7a014ef03dc2b68b43957246405264",
+      "source_sha256": "a654d92c49ad76580b11559cb9718766bba7712154ccf8f486f100bbd6d6a91e"
+    },
+    {
+      "id": "grid_numeric_03",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "numeric",
+        "index": 3
+      },
+      "seed_id": "cd54b4a910ce440b8e4cba30368580135327500d629f6093eae60d2725e9db32",
+      "source_sha256": "d51d84b167213ccade354faebd48ce676554bb4ec28bab49914deb12ee67a705"
+    },
+    {
+      "id": "grid_numeric_04",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "numeric",
+        "index": 4
+      },
+      "seed_id": "2eb33d4b9074990730d95553f9dcb8be58d8c264fc6446944cf82c48c337fb78",
+      "source_sha256": "1fe08fba7c1c6559b4e022cb426861f77ddca7b62966cb4aaa8a7d91f0a32f49"
+    },
+    {
+      "id": "grid_numeric_05",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "numeric",
+        "index": 5
+      },
+      "seed_id": "91756947ad982a8bf5a99871168d6df25ed495b227b565015f304722c95fe78f",
+      "source_sha256": "044817409140fed36a43ce82611d67c98cfda7a175bd5557364fe7fc94138b9b"
+    },
+    {
+      "id": "grid_numeric_06",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "numeric",
+        "index": 6
+      },
+      "seed_id": "79700e56ccc5e13918fd935d44b80303092eba8da0dc7b5d1da7b948b9100158",
+      "source_sha256": "9d7fc37597e8862841536bdc79eabe1e60ccc5ef742cf69b01a8ceace7625048"
+    },
+    {
+      "id": "grid_numeric_07",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "numeric",
+        "index": 7
+      },
+      "seed_id": "9183d51462b777c2a64ffc61f35a25cb741ffeabcef7c4b5ab8b1e35a88a4f29",
+      "source_sha256": "715327db6f3406ae9c013e1954d34ff5ecb37ca53454f73fa6544204c9cb63d7"
+    },
+    {
+      "id": "grid_numeric_08",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "numeric",
+        "index": 8
+      },
+      "seed_id": "d2fe6f6500727850cc5f81e309d4d8b212f958447bfb0659e0ca1ddfe40b6829",
+      "source_sha256": "adc6e485956f77dabeb65fa461bdc25491cd8d281edeb77af3f21a8d6c35d821"
+    },
+    {
+      "id": "grid_numeric_09",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "numeric",
+        "index": 9
+      },
+      "seed_id": "a61266270e85f7377cfa1cc4af191e4d6eed89ef4b453c3e1d617bfd4692342f",
+      "source_sha256": "afc082d894a20e4b065634cb2bee04523795daf38fa638997e5233a872319bfe"
+    },
+    {
+      "id": "grid_numeric_10",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "numeric",
+        "index": 10
+      },
+      "seed_id": "054c41204232ff4d9538c19bd8b2fa7863cea4aedae4baec514db53bb53f081d",
+      "source_sha256": "e078123fe1ec9c4a161369396002c95822d566db3ac965cd5e9398cac4cf5597"
+    },
+    {
+      "id": "grid_numeric_11",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "numeric",
+        "index": 11
+      },
+      "seed_id": "9b5f0265cd2a593ed80a6c66f6a4a867fbc57365cf3f54e2283a4be2a7214f03",
+      "source_sha256": "bd8f2c928105de8050e1e26eac39dfdd595806af2a86dff9ca732e9078d92559"
+    },
+    {
+      "id": "grid_numeric_12",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "numeric",
+        "index": 12
+      },
+      "seed_id": "9a7edc5ecf47e4989319a885f4324ce9978c999059f52f9a0fbe2eb57673f6f4",
+      "source_sha256": "e8d785167fe87f1dcd786cb0fc21bcf96d7dd23b0b7d380961ec3ab4756e7595"
+    },
+    {
+      "id": "grid_numeric_13",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "numeric",
+        "index": 13
+      },
+      "seed_id": "4c8cf474d8b773d442547ac27ca08f067da3c785e786d08cc80dd60939aaf408",
+      "source_sha256": "8005b477ebbf892413d2d3008535e0c4ed80ad90fb296060cde3f9672ec02afc"
+    },
+    {
+      "id": "grid_numeric_14",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "numeric",
+        "index": 14
+      },
+      "seed_id": "2619a23b40dd9ca3ac6ea62b83a2fb1055b5c679b41c41f71738228246ffe783",
+      "source_sha256": "43a0742153ec14e6595c16dd7336bde95882b1bb18df41dc244aca45a28a0c62"
+    },
+    {
+      "id": "grid_numeric_15",
+      "kind": "generated_positive",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "numeric",
+        "index": 15
+      },
+      "seed_id": "c457b7b7fe582d59eb4d048e4e8758e41979043314e14b90f58b6783ec4f96dc",
+      "source_sha256": "03cb0bcc1b610188c4a2538a8f1f60a4398dc231aa74229f8c970e2e9132dea6"
+    },
+    {
+      "id": "grid_cycle_00",
+      "kind": "generated_negative",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "cycle",
+        "index": 0
+      },
+      "seed_id": "e37ca423d15cdd25f3301c30c6dc5c5049f22b730987b3cbe71ccd1200f4a840",
+      "source_sha256": "4557a641418e05a85f1b142d8ca32de1a913e24ae00482644ee6a935b6a97e7f"
+    },
+    {
+      "id": "grid_cycle_01",
+      "kind": "generated_negative",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "cycle",
+        "index": 1
+      },
+      "seed_id": "5beb5ab3941092091106246cbc44e783a923147bfa1d3dc6ed2444065edfdf6e",
+      "source_sha256": "b60380c084baad8aa73673a1b5af8fcdff62c54886cbfb6184207227a96eecfe"
+    },
+    {
+      "id": "grid_cycle_02",
+      "kind": "generated_negative",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "cycle",
+        "index": 2
+      },
+      "seed_id": "6dc2747dff085c97ca8fba2236e5febb3278665a4c6b884e785049bfd3ab3253",
+      "source_sha256": "b223f0a8cdaea58574194ab9e92927d02b9dec15e4e975a3329b652b16852dad"
+    },
+    {
+      "id": "grid_cycle_03",
+      "kind": "generated_negative",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "cycle",
+        "index": 3
+      },
+      "seed_id": "784c348b9c16cc1a53766d8934280915d9f4ea5dd5e97e9b99d6d3aaf10049e2",
+      "source_sha256": "a9aa15454bbd23b748ce5e9812d607bdc9821eeb62f661bfbf84c0f3ebd318c7"
+    },
+    {
+      "id": "grid_dimensions_00",
+      "kind": "generated_negative",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dimensions",
+        "index": 0
+      },
+      "seed_id": "19e5d8d93f269b2575dfa5225a88a53139fbde6cc3f7b0ee2911cddb026acf52",
+      "source_sha256": "889e4b13b3ce31ba5dc737d0e001015a261000e53b5b4d8eba42a9309ff22307"
+    },
+    {
+      "id": "grid_dimensions_01",
+      "kind": "generated_negative",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dimensions",
+        "index": 1
+      },
+      "seed_id": "2a59f621a6fca169c7983420990e46ab263d65c9c19290588f0a9ed48824267a",
+      "source_sha256": "3d41ce3830b13ebddbf153c5dc5c964da6a742d6b4ce3791f6fbcdb3b786d2de"
+    },
+    {
+      "id": "grid_dimensions_02",
+      "kind": "generated_negative",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dimensions",
+        "index": 2
+      },
+      "seed_id": "2e1377ab77a70f95c96ba18ba20722843d90000423c0605948e0c461f6d9e2e5",
+      "source_sha256": "835e64800c51aa363cfdbb2c1e4650ec4ff5adda77f2e6e167e03327a825ee8d"
+    },
+    {
+      "id": "grid_dimensions_03",
+      "kind": "generated_negative",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "dimensions",
+        "index": 3
+      },
+      "seed_id": "e1d1ece3c0930faa29018bad82b7f565d4f72f3dc7312933dc6a17ef5abb5e71",
+      "source_sha256": "2301442aa54a972de674ece8d4e83af458fd9fa07d1ccc3a0f3192e5908b4261"
+    },
+    {
+      "id": "grid_unset_00",
+      "kind": "generated_negative",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "unset",
+        "index": 0
+      },
+      "seed_id": "113ef8825a11b7bf6e76701ec1a66038d95145cb037b48ff05d1a201c4ac348d",
+      "source_sha256": "18cd07ce66a3891b556543885e642750d632ff65a0378c84e090e0d7fd7d0351"
+    },
+    {
+      "id": "grid_unset_01",
+      "kind": "generated_negative",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "unset",
+        "index": 1
+      },
+      "seed_id": "ee78591c5dbbd2c4b8bb85e2bd3a9d08a9a955c71189dd5322998ef078db89af",
+      "source_sha256": "a3cb8ffc7e359c2b2e9d53ff19fe13b183cb4b3e71dadc490037908d54936bd4"
+    },
+    {
+      "id": "grid_unset_02",
+      "kind": "generated_negative",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "unset",
+        "index": 2
+      },
+      "seed_id": "eedca5d1dc0a8228a5c45cd4b5d0b012abb0bf71ff7407cb3ae1a3b5dcb81efd",
+      "source_sha256": "e1652aea118c6007a063e3b759f676b3ef9c0fe164cbc038df7f2a5c43d87c8e"
+    },
+    {
+      "id": "grid_unset_03",
+      "kind": "generated_negative",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "unset",
+        "index": 3
+      },
+      "seed_id": "a5a10c8ac887e83716cac8b8a242fe74c69f02b24c83a1cb0099a27ed47d07c6",
+      "source_sha256": "c6862aa46f9c63071a6e6bde1726eaf1238368e0ec11757f1fd34f3256fb45ba"
+    },
+    {
+      "id": "grid_envelope_00",
+      "kind": "generated_negative",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "envelope",
+        "index": 0
+      },
+      "seed_id": "56584e16d6d9cdf678b8db2d5cb84303849fa4eb50437e68328b40b2a30a5ab4",
+      "source_sha256": "26c28fbc7ce225e98bf3371650881b45951ca37a624ff0c0f38b1fba943f72bb"
+    },
+    {
+      "id": "grid_envelope_01",
+      "kind": "generated_negative",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "envelope",
+        "index": 1
+      },
+      "seed_id": "29ce6e52352742f954b8756995e370b44e1439f0d509343c4507f82cb6d9c99c",
+      "source_sha256": "e5bdb7f189de354d9cb0ef3b69748398f2ba80abee9a20d2dd9d860733d123cf"
+    },
+    {
+      "id": "grid_envelope_02",
+      "kind": "generated_negative",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "envelope",
+        "index": 2
+      },
+      "seed_id": "4b3d5fa76a7bc24e9ba2cbc02148a7a92418168dac8bb44b6d51e93fc4c3912b",
+      "source_sha256": "9fcba5981054b1a63075cd26f000fe25bab5e1185befd4c571ffb9f6721fd306"
+    },
+    {
+      "id": "grid_envelope_03",
+      "kind": "generated_negative",
+      "numerical": "NOT_RUN",
+      "recipe": {
+        "family": "envelope",
+        "index": 3
+      },
+      "seed_id": "c8a9e6059ac101a4028db3b14cf96e8772934fc1e196861d4c456091562a0599",
+      "source_sha256": "baf99f3546a2632b486fec8594f7398b1f48759a297246b402b4c1efe6af9058"
+    }
+  ],
+  "generation": "finite ordered parameter grid; no PRNG",
+  "generator_version": "antimony-structured-grid-v1",
+  "root_seed": "2026-10-10-grid-01",
+  "schema": "antimony-generated-grid-v1"
+}

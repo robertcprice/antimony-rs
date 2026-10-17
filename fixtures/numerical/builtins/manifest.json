@@ -1,0 +1,47 @@
+{
+  "schema": "antimony-builtin-numerical-v1",
+  "grid": {
+    "start": 0,
+    "end": 10,
+    "steps": 100
+  },
+  "comparison": {
+    "absolute": 1e-08,
+    "relative": 1e-07
+  },
+  "solver": {
+    "name": "cvode",
+    "relative_tolerance": 1e-10,
+    "absolute_tolerance": 1e-12,
+    "maximum_num_steps": 100000,
+    "variable_step_size": false,
+    "stiff": true
+  },
+  "cases": [
+    {
+      "id": "exponential_input",
+      "path": "fixtures/numerical/builtins/exponential_input.ant",
+      "sha256": "bbc00c583e375efb8b5fb105dae9f93a0863302dcd421534921a77d53211db83",
+      "selections": [
+        "time",
+        "S",
+        "[S]",
+        "default_compartment"
+      ],
+      "provenance": "Original hand-derived builtin/time analytic input; no fitted or solver-derived coefficients."
+    },
+    {
+      "id": "oscillating_input",
+      "path": "fixtures/numerical/builtins/oscillating_input.ant",
+      "sha256": "c3aaedd5bfc312f2a1e8ea753d3cff888dd1a244817224c391f5c66b60d1af43",
+      "selections": [
+        "time",
+        "S",
+        "[S]",
+        "default_compartment"
+      ],
+      "provenance": "Original hand-derived builtin/time analytic input; no fitted or solver-derived coefficients."
+    }
+  ],
+  "implemented_profile": "math-core-v0.2-slice"
+}

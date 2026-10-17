@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  The variable 'u' is the type Unit Definition, and may not have an assignment rule associated with it.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "da45f28758559d4589fd735aeacc5765ce5d2c2fb98dd65287b7b9fe00cd03b0",
+  "status": "REFERENCE_REJECTED"
+}

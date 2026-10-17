@@ -1,0 +1,3 @@
+compartment C = 2;
+function f(C) C * 3 end
+a = f(5);

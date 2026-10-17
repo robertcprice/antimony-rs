@@ -1,0 +1,1 @@
+unit square=metre^2; unit inv=1/second; a=2; a has square; b=2; b has inv;

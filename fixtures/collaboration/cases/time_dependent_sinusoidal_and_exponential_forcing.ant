@@ -1,0 +1,18 @@
+function damped_wave(t, amp, decay, omega)
+  amp * exp(-decay * t) * (1 + 0.5 * sin(omega * t))
+end
+
+model time_dependent_sinusoidal_and_exponential_forcing()
+  species M = 0.5, P = 0.1;
+  amp = 1.6;
+  decay = 0.15;
+  omega = 1.2;
+  k_trans = 0.8;
+  k_deg_m = 0.4;
+  k_deg_p = 0.25;
+  drive := damped_wave(time, amp, decay, omega);
+  J_tx: -> M; drive;
+  J_deg_m: M -> ; k_deg_m * M;
+  J_tl: -> P; k_trans * M;
+  J_deg_p: P -> ; k_deg_p * P;
+end

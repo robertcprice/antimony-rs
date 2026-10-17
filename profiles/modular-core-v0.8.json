@@ -1,0 +1,47 @@
+{
+  "schema": "antimony-rs-implementation-boundary-v2",
+  "implementation_id": "modular-core-v0.8-slice",
+  "status": "experimental_bounded_implementation",
+  "extends_implementation": "functions-core-v0.5-slice",
+  "historical_corpus_profile": "kinetic-core-v0.1",
+  "relationship_to_historical_target": "Separate bounded extension: submodel composition/flattening, discrete at events, substanceOnly species, dynamic compartments, reaction kinetic-law overrides, user-defined functions, flat assignment and rate rules, Boolean/conditional operators, and numeric functions extend beyond frozen kinetic-core-v0.1; old corpus reuse is not target conformance.",
+  "syntax": {
+    "substance_only_species": "Explicit substanceOnly species declarations ([const|var] substanceOnly species [$]S [in C] [= expr]...) across top-level and submodel scopes.",
+    "dynamic_compartments": "Compartment expression initialization (compartment C = expr; or C = expr;) and compartment assignment/rate rules (C := expr; and C' = expr;).",
+    "reaction_kinetic_law_overrides": "Post-declaration reaction kinetic-law replacement via assignment rules (J0 := expr;) and ordinary assignments (J0 = expr;).",
+    "discrete_events": "Named and unnamed discrete events ([E0:] at [delay after] (trigger) [, t0=bool, priority=expr, persistent=bool, fromTrigger=bool]: var1 = expr1, var2 = expr2;).",
+    "modules_ports_and_aliases": "Multi-module Antimony documents (model|module [*]name(port1, port2, ...) ... end), multi-file imports via parse_with_imports / load_file (import \"file.ant\"), named and unnamed submodel calls ([M1:] sub(arg1, ...) [, timeconv = tf] [, extentconv = ef]), submodel deletions (delete M1.x, M1.y;), member access (M1.x = ..., M1.S in C, M1.a is x), and symbol aliasing (a is b;).",
+    "sbml_reader_and_decompiler": "Bidirectional SBML L2 (v1-v5) and L3 (v1-v2) Core reader and canonical Antimony decompiler (read_sbml, sbml_to_antimony, examples/import_sbml.rs), including <notes>/<annotation> metadata skipping and reaction-scoped local parameter lifting.",
+    "pure_rust_simulation_and_stoichiometry": "Native pure-Rust stoichiometry matrix extraction (ValidatedModel::stoichiometry_matrix), RK4 ODE + bisection discrete-event simulator (ValidatedModel::simulate, simulate, examples/ode_trajectory_csv.rs), steady-state solver (ValidatedModel::steady_state, steady_state), and Metabolic Control Analysis elasticity matrices (ValidatedModel::elasticity_matrix, ElasticityMatrix)."
+  },
+  "semantics": {
+    "substance_only_and_compartments": "substanceOnly species export hasOnlySubstanceUnits=\"true\" with initialAmount when scalar-initialized and skip implicit <substance>_<volume> concentration unit synthesis. Dynamic compartments with expression initializers export <initialAssignment symbol=\"C\"> without size attribute; compartment assignment/rate rules set constant=\"false\" and export <assignmentRule>/<rateRule>.",
+    "reaction_overrides": "Assigning to a declared reaction identifier via := or = replaces that reaction's kinetic law expression in source order and recomputes reaction modifiers and constancy dependencies.",
+    "events": "Events export in source order to <listOfEvents> with default ids _E0, _E1, ... when unnamed; triggers require Boolean expressions; optional delay and priority expressions require numeric expressions; event assignments clear target constant=\"false\" and validate dimensional compatibility.",
+    "module_flattening": "Submodels instantiate in declaration order before the main model body executes; unaliased internal symbols receive {instance}_ prefixes (unnamed instances default to _sys0, _sys1, ...); port arguments bind positionally; caller initializers and compartment placements override submodel defaults; timeconv scales submodel reaction rates (/ tf), rate rules (/ tf), explicit time (/ tf), and event delays (* tf); extentconv scales submodel reaction rates (* ef); delete M1.x removes unreferenced non-port submodel members while rejecting dangling references or port-bound deletions.",
+    "multi_file_imports": "Single-file parse() remains sandboxed and rejects import directives; parse_with_imports() and load_file() resolve relative .ant files recursively with diamond deduplication, cycle detection, path-traversal guards, and cumulative source-byte accounting.",
+    "simulation": "Reaction-governed floating species integrate substance amounts (dn_S/dt = sum_j N_{S,j} v_j) with concentration [S] = n_S / V_c; rate-rule targets integrate dx/dt directly; discrete events use bisection root-finding (1e-10) with support for delays, fromTrigger, persistent, t0, and priority; steady_state() solves dx/dt = 0 while preserving moiety conservation laws and computes unscaled/scaled MCA elasticity matrices."
+  },
+  "retained_exclusions": [
+    "Single-file sandboxed parse() rejects import \"file.ant\" unless parse_with_imports() or load_file() is used",
+    "Literal numeric submodel conversion factors (timeconv = 60); conversion factors must be named parameter symbols",
+    "Display-name string annotations (a is \"label\") and SBO/CVTerm metadata",
+    "Algebraic rules (0 = expr) and empty rule clearing (a := ;)",
+    "Empty function bodies, forward/out-of-order function calls, and recursive functions",
+    "All textual infix/prefix logical aliases, comparison chains, XOR, and implies",
+    "Nonfinite constants and existing scalar/rational restrictions"
+  ],
+  "verification_contracts": {
+    "manifest": "fixtures/modular/manifest.json",
+    "overlay": "fixtures/manifests/modular-core-v8-overlay.json",
+    "evidence": "tools/oracle/modular-evidence.json",
+    "guide": "docs/MODULAR_AND_EVENTS.md",
+    "analytic_manifest": "fixtures/numerical/modular/manifest.json"
+  },
+  "claims": {
+    "full_antimony": false,
+    "frozen_target_conformance": false,
+    "published": false,
+    "upstream_endorsement": false
+  }
+}

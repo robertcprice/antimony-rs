@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  In the formula \"ceiling(1, 2)\":  Error when parsing input 'ceiling(1,2)' at position 12:  The function 'ceiling' takes exactly one argument, but 2 were found.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "40730f6ef7e664f0635d617f951b856452c0794f488ee3c62bb1847cd09af380",
+  "status": "REFERENCE_REJECTED"
+}

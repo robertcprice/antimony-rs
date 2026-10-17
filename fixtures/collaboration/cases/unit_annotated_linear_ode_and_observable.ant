@@ -1,0 +1,19 @@
+function linear_rate(k, x)
+  k * x
+end
+
+model unit_annotated_linear_ode_and_observable()
+  unit time_unit = second;
+  unit mM = 1e-3 mole / litre;
+  unit per_sec = 1 / second;
+  A = 5.0;
+  A has mM;
+  B = 1.0;
+  B has mM;
+  k = 0.2;
+  k has per_sec;
+  A' = -linear_rate(k, A);
+  B' = linear_rate(k, A);
+  total_ab := A + B;
+  total_ab has mM;
+end

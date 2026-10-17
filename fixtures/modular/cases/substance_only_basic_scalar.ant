@@ -1,0 +1,3 @@
+substanceOnly species S1 = 10, S2 = 0;
+k = 0.2;
+S1 -> S2; k*S1;

@@ -1,0 +1,7 @@
+unit mM = 1e-3 mole / litre;
+unit s_unit = second;
+species S = 1;
+S has mM;
+t_bad = 2;
+t_bad has s_unit;
+at (time > 1): S = t_bad;

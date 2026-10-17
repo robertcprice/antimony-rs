@@ -1,0 +1,1 @@
+species A=1,B=0,C;J:A=>B;piecewise(A,true,C);

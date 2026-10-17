@@ -1,0 +1,15 @@
+{
+  "antimony_bundled_libsbml": "5.21.1",
+  "antimony_library_version": "v3.2.0",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "projection_reasons": [
+    "Unrepresented MathML element: xor"
+  ],
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "fa922ad8a287809481b3f5ade442204bd215cb980e6ce518584b07784bad61c7",
+  "status": "PROJECTION_UNSUPPORTED"
+}

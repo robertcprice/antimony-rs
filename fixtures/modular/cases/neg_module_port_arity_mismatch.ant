@@ -1,0 +1,7 @@
+model sub(x, y)
+  x -> y; 0.1*x;
+end
+model *main()
+  species A = 1;
+  M: sub(A);
+end

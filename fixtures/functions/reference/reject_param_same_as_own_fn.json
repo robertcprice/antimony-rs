@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  syntax error, unexpected name of an existing function, expecting ')' or ','",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "61d371e7274e7c04311610ad41e865cd1ba8fec130feddefeb69c514503c8e2d",
+  "status": "REFERENCE_REJECTED"
+}

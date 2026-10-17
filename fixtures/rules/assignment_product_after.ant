@@ -1,0 +1,1 @@
+species S=1,P=1,Q=0;k=1;J:P=>S;k*P;S:=2;

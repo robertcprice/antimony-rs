@@ -1,0 +1,13 @@
+{
+  "antimony_bundled_libsbml": null,
+  "antimony_library_version": "v3.2.0",
+  "diagnostic": "Error in model string, line 1:  'unknown_fn' was used as a function, but no such function was defined.  Please define the function using 'function unknown_fn([arguments]) [function definition] end'.",
+  "messages": [],
+  "oracle_versions": {
+    "antimony": "3.2.0",
+    "python-libsbml": "5.21.2"
+  },
+  "schema": "antimony-rs-oracle-v1",
+  "source_sha256": "566b53ec319de6f7fbcde9f45b6e4f137bcc9cda93c3a95189609af86be6953c",
+  "status": "REFERENCE_REJECTED"
+}
